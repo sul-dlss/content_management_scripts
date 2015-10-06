@@ -1,0 +1,76 @@
+require 'rubygems'
+
+# this script renames filenames
+# input file (mapping file) is a comma separated file of old filename values and new filename values
+# the filename values in the mapping file should include the extension, otherwise your files will not have extensions
+# example: old.xml,new.xml
+# it will read the directory of files you want name changes and compare that with the mapping file
+# it will report out filenames in your directory that do not exist in the mapping file
+
+# run the script:
+# ruby rename_files.rb <mapping_file>
+
+# get the filename of the mapping file from user input
+#mapping_file = "test_rename_files.csv"
+mapping_file = ARGV[0]
+
+# folder name where files are that need name changes
+#folder = "test"
+folder = ARGV[1]
+
+# initiate hash for the mapping file
+old_name_new_name = Hash.new
+
+# reads the mapping file into the old_name_new_name hash
+File.open("#{mapping_file}").each do | line |
+	key,value = line.chomp.split(',')
+	old_name_new_name[key] = value
+end
+
+# # test hash assignment
+# old_name_new_name.each_key do |old_name|
+# 	puts "#{old_name} #{old_name_new_name[old_name]}"
+# end
+
+# file to write errors where the filename is in the directory but not the mapping file
+unchanged_names = File.new("unchanged_names.txt", "w+")	
+
+# change working directory to there
+Dir.chdir(folder) do
+	# read the filenames in directory into an array for looking up
+	filenames = Dir.entries(".")  #=> ["0004A.xml", "0004001.xml"]
+	# filenames.each { | file | 
+	# 	puts file
+	# }
+
+	# iterate through filenames listing and look it up in the mapping file 
+	# to find the matching new_name
+	filenames.each { | old_name | 
+		# remove the file extension
+		#old_name = file.gsub(/\.xml/,"")
+	
+		# lookup filenames in the hash
+		#new_name = $old_name_new_name.fetch[old_name]
+		if old_name_new_name.has_key?(old_name)
+			new_name = old_name_new_name[old_name]
+			#puts "#{new_name}"
+			File.rename("#{old_name}", "#{new_name}")
+
+		# need to figure out how to compare the mapping file's old filenames to the filenames
+		# in the directory for reporting.
+			
+		else
+			unchanged_names.puts "#{old_name}"
+		end
+
+	}
+end
+
+
+
+
+
+# $new_name_old_name.each_key do | new_name |
+#   script.puts "mv ../descMD/#{$new_name_old_name[new_name]}.xml ../descMD/#{new_name}.xml"
+#   end
+#filenames.close
