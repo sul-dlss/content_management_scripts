@@ -32,11 +32,11 @@ end
 # 	puts "#{old_name} #{old_name_new_name[old_name]}"
 # end
 
-# file to write errors where the filename is in the directory but not the mapping file
-unchanged_names = File.new("unchanged_names.txt", "w+")	
-
 # change working directory to there
 Dir.chdir(folder) do
+	# file to write errors where the filename is in the directory but not the mapping file
+	unchanged_names = File.new("unchanged_names.txt", "w+")	
+
 	# read the filenames in directory into an array for looking up
 	filenames = Dir.entries(".")  #=> ["0004A.xml", "0004001.xml"]
 	# filenames.each { | file | 
