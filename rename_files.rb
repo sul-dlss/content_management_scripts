@@ -8,7 +8,7 @@ require 'rubygems'
 # it will report out filenames in your directory that do not exist in the mapping file
 
 # run the script:
-# ruby rename_files.rb <mapping_file>
+# ruby rename_files.rb <mapping_file> <relative path of folder where filenames need to be changed>
 
 # get the filename of the mapping file from user input
 #mapping_file = "test_rename_files.csv"
