@@ -50,12 +50,22 @@ Dir.chdir(folder) do
 			druid = file.gsub(/\.xml/,"")
 
 			# open druid-named files
-			doc = Nokogiri::XML(open("#{druid}.xml"))
+			doc = Nokogiri::XML(open("#{file}"))
 			record = doc.root
 
 			# add xmlDoc wrapper
 			newFile.write("<xmlDoc id=\"descMetadata\" objectId=\"#{druid}\">" + record.to_xml + "</xmlDoc>")
 
+		elsif (file =~ /druid.[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}/)
+			# get druid from the filename
+			druid = file.gsub(/druid./,"") 
+
+			# open druid-named files
+			doc = Nokogiri::XML(open("#{file}"))
+			record = doc.root
+
+			# add xmlDoc wrapper
+			newFile.write("<xmlDoc id=\"descMetadata\" objectId=\"#{druid}\">" + record.to_xml + "</xmlDoc>")
 			
 		end
 
