@@ -4,6 +4,10 @@ require 'nokogiri'
 # this script compiles XML descriptive metadata records coming from druid-named files into one file
 # the required wrappers for Argo's MODS bulk upload are added
 
+# druid-named files are defined as:
+# [druid].xml, e.g. bb020sf5359.xml
+# druid:[druid], e.g. druid:bb020sf5359
+
 # example wrapper
 
 # <xmlDocs xmlns="http://library.stanford.edu/xmlDocs" datetime="YYYY-MM-DD HH:MM:SSAM" sourceFile="filename.xml">
@@ -14,8 +18,14 @@ require 'nokogiri'
 #  </xmlDoc>
 # </xmlDocs>
 
-# run the script:
-# ruby compile_wrap_mods.rb <relative path to folder of files to process> <new filename>
+# to run the script, it needs two input parameters:
+# 1. the folder of files to process
+# 2. the filename for the new file 
+
+# the new file is written to the folder of files to process by default, unless you specify another location (a relative path) from this pwd
+
+# command to run the script:
+# ruby compile_wrap_descMD.rb <path to folder of files to process> <new filename>
 
 folder = ARGV[0]
 descMD = ARGV[1]
@@ -45,6 +55,7 @@ Dir.chdir(folder) do
 
 			# add xmlDoc wrapper
 			newFile.write("<xmlDoc id=\"descMetadata\" objectId=\"#{druid}\">" + record.to_xml + "</xmlDoc>")
+
 			
 		end
 
