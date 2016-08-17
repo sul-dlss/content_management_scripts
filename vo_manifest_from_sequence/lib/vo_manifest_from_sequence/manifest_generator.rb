@@ -17,6 +17,12 @@ class ManifestGenerator
     infile = ManifestSheet.new(@filename)
     # Validate incoming data and return validated spreadsheet object
     sheet = infile.validate
+    data = generate_data_hash(sheet)
+    report_output_stats(data)
+    write_output_file(data)
+  end
+
+  def generate_data_hash(sheet)
     # Hash to store output data for manifest
     data = Hash.new
 
@@ -35,11 +41,17 @@ class ManifestGenerator
         data[@current_parent] << row[:druid]
       end
     end
+    return data
+  end
+
+  def report_output_stats(data)
     # Reports number of child objects assigned to each parent in the manifest
     puts "parent druid\tchild object count"
     data.each {|parent, children| puts "#{parent}\t#{children.count}"}
     puts "\n"
+  end
 
+  def write_output_file(data)
     # Generate output filename from input filename
     outfile = File.absolute_path(@filename).sub(/\.[A-Za-z]+$/, '_manifest.csv')
 
