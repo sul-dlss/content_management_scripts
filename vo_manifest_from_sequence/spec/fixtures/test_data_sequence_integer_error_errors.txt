@@ -1,0 +1,2 @@
+Sequence value cannot be converted to integer in {:sequence=>"9.0", :root=>"0019", :druid=>"cf968pv8332"}
+Sequence value cannot be converted to integer in {:sequence=>"ten", :root=>"0019", :druid=>"ms584wq3812"}

@@ -32,22 +32,25 @@ class ManifestSheet
     puts "Validating input file #{@filename}...\n\n"
     # Generates sheet object
     @sheet = self.spreadsheet
+    # Array for error messages; write to file if more than one
 
     # Checks that header contains sequence, root, and druid
     if !@sheet.row(1).include?('sequence') || !@sheet.row(1).include?('root') || !@sheet.row(1).include?('druid')
-      puts "Validation failed!!\n\n"
-      fail "\n\n***Header error: #{@filename} must contain 'sequence', 'root', and 'druid' in first row***\n\n"
+      puts "***Validation failed due to header error!! Input data must contain 'sequence', 'root', and 'druid' in first row\n\n"
+      fail
     end
     @rows = @sheet.parse(sequence: 'sequence', root: 'root', druid: 'druid').drop(1)
 
     root_sequence = {}
+    # Array to hold errors
+    @errors = []
+
     @rows.each do |row|
       # begin block to handle ArgumentError for integer test
       begin
       # Checks for empty cells
       if row.values.compact.count != row.values.count || row.values.count < 3
-        puts "Validation failed!!\n\n"
-        fail "\n\n***Data error: missing value in #{row}***\n\n"
+        @errors << "Missing value in #{row}"
       elsif root_sequence.has_key?(row[:root])
         root_sequence[row[:root]] << Integer(row[:sequence])
       else
@@ -55,28 +58,46 @@ class ManifestSheet
       end
       # Handles error if row[:sequence] cannot be converted to integer
       rescue ArgumentError
-        puts "Validation failed!!\n\n"
-        fail "\n\n***Data error: sequence value cannot be converted to integer in #{row}***\n\n"
+        @errors << "Sequence value cannot be converted to integer in #{row}"
       end
     end
+    # If validation fails, writes errors to file and exits
+    if !@errors.empty?
+      write_error_output(@errors)
+      exit
+    end
+
     root_sequence.each do |r, s|
       # Checks that each root has ordered sequence starting with 0
       if s[0] != 0
-        puts "Validation failed!!\n\n"
-        fail "\n\n***Data error: root #{r} missing parent numbered 0***\n\n"
+        @errors << "Root #{r} missing parent numbered 0"
       else
         # Checks that sequence values are in numeric order
         while s.count >= 2
           if s.pop != s.last + 1
-            puts "Validation failed!!\n\n"
-            fail "\n\n***Data error: root #{r} has disordered elements near #{s.last}***\n\n"
+            @errors << "Root #{r} has disordered elements near #{s.last}"
           end
         end
       end
     end
+    # If validation fails, writes errors to file and exits
+    if !@errors.empty?
+      write_error_output(@errors)
+      exit
+    end
+
     # If no errors, returns sheet object
     puts "Validation successful\n\n"
     return @sheet
+  end
+
+  def write_error_output(errors)
+    error_filename = File.absolute_path(@filename).sub(/\.[A-Za-z]+$/, '_errors.txt')
+    error_file = File.new(error_filename, "w")
+    @errors.uniq!
+    @errors.each { |e| error_file.write("#{e}\n") }
+    puts "***Validation failed with #{@errors.count} error(s)!! For details, see:"
+    puts "#{error_filename}\n\n"
   end
 
 end
