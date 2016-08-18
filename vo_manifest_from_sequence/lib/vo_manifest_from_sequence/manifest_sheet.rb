@@ -51,10 +51,10 @@ class ManifestSheet
       # Checks for empty cells
       if row.values.compact.count != row.values.count || row.values.count < 3
         @errors << "Missing value in #{row}"
-      elsif root_sequence.has_key?(row[:root])
-        root_sequence[row[:root]] << Integer(row[:sequence])
+      elsif root_sequence.has_key?(row[:root].to_s)
+        root_sequence[row[:root].to_s] << Integer(row[:sequence])
       else
-        root_sequence[row[:root]] = [Integer(row[:sequence])]
+        root_sequence[row[:root].to_s] = [Integer(row[:sequence])]
       end
       # Handles error if row[:sequence] cannot be converted to integer
       rescue ArgumentError
@@ -68,7 +68,6 @@ class ManifestSheet
     end
 
     root_sequence.each do |r, s|
-      # Checks that each root has ordered sequence starting with 0
       if s[0] != 0
         @errors << "Root #{r} missing parent numbered 0"
       else
