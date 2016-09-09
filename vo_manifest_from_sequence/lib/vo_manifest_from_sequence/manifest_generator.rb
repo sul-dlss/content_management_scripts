@@ -34,15 +34,30 @@ class ManifestGenerator
       if row[:druid] == 'druid'
         next
       end
+      druid = check_druid_prefix(row[:druid])
       if row[:sequence] == 0 || row[:sequence] == '0'
         @current_parent = row[:druid]
-        data[@current_parent] = [row[:druid]]
+        data[@current_parent] = [druid]
       else
-        data[@current_parent] << row[:druid]
+        data[@current_parent] << druid
       end
     end
     return data
   end
+
+  def check_druid_prefix(druid)
+    case
+    when druid.match(/^druid:[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/)
+      return druid
+    when druid.match(/^[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/)
+      new_druid = "druid:#{druid}"
+      return new_druid
+    else
+      puts "Druid not recognized: #{druid}. Processing as-is and continuing - remediate after completion."
+      return druid
+    end
+  end
+
 
   def report_output_stats(data)
     # Reports number of child objects assigned to each parent in the manifest

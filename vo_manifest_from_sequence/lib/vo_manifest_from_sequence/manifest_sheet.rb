@@ -64,7 +64,7 @@ class ManifestSheet
     # If validation fails, writes errors to file and exits
     if !@errors.empty?
       write_error_output(@errors)
-      exit
+      fail
     end
 
     root_sequence.each do |r, s|
@@ -82,7 +82,7 @@ class ManifestSheet
     # If validation fails, writes errors to file and exits
     if !@errors.empty?
       write_error_output(@errors)
-      exit
+      fail
     end
 
     # If no errors, returns sheet object

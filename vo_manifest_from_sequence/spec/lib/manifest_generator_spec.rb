@@ -67,21 +67,21 @@ describe ManifestGenerator do
       it "should generate druid hash values .xlsx" do
         @xlsx_hash.each_value do |value|
           value.each do |druid|
-            expect(druid).to match(/^[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/)
+            expect(druid).to match(/^druid:[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/)
           end
         end
       end
       it "should generate druid hash values .xls" do
         @xls_hash.each_value do |value|
           value.each do |druid|
-            expect(druid).to match(/^[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/)
+            expect(druid).to match(/^druid:[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/)
           end
         end
       end
       it "should generate druid hash values .csv" do
         @csv_hash.each_value do |value|
           value.each do |druid|
-            expect(druid).to match(/^[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/)
+            expect(druid).to match(/^druid:[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/)
           end
         end
       end
