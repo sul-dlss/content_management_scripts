@@ -5,7 +5,7 @@ require 'net/http'
 # returns LC authorized forms and identifiers that match the term.
 # Raw API response is RDF/XML, processed for tabular output.
 
-# Usage: ruby get_lc_data_from_fast_api.rb infile.txt outfile.xml
+# Usage: ruby get_lc_data_from_fast_api.rb infile.txt outfile.txt
 
 # Get input and output filenames from command line
 infilename = ARGV[0]
