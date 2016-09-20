@@ -41,31 +41,24 @@ Dir.chdir(folder) do
   # read the filenames in directory into an array for looking up
   filenames = Dir.entries('.') #=> ["bc849vk0855.xml", "bc994zz9154.xml"]
 
-  # iterate through filenames
+  # iterate through filenames and get druid from filename
   filenames.each do |file|
-    if file =~ /[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}\.xml/
-      # get druid from filename
-      druid = file.gsub(/\.xml/, '')
-
-      # open druid-named files
-      doc = Nokogiri::XML(open(file.to_s))
-      record = doc.root
-
-      # add xmlDoc wrapper
-      newFile.write("<xmlDoc id=\"descMetadata\" objectId=\"#{druid}\">" + record.to_xml + '</xmlDoc>')
-
-    elsif file =~ /druid.[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}/
-      # get druid from the filename
-      druid = file.gsub(/druid./, '')
-
-      # open druid-named files
-      doc = Nokogiri::XML(open(file.to_s))
-      record = doc.root
-
-      # add xmlDoc wrapper
-      newFile.write("<xmlDoc id=\"descMetadata\" objectId=\"#{druid}\">" + record.to_xml + '</xmlDoc>')
-
+    if file =~ /^[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}\.xml$/
+      @druid = file.gsub(/\.xml/, '')
+    elsif file =~ /^druid.[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/
+      @druid = file.gsub(/druid./, '')
+    elsif file =~ /^druid.[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}\.xml$/
+      @druid = file.gsub(/druid./, '').gsub(/\.xml/, '')
+    else # continue to next if filename does not match druid pattern
+      next
     end
+
+    # open druid-named files
+    doc = Nokogiri::XML(open(file.to_s))
+    record = doc.root
+
+    # add xmlDoc wrapper
+    newFile.write("<xmlDoc id=\"descMetadata\" objectId=\"#{@druid}\">" + record.to_xml + '</xmlDoc>')
   end
 
   newFile.write('</xmlDocs>')
