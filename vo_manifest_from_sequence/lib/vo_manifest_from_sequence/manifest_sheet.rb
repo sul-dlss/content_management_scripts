@@ -2,8 +2,7 @@ require 'roo'
 require 'roo-xls'
 
 class ManifestSheet
-
-# Methods for processing and validating input file
+  # Methods for processing and validating input file
 
   attr_reader :filename
 
@@ -18,26 +17,25 @@ class ManifestSheet
   # @return [Roo::CSV, Roo::Excel, Roo::Excelx]   A Roo object, whose type depends on the extension of the given filename.
   def spreadsheet
     @spreadsheet ||= case File.extname(@filename)
-                  when '.csv' then Roo::Spreadsheet.open(@filename, extension: :csv)
-                  when '.xls' then Roo::Spreadsheet.open(@filename, extension: :xls)
-                  when '.xlsx' then Roo::Spreadsheet.open(@filename, extension: :xlsx)
-                  else fail "\n\n***Unknown file type: #{@filename} (must be .csv, .xls, or .xlsx)***\n\n"
+                     when '.csv' then Roo::Spreadsheet.open(@filename, extension: :csv)
+                     when '.xls' then Roo::Spreadsheet.open(@filename, extension: :xls)
+                     when '.xlsx' then Roo::Spreadsheet.open(@filename, extension: :xlsx)
+                     else raise "\n\n***Unknown file type: #{@filename} (must be .csv, .xls, or .xlsx)***\n\n"
     end
   end
 
   # Confirms that input file follows expected pattern
   # @return spreadsheet A spreadsheet object for the filename argument that passes validation tests
   def validate
-
     puts "Validating input file #{@filename}...\n\n"
     # Generates sheet object
-    @sheet = self.spreadsheet
+    @sheet = spreadsheet
     # Array for error messages; write to file if more than one
 
     # Checks that header contains sequence, root, and druid
     if !@sheet.row(1).include?('sequence') || !@sheet.row(1).include?('root') || !@sheet.row(1).include?('druid')
       puts "***Validation failed due to header error!! Input data must contain 'sequence', 'root', and 'druid' in first row\n\n"
-      fail
+      raise
     end
     @rows = @sheet.parse(sequence: 'sequence', root: 'root', druid: 'druid').drop(1)
 
@@ -48,23 +46,23 @@ class ManifestSheet
     @rows.each do |row|
       # begin block to handle ArgumentError for integer test
       begin
-      # Checks for empty cells
-      if row.values.compact.count != row.values.count || row.values.count < 3
-        @errors << "Missing value in #{row}"
-      elsif root_sequence.has_key?(row[:root].to_s)
-        root_sequence[row[:root].to_s] << Integer(row[:sequence])
-      else
-        root_sequence[row[:root].to_s] = [Integer(row[:sequence])]
-      end
-      # Handles error if row[:sequence] cannot be converted to integer
+        # Checks for empty cells
+        if row.values.compact.count != row.values.count || row.values.count < 3
+          @errors << "Missing value in #{row}"
+        elsif root_sequence.key?(row[:root].to_s)
+          root_sequence[row[:root].to_s] << Integer(row[:sequence])
+        else
+          root_sequence[row[:root].to_s] = [Integer(row[:sequence])]
+        end
+        # Handles error if row[:sequence] cannot be converted to integer
       rescue ArgumentError
         @errors << "Sequence value cannot be converted to integer in #{row}"
       end
     end
     # If validation fails, writes errors to file and exits
-    if !@errors.empty?
+    unless @errors.empty?
       write_error_output(@errors)
-      fail
+      raise
     end
 
     root_sequence.each do |r, s|
@@ -80,23 +78,22 @@ class ManifestSheet
       end
     end
     # If validation fails, writes errors to file and exits
-    if !@errors.empty?
+    unless @errors.empty?
       write_error_output(@errors)
-      fail
+      raise
     end
 
     # If no errors, returns sheet object
     puts "Validation successful\n\n"
-    return @sheet
+    @sheet
   end
 
-  def write_error_output(errors)
+  def write_error_output(_errors)
     error_filename = File.absolute_path(@filename).sub(/\.[A-Za-z]+$/, '_errors.txt')
-    error_file = File.new(error_filename, "w")
+    error_file = File.new(error_filename, 'w')
     @errors.uniq!
     @errors.each { |e| error_file.write("#{e}\n") }
     puts "***Validation failed with #{@errors.count} error(s)!! For details, see:"
     puts "#{error_filename}\n\n"
   end
-
 end

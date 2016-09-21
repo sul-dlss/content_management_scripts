@@ -5,11 +5,10 @@ require_relative '../../lib/vo_manifest_from_sequence/manifest_sheet'
 require_relative '../../lib/vo_manifest_from_sequence/manifest_generator'
 
 describe ManifestGenerator do
-
   # Checks fixture object output against key
   # Creates test output files in fixtures directory; these will be overwritten
   # each time the test is run
-  describe "generates expected output" do
+  describe 'generates expected output' do
     key_file_content = File.read(File.join(FIXTURES_DIR, 'test_data_key_manifest.csv'))
     {
       'test_data_xlsx.xlsx' => 'test_data_xlsx_manifest.csv',
@@ -23,5 +22,4 @@ describe ManifestGenerator do
       end
     end
   end
-
 end
