@@ -8,6 +8,8 @@ outputFile = ARGV[1]
 
 outfile = File.new("#{outputFile}", "w")
 
+count = 0
+
 Dir.foreach("#{inputDir}") do |file|
   next if File.directory? file
 	infile = File.open(File.join("#{inputDir}", "#{file}"), "r")
@@ -21,6 +23,9 @@ Dir.foreach("#{inputDir}") do |file|
 # Line below prints matching character's Unicode code point to console
 #      line.match(/[^\u0000-\u007F\w]/) {|m| puts m.to_s.ord.to_s(16)}
       outfile.write("#{file}\t#{line}")
+      count += 1
     end
   end
 end
+
+puts "Lines changed: #{count}"
