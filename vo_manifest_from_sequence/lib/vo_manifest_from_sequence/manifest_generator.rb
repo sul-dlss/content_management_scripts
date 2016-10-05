@@ -2,6 +2,7 @@ require 'csv'
 require 'roo'
 require_relative 'manifest_sheet'
 
+# Generates virtual object manifest based on validated spreadsheet input
 class ManifestGenerator
   attr_reader :filename
 
@@ -23,35 +24,40 @@ class ManifestGenerator
 
   def generate_data_hash(sheet)
     # Hash to store output data for manifest
-    data = {}
-
+    @data = {}
     # Populate output data hash:
     # key = parent druid (sequence = 0),
     # value = array of child druids (sequence = 1-N)
     # Assumes that incoming data has passed validation
     sheet.each(sequence: 'sequence', druid: 'druid') do |row|
       next if row[:druid] == 'druid'
-      druid = check_druid_prefix(row[:druid])
-      if row[:sequence] == 0 || row[:sequence] == '0'
-        @current_parent = row[:druid]
-        data[@current_parent] = [druid]
-      else
-        data[@current_parent] << druid
-      end
+      populate_data_hash(row)
     end
-    data
+    @data
+  end
+
+  def populate_data_hash(row)
+    # Add druid prefix if not present
+    druid = check_druid_prefix(row[:druid])
+    # Set parent druid if sequence = 0
+    if row[:sequence] == 0 || row[:sequence] == '0'
+      @current_parent = row[:druid]
+      # If child belongs to new parent, add parent key to hash and initialize value array with first child
+      @data[@current_parent] = [druid]
+    else
+      # If child belongs to existing parent, add to value array
+      @data[@current_parent] << druid
+    end
   end
 
   def check_druid_prefix(druid)
-    if druid =~ /^druid:[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/
-      return druid
-    elsif druid =~ /^[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/
-      new_druid = "druid:#{druid}"
-      return new_druid
-    else
-      puts "Druid not recognized: #{druid}. Processing as-is and continuing - remediate after completion."
-      return druid
-    end
+    # Return if matches desired pattern
+    return druid if druid =~ /^druid:[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/
+    # Add prefix if not already present
+    return "druid:#{druid}" if druid =~ /^[a-z]{2}[0-9]{3}[a-z]{2}[0-9]{4}$/
+    # Return and warn if pattern not recognized as druid
+    puts "Druid not recognized: #{druid}. Processing as-is and continuing - remediate after completion."
+    druid
   end
 
   def report_output_stats(data)
