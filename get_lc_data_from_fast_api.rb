@@ -26,7 +26,8 @@ File.foreach(infilename) do |term|
   term_count += 1
   term.strip!
   term_encode = URI.encode(term)
-  url = URI.parse("http://experimental.worldcat.org/fast/search?query=cql.any%20all%20%22#{term_encode}%22")
+#  url = URI.parse("http://experimental.worldcat.org/fast/search?query=cql.any%20all%20%22#{term_encode}%22")
+  url = URI.parse("http://experimental.worldcat.org/fast/search?query=cql.any%20all%20%22#{term_encode}%22&fl=suggest50")
   request = Net::HTTP::Get.new(url)
   request["Accept"] = "application/rdf+xml"
   response = Net::HTTP.start(url.hostname, url.port) do |http|
