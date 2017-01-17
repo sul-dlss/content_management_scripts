@@ -66,7 +66,7 @@ missing_druids = 0
     error = TRUE
   elsif row.values.include?(nil)
     puts "Datafile missing coordinate data for #{row[:druid]}"
-    error = TRUE
+#    error = TRUE
   elsif row.values[1..-1].join(' ').match(/[^0-9. ]/)
     puts "Datafile contains invalid characters in coordinate data for #{row[:druid]}"
     error = TRUE
