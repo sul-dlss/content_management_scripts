@@ -71,7 +71,7 @@ sheets_in.each_with_pagename do |name, sheet|
     end
     # Delete data from row hash when required dependency is not present
     @datarules.each do |target, rule|
-      if data_fields.index(rule) == nil || row[data_fields.index(rule)] == nil
+      if data_fields.index(rule) == nil || row[data_fields.index(rule)] == nil || row[data_fields.index(rule)] =~ /^\s+$/
         data_out[target] = nil
       end
     end
