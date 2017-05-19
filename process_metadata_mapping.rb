@@ -59,6 +59,8 @@ sheets_in.each_with_pagename do |name, sheet|
   sheet.each do |row|
     # Skip header row
     next if row == data_fields
+    # Convert all values to strings
+    row.map! {|x| x.to_s}
     # Populate row hash with constant string data from mapfile
     data_out = Hash.new.merge(@stringdata)
     # Add source data to row hash based on simple mapping
