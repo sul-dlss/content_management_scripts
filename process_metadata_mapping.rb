@@ -59,6 +59,8 @@ sheets_in.each_with_pagename do |name, sheet|
   sheet.each do |row|
     # Skip header row
     next if row == data_fields
+    # Convert all values to strings
+    row.map! {|x| x.to_s}
     # Populate row hash with constant string data from mapfile
     data_out = Hash.new.merge(@stringdata)
     # Add source data to row hash based on simple mapping
@@ -71,7 +73,7 @@ sheets_in.each_with_pagename do |name, sheet|
     end
     # Delete data from row hash when required dependency is not present
     @datarules.each do |target, rule|
-      if data_fields.index(rule) == nil || row[data_fields.index(rule)] == nil
+      if data_fields.index(rule) == nil || row[data_fields.index(rule)] == nil || row[data_fields.index(rule)] =~ /^\s*$/
         data_out[target] = nil
       end
     end
