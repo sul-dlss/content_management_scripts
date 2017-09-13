@@ -1,0 +1,190 @@
+AMIA	Asociación Mutual Israelita Argentina	http://id.loc.gov/authorities/names/n50002046
+AMIA	American Medical Informatics Association	http://id.loc.gov/authorities/names/n82054399
+AMIA	Asociación Mutual Israelita Argentina de La Plata	http://id.loc.gov/authorities/names/no2001051569
+AMIA	Association of Moving Image Archivists	http://id.loc.gov/authorities/names/n2001034187
+Academy of Motion Picture Arts and Sciences	Academy of Motion Picture Arts and Sciences. Foundation	http://id.loc.gov/authorities/names/n85270696
+Academy of Motion Picture Arts and Sciences	Academy of Motion Picture Arts and Sciences	http://id.loc.gov/authorities/names/n80020340
+Apple	Apple Computer, Inc.	http://id.loc.gov/authorities/names/n84040978
+Apple	Appleton Area School District (Appleton, Wis.)	http://id.loc.gov/authorities/names/n95042913
+Apple	Apple Computer, Inc. Macintosh Division	http://id.loc.gov/authorities/names/n88664750
+Apple	Appleton Public Library	http://id.loc.gov/authorities/names/n85808130
+Apple	Appledore Press	http://id.loc.gov/authorities/names/no93030370
+Apple	Apple Records	http://id.loc.gov/authorities/names/n83155709
+Apple	Appledore (Ship)	http://id.loc.gov/authorities/names/n81109643
+Apple	Appleton (Wis.). Dept. of Public Works	http://id.loc.gov/authorities/names/n84195580
+Apple	Appleton Electric Company	http://id.loc.gov/authorities/names/nr91043211
+Apple	Applebaums' Food Markets	http://id.loc.gov/authorities/names/n85052040
+Apple	Appleton-Century-Crofts, inc.	http://id.loc.gov/authorities/names/n81038530
+Apple	Apple Library Users Group	http://id.loc.gov/authorities/names/n90671733
+Apple	Apple Hill Chamber Players	http://id.loc.gov/authorities/names/n79027558
+Apple	Appleton Temporary Home	http://id.loc.gov/authorities/names/no97055819
+Apple	AppleOne Employment Services	http://id.loc.gov/authorities/names/no98097003
+Apple	Apple Classrooms of Tomorrow (Project)	http://id.loc.gov/authorities/names/n96076771
+Apple	Apple Industrial Design Group	http://id.loc.gov/authorities/names/nr97043074
+Apple	Appleton Papers, Inc.	http://id.loc.gov/authorities/names/no2010046431
+Apple	Appleton (Wis.). Police Dept.	http://id.loc.gov/authorities/names/n2006000767
+Apple	Appleton (Wis.). Police Department	http://id.loc.gov/authorities/names/n2006000767
+Apple	Apple Orchard School (Brookline, Mass.)	http://id.loc.gov/authorities/names/n99027840
+Apple	Appleby Castle (Appleby-in-Westmorland, England)	http://id.loc.gov/authorities/subjects/sh2007001046
+Apple	Apple Computer, Inc. Community Affairs	http://id.loc.gov/authorities/names/no95046765
+Apple	Appleton Street Chapel (Boston, Mass.)	http://id.loc.gov/authorities/names/no2010067042
+Apple	Appleton Edison Light Company	http://id.loc.gov/authorities/names/n2003069900
+Apple	Apple's Church (Frederick County, Md.)	http://id.loc.gov/authorities/names/n99006362
+Apple	Apple Education Foundation	http://id.loc.gov/authorities/names/no99082350
+Apple	Appleby Grammar School	http://id.loc.gov/authorities/names/nb2007025702
+Apple	Apple Computer, Inc. Corporate Grants	http://id.loc.gov/authorities/names/no99082357
+Apple	Appleton Hall (Warrington, England)	http://id.loc.gov/authorities/subjects/sh2009010397
+Apple	Apple Computer, Inc. Education Affairs	http://id.loc.gov/authorities/names/no99082361
+Apple	Appledore House (Appledore Island, Me.)	http://id.loc.gov/authorities/names/n00073881
+Apple	Appleton (Wis.). Department of Public Works	http://id.loc.gov/authorities/names/n84195580
+Apple	Applegate Partnership	http://id.loc.gov/authorities/names/nr2002005515
+Apple	Apple Athletic Club (Idaho Falls, Idaho)	http://id.loc.gov/authorities/subjects/sh2005003848
+Apple	Apple Corps Limited	http://id.loc.gov/authorities/names/no2001043818
+Apple	Appleton Street Church (Lowell, Mass.)	http://id.loc.gov/authorities/names/n97121011
+Apple	Appleton (Ship)	http://id.loc.gov/authorities/names/n00113664
+Apple	Appleton Museum of Art (Ocala, Fla.)	http://id.loc.gov/authorities/names/n97093489
+Apple	Applebee's International, Inc.	http://id.loc.gov/authorities/names/nr00026664
+Apple	Apple Federal Credit Union	http://id.loc.gov/authorities/names/n2006083056
+Apple	Applewood Seed Co.	http://id.loc.gov/authorities/names/n85085174
+Library of Congress	Library of Congress. Exchange and Gift Division	http://id.loc.gov/authorities/names/n80165387
+Library of Congress	Library of Congress. Poetry Office	http://id.loc.gov/authorities/names/n80009814
+Library of Congress	Library of Congress. Research Services	http://id.loc.gov/authorities/names/n79099561
+Library of Congress	Library of Congress. Geography and Map Division. Reference and Bibliography Section	http://id.loc.gov/authorities/names/n80082865
+Library of Congress	Library of Congress. Division of Documents	http://id.loc.gov/authorities/names/n82082569
+Library of Congress	Library of Congress. Information Technology Services	http://id.loc.gov/authorities/names/n95079276
+Library of Congress	Library of Congress. Science and Technology Division	http://id.loc.gov/authorities/names/n79065481
+Library of Congress	Library of Congress. European Law Division	http://id.loc.gov/authorities/names/n79026900
+Library of Congress	Library of Congress. Federal Research Division	http://id.loc.gov/authorities/names/n88033523
+Library of Congress	Library of Congress. Reference Dept.	http://id.loc.gov/authorities/names/n79099161
+Library of Congress	Library of Congress. Orientalia Division	http://id.loc.gov/authorities/names/n79093851
+Library of Congress	Library of Congress. Catalog Division	http://id.loc.gov/authorities/names/n81070777
+Library of Congress	Library of Congress. Descriptive Cataloging Division	http://id.loc.gov/authorities/names/n81070778
+Library of Congress	Library of Congress. Cataloging Distribution Service. Customer Services Section	http://id.loc.gov/authorities/names/no92009778
+Library of Congress	Library of Congress. Children's Book Section	http://id.loc.gov/authorities/names/n80119349
+Library of Congress	Library of Congress. Processing Services	http://id.loc.gov/authorities/names/n78056703
+Library of Congress	Library of Congress. Copyright Office	http://id.loc.gov/authorities/names/n79117971
+Library of Congress	Library of Congress. Collections Policy Office	http://id.loc.gov/authorities/names/n94101527
+Library of Congress	Library of Congress. Processing Dept.	http://id.loc.gov/authorities/names/n79139527
+Library of Congress	Library of Congress. Geography and Map Division	http://id.loc.gov/authorities/names/n79043434
+Library of Congress	Library of Congress. Map Division	http://id.loc.gov/authorities/names/n79043435
+Library of Congress	Library of Congress. Office for Descriptive Cataloging Policy	http://id.loc.gov/authorities/names/n80163266
+Library of Congress	Library of Congress. African Section	http://id.loc.gov/authorities/names/n80003938
+Library of Congress	Library of Congress. Copyright Office. Labor Management Working Group	http://id.loc.gov/authorities/names/n86130587
+Library of Congress	Library of Congress. Environment and Natural Resources Policy Division. Food and Agriculture Section	http://id.loc.gov/authorities/names/no94013727
+Library of Congress	Library of Congress. Professional Guild	http://id.loc.gov/authorities/names/n84019328
+Library of Congress	Library of Congress. Division of Maps and Charts	http://id.loc.gov/authorities/names/no91030744
+Library of Congress	Library of Congress. Motion Picture, Broadcasting, and Recorded Sound Division	http://id.loc.gov/authorities/names/n79075059
+Library of Congress	Library of Congress. Rare Book Division	http://id.loc.gov/authorities/names/n82094396
+Library of Congress	Library of Congress. Congressional Research Service	http://id.loc.gov/authorities/names/n79061321
+Library of Congress	Library of Congress. Recorded Sound Section	http://id.loc.gov/authorities/names/n79075060
+Library of Congress	Library of Congress. Preservation Microfilming Office	http://id.loc.gov/authorities/names/n84077684
+Library of Congress	Library of Congress. Latin American, Portuguese, and Spanish Division	http://id.loc.gov/authorities/names/n82132729
+Library of Congress	Library of Congress. Orientalia Division. Chinese and Korean Section	http://id.loc.gov/authorities/names/n79129589
+Library of Congress	Library of Congress. Preservation Office	http://id.loc.gov/authorities/names/n79087193
+Library of Congress	Library of Congress. Hispanic Foundation	http://id.loc.gov/authorities/names/n82132730
+Library of Congress	Library of Congress. McKim Fund	http://id.loc.gov/authorities/names/n82235507
+Library of Congress	Library of Congress. Information Systems Office	http://id.loc.gov/authorities/names/n90673316
+Library of Congress	Library of Congress. MARC Editorial Division	http://id.loc.gov/authorities/names/n82252922
+Library of Congress	Library of Congress. Service for the Blind	http://id.loc.gov/authorities/names/n81032991
+Library of Congress	Library of Congress. Division for the Blind and Physically Handicapped	http://id.loc.gov/authorities/names/n81032992
+Library of Congress	Library of Congress. Division for the Blind	http://id.loc.gov/authorities/names/n81032994
+Library of Congress	Library of Congress. National Library Service for the Blind and Physically Handicapped	http://id.loc.gov/authorities/names/n81032995
+Library of Congress	Library of Congress James Madison Memorial Building (Washington, D.C.)	http://id.loc.gov/authorities/subjects/sh85076706
+Library of Congress	Library of Congress	http://id.loc.gov/authorities/names/n78089035
+Library of Congress	Library of Congress Thomas Jefferson Building (Washington, D.C.)	http://id.loc.gov/authorities/subjects/sh85076707
+Library of Congress	Library of Congress. Collections Services	http://id.loc.gov/authorities/names/n89653437
+Library of Congress	Library of Congress. National Library Service for the Blind and Physically Handicapped. Music Section	http://id.loc.gov/authorities/names/n82209376
+Library of Congress	Library of Congress. Music Division	http://id.loc.gov/authorities/names/n81079447
+Library of Congress	Library of Congress. Humanities and Social Sciences Division	http://id.loc.gov/authorities/names/no92018499
+Library of Congress	Library of Congress. Photograph Section	http://id.loc.gov/authorities/names/n79055160
+Library of Congress	Library of Congress. Cataloging in Publication Division	http://id.loc.gov/authorities/names/n80129364
+Library of Congress	Library of Congress. Prints and Photographs Division	http://id.loc.gov/authorities/names/n79055161
+Library of Congress	Library of Congress. Card Section	http://id.loc.gov/authorities/names/n88084586
+Library of Congress	Library of Congress. Economics Division	http://id.loc.gov/authorities/names/n79043676
+Library of Congress	Library of Congress. Card Distribution Section	http://id.loc.gov/authorities/names/n88084587
+Library of Congress	Library of Congress. Library of Congress Office, Rio de Janeiro	http://id.loc.gov/authorities/names/no90008224
+Library of Congress	Library of Congress. Police	http://id.loc.gov/authorities/names/n92004523
+Library of Congress	Library of Congress. Union Catalog Division	http://id.loc.gov/authorities/names/n82115518
+Library of Congress	Library of Congress. Constituent Services	http://id.loc.gov/authorities/names/n89653448
+Library of Congress	Library of Congress. African and Middle Eastern Division. Hebraic Section	http://id.loc.gov/authorities/names/n79088288
+Library of Congress	Library of Congress. African and Middle Eastern Division	http://id.loc.gov/authorities/names/n79091042
+Library of Congress	Library of Congress. Near East Section	http://id.loc.gov/authorities/names/n81058543
+Library of Congress	Library of Congress. Asian Division	http://id.loc.gov/authorities/names/n79091044
+Library of Congress	Library of Congress. Serial Record Division	http://id.loc.gov/authorities/names/n79059565
+Library of Congress	Library of Congress. Copyright Office. Licensing Division	http://id.loc.gov/authorities/names/n80084354
+Library of Congress	Library of Congress. Library of Congress Office, Brazil	http://id.loc.gov/authorities/names/n81013220
+Library of Congress	Library of Congress. Library of Congress Office, Cairo	http://id.loc.gov/authorities/names/n81013222
+Library of Congress	Library of Congress. Library of Congress Office, Karachi	http://id.loc.gov/authorities/names/n81013223
+Library of Congress	Library of Congress. Library of Congress Office, Jakarta	http://id.loc.gov/authorities/names/n81013224
+Library of Congress	Library of Congress. Subject Cataloging Division	http://id.loc.gov/authorities/names/n79018511
+Library of Congress	Library of Congress. Law Library	http://id.loc.gov/authorities/names/n79055991
+Library of Congress	Library of Congress. Serge Koussevitzky Music Foundation	http://id.loc.gov/authorities/names/n81076959
+Library of Congress	Library of Congress. Legislative Reference Service	http://id.loc.gov/authorities/names/n79065441
+Library of Congress	Library of Congress. National Digital Library Program	http://id.loc.gov/authorities/names/n95056710
+Library of Congress	Library of Congress. Office for Subject Cataloging Policy	http://id.loc.gov/authorities/names/n90606905
+Library of Congress	Library of Congress. Serial & Government Publications Division	http://id.loc.gov/authorities/names/n81050891
+Library of Congress	Library of Congress. General Reading Rooms Division	http://id.loc.gov/authorities/names/n81050893
+Library of Congress	Library of Congress. General Reference and Bibliography Division	http://id.loc.gov/authorities/names/n80009680
+Library of Congress	Library of Congress. Elizabeth Sprague Coolidge Foundation	http://id.loc.gov/authorities/names/n82124027
+Library of Congress	Library of Congress. Division of Bibliography	http://id.loc.gov/authorities/names/n80009686
+Library of Congress	Library of Congress. Gertrude Clarke Whittall Foundation	http://id.loc.gov/authorities/names/n89618944
+Library of Congress	Library of Congress. Reading Rooms	http://id.loc.gov/authorities/names/n85073049
+Library of Congress	Library of Congress. Motion Picture Section	http://id.loc.gov/authorities/names/n78023545
+Library of Congress	Library of Congress. Professional Association	http://id.loc.gov/authorities/names/n50074455
+Library of Congress	Library of Congress Special Facilities Center	http://id.loc.gov/authorities/names/no93000391
+Library of Congress	Library of Congress. European Division	http://id.loc.gov/authorities/names/n79014975
+Library of Congress	Library of Congress. Slavic and Central European Division	http://id.loc.gov/authorities/names/n79014976
+Library of Congress	Library of Congress. Hispanic Division	http://id.loc.gov/authorities/names/n82132975
+Library of Congress	Library of Congress Mass Book Deacidification Facility (Md.)	http://id.loc.gov/authorities/subjects/sh86000244
+Library of Congress	Library of Congress. Orientalia Division. Japanese Section	http://id.loc.gov/authorities/names/n86108402
+Library of Congress	Library of Congress. Manuscript Division	http://id.loc.gov/authorities/names/n78080642
+Library of Congress	Library of Congress. Division of Aeronautics	http://id.loc.gov/authorities/names/n82111274
+Library of Congress	Library of Congress. Decimal Classification Office	http://id.loc.gov/authorities/names/n82076267
+Library of Congress	Library of Congress Trust Fund Board	http://id.loc.gov/authorities/names/no92009749
+Library of Congress	Library of Congress. Preservation Directorate	http://id.loc.gov/authorities/names/n93040946
+Library of Congress	Library of Congress. Division of Accessions	http://id.loc.gov/authorities/names/n81146616
+Library of Congress	Library of Congress. Order Division	http://id.loc.gov/authorities/names/n81146617
+Library of Congress	Library of Congress. Acquisitions Dept.	http://id.loc.gov/authorities/names/n81146618
+Library of Congress	Library of Congress. Cataloging Distribution Service	http://id.loc.gov/authorities/names/n77015331
+Library of Congress	Library of Congress. Photoduplication Service	http://id.loc.gov/authorities/names/n80026011
+Library of Congress	Library of Congress. Rare Book and Special Collections Division	http://id.loc.gov/authorities/names/n82095930
+Library of Congress	Library of Congress. Card Division	http://id.loc.gov/authorities/names/n77015332
+Library of Congress	Library of Congress. Recording Laboratory	http://id.loc.gov/authorities/names/n79066745
+Library of Congress	Library of Congress. Cataloging Policy and Support Office	http://id.loc.gov/authorities/names/n93014216
+Library of Congress	Library of Congress. National Preservation Program Office	http://id.loc.gov/authorities/names/n81137734
+Library of Congress	Library of Congress. Advisory Committee on Copyright Registration and Deposit	http://id.loc.gov/authorities/names/n93111459
+Library of Congress	Library of Congress. African/Asian Acquisitions and Overseas Operations Division	http://id.loc.gov/authorities/names/n2003075641
+Library of Congress	Library of Congress. Books for the Adult Blind	http://id.loc.gov/authorities/names/no99032978
+Library of Congress	Library of Congress. Reference Department	http://id.loc.gov/authorities/names/n79099161
+Library of Congress	Library of Congress. Library Services	http://id.loc.gov/authorities/names/no96053172
+Library of Congress	Library of Congress. Processing Department	http://id.loc.gov/authorities/names/n79139527
+Library of Congress	Library of Congress. Office of the Librarian	http://id.loc.gov/authorities/names/n2004040204
+Library of Congress	Library of Congress. Friends of Music	http://id.loc.gov/authorities/names/n96030191
+Library of Congress	Library of Congress. Office of Special Events and Public Programs	http://id.loc.gov/authorities/names/n2004040205
+Library of Congress	Library of Congress. Asian American Association	http://id.loc.gov/authorities/names/no96068913
+Library of Congress	Library of Congress. Shared Cataloging Division	http://id.loc.gov/authorities/names/n2006029633
+Library of Congress	Library of Congress. Office of the Director for Public Service Collections	http://id.loc.gov/authorities/names/no97004849
+Library of Congress	Library of Congress. American-British Law Division	http://id.loc.gov/authorities/names/n2004047633
+Library of Congress	Library of Congress. Congressional Research Service. American Law Division	http://id.loc.gov/authorities/names/n79135077
+Library of Congress	Library of Congress. Asian Division. Southern Asia Section	http://id.loc.gov/authorities/names/n80019125
+Library of Congress	Library of Congress. Office of Strategic Initiatives	http://id.loc.gov/authorities/names/no2005043878
+Library of Congress	Library of Congress. Orientalia Division. Hebraic Section	http://id.loc.gov/authorities/names/n79081584
+Library of Congress	Library of Congress. Overseas Operations Division	http://id.loc.gov/authorities/names/no97029134
+Library of Congress	Library of Congress. Middle East Office	http://id.loc.gov/authorities/names/no97029135
+Library of Congress	Library of Congress. Serial Division	http://id.loc.gov/authorities/names/n81054148
+Library of Congress	Library of Congress Office, New Delhi	http://id.loc.gov/authorities/names/n81013218
+Library of Congress	Library of Congress. Library of Congress Office, New Delhi	http://id.loc.gov/authorities/names/n81013218
+Library of Congress	Library of Congress. Center for the Book	http://id.loc.gov/authorities/names/n77013156
+Library of Congress	Library of Congress. Automated Systems Office	http://id.loc.gov/authorities/names/n81060454
+Library of Congress	Library of Congress. Stack and Reader Division	http://id.loc.gov/authorities/names/n2004022886
+Library of Congress	Library of Congress. Junior Fellows Program	http://id.loc.gov/authorities/names/no2006101168
+Library of Congress	Library of Congress. Acquisitions Department	http://id.loc.gov/authorities/names/n81146618
+Library of Congress	Library of Congress. Moldenhauer Archives	http://id.loc.gov/authorities/names/n99027005
+Library of Congress	Library of Congress. Bicentennial Program Office	http://id.loc.gov/authorities/names/no99061485
+Library of Congress	Library of Congress Mission to Germany	http://id.loc.gov/authorities/names/n2004022892
+Library of Congress	Library of Congress. Far Eastern Law Division	http://id.loc.gov/authorities/names/n79084643
+Moe's Books
+Shakespeare and Company	Shakespeare and Company	http://id.loc.gov/authorities/names/n79127028
+Shakespeare and Company	Shakespeare and Company (Paris, France)	http://id.loc.gov/authorities/names/n79127028
+Shakespeare and Company	Shakespeare and Company (Paris, France : 1964- )	http://id.loc.gov/authorities/names/n2005025172
+Arion Press	Arion Press	http://id.loc.gov/authorities/names/n87922903

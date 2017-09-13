@@ -1,0 +1,5 @@
+The search_local_fast_file.rb script uses the command line tool "grep" to search a preprocessed copy of a FAST data dump for terms listed in a text file. It returns the LC authorized form of the term and the associated id.loc.gov URI if available. The script first searches for (left-anchored, case-insensitive) matches in LC terms; if none are found, the script checks FAST alternate labels for any additional matches. All direct LC matches OR all LC matches based on FAST alternate labels are returned.
+
+Download FAST files in Linked Data Format N-Triples here: http://www.oclc.org/research/themes/data-science/fast/download.html
+
+Once the file is downloaded and unzipped, run preprocess_local_fast_file.rb on it. This script extracts only the triples needed for the main script, reducing the size of the file and improving search speed. It also replaces escaped Unicode sequences in the FAST file with the corresponding UTF-8 character, so files listing search terms may contain diacritics and other special characters so long as they are encoded in UTF-8.
