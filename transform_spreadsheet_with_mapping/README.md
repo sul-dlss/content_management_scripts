@@ -56,10 +56,11 @@ ID  | Title | Dimensions (mm)
 3 | Portrait #3 | 88 x 44
 
 #### Mapping
-(note that the first row is not a header)
+(ignore first row, given here for table formatting purposes only)
 
-portraitID | ID | map | |
+.|.|.|.
 ---|---|---|---
+portraitID | ID | map |
 title | Title | map |
 extent | {Dimensions (mm)} mm | complex | Dimensions (mm)
 repository | Stanford University Libraries | string |
@@ -71,5 +72,4 @@ portraitID | title | extent | repository
 2 | Portrait #2 | 55 x 72 mm | Stanford University Libraries
 3 | Portrait #3 | 88 x 44 mm | Stanford University Libraries
 
-See the files in the fixtures directory for more sample input, mapping, and
-output.
+See the fixtures directory for more sample input, mapping, and output files.
