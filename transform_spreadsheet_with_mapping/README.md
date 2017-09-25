@@ -56,11 +56,10 @@ ID  | Title | Dimensions (mm)
 3 | Portrait #3 | 88 x 44
 
 #### Mapping
-(ignore blank first row)
+(note that the first row is not a header)
 
-   |   |   |   |
+portraitID | ID | map | |
 ---|---|---|---
-portraitID | ID | map |
 title | Title | map |
 extent | {Dimensions (mm)} mm | complex | Dimensions (mm)
 repository | Stanford University Libraries | string |
