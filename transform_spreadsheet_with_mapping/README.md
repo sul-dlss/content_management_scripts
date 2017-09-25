@@ -1,6 +1,6 @@
 ## Overview
 
-Script to transform a spreadsheet into a tab-delimited file based on rules in a
+Transforms a spreadsheet into a tab-delimited file based on rules defined in a
 mapping file.
 
 Usage: ruby process_mapping.rb infile.xlsx outputdirectory mapfile.tsv
@@ -26,7 +26,7 @@ field (`{Dimensions} {Units}`).
 The mapping file contains four columns (three if no conditionals are used).
 
 The first column gives the target field -- the field that data will be mapped
-to in the output. Values of this column must be unique.
+to in the output (i.e., the column headers in the output file). Values of this column must be unique.
 
 The second column indicates the source of the data. Its exact syntax depends on the transformation type, as described below. If this column is left blank, the field named in the first column will be created in the output, but will not contain any data.
 * **Simple mapping:** the second column contains the header of the column in the
@@ -56,7 +56,7 @@ ID  | Title | Dimensions (mm)
 3 | Portrait #3 | 88 x 44
 
 #### Mapping
-(ignore first row, given here for table formatting purposes only)
+(ignore first row, given here for table formatting purposes only as the mapping file has no headers)
 
 .|.|.|.
 ---|---|---|---
