@@ -4,42 +4,36 @@ Script to transform a spreadsheet into a tab-delimited file based on rules in a
 mapping file.
 
 Usage: ruby process_mapping.rb infile.xlsx outputdirectory mapfile.tsv
-1. infile.xlsx = Excel spreadsheet containing input data, with headers in first
+* infile.xlsx = Excel spreadsheet containing input data, with headers in first
 row
-2. outputdirectory = directory for script output, one file per tab in input
+* outputdirectory = directory for script output, one file per tab in input
 spreadsheet, with the filename derived from the tab name
-3. mapfile.tsv = tab-delimited text file stating mapping rules in expected
+* mapfile.tsv = tab-delimited text file stating mapping rules in expected
 syntax
 
-The mapping syntax allows four different kinds of transformations:
+The mapping syntax allows four different kinds of transformation:
 1. **Simple mapping:** The value is transferred as-is to a field in the output data.
 2. **Constant data:** A value given in the mapping itself is transferred to a field
 in the output data, with no reference to the input data.
 3. **Mapping as variables:** Variables are given as the input header in
 curly brackets. This may be used to insert a mapped value into a constant string
-("{Dimensions} mm") or to combine two or more input fields into a single output
-field ("{Dimensions} {Units}").
-4. **Conditional output:** This works in conjunction with one of the three methods
-above. It states a dependency between two fields, such as that the variable
-mapping "{Dimensions} mm" should not be applied if the Dimensions input field
-does not have a value. This prevents the output " mm" when the Dimensions value
-is absent.
+(`{Dimensions} mm`) or to combine two or more input fields into a single output
+field (`{Dimensions} {Units}`).
+4. **Conditional output:** This works in conjunction with one of the three methods above. It states a dependency between two fields, such as that the variable mapping `{Dimensions} mm` should not be applied if the Dimensions input field does not have a value. This prevents the output " mm" when the Dimensions value is absent.
 
 ## Mapping syntax
 
 The mapping file contains four columns (three if no conditionals are used).
 
-The first column contains the target field -- the field that data will be mapped
+The first column gives the target field -- the field that data will be mapped
 to in the output. Values of this column must be unique.
 
-The second column indicates the source of the data, and depends on the type of
-transformation used. If this column is left black, the field named in the first
-column will be created in the output, but will not contain any data.
+The second column indicates the source of the data. Its exact syntax depends on the transformation type, as described below. If this column is left blank, the field named in the first column will be created in the output, but will not contain any data.
 * **Simple mapping:** the second column contains the header of the column in the
 input that contains the data.
 * **Constant data:** the second column contains the data string to write to output.
 * **Mapping as variables:** the second column contains a statement including
-variables, which are given as input column names in curly brackets.
+variables, which are given as input headers in curly brackets.
 
 The third column names the transformation type. If the second column is blank,
 this column should be blank as well. Otherwise, enter the value as given below.
@@ -64,7 +58,7 @@ ID  | Title | Dimensions (mm)
 #### Mapping
 (ignore blank first row)
 
-||||
+   |   |   |   |
 ---|---|---|---
 portraitID | ID | map |
 title | Title | map |
