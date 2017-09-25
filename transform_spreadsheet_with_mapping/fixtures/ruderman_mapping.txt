@@ -1,0 +1,194 @@
+druid			
+sourceId	sourceId	map	
+lo:purl				
+ti1:title	Title	map	
+na1:namePart	Map Maker	map	
+na1:usage	primary	string	
+ty1:typeOfResource	cartographic	string	
+ge1:genre	Map	string	
+ge1:authority	marcgt	string	
+ge1:authorityURI	http://id.loc.gov/vocabulary/genreFormSchemes/marcgt	string	
+ge2:genre	Genre #2	map	
+ge2:authority	marcgt	string	Genre #2
+ge2:authorityURI	http://id.loc.gov/vocabulary/genreFormSchemes/marcgt	string	Genre #2
+dt:dateIssued	Issue Date	map	
+dt:dateIssuedKeyDate	yes	string	
+dt:dateIssuedEncoding	w3cdtf	string	
+dt:dateIssuedQualifier	dt:dateIssuedQualifier	map	
+dt:dateIssuedPoint	start	string	dt:dateIssued2
+dt:dateIssued2	dt:dateIssued2	map	
+dt:dateIssued2Qualifier	dt:dateIssuedQualifier	map	dt:dateIssued2
+dt:dateIssued2Point	end	string	dt:dateIssued2
+or:eventType	publication	string	
+pl:placeText	Place	map	
+ph1:form	cartographic image	string	
+ph1:formAuthority	rdacontent	string	
+ph1:formAuthorityURI	http://id.loc.gov/vocabulary/contentTypes	string	
+ph1:formValueURI	http://id.loc.gov/vocabulary/contentTypes/cri	string	
+ph1:extent	1 map : {Coloring} ; {Size} in	complex	
+ph1:digitalOrigin	reformatted digital	string	
+ph1:internetMediaType	image/jpeg	string	
+no1:note	Description	map	
+no2:note	Categories	map	
+no3:note	Stanford copy: {Condition Description}	complex	Condition Description
+no4:note	References	map	
+no4:type	references	string	References
+no4:displayLabel	citation/reference	string	References
+no5:note	Dimensions given in inches.	string	
+su1:authority	su1:authority	map	
+su1:authorityURI	su1:authorityURI	map	
+su1:valueURI	su1:valueURI	map	
+su1:p1:type	su1:p1:type	map	
+su1:p1:value	su1:p1:value	map	
+su1:p1:authority	su1:p1:authority	map	
+su1:p1:authorityURI	su1:p1:authorityURI	map	
+su1:p1:valueURI	su1:p1:valueURI	map	
+su1:p2:type	su1:p2:type	map	
+su1:p2:value	su1:p2:value	map	
+su1:p2:authority	su1:p2:authority	map	
+su1:p2:authorityURI	su1:p2:authorityURI	map	
+su1:p2:valueURI	su1:p2:valueURI	map	
+su1:p3:type	su1:p3:type	map	
+su1:p3:value	su1:p3:value	map	
+su1:p3:authority	su1:p3:authority	map	
+su1:p3:authorityURI	su1:p3:authorityURI	map	
+su1:p3:valueURI	su1:p3:valueURI	map	
+su1:p4:type	su1:p4:type	map	
+su1:p4:value	su1:p4:value	map	
+su1:p4:authority	su1:p4:authority	map	
+su1:p4:authorityURI	su1:p4:authorityURI	map	
+su1:p4:valueURI	su1:p4:valueURI	map	
+su1:p5:type	su1:p5:type	map	
+su1:p5:value	su1:p5:value	map	
+su1:p5:authority	su1:p5:authority	map	
+su1:p5:authorityURI	su1:p5:authorityURI	map	
+su1:p5:valueURI	su1:p5:valueURI	map	
+su2:authority	su2:authority	map	
+su2:authorityURI	su2:authorityURI	map	
+su2:valueURI	su2:valueURI	map	
+su2:p1:type	su2:p1:type	map	
+su2:p1:value	su2:p1:value	map	
+su2:p1:authority	su2:p1:authority	map	
+su2:p1:authorityURI	su2:p1:authorityURI	map	
+su2:p1:valueURI	su2:p1:valueURI	map	
+su2:p2:type	su2:p2:type	map	
+su2:p2:value	su2:p2:value	map	
+su2:p2:authority	su2:p2:authority	map	
+su2:p2:authorityURI	su2:p2:authorityURI	map	
+su2:p2:valueURI	su2:p2:valueURI	map	
+su2:p3:type	su2:p3:type	map	
+su2:p3:value	su2:p3:value	map	
+su2:p3:authority	su2:p3:authority	map	
+su2:p3:authorityURI	su2:p3:authorityURI	map	
+su2:p3:valueURI	su2:p3:valueURI	map	
+su2:p4:type	su2:p4:type	map	
+su2:p4:value	su2:p4:value	map	
+su2:p4:authority	su2:p4:authority	map	
+su2:p4:authorityURI	su2:p4:authorityURI	map	
+su2:p4:valueURI	su2:p4:valueURI	map	
+su2:p5:type	su2:p5:type	map	
+su2:p5:value	su2:p5:value	map	
+su2:p5:authority	su2:p5:authority	map	
+su2:p5:authorityURI	su2:p5:authorityURI	map	
+su2:p5:valueURI	su2:p5:valueURI	map	
+su3:authority	su3:authority	map	
+su3:authorityURI	su3:authorityURI	map	
+su3:valueURI	su3:valueURI	map	
+su3:p1:type	su3:p1:type	map	
+su3:p1:value	su3:p1:value	map	
+su3:p1:authority	su3:p1:authority	map	
+su3:p1:authorityURI	su3:p1:authorityURI	map	
+su3:p1:valueURI	su3:p1:valueURI	map	
+su3:p2:type	su3:p2:type	map	
+su3:p2:value	su3:p2:value	map	
+su3:p2:authority	su3:p2:authority	map	
+su3:p2:authorityURI	su3:p2:authorityURI	map	
+su3:p2:valueURI	su3:p2:valueURI	map	
+su3:p3:type	su3:p3:type	map	
+su3:p3:value	su3:p3:value	map	
+su3:p3:authority	su3:p3:authority	map	
+su3:p3:authorityURI	su3:p3:authorityURI	map	
+su3:p3:valueURI	su3:p3:valueURI	map	
+su3:p4:type	su3:p4:type	map	
+su3:p4:value	su3:p4:value	map	
+su3:p4:authority	su3:p4:authority	map	
+su3:p4:authorityURI	su3:p4:authorityURI	map	
+su3:p4:valueURI	su3:p4:valueURI	map	
+su3:p5:type	su3:p5:type	map	
+su3:p5:value	su3:p5:value	map	
+su3:p5:authority	su3:p5:authority	map	
+su3:p5:authorityURI	su3:p5:authorityURI	map	
+su3:p5:valueURI	su3:p5:valueURI	map	
+su4:authority	su4:authority	map	
+su4:authorityURI	su4:authorityURI	map	
+su4:valueURI	su4:valueURI	map	
+su4:p1:type	su4:p1:type	map	
+su4:p1:value	su4:p1:value	map	
+su4:p1:authority	su4:p1:authority	map	
+su4:p1:authorityURI	su4:p1:authorityURI	map	
+su4:p1:valueURI	su4:p1:valueURI	map	
+su4:p2:type	su4:p2:type	map	
+su4:p2:value	su4:p2:value	map	
+su4:p2:authority	su4:p2:authority	map	
+su4:p2:authorityURI	su4:p2:authorityURI	map	
+su4:p2:valueURI	su4:p2:valueURI	map	
+su4:p3:type	su4:p3:type	map	
+su4:p3:value	su4:p3:value	map	
+su4:p3:authority	su4:p3:authority	map	
+su4:p3:authorityURI	su4:p3:authorityURI	map	
+su4:p3:valueURI	su4:p3:valueURI	map	
+su4:p4:type	su4:p4:type	map	
+su4:p4:value	su4:p4:value	map	
+su4:p4:authority	su4:p4:authority	map	
+su4:p4:authorityURI	su4:p4:authorityURI	map	
+su4:p4:valueURI	su4:p4:valueURI	map	
+su4:p5:type	su4:p5:type	map	
+su4:p5:value	su4:p5:value	map	
+su4:p5:authority	su4:p5:authority	map	
+su4:p5:authorityURI	su4:p5:authorityURI	map	
+su4:p5:valueURI	su4:p5:valueURI	map	
+su5:authority	su5:authority	map	
+su5:authorityURI	su5:authorityURI	map	
+su5:valueURI	su5:valueURI	map	
+su5:p1:type	su5:p1:type	map	
+su5:p1:value	su5:p1:value	map	
+su5:p1:authority	su5:p1:authority	map	
+su5:p1:authorityURI	su5:p1:authorityURI	map	
+su5:p1:valueURI	su5:p1:valueURI	map	
+su5:p2:type	su5:p2:type	map	
+su5:p2:value	su5:p2:value	map	
+su5:p2:authority	su5:p2:authority	map	
+su5:p2:authorityURI	su5:p2:authorityURI	map	
+su5:p2:valueURI	su5:p2:valueURI	map	
+su5:p3:type	su5:p3:type	map	
+su5:p3:value	su5:p3:value	map	
+su5:p3:authority	su5:p3:authority	map	
+su5:p3:authorityURI	su5:p3:authorityURI	map	
+su5:p3:valueURI	su5:p3:valueURI	map	
+su5:p4:type	su5:p4:type	map	
+su5:p4:value	su5:p4:value	map	
+su5:p4:authority	su5:p4:authority	map	
+su5:p4:authorityURI	su5:p4:authorityURI	map	
+su5:p4:valueURI	su5:p4:valueURI	map	
+su5:p5:type	su5:p5:type	map	
+su5:p5:value	su5:p5:value	map	
+su5:p5:authority	su5:p5:authority	map	
+su5:p5:authorityURI	su5:p5:authorityURI	map	
+su5:p5:valueURI	su5:p5:valueURI	map	
+sc1:scale	Scale not determined	string	
+id1:identifier	Inventory ID
+ri1:type	Other version	string	
+ri1:displayLabel	Available online	string	
+ri1:title	www.raremaps.com	string	
+ri1:url	Images	map	
+rc:languageOfCataloging	eng	string	
+rc:languageOfCatalogingTerm	English	string	
+rc:langAuthority	marclanguage	string	
+rc:langAuthorityURI	http://id.loc.gov/vocabulary/languages	string	
+rc:langValueURI	http://id.loc.gov/vocabulary/languages/eng	string	
+rc:contentSource	CSt	string	
+rc:contentSourceAuthority	marcorg	string	
+rc:contentSourceAuthorityURI	http://id.loc.gov/vocabulary/organizations	string	
+rc:contentSourceValueURI	http://id.loc.gov/vocabulary/organizations/cst	string	
+rc:recordOrigin	human prepared	string	
+
