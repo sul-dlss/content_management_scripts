@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>00965cam a2200289I  4500</marc:leader>
+        <marc:controlfield tag="001">a4059677</marc:controlfield>
+        <marc:controlfield tag="003">SIRSI</marc:controlfield>
+        <marc:controlfield tag="005">20170812050002.0</marc:controlfield>
+        <marc:controlfield tag="008">830816s1899    enka          000 1 eng d</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">RCE</marc:subfield>
+            <marc:subfield code="c">RCE</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="090" ind1=" " ind2=" ">
+            <marc:subfield code="a">PR4004.A2</marc:subfield>
+            <marc:subfield code="b">M6</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Allen, Grant,</marc:subfield>
+            <marc:subfield code="d">1848-1899.</marc:subfield>
+            <marc:subfield code="=">^A28062</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Miss Cayley's adventures,</marc:subfield>
+            <marc:subfield code="c">by Grant Allen. With illustrations by Gordon Browne.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">London,</marc:subfield>
+            <marc:subfield code="b">G. Richards,</marc:subfield>
+            <marc:subfield code="c">1899.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">ix, 330 p.</marc:subfield>
+            <marc:subfield code="b">front., illus.</marc:subfield>
+            <marc:subfield code="c">20 cm.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="596" ind1=" " ind2=" ">
+            <marc:subfield code="a">21</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2=" ">
+            <marc:subfield code="a">--A</marc:subfield>
+            <marc:subfield code="a">--B</marc:subfield>
+            <marc:subfield code="a">--C</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="0">
+            <marc:subfield code="a">-0A</marc:subfield>
+            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-0C</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="1">
+            <marc:subfield code="a">-1A</marc:subfield>
+            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-1C</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="2">
+            <marc:subfield code="a">-2A</marc:subfield>
+            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-2C</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="3">
+            <marc:subfield code="a">-3A</marc:subfield>
+            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-3C</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="4">
+            <marc:subfield code="a">-4A</marc:subfield>
+            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-4C</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="5">
+            <marc:subfield code="a">-5A</marc:subfield>
+            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-5C</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="6">
+            <marc:subfield code="a">-6A</marc:subfield>
+            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-6C</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="916" ind1=" " ind2=" ">
+            <marc:subfield code="a">DATE CATALOGED</marc:subfield>
+            <marc:subfield code="b">NEVER</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="f">STARLING</marc:subfield>
+            <marc:subfield code="b">druid:jy802xh5526</marc:subfield>
+            <marc:subfield code="c">jy802xh5526_00_0001.jp2</marc:subfield>
+            <marc:subfield code="d">Gift of Kenyon Law Starling</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="999" ind1=" " ind2=" ">
+            <marc:subfield code="a">XX(4059677.1)</marc:subfield>
+            <marc:subfield code="w">LC</marc:subfield>
+            <marc:subfield code="c">1</marc:subfield>
+            <marc:subfield code="i">4059677-1001</marc:subfield>
+            <marc:subfield code="d">4/29/1999</marc:subfield>
+            <marc:subfield code="k">INPROCESS</marc:subfield>
+            <marc:subfield code="l">FELTON</marc:subfield>
+            <marc:subfield code="m">SPEC-COLL</marc:subfield>
+            <marc:subfield code="r">Y</marc:subfield>
+            <marc:subfield code="s">Y</marc:subfield>
+            <marc:subfield code="t">STKS</marc:subfield>
+            <marc:subfield code="u">4/29/1999</marc:subfield>
+            <marc:subfield code="z">TAX=8.25</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
