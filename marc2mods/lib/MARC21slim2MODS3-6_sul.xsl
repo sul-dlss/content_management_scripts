@@ -3010,7 +3010,15 @@
 		<xsl:for-each select="marc:subfield[@code='e']">
 			<role>
 				<roleTerm type="text">
+					<!-- SUL modification v1.0.0 10/6/2017) -->
+					<xsl:call-template name="chopPunctuation">
+						<xsl:with-param name="chopString" select="."/>
+					</xsl:call-template>
+					<!-- LC original -->
+					<!--
 					<xsl:value-of select="."/>
+					-->
+					<!-- end SUL modification -->
 				</roleTerm>
 			</role>
 		</xsl:for-each>
