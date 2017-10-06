@@ -872,7 +872,7 @@
 				<place>
 					<placeTerm>
 						<xsl:attribute name="type">text</xsl:attribute>
-						<!-- SUL modification v1.0.0 10/5/2017 -->
+						<!-- SUL modification rev1.0.1 10/5/2017 -->
 							<xsl:call-template name="chopPunctuation">
 								<xsl:with-param name="chopString" select="."/>
 								<xsl:with-param name="punctuation">
@@ -966,7 +966,7 @@
 					<xsl:when test="@code='g'">
 						<xsl:if test="$leader6='d' or $leader6='f' or $leader6='p' or $leader6='t'">
 							<dateCreated>
-								<!-- SUL modification v1.0.0 10/6/2017 -->
+								<!-- SUL modification rev1.0.4 10/6/2017 -->
 								<xsl:call-template name="chopPunctuation">
 									<xsl:with-param name="chopString" select="."/>
 								</xsl:call-template>
@@ -979,7 +979,7 @@
 						</xsl:if>
 						<xsl:if test="not($leader6='d' or $leader6='f' or $leader6='p' or $leader6='t')">
 							<dateCreated>
-								<!-- SUL modification v1.0.0 10/6/2017 -->
+								<!-- SUL modification rev1.0.4 10/6/2017 -->
 								<xsl:call-template name="chopPunctuation">
 									<xsl:with-param name="chopString" select="."/>
 								</xsl:call-template>
@@ -1163,7 +1163,7 @@
 				<xsl:call-template name="xxx880"/>
 				<place>
 					<placeTerm type="text">
-						<!-- SUL modification v1.0.0 10/6/2017 -->
+						<!-- SUL modification rev1.0.2 10/6/2017 -->
 						<xsl:call-template name="chopPunctuation">
 							<xsl:with-param name="chopString" select="marc:subfield[@code='a']"/>
 							<xsl:with-param name="punctuation">
@@ -1178,7 +1178,7 @@
 					</placeTerm>
 				</place>
 				<publisher>
-					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<!-- SUL modification rev1.0.3 10/6/2017 -->
 					<xsl:call-template name="chopPunctuation">
 						<xsl:with-param name="chopString" select="marc:subfield[@code='b']"/>
 						<xsl:with-param name="punctuation">
@@ -1192,7 +1192,7 @@
 					<!-- end SUL modification -->
 				</publisher>
 				<dateOther type="production">
-					<!-- SUL modification v1.0.0 10/7/2017 -->
+					<!-- SUL modification rev1.0.5 10/7/2017 -->
 					<xsl:call-template name="chopPunctuation">
 						<xsl:with-param name="chopString" select="marc:subfield[@code='c']"/>
 					</xsl:call-template>
@@ -1210,7 +1210,7 @@
 				<xsl:call-template name="xxx880"/>
 				<place>
 						<placeTerm type="text">
-							<!-- SUL modification v1.0.0 10/6/2017 -->
+							<!-- SUL modification rev1.0.2 10/6/2017 -->
 							<xsl:call-template name="chopPunctuation">
 								<xsl:with-param name="chopString" select="marc:subfield[@code='a']"/>
 								<xsl:with-param name="punctuation">
@@ -1225,7 +1225,7 @@
 						</placeTerm>
 				</place>
 				<publisher>
-					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<!-- SUL modification rev1.0.3 10/6/2017 -->
 					<xsl:call-template name="chopPunctuation">
 						<xsl:with-param name="chopString" select="marc:subfield[@code='b']"/>
 						<xsl:with-param name="punctuation">
@@ -1239,7 +1239,7 @@
 					<!-- end SUL modification -->
 				</publisher>
 				<dateIssued>
-					<!-- SUL modification v1.0.0 10/7/2017 -->
+					<!-- SUL modification rev1.0.5 10/7/2017 -->
 					<xsl:call-template name="chopPunctuation">
 						<xsl:with-param name="chopString" select="marc:subfield[@code='c']"/>
 					</xsl:call-template>
@@ -1257,7 +1257,7 @@
 				<xsl:call-template name="xxx880"/>
 				<place>
 					<placeTerm type="text">
-						<!-- SUL modification v1.0.0 10/6/2017 -->
+						<!-- SUL modification rev1.0.2 10/6/2017 -->
 						<xsl:call-template name="chopPunctuation">
 							<xsl:with-param name="chopString" select="marc:subfield[@code='a']"/>
 							<xsl:with-param name="punctuation">
@@ -1272,7 +1272,7 @@
 					</placeTerm>
 				</place>
 				<publisher>
-					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<!-- SUL modification rev1.0.3 10/6/2017 -->
 					<xsl:call-template name="chopPunctuation">
 						<xsl:with-param name="chopString" select="marc:subfield[@code='b']"/>
 						<xsl:with-param name="punctuation">
@@ -1286,7 +1286,7 @@
 					<!-- end SUL modification -->
 				</publisher>
 				<dateOther type="distribution">
-					<!-- SUL modification v1.0.0 10/7/2017 -->
+					<!-- SUL modification rev1.0.5 10/7/2017 -->
 					<xsl:call-template name="chopPunctuation">
 						<xsl:with-param name="chopString" select="marc:subfield[@code='c']"/>
 					</xsl:call-template>
@@ -1304,7 +1304,7 @@
 				<xsl:call-template name="xxx880"/>
 				<place>
 					<placeTerm type="text">
-						<!-- SUL modification v1.0.0 10/6/2017 -->
+						<!-- SUL modification rev1.0.2 10/6/2017 -->
 						<xsl:call-template name="chopPunctuation">
 							<xsl:with-param name="chopString" select="marc:subfield[@code='a']"/>
 							<xsl:with-param name="punctuation">
@@ -1319,7 +1319,7 @@
 					</placeTerm>
 				</place>
 				<publisher>
-					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<!-- SUL modification rev1.0.3 10/6/2017 -->
 					<xsl:call-template name="chopPunctuation">
 						<xsl:with-param name="chopString" select="marc:subfield[@code='b']"/>
 						<xsl:with-param name="punctuation">
@@ -1333,7 +1333,7 @@
 					<!-- end SUL modification -->
 				</publisher>
 				<dateOther type="manufacture">
-					<!-- SUL modification v1.0.0 10/7/2017 -->
+					<!-- SUL modification rev1.0.5 10/7/2017 -->
 					<xsl:call-template name="chopPunctuation">
 						<xsl:with-param name="chopString" select="marc:subfield[@code='c']"/>
 					</xsl:call-template>
@@ -3010,7 +3010,7 @@
 		<xsl:for-each select="marc:subfield[@code='e']">
 			<role>
 				<roleTerm type="text">
-					<!-- SUL modification v1.0.0 10/6/2017) -->
+					<!-- SUL modification rev1.0.9 10/6/2017) -->
 					<xsl:call-template name="chopPunctuation">
 						<xsl:with-param name="chopString" select="."/>
 					</xsl:call-template>
@@ -4859,7 +4859,7 @@
 	<xsl:template name="createNoteFrom245c">
 		<xsl:if test="marc:subfield[@code='c']">
 				<note type="statement of responsibility">
-					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<!-- SUL modification rev1.0.10 10/6/2017 -->
 					<xsl:call-template name="xxx880"/>
 					<!-- LC original -->
 					<!--
@@ -5466,7 +5466,7 @@
 	<xsl:template name="createSubFrom653">
 
 		<xsl:if test="@ind2=' '">
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			<xsl:for-each select="marc:subfield[@code='a']">
 			<!-- end SUL addition -->
 				<subject>
@@ -5474,12 +5474,12 @@
 						<xsl:value-of select="."/>
 					</topic>
 				</subject>
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			</xsl:for-each>
 			<!-- end SUL addition -->
 		</xsl:if>
 		<xsl:if test="@ind2='0'">
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			<xsl:for-each select="marc:subfield[@code='a']">
 			<!-- end SUL addition -->
 				<subject>
@@ -5487,19 +5487,19 @@
 						<xsl:value-of select="."/>
 					</topic>
 				</subject>
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			</xsl:for-each>
 			<!-- end SUL addition -->
 		</xsl:if>
 <!-- tmee 1.93 20140130 -->
-		<!-- SUL modification v1.0.0 10/6/2017 -->
+		<!-- SUL modification rev1.0.7 10/6/2017 -->
 		<xsl:if test="@ind2='1'">
 		<!-- LC original -->
 		<!--
 		<xsl:if test="@ind=' ' or @ind1='0' or @ind1='1'">
 		-->
 		<!-- end SUL modification -->
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			<xsl:for-each select="marc:subfield[@code='a']">
 			<!-- end SUL addition -->
 				<subject>
@@ -5509,11 +5509,11 @@
 						</namePart>
 					</name>
 				</subject>
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			</xsl:for-each>
 			<!-- end SUL addition -->
 		</xsl:if>
-		<!-- SUL deletion v1.0.0 10/6/2017 -->
+		<!-- SUL deletion rev1.0.8 10/6/2017 -->
 		<!--
 		<xsl:if test="@ind1='3'">
 				<subject>
@@ -5527,7 +5527,7 @@
 		-->
 		<!-- end SUL deletion -->
 		<xsl:if test="@ind2='2'">
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			<xsl:for-each select="marc:subfield[@code='a']">
 			<!-- end SUL addition -->
 				<subject>
@@ -5537,12 +5537,12 @@
 						</namePart>
 					</name>
 				</subject>
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			</xsl:for-each>
 			<!-- end SUL addition -->
 		</xsl:if>
 		<xsl:if test="@ind2='3'">
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			<xsl:for-each select="marc:subfield[@code='a']">
 			<!-- end SUL addition -->
 				<subject>
@@ -5552,12 +5552,12 @@
 						</namePart>
 					</name>
 				</subject>
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			</xsl:for-each>
 			<!-- end SUL addition -->
 		</xsl:if>
 		<xsl:if test="@ind2=4">
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			<xsl:for-each select="marc:subfield[@code='a']">
 			<!-- end SUL addition -->
 				<subject>
@@ -5565,12 +5565,12 @@
 						<xsl:value-of select="."/>
 					</temporal>
 				</subject>
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			</xsl:for-each>
 			<!-- end SUL addition -->
 		</xsl:if>
 		<xsl:if test="@ind2=5">
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			<xsl:for-each select="marc:subfield[@code='a']">
 			<!-- end SUL addition -->
 				<subject>
@@ -5578,12 +5578,12 @@
 						<xsl:value-of select="."/>
 					</geographic>
 				</subject>
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 		</xsl:for-each>
 		<!-- end SUL addition -->
 		</xsl:if>
 		<xsl:if test="@ind2=6">
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			<xsl:for-each select="marc:subfield[@code='a']">
 			<!-- end SUL addition -->
 				<subject>
@@ -5591,7 +5591,7 @@
 						<xsl:value-of select="."/>
 					</genre>
 				</subject>
-			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<!-- SUL addition rev1.0.6 10/6/2017 -->
 			</xsl:for-each>
 			<!-- end SUL addition -->
 		</xsl:if>
