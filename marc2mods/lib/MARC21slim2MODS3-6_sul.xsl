@@ -872,7 +872,7 @@
 				<place>
 					<placeTerm>
 						<xsl:attribute name="type">text</xsl:attribute>
-						<!-- SUL modification v1 10/5/2017 -->
+						<!-- SUL modification v1.0.0 10/5/2017 -->
 							<xsl:call-template name="chopPunctuation">
 								<xsl:with-param name="chopString" select="."/>
 								<xsl:with-param name="punctuation">
@@ -888,7 +888,7 @@
 								</xsl:call-template>
 							</xsl:with-param>
 						</xsl:call-template>
-					-->
+						-->
 						<!-- end SUL modification -->
 					</placeTerm>
 				</place>
@@ -1147,7 +1147,18 @@
 				<xsl:call-template name="xxx880"/>
 				<place>
 					<placeTerm type="text">
+						<!-- SUL modification v1.0.0 10/6/2017 -->
+						<xsl:call-template name="chopPunctuation">
+							<xsl:with-param name="chopString" select="marc:subfield[@code='a']"/>
+							<xsl:with-param name="punctuation">
+								<xsl:text>:,;/ </xsl:text>
+							</xsl:with-param>
+						</xsl:call-template>
+						<!-- LC original -->
+						<!--
 						<xsl:value-of select="marc:subfield[@code='a']"/>
+					-->
+					<!-- end SUL modification -->
 					</placeTerm>
 				</place>
 				<publisher>
@@ -1164,7 +1175,18 @@
 				<xsl:call-template name="xxx880"/>
 				<place>
 						<placeTerm type="text">
+							<!-- SUL modification v1.0.0 10/6/2017 -->
+							<xsl:call-template name="chopPunctuation">
+								<xsl:with-param name="chopString" select="marc:subfield[@code='a']"/>
+								<xsl:with-param name="punctuation">
+									<xsl:text>:,;/ </xsl:text>
+								</xsl:with-param>
+							</xsl:call-template>
+							<!-- LC original -->
+							<!--
 							<xsl:value-of select="marc:subfield[@code='a']"/>
+						-->
+						<!-- end SUL modification -->
 						</placeTerm>
 				</place>
 				<publisher>
@@ -1181,7 +1203,18 @@
 				<xsl:call-template name="xxx880"/>
 				<place>
 					<placeTerm type="text">
+						<!-- SUL modification v1.0.0 10/6/2017 -->
+						<xsl:call-template name="chopPunctuation">
+							<xsl:with-param name="chopString" select="marc:subfield[@code='a']"/>
+							<xsl:with-param name="punctuation">
+								<xsl:text>:,;/ </xsl:text>
+							</xsl:with-param>
+						</xsl:call-template>
+						<!-- LC original -->
+						<!--
 						<xsl:value-of select="marc:subfield[@code='a']"/>
+					-->
+					<!-- end SUL modification -->
 					</placeTerm>
 				</place>
 				<publisher>
@@ -1198,7 +1231,18 @@
 				<xsl:call-template name="xxx880"/>
 				<place>
 					<placeTerm type="text">
+						<!-- SUL modification v1.0.0 10/6/2017 -->
+						<xsl:call-template name="chopPunctuation">
+							<xsl:with-param name="chopString" select="marc:subfield[@code='a']"/>
+							<xsl:with-param name="punctuation">
+								<xsl:text>:,;/ </xsl:text>
+							</xsl:with-param>
+						</xsl:call-template>
+						<!-- LC original -->
+						<!--
 						<xsl:value-of select="marc:subfield[@code='a']"/>
+					-->
+					<!-- end SUL modification -->
 					</placeTerm>
 				</place>
 				<publisher>
