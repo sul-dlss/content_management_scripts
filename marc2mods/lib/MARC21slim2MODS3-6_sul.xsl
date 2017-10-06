@@ -5500,6 +5500,7 @@
 			<!-- end SUL addition -->
 		</xsl:if>
 		<!-- SUL deletion v1.0.0 10/6/2017 -->
+		<!--
 		<xsl:if test="@ind1='3'">
 				<subject>
 					<name type="family">
@@ -5508,8 +5509,9 @@
 						</namePart>
 					</name>
 				</subject>
-		<!-- end SUL deletion -->
 		</xsl:if>
+		-->
+		<!-- end SUL deletion -->
 		<xsl:if test="@ind2='2'">
 			<!-- SUL addition v1.0.0 10/6/2017 -->
 			<xsl:for-each select="marc:subfield[@code='a']">
