@@ -1162,7 +1162,17 @@
 					</placeTerm>
 				</place>
 				<publisher>
+					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<xsl:call-template name="chopPunctuation">
+						<xsl:with-param name="chopString" select="marc:subfield[@code='b']"/>
+						<xsl:with-param name="punctuation">
+							<xsl:text>:,;/ </xsl:text>
+						</xsl:with-param>
+					</xsl:call-template>
+					<!-- LC original -->
+					<!--
 					<xsl:value-of select="marc:subfield[@code='b']"/>
+				-->
 				</publisher>
 				<dateOther type="production">
 					<xsl:value-of select="marc:subfield[@code='c']"/>
@@ -1190,7 +1200,17 @@
 						</placeTerm>
 				</place>
 				<publisher>
+					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<xsl:call-template name="chopPunctuation">
+						<xsl:with-param name="chopString" select="marc:subfield[@code='b']"/>
+						<xsl:with-param name="punctuation">
+							<xsl:text>:,;/ </xsl:text>
+						</xsl:with-param>
+					</xsl:call-template>
+					<!-- LC original -->
+					<!--
 					<xsl:value-of select="marc:subfield[@code='b']"/>
+				-->
 				</publisher>
 				<dateIssued>
 					<xsl:value-of select="marc:subfield[@code='c']"/>
@@ -1218,7 +1238,17 @@
 					</placeTerm>
 				</place>
 				<publisher>
+					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<xsl:call-template name="chopPunctuation">
+						<xsl:with-param name="chopString" select="marc:subfield[@code='b']"/>
+						<xsl:with-param name="punctuation">
+							<xsl:text>:,;/ </xsl:text>
+						</xsl:with-param>
+					</xsl:call-template>
+					<!-- LC original -->
+					<!--
 					<xsl:value-of select="marc:subfield[@code='b']"/>
+				-->
 				</publisher>
 				<dateOther type="distribution">
 					<xsl:value-of select="marc:subfield[@code='c']"/>
@@ -1246,7 +1276,17 @@
 					</placeTerm>
 				</place>
 				<publisher>
+					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<xsl:call-template name="chopPunctuation">
+						<xsl:with-param name="chopString" select="marc:subfield[@code='b']"/>
+						<xsl:with-param name="punctuation">
+							<xsl:text>:,;/ </xsl:text>
+						</xsl:with-param>
+					</xsl:call-template>
+					<!-- LC original -->
+					<!--
 					<xsl:value-of select="marc:subfield[@code='b']"/>
+				-->
 				</publisher>
 				<dateOther type="manufacture">
 					<xsl:value-of select="marc:subfield[@code='c']"/>
