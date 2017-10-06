@@ -1,0 +1,146 @@
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>01882cam a2200397 a 4500</leader>
+    <controlfield tag="001">a9266342</controlfield>
+    <controlfield tag="003">SIRSI</controlfield>
+    <controlfield tag="005">20170812050002.0</controlfield>
+    <controlfield tag="008">101208r20101926ru 000 0drus c</controlfield>
+    <datafield ind1=" " ind2=" " tag="040">
+        <subfield code="a">HLS</subfield>
+        <subfield code="c">HLS</subfield>
+        <subfield code="d">CGU</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="042">
+        <subfield code="a">pcc</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="043">
+        <subfield code="a">e-ru---</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="049">
+        <subfield code="a">STFA</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="050">
+        <subfield code="a">DK254.L42</subfield>
+        <subfield code="b">R33 2010</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="245">
+        <subfield code="6">880-01</subfield>
+        <subfield code="a">Rabotnit͡sy ob Ilʹiche :</subfield>
+        <subfield code="b">stikhi, vospominanii͡a, otkliki /</subfield>
+        <subfield code="c">sostavil S.V. I͡Urin.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="260">
+        <subfield code="6">880-02</subfield>
+        <subfield code="a">Sankt-Peterburg :</subfield>
+        <subfield code="b">Krasnyĭ matros,</subfield>
+        <subfield code="c">2010.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+        <subfield code="a">64 p. ;</subfield>
+        <subfield code="c">19 cm.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="490">
+        <subfield code="6">880-03</subfield>
+        <subfield code="a">Serii͡a &quot;Reprint&quot; ;</subfield>
+        <subfield code="v">kn. 11</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="534">
+        <subfield code="p">Reprint. Originally published:</subfield>
+        <subfield code="c">Leningrad : Rabochee izd-vo &quot;Priboĭ, &quot;, 1926, as
+            &quot;Prilozhenie k zhurnalu &apos;Rabotnit͡sa i krestʹi͡anka&apos;
+            No.5.&quot;</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+        <subfield code="a">Lenin, Vladimir Ilʹich,</subfield>
+        <subfield code="d">1870-1924.</subfield>
+        <subfield code=" ">^A170823</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+        <subfield code="a">Lenin, Vladimir Ilʹich,</subfield>
+        <subfield code="d">1870-1924</subfield>
+        <subfield code="v">Poetry.</subfield>
+        <subfield code=" ">^A170823</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="600">
+        <subfield code="a">Lenin, Vladimir Ilʹich,</subfield>
+        <subfield code="d">1870-1924</subfield>
+        <subfield code="v">Miscellanea.</subfield>
+        <subfield code=" ">^A170823</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+        <subfield code="a">Women blue collar workers</subfield>
+        <subfield code="z">Russia (Federation)</subfield>
+        <subfield code="z">Saint Petersburg.</subfield>
+        <subfield code=" ">^A2692196</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+        <subfield code="6">880-04</subfield>
+        <subfield code="a">I͡Urin, Sergeĭ Vasilʹevich,</subfield>
+        <subfield code="d">1895-1953.</subfield>
+        <subfield code=" ">^A2718818</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="830">
+        <subfield code="6">880-05</subfield>
+        <subfield code="a">Serii͡a &quot;Reprint&quot;</subfield>
+        <subfield code="v">kn. 11.</subfield>
+        <subfield code=" ">^A2043435</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="880">
+        <subfield code="6">245-01</subfield>
+        <subfield code="a">Работницы об Ильиче :</subfield>
+        <subfield code="b">стихи, воспоминания, отклики /</subfield>
+        <subfield code="c">составил С.В. Юрин.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="880">
+        <subfield code="6">260-02</subfield>
+        <subfield code="a">Санкт-Петербург :</subfield>
+        <subfield code="b">Красный матрос,</subfield>
+        <subfield code="c">2010.</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="880">
+        <subfield code="6">490-03</subfield>
+        <subfield code="a">Серия &quot;Репринт&quot; ;</subfield>
+        <subfield code="v">кн. 11</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="880">
+        <subfield code="6">700-04</subfield>
+        <subfield code="a">Юрин, Сергей Васильевич,</subfield>
+        <subfield code="d">1895-1953.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="880">
+        <subfield code="6">830-05</subfield>
+        <subfield code="a">Серия &quot;Репринт&quot; ;</subfield>
+        <subfield code="v">кн. 11.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="916">
+        <subfield code="a">DATE CATALOGED</subfield>
+        <subfield code="b">20120103</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="994">
+        <subfield code="a">C0</subfield>
+        <subfield code="b">STF</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+        <subfield code="a">(OCoLC-M)754147343</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+        <subfield code="a">(OCoLC-I)770616008</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="596">
+        <subfield code="a">1</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="999">
+        <subfield code="a">DK254 .L42 R33 2010</subfield>
+        <subfield code="w">LC</subfield>
+        <subfield code="c">1</subfield>
+        <subfield code="i">36105134193718</subfield>
+        <subfield code="d">3/8/2012</subfield>
+        <subfield code="e">1/20/2012</subfield>
+        <subfield code="l">STACKS</subfield>
+        <subfield code="m">GREEN</subfield>
+        <subfield code="n">2</subfield>
+        <subfield code="r">Y</subfield>
+        <subfield code="s">Y</subfield>
+        <subfield code="t">STKS-MONO</subfield>
+        <subfield code="u">8/15/2011</subfield>
+    </datafield>
+</record>
