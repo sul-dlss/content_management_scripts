@@ -1173,8 +1173,8 @@
 						<!-- LC original -->
 						<!--
 						<xsl:value-of select="marc:subfield[@code='a']"/>
-					-->
-					<!-- end SUL modification -->
+						-->
+						<!-- end SUL modification -->
 					</placeTerm>
 				</place>
 				<publisher>
@@ -1188,10 +1188,19 @@
 					<!-- LC original -->
 					<!--
 					<xsl:value-of select="marc:subfield[@code='b']"/>
-				-->
+					-->
+					<!-- end SUL modification -->
 				</publisher>
 				<dateOther type="production">
+					<!-- SUL modification v1.0.0 10/7/2017 -->
+					<xsl:call-template name="chopPunctuation">
+						<xsl:with-param name="chopString" select="marc:subfield[@code='c']"/>
+					</xsl:call-template>
+					<!-- LC original -->
+					<!--
 					<xsl:value-of select="marc:subfield[@code='c']"/>
+					-->
+					<!-- end SUL modification -->
 				</dateOther>
 			</originInfo>
 		</xsl:for-each>
@@ -1211,8 +1220,8 @@
 							<!-- LC original -->
 							<!--
 							<xsl:value-of select="marc:subfield[@code='a']"/>
-						-->
-						<!-- end SUL modification -->
+							-->
+							<!-- end SUL modification -->
 						</placeTerm>
 				</place>
 				<publisher>
@@ -1226,10 +1235,19 @@
 					<!-- LC original -->
 					<!--
 					<xsl:value-of select="marc:subfield[@code='b']"/>
-				-->
+					-->
+					<!-- end SUL modification -->
 				</publisher>
 				<dateIssued>
+					<!-- SUL modification v1.0.0 10/7/2017 -->
+					<xsl:call-template name="chopPunctuation">
+						<xsl:with-param name="chopString" select="marc:subfield[@code='c']"/>
+					</xsl:call-template>
+					<!-- LC original -->
+					<!--
 					<xsl:value-of select="marc:subfield[@code='c']"/>
+					-->
+					<!-- end SUL modification -->
 				</dateIssued>
 			</originInfo>
 		</xsl:for-each>
@@ -1249,8 +1267,8 @@
 						<!-- LC original -->
 						<!--
 						<xsl:value-of select="marc:subfield[@code='a']"/>
-					-->
-					<!-- end SUL modification -->
+						-->
+						<!-- end SUL modification -->
 					</placeTerm>
 				</place>
 				<publisher>
@@ -1264,10 +1282,19 @@
 					<!-- LC original -->
 					<!--
 					<xsl:value-of select="marc:subfield[@code='b']"/>
-				-->
+					-->
+					<!-- end SUL modification -->
 				</publisher>
 				<dateOther type="distribution">
+					<!-- SUL modification v1.0.0 10/7/2017 -->
+					<xsl:call-template name="chopPunctuation">
+						<xsl:with-param name="chopString" select="marc:subfield[@code='c']"/>
+					</xsl:call-template>
+					<!-- LC original -->
+					<!--
 					<xsl:value-of select="marc:subfield[@code='c']"/>
+					-->
+					<!-- end SUL modification -->
 				</dateOther>
 			</originInfo>
 		</xsl:for-each>
@@ -1287,8 +1314,8 @@
 						<!-- LC original -->
 						<!--
 						<xsl:value-of select="marc:subfield[@code='a']"/>
-					-->
-					<!-- end SUL modification -->
+						-->
+						<!-- end SUL modification -->
 					</placeTerm>
 				</place>
 				<publisher>
@@ -1302,10 +1329,19 @@
 					<!-- LC original -->
 					<!--
 					<xsl:value-of select="marc:subfield[@code='b']"/>
-				-->
+					-->
+					<!-- end SUL modification -->
 				</publisher>
 				<dateOther type="manufacture">
+					<!-- SUL modification v1.0.0 10/7/2017 -->
+					<xsl:call-template name="chopPunctuation">
+						<xsl:with-param name="chopString" select="marc:subfield[@code='c']"/>
+					</xsl:call-template>
+					<!-- LC original -->
+					<!--
 					<xsl:value-of select="marc:subfield[@code='c']"/>
+					-->
+					<!-- end SUL modification -->
 				</dateOther>
 			</originInfo>
 		</xsl:for-each>
