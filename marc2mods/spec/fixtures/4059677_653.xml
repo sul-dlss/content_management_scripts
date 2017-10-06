@@ -50,32 +50,32 @@
         </marc:datafield>
         <marc:datafield tag="653" ind1=" " ind2="1">
             <marc:subfield code="a">-1A</marc:subfield>
-            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-1B</marc:subfield>
             <marc:subfield code="a">-1C</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="653" ind1=" " ind2="2">
             <marc:subfield code="a">-2A</marc:subfield>
-            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-2B</marc:subfield>
             <marc:subfield code="a">-2C</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="653" ind1=" " ind2="3">
             <marc:subfield code="a">-3A</marc:subfield>
-            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-3B</marc:subfield>
             <marc:subfield code="a">-3C</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="653" ind1=" " ind2="4">
             <marc:subfield code="a">-4A</marc:subfield>
-            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-4B</marc:subfield>
             <marc:subfield code="a">-4C</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="653" ind1=" " ind2="5">
             <marc:subfield code="a">-5A</marc:subfield>
-            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-5B</marc:subfield>
             <marc:subfield code="a">-5C</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="653" ind1=" " ind2="6">
             <marc:subfield code="a">-6A</marc:subfield>
-            <marc:subfield code="a">-0B</marc:subfield>
+            <marc:subfield code="a">-6B</marc:subfield>
             <marc:subfield code="a">-6C</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="916" ind1=" " ind2=" ">
