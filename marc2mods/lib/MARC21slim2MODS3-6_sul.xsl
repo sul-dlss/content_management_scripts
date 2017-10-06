@@ -4859,10 +4859,16 @@
 	<xsl:template name="createNoteFrom245c">
 		<xsl:if test="marc:subfield[@code='c']">
 				<note type="statement of responsibility">
+					<!-- SUL modification v1.0.0 10/6/2017 -->
+					<xsl:call-template name="xxx880"/>
+					<!-- LC original -->
+					<!--
 					<xsl:attribute name="altRepGroup">
 						<xsl:text>00</xsl:text>
 					</xsl:attribute>
 					<xsl:call-template name="scriptCode"/>
+					-->
+					<!-- end SUL modification -->
 					<xsl:call-template name="subfieldSelect">
 						<xsl:with-param name="codes">c</xsl:with-param>
 					</xsl:call-template>
