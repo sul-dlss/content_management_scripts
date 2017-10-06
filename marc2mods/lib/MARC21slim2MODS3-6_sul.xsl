@@ -5452,77 +5452,132 @@
 	<xsl:template name="createSubFrom653">
 
 		<xsl:if test="@ind2=' '">
-			<subject>
-				<topic>
-					<xsl:value-of select="."/>
-				</topic>
-			</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<xsl:for-each select="marc:subfield[@code='a']">
+			<!-- end SUL addition -->
+				<subject>
+					<topic>
+						<xsl:value-of select="."/>
+					</topic>
+				</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			</xsl:for-each>
+			<!-- end SUL addition -->
 		</xsl:if>
 		<xsl:if test="@ind2='0'">
-			<subject>
-				<topic>
-					<xsl:value-of select="."/>
-				</topic>
-			</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<xsl:for-each select="marc:subfield[@code='a']">
+			<!-- end SUL addition -->
+				<subject>
+					<topic>
+						<xsl:value-of select="."/>
+					</topic>
+				</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			</xsl:for-each>
+			<!-- end SUL addition -->
 		</xsl:if>
 <!-- tmee 1.93 20140130 -->
+		<!-- SUL modification v1.0.0 10/6/2017 -->
+		<xsl:if test="@ind2='1'">
+		<!-- LC original -->
+		<!--
 		<xsl:if test="@ind=' ' or @ind1='0' or @ind1='1'">
-			<subject>
-				<name type="personal">
-					<namePart>
-						<xsl:value-of select="."/>
-					</namePart>
-				</name>
-			</subject>
+		-->
+		<!-- end SUL modification -->
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<xsl:for-each select="marc:subfield[@code='a']">
+			<!-- end SUL addition -->
+				<subject>
+					<name type="personal">
+						<namePart>
+							<xsl:value-of select="."/>
+						</namePart>
+					</name>
+				</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			</xsl:for-each>
+			<!-- end SUL addition -->
 		</xsl:if>
+		<!-- SUL deletion v1.0.0 10/6/2017 -->
 		<xsl:if test="@ind1='3'">
-			<subject>
-				<name type="family">
-					<namePart>
-						<xsl:value-of select="."/>
-					</namePart>
-				</name>
-			</subject>
+				<subject>
+					<name type="family">
+						<namePart>
+							<xsl:value-of select="."/>
+						</namePart>
+					</name>
+				</subject>
+		<!-- end SUL deletion -->
 		</xsl:if>
 		<xsl:if test="@ind2='2'">
-			<subject>
-				<name type="corporate">
-					<namePart>
-						<xsl:value-of select="."/>
-					</namePart>
-				</name>
-			</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<xsl:for-each select="marc:subfield[@code='a']">
+			<!-- end SUL addition -->
+				<subject>
+					<name type="corporate">
+						<namePart>
+							<xsl:value-of select="."/>
+						</namePart>
+					</name>
+				</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			</xsl:for-each>
+			<!-- end SUL addition -->
 		</xsl:if>
 		<xsl:if test="@ind2='3'">
-			<subject>
-				<name type="conference">
-					<namePart>
-						<xsl:value-of select="."/>
-					</namePart>
-				</name>
-			</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<xsl:for-each select="marc:subfield[@code='a']">
+			<!-- end SUL addition -->
+				<subject>
+					<name type="conference">
+						<namePart>
+							<xsl:value-of select="."/>
+						</namePart>
+					</name>
+				</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			</xsl:for-each>
+			<!-- end SUL addition -->
 		</xsl:if>
 		<xsl:if test="@ind2=4">
-			<subject>
-				<temporal>
-					<xsl:value-of select="."/>
-				</temporal>
-			</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<xsl:for-each select="marc:subfield[@code='a']">
+			<!-- end SUL addition -->
+				<subject>
+					<temporal>
+						<xsl:value-of select="."/>
+					</temporal>
+				</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			</xsl:for-each>
+			<!-- end SUL addition -->
 		</xsl:if>
 		<xsl:if test="@ind2=5">
-			<subject>
-				<geographic>
-					<xsl:value-of select="."/>
-				</geographic>
-			</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<xsl:for-each select="marc:subfield[@code='a']">
+			<!-- end SUL addition -->
+				<subject>
+					<geographic>
+						<xsl:value-of select="."/>
+					</geographic>
+				</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+		</xsl:for-each>
+		<!-- end SUL addition -->
 		</xsl:if>
-
 		<xsl:if test="@ind2=6">
-			<subject>
-				<genre>
-					<xsl:value-of select="."/>
-				</genre>
-			</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			<xsl:for-each select="marc:subfield[@code='a']">
+			<!-- end SUL addition -->
+				<subject>
+					<genre>
+						<xsl:value-of select="."/>
+					</genre>
+				</subject>
+			<!-- SUL addition v1.0.0 10/6/2017 -->
+			</xsl:for-each>
+			<!-- end SUL addition -->
 		</xsl:if>
 	</xsl:template>
 
