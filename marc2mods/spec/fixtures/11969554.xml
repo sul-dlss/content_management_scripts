@@ -1,0 +1,169 @@
+<record xmlns="http://www.loc.gov/MARC21/slim">
+    <leader>02572nem a2200493Ii 4500</leader>
+    <controlfield tag="001">a11969554</controlfield>
+    <controlfield tag="003">SIRSI</controlfield>
+    <controlfield tag="005">20170812050002.0</controlfield>
+    <controlfield tag="006">m o d f </controlfield>
+    <controlfield tag="007">aj cznzn</controlfield>
+    <controlfield tag="007">cr cn|||||||||</controlfield>
+    <controlfield tag="008">170308s2017 vauek zz a fo 1 eng d</controlfield>
+    <datafield ind1="1" ind2=" " tag="034">
+        <subfield code="a">a</subfield>
+        <subfield code="b">100000</subfield>
+        <subfield code="d">W1000000</subfield>
+        <subfield code="e">W0990000</subfield>
+        <subfield code="f">N0360000</subfield>
+        <subfield code="g">N0353000</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+        <subfield code="a">GPO</subfield>
+        <subfield code="b">eng</subfield>
+        <subfield code="e">rda</subfield>
+        <subfield code="e">pn</subfield>
+        <subfield code="c">GPO</subfield>
+        <subfield code="d">GPO</subfield>
+        <subfield code="d">MvI</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="043">
+        <subfield code="a">n-us-ok</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="052">
+        <subfield code="a">4021</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="074">
+        <subfield code="a">0619-G-33 (online)</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="086">
+        <subfield code="a">I 19.91/3:3374</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+        <subfield code="a">Geological Survey (U.S.),</subfield>
+        <subfield code="e">cartographer.</subfield>
+        <subfield code="0">http://id.loc.gov/authorities/names/n80092173</subfield>
+        <subfield code=" ">^A179855</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+        <subfield code="a">Bathymetry and capacity of Shawnee Reservoir, Oklahoma, 2016 /</subfield>
+        <subfield code="c">by Chad E. Ashworth, S. Jerrod Smith and Kevin A. Smith ; prepared in
+            cooperation with the City of Shawnee.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="255">
+        <subfield code="a">Scale 1:10,000 ;</subfield>
+        <subfield code="b">Oklahoma state plane South projection</subfield>
+        <subfield code="c">(W 97°07ʹ30&quot;--W 97°03ʹ30&quot;/N 35°22ʹ00&quot;--N
+            35°18ʹ30&quot;).</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="264">
+        <subfield code="a">[Reston, Va.] :</subfield>
+        <subfield code="b">U.S. Department of the Interior, U.S. Geological Survey,</subfield>
+        <subfield code="c">2017.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+        <subfield code="a">1 online resource (1 map) :</subfield>
+        <subfield code="b">color.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="336">
+        <subfield code="a">cartographic image</subfield>
+        <subfield code="b">cri</subfield>
+        <subfield code="2">rdacontent</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="337">
+        <subfield code="a">computer</subfield>
+        <subfield code="b">c</subfield>
+        <subfield code="2">rdamedia</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="338">
+        <subfield code="a">online resource</subfield>
+        <subfield code="b">cr</subfield>
+        <subfield code="2">rdacarrier</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="490">
+        <subfield code="a">Scientific investigations map ;</subfield>
+        <subfield code="v">3374</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+        <subfield code="a">Depth shown by isolines and soundings.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="500">
+        <subfield code="a">Includes text, location map, table, and two graphs.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="504">
+        <subfield code="a">Includes bibliographical references.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="588">
+        <subfield code="a">Description based on online resource; title from PDF title page (USGS,
+            viewed Mar. 8, 2017).</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+        <subfield code="a">Reservoirs</subfield>
+        <subfield code="z">Oklahoma</subfield>
+        <subfield code="z">Shawnee</subfield>
+        <subfield code="v">Maps.</subfield>
+        <subfield code=" ">^A1055915</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="655">
+        <subfield code="a">Bathymetric maps.</subfield>
+        <subfield code="2">lcgft</subfield>
+        <subfield code="0">http://id.loc.gov/authorities/genreForms/gf2011026081</subfield>
+        <subfield code=" ">^A2950529</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+        <subfield code="a">Ashworth, Chad E.,</subfield>
+        <subfield code="e">cartographer.</subfield>
+        <subfield code="0">http://id.loc.gov/authorities/names/no2012105958</subfield>
+        <subfield code=" ">^A2986318</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+        <subfield code="a">Smith, S. Jerrod,</subfield>
+        <subfield code="e">cartographer.</subfield>
+        <subfield code="0">http://id.loc.gov/authorities/names/no2012105960</subfield>
+        <subfield code=" ">^A3336672</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="700">
+        <subfield code="a">Smith, Kevin A.,</subfield>
+        <subfield code="e">cartographer.</subfield>
+        <subfield code=" ">UNAUTHORIZED</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="710">
+        <subfield code="a">Shawnee (Okla.)</subfield>
+        <subfield code="0">http://id.loc.gov/authorities/names/n82084216</subfield>
+        <subfield code=" ">^A3290759</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="776">
+        <subfield code="i">Print version:</subfield>
+        <subfield code="a">Geological Survey (U.S.).</subfield>
+        <subfield code="t">Bathymetry and capacity of Shawnee Reservoir, Oklahoma, 2016</subfield>
+        <subfield code="w">(OCoLC)980875539</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="830">
+        <subfield code="a">Scientific investigations map ;</subfield>
+        <subfield code="v">3374.</subfield>
+        <subfield code="0">http://id.loc.gov/authorities/names/no2004050660</subfield>
+        <subfield code=" ">^A1749013</subfield>
+    </datafield>
+    <datafield ind1="4" ind2="0" tag="856">
+        <subfield code="u">http://purl.fdlp.gov/GPO/gpo78173</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="596">
+        <subfield code="a">10</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+        <subfield code="a">(OCoLC-M)974820285</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="916">
+        <subfield code="a">DATE CATALOGED</subfield>
+        <subfield code="b">20170412</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="999">
+        <subfield code="a">G3701 .C5 SVAR .U5 I-3374</subfield>
+        <subfield code="w">LC</subfield>
+        <subfield code="c">1</subfield>
+        <subfield code="i">36105050735229</subfield>
+        <subfield code="l">MAP-FILE</subfield>
+        <subfield code="m">EARTH-SCI</subfield>
+        <subfield code="r">Y</subfield>
+        <subfield code="s">Y</subfield>
+        <subfield code="t">EASTK-DOC</subfield>
+        <subfield code="u">4/27/2017</subfield>
+    </datafield>
+</record>
