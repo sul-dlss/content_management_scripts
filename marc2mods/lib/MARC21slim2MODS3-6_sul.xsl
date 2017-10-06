@@ -966,12 +966,28 @@
 					<xsl:when test="@code='g'">
 						<xsl:if test="$leader6='d' or $leader6='f' or $leader6='p' or $leader6='t'">
 							<dateCreated>
+								<!-- SUL modification v1.0.0 10/6/2017 -->
+								<xsl:call-template name="chopPunctuation">
+									<xsl:with-param name="chopString" select="."/>
+								</xsl:call-template>
+								<!-- LC original -->
+								<!--
 								<xsl:value-of select="."/>
+							-->
+							<!-- end SUL modification -->
 							</dateCreated>
 						</xsl:if>
 						<xsl:if test="not($leader6='d' or $leader6='f' or $leader6='p' or $leader6='t')">
 							<dateCreated>
+								<!-- SUL modification v1.0.0 10/6/2017 -->
+								<xsl:call-template name="chopPunctuation">
+									<xsl:with-param name="chopString" select="."/>
+								</xsl:call-template>
+								<!-- LC original -->
+								<!--
 								<xsl:value-of select="."/>
+							-->
+							<!-- end SUL modification -->
 							</dateCreated>
 						</xsl:if>
 					</xsl:when>
