@@ -3850,7 +3850,7 @@
 		<xsl:variable name="sf06b" select="substring($sf06, 5, 2)"/>
 		<xsl:variable name="sf06c" select="substring($sf06, 7)"/>
 		<xsl:variable name="scriptCode" select="substring($sf06, 8, 2)"/>
-		<xsl:if test="//marc:datafield/marc:subfield[@code='6']">
+		<xsl:if test="//marc:datafield/marc:subfield[@code='6'] and $scriptCode!=''">
 			<xsl:attribute name="script">
 				<xsl:choose>
 					<!-- SUL deletion rev1.0.11 10/10/2017-->
@@ -3858,7 +3858,8 @@
 					<!-- LC original -->
 					<!--
 					<xsl:when test="$scriptCode=''">Latn</xsl:when>
-				-->
+					-->
+					<!-- end SUL deletion -->
 					<xsl:when test="$scriptCode='(3'">Arab</xsl:when>
 					<xsl:when test="$scriptCode='(4'">Arab</xsl:when>
 					<xsl:when test="$scriptCode='(B'">Latn</xsl:when>
@@ -3888,7 +3889,13 @@
 				</xsl:attribute>
 				<xsl:attribute name="script">
 					<xsl:choose>
+						<!-- SUL deletion rev1.0.11 10/10/2017-->
+						<!-- Do not default to Latn if no script code in MARC -->
+						<!-- LC original -->
+						<!--
 						<xsl:when test="$scriptCode=''">Latn</xsl:when>
+						-->
+						<!-- end SUL deletion -->
 						<xsl:when test="$scriptCode='(3'">Arab</xsl:when>
 						<xsl:when test="$scriptCode='(4'">Arab</xsl:when>
 						<xsl:when test="$scriptCode='(B'">Latn</xsl:when>
