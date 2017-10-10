@@ -3853,7 +3853,12 @@
 		<xsl:if test="//marc:datafield/marc:subfield[@code='6']">
 			<xsl:attribute name="script">
 				<xsl:choose>
+					<!-- SUL deletion rev1.0.11 10/10/2017-->
+					<!-- Do not default to Latn if no script code in MARC -->
+					<!-- LC original -->
+					<!--
 					<xsl:when test="$scriptCode=''">Latn</xsl:when>
+				-->
 					<xsl:when test="$scriptCode='(3'">Arab</xsl:when>
 					<xsl:when test="$scriptCode='(4'">Arab</xsl:when>
 					<xsl:when test="$scriptCode='(B'">Latn</xsl:when>
@@ -4860,6 +4865,7 @@
 		<xsl:if test="marc:subfield[@code='c']">
 				<note type="statement of responsibility">
 					<!-- SUL modification rev1.0.10 10/6/2017 -->
+					<!-- note has same altRepGroup as titleInfo element from 245ab -->
 					<xsl:call-template name="xxx880"/>
 					<!-- LC original -->
 					<!--
