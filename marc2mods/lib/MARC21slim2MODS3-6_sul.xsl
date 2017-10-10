@@ -3850,7 +3850,13 @@
 		<xsl:variable name="sf06b" select="substring($sf06, 5, 2)"/>
 		<xsl:variable name="sf06c" select="substring($sf06, 7)"/>
 		<xsl:variable name="scriptCode" select="substring($sf06, 8, 2)"/>
-		<xsl:if test="//marc:datafield/marc:subfield[@code='6'] and $scriptCode!=''">
+		<!-- SUL modification rev1.0.13 10/10/2017 -->
+		<xsl:if test="//marc:datafield/marc:subfield[@code='6'] and $scriptCode">
+		<!-- LC original -->
+		<!--
+		<xsl:if test="//marc:datafield/marc:subfield[@code='6']">
+		-->
+		<!-- end SUL modification -->
 			<xsl:attribute name="script">
 				<xsl:choose>
 					<!-- SUL deletion rev1.0.11 10/10/2017-->
@@ -3887,26 +3893,32 @@
 				<xsl:attribute name="altRepGroup">
 					<xsl:value-of select="$sf06b"/>
 				</xsl:attribute>
-				<xsl:attribute name="script">
-					<xsl:choose>
-						<!-- SUL deletion rev1.0.11 10/10/2017-->
-						<!-- Do not default to Latn if no script code in MARC -->
-						<!-- LC original -->
-						<!--
-						<xsl:when test="$scriptCode=''">Latn</xsl:when>
-						-->
-						<!-- end SUL deletion -->
-						<xsl:when test="$scriptCode='(3'">Arab</xsl:when>
-						<xsl:when test="$scriptCode='(4'">Arab</xsl:when>
-						<xsl:when test="$scriptCode='(B'">Latn</xsl:when>
-						<xsl:when test="$scriptCode='!E'">Latn</xsl:when>
-						<xsl:when test="$scriptCode='$1'">CJK</xsl:when>
-						<xsl:when test="$scriptCode='(N'">Cyrl</xsl:when>
-						<xsl:when test="$scriptCode='(Q'">Cyrl</xsl:when>
-						<xsl:when test="$scriptCode='(2'">Hebr</xsl:when>
-						<xsl:when test="$scriptCode='(S'">Grek</xsl:when>
-					</xsl:choose>
-				</xsl:attribute>
+				<!-- SUL addition rev1.0.13 10/10/2017 -->
+				<xsl:if test="$scriptCode">
+				<!-- end SUL addition -->
+					<xsl:attribute name="script">
+						<xsl:choose>
+							<!-- SUL deletion rev1.0.12 10/10/2017-->
+							<!-- Do not default to Latn if no script code in MARC -->
+							<!-- LC original -->
+							<!--
+							<xsl:when test="$scriptCode=''">Latn</xsl:when>
+							-->
+							<!-- end SUL deletion -->
+							<xsl:when test="$scriptCode='(3'">Arab</xsl:when>
+							<xsl:when test="$scriptCode='(4'">Arab</xsl:when>
+							<xsl:when test="$scriptCode='(B'">Latn</xsl:when>
+							<xsl:when test="$scriptCode='!E'">Latn</xsl:when>
+							<xsl:when test="$scriptCode='$1'">CJK</xsl:when>
+							<xsl:when test="$scriptCode='(N'">Cyrl</xsl:when>
+							<xsl:when test="$scriptCode='(Q'">Cyrl</xsl:when>
+							<xsl:when test="$scriptCode='(2'">Hebr</xsl:when>
+							<xsl:when test="$scriptCode='(S'">Grek</xsl:when>
+						</xsl:choose>
+					</xsl:attribute>
+				<!-- SUL addition rev1.0.13 10/10/2017 -->
+				</xsl:if>
+				<!-- end SUL addition -->
 			</xsl:if>
 		</xsl:if>
 	</xsl:template>
