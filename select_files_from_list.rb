@@ -4,17 +4,17 @@
 
 require 'fileutils'
 
-# Check for existence of input and output directories
-if !Dir.exist?(inputdir)
-  puts "#{inputdir} does not exist"
-  exit
-elsif !Dir.exist?(outputdir)
-  Dir.mkdir(outputdir)
-end
-
 list_file = ARGV[0]
 input_dir = ARGV[1]
 output_dir = ARGV[2]
+
+# Check for existence of input and output directories
+if !Dir.exist?(input_dir)
+  puts "#{input_dir} does not exist"
+  exit
+elsif !Dir.exist?(output_dir)
+  Dir.mkdir(output_dir)
+end
 
 filelist = []
 
