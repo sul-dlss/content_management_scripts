@@ -59,6 +59,9 @@ metadata_in.each do |row|
         # If in skip list, output as-is
         if skip_index_list.include?(field_index)
           row_out << field
+        # Don't overwrite existing child object data
+        elsif field.to_s.strip.size > 0
+          row_out << field
         else
         # Otherwise, output data from parent
           row_out << row_parent[field_index]
