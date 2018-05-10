@@ -10,12 +10,11 @@ output_dir = ARGV[1]
 
 xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>'
 
-doc = Nokogiri(File.open("#{ARGV[0]}"))
-
-records = doc.xpath('//mods')
+doc = Nokogiri::XML(File.open("#{ARGV[0]}"))
+records = doc.xpath('//*[local-name()="mods"]')
 
 records.each do |mods|
-  druid = mods.parent['objectid']
+  druid = mods.parent['objectId']
   outfile = File.open(File.join("#{ARGV[1]}", "#{druid}.xml"), 'w')
   outfile.write("#{xml_declaration}\n")
   outfile.write(mods.to_s)
