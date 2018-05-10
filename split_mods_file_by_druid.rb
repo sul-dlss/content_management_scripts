@@ -8,6 +8,11 @@ require 'nokogiri'
 input_file = ARGV[0]
 output_dir = ARGV[1]
 
+# Create output directory if not existing
+unless Dir.exist?("#{output_dir}")
+  Dir.mkdir("#{output_dir}")
+end
+
 xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>'
 
 doc = Nokogiri::XML(File.open("#{ARGV[0]}"))
