@@ -23,16 +23,16 @@ Dependency: roo
 * No data rows without druids
 * Druids match alphanumeric pattern
 * Required fields have data
-..* Title (ti1:title)
-..* Type of resource (ty1:typeOfResource)
+  * Title (ti1:title)
+  * Type of resource (ty1:typeOfResource)
 * MODS controlled field values match specified vocabulary
-..* Title type (tiX:type)
-..* Name usage (na1:usage)
-..* Type of resource (ty1:typeOfResource)
-..* Manuscript (ty1:manuscript)
-..* All dates: keyDate, qualifier, point, encoding
-..* Issuance (orX:issuance)
-..* Subject types (snX:p1:nameType, suX:pX:type)
+  * Title type (tiX:type)
+  * Name usage (na1:usage)
+  * Type of resource (ty1:typeOfResource)
+  * Manuscript (ty1:manuscript)
+  * All dates: keyDate, qualifier, point, encoding
+  * Issuance (orX:issuance)
+  * Subject types (snX:p1:nameType, suX:pX:type)
 * No more than one keyDate is declared
 * All subject values have types
 
