@@ -156,7 +156,7 @@ type_of_resource_terms = [
   'moving image',
   'three dimensional object',
   'software, multimedia',
-  'mixed material',
+  'mixed material'
 ]
 
 # subject / suX:pX:value
@@ -172,7 +172,7 @@ title_type_terms = [
   'alternative',
   'abbreviated',
   'translated',
-  'uniform',
+  'uniform'
 ]
 
 # name type / naX:type
@@ -197,13 +197,13 @@ date_elements = [
 date_qualifier_terms = [
   'approximate',
   'inferred',
-  'questionable',
+  'questionable'
 ]
 
 # originInfo/date* point / dt:*Point
 date_point_terms = [
   'start',
-  'end',
+  'end'
 ]
 
 # Date encodings allowed in MODS
@@ -213,7 +213,7 @@ date_encoding_terms = [
   'iso8601',
   'marc',
   'edtf',
-  'temper',
+  'temper'
 ]
 
 # originInfo/issuance
@@ -228,7 +228,7 @@ issuance_terms = [
 
 # For attributes whose only valid value is "yes"
 yes_terms = [
-  'yes',
+  'yes'
 ]
 
 # Error type labels for output
