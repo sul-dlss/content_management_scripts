@@ -538,13 +538,13 @@ end
 
 # Report if key date not declared or declared multiple times
 key_dates.each do |i, d|
-  if d.compact.size > 1
+  valid_values = d.select {|x| x == "yes"}
+  if valid_values.size > 1
     log_error(@error, get_druid_or_row_number(i), "Multiple key dates declared")
-  elsif d.compact.size == 0
+  elsif valid_values.size == 0
     log_error(@warning, get_druid_or_row_number(i), "No key date declared")
   end
 end
-
 
 ## Issuance
 
