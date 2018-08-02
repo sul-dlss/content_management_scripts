@@ -379,10 +379,13 @@ end
 
 puts "Validating titles..."
 
-# Report missing values in title column
-if @header_row_terms.include?("ti1:title")
+# Report missing title in first title column
+ if @header_row_terms.include?("ti1:title")
   report_blank_values_by_header("ti1:title", @error)
-else
+end
+
+# Report absence of title columns
+if !@header_row_terms.any? {|h| h.match(/^ti\d+:title$/)}
   log_error(@error, "ti1:title", "Missing required column")
 end
 
