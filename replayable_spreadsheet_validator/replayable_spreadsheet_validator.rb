@@ -524,15 +524,6 @@ all_date_headers.each do |prefix, originInfo_instance_headers|
           log_error(@warning, id, "Unnecessary #{current_headers['date2_point']} value for blank #{current_headers['date2']}")
         end
       end
-      # Report invalid encoding term
-      if value_is_not_blank?(encoding[i])
-        unless value_is_blank?(date1[i]) || check_date_encoding(date1[i], encoding[i])
-          log_error(@error, id, "Invalid date encoding #{encoding[i]} for \"#{date1[i]}\" in #{current_headers['date1']}")
-        end
-        unless value_is_blank?(date2[i]) || check_date_encoding(date2[i], encoding[i])
-          log_error(@error, id, "Invalid date encoding #{encoding[i]} for \"#{date2[i]}\" in #{current_headers['date1']}")
-        end
-      end
       # Get key dates for comparison across date types
       if value_is_not_blank?(date1[i]) || value_is_not_blank?(date2[i])
         if key_dates.keys.include?(i)
