@@ -587,8 +587,12 @@ value_type_indexes.each do |value, type|
       log_error(@error, get_druid_or_row_number(i), "Missing subject type in #{@header_row[type]}")
     elsif value_is_blank?(v) && value_is_not_blank?(type_column[i])
       log_error(@warning, get_druid_or_row_number(i), "Subject type provided but subject is empty in #{@header_row[value]}")
-    elsif value_is_not_blank?(v) && !subject_subelements.include?(type_column[i])
-      log_error(@error, get_druid_or_row_number(i), "Invalid subject type \"#{type_column[i]}\" in #{@header_row[type]}")
+    elsif value_is_not_blank?(v)
+      if value_column[@header_row_index].match(/^su\d+:/) && !subject_subelements.include?(type_column[i])
+        log_error(@error, get_druid_or_row_number(i), "Invalid subject type \"#{type_column[i]}\" in #{@header_row[type]}")
+      elsif value_column[@header_row_index].match(/^su\d+:/) && !name_type_terms.include?(type_column[i])
+        log_error(@error, get_druid_or_row_number(i), "Invalid name type \"#{type_column[i]}\" in #{@header_row[type]}")
+      end
     end
   end
 end
