@@ -413,6 +413,7 @@ puts "Validating type of resource..."
 
 # Report missing (required) or invalid type of resource value
 type_of_resource_headers = select_by_pattern(@header_row_terms, /^ty\d+:/)
+type_of_resource_headers.delete("ty1:manuscript")
 if type_of_resource_headers.size == 0
   log_error(@warning, "ty1:typeOfResource", "Recommended column missing")
 else
