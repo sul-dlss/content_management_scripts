@@ -437,7 +437,7 @@ report_invalid_values_by_header('ty1:manuscript', yes_terms)
 puts "Validating dates and origin info..."
 
 # Get date headers present in spreadsheet and group by prefix(es)
-all_date_headers = collect_by_pattern(@header_row_terms, /^(o?r?[23]?:?dt:)/)
+all_date_headers = collect_by_pattern(@header_row_terms, /^(o?r?[23]?:?dt\d?:)/)
 key_dates = {}
 # Iterate over the set of headers for each prefix
 all_date_headers.each do |prefix, originInfo_instance_headers|
