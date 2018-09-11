@@ -498,6 +498,7 @@ all_date_headers.each do |prefix, originInfo_instance_headers|
         end
       end
     end
+
     # Report invalid values for each field in this date type
     date1.each_index do |i|
       next if i <= @header_row_index
@@ -525,7 +526,7 @@ all_date_headers.each do |prefix, originInfo_instance_headers|
         if value_is_not_blank?(key_date[i])
           log_error(@warning, id, "Unnecessary #{current_headers['key_date']} value for blank #{current_headers['date1']}")
         end
-        if value_is_not_blank?(encoding[i])
+        if value_is_not_blank?(encoding[i]) && value_is_blank?(date2[i])
           log_error(@warning, id, "Unnecessary #{current_headers['encoding']} value for blank #{current_headers['date1']}")
         end
         if value_is_not_blank?(date1_qualifier[i])
@@ -553,6 +554,16 @@ all_date_headers.each do |prefix, originInfo_instance_headers|
         if value_is_not_blank?(date3_qualifier[i])
           log_error(@warning, id, "Unnecessary #{current_headers['date3_qualifier']} value for blank #{current_headers['date3']}")
         end
+      end
+      # Report dates declared w3cdtf but invalid syntax
+      if value_is_not_blank?(date1[i]) && encoding[i] == 'w3cdtf' && /^\d\d\d\d$|^\d\d\d\d-\d\d$|^\d\d\d\d-\d\d-\d\d$/.match(date1[i]) == nil
+        log_error(@error, id, "Date #{date1[i]} in #{current_headers['date1']} does not match stated #{encoding[i]} encoding")
+      end
+      if value_is_not_blank?(date2[i]) && encoding[i] == 'w3cdtf' && /^\d\d\d\d$|^\d\d\d\d-\d\d$|^\d\d\d\d-\d\d-\d\d$/.match(date2[i]) == nil
+        log_error(@error, id, "Date #{date2[i]} in #{current_headers['date2']} does not match stated #{encoding[i]} encoding")
+      end
+      if value_is_not_blank?(date3[i]) && date3_encoding[i] == 'w3cdtf' && /^\d\d\d\d$|^\d\d\d\d-\d\d$|^\d\d\d\d-\d\d-\d\d$/.match(date3[i]) == nil
+        log_error(@error, id, "Date #{date3[i]} in #{current_headers['date3']} does not match stated #{date3_encoding[i]} encoding")
       end
       # Get key dates for comparison across date types
       if value_is_not_blank?(date1[i]) || value_is_not_blank?(date2[i])
