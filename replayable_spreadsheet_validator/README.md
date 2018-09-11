@@ -1,6 +1,6 @@
 # Replayable spreadsheet validator
 
-Validates a replayable spreadsheet (.xlsx, .xls, or .csv) against the modsulator template and checks for other problems with the metadata. If desired, an alternate template may be specified as a third argument; otherwise, the modsulator_template.xml in the same directory as the script is used.
+Validates a replayable spreadsheet (.xlsx, .xls, or .csv) against the modsulator template and checks for other problems with the metadata. If desired, an alternate template may be specified as a third argument; otherwise, the script expects a file called modsulator_template.xml to be in the same directory as the script.
 
 The validator classes issues into failures, errors, warnings, and information. Failures prevent the spreadsheet from being parsed for validation; errors mean system or schema metadata requirements are not met; warnings mean metadata recommendations are not met; information means the data suggests an error may be present, or is missing from a non-essential field.
 
