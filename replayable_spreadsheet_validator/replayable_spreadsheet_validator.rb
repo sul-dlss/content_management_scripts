@@ -120,6 +120,7 @@ def report_invalid_value(value, valid_terms, id, header)
 end
 
 # Check that date syntax matches specified encoding
+# NOT IN USE
 def check_date_encoding(date_value, encoding)
   date = date_value.to_s.strip
   case encoding
@@ -448,7 +449,7 @@ all_date_headers.each do |prefix, originInfo_instance_headers|
     # Skip to next if date type for this iteration is not in spreadsheet
     next if value_is_blank?(date_group_headers)
     # Base of date term (dateCreated, etc.) and suffixes for date headers (keyDate, etc.)
-    date_base, date1, key_date, encoding, date1_qualifier, date1_point, date2, date2_qualifier, date2_point = Array.new(9, [])
+    date_base, date1, key_date, encoding, date1_qualifier, date1_point, date2, date2_qualifier, date2_point, date3, date3_key_date, date3_encoding, date3_qualifier = Array.new(13, [])
     # Identify values under each possible header for given date type if header is present
     current_headers = {}
     date_group_headers.each do |h|
@@ -482,19 +483,35 @@ all_date_headers.each do |prefix, originInfo_instance_headers|
         when "2Point"
           date2_point = get_values_by_header(h)
           current_headers['date2_point'] = h
+        when "3"
+          date3 = get_values_by_header(h)
+          current_headers['date3'] = h
+        when "3KeyDate"
+          date3_key_date = get_values_by_header(h)
+          current_headers['date3_key_date'] = h
+        when "3Encoding"
+          date3_encoding = get_values_by_header(h)
+          current_headers['date3_encoding'] = h
+        when "3Qualifier"
+          date3_qualifier = get_values_by_header(h)
+          current_headers['date3_qualifier'] = h
         end
       end
     end
+
     # Report invalid values for each field in this date type
     date1.each_index do |i|
       next if i <= @header_row_index
       id = get_druid_or_row_number(i)
       report_invalid_value(key_date[i], yes_terms, id, current_headers['key_date'])
+      report_invalid_value(date3_key_date[i], yes_terms, id, current_headers['date3_key_date'])
       report_invalid_value(date1_qualifier[i], date_qualifier_terms, id, current_headers['date1_qualifier'])
       report_invalid_value(date2_qualifier[i], date_qualifier_terms, id, current_headers['date2_qualifier'])
+      report_invalid_value(date3_qualifier[i], date_qualifier_terms, id, current_headers['date3_qualifier'])
       report_invalid_value(date1_point[i], date_point_terms, id, current_headers['date1_point'])
       report_invalid_value(date2_point[i], date_point_terms, id, current_headers['date2_point'])
       report_invalid_value(encoding[i], date_encoding_terms, id, current_headers['encoding'])
+      report_invalid_value(date3_encoding[i], date_encoding_terms, id, current_headers['date3_encoding'])
       # Report missing date point values if two dates are present (dateCreated & dateCreated2, etc.)
       if value_is_not_blank?(date1[i]) && value_is_not_blank?(date2[i])
         if value_is_blank?(date1_point[i])
@@ -508,6 +525,9 @@ all_date_headers.each do |prefix, originInfo_instance_headers|
       if value_is_blank?(date1[i])
         if value_is_not_blank?(key_date[i])
           log_error(@warning, id, "Unnecessary #{current_headers['key_date']} value for blank #{current_headers['date1']}")
+        end
+        if value_is_not_blank?(encoding[i]) && value_is_blank?(date2[i])
+          log_error(@warning, id, "Unnecessary #{current_headers['encoding']} value for blank #{current_headers['date1']}")
         end
         if value_is_not_blank?(date1_qualifier[i])
           log_error(@warning, id, "Unnecessary #{current_headers['date1_qualifier']} value for blank #{current_headers['date1']}")
@@ -524,12 +544,40 @@ all_date_headers.each do |prefix, originInfo_instance_headers|
           log_error(@warning, id, "Unnecessary #{current_headers['date2_point']} value for blank #{current_headers['date2']}")
         end
       end
+      if value_is_blank?(date3[i])
+        if value_is_not_blank?(date3_key_date[i])
+          log_error(@warning, id, "Unnecessary #{current_headers['date3_key_date']} value for blank #{current_headers['date3']}")
+        end
+        if value_is_not_blank?(date3_encoding[i])
+          log_error(@warning, id, "Unnecessary #{current_headers['date3_encoding']} value for blank #{current_headers['date3']}")
+        end
+        if value_is_not_blank?(date3_qualifier[i])
+          log_error(@warning, id, "Unnecessary #{current_headers['date3_qualifier']} value for blank #{current_headers['date3']}")
+        end
+      end
+      # Report dates declared w3cdtf but invalid syntax
+      if value_is_not_blank?(date1[i]) && encoding[i] == 'w3cdtf' && /^\d\d\d\d$|^\d\d\d\d-\d\d$|^\d\d\d\d-\d\d-\d\d$/.match(date1[i]) == nil
+        log_error(@error, id, "Date #{date1[i]} in #{current_headers['date1']} does not match stated #{encoding[i]} encoding")
+      end
+      if value_is_not_blank?(date2[i]) && encoding[i] == 'w3cdtf' && /^\d\d\d\d$|^\d\d\d\d-\d\d$|^\d\d\d\d-\d\d-\d\d$/.match(date2[i]) == nil
+        log_error(@error, id, "Date #{date2[i]} in #{current_headers['date2']} does not match stated #{encoding[i]} encoding")
+      end
+      if value_is_not_blank?(date3[i]) && date3_encoding[i] == 'w3cdtf' && /^\d\d\d\d$|^\d\d\d\d-\d\d$|^\d\d\d\d-\d\d-\d\d$/.match(date3[i]) == nil
+        log_error(@error, id, "Date #{date3[i]} in #{current_headers['date3']} does not match stated #{date3_encoding[i]} encoding")
+      end
       # Get key dates for comparison across date types
       if value_is_not_blank?(date1[i]) || value_is_not_blank?(date2[i])
         if key_dates.keys.include?(i)
           key_dates[i] << key_date[i]
         else
           key_dates[i] = [key_date[i]]
+        end
+      end
+      if value_is_not_blank?(date3[i])
+        if key_dates.keys.include?(i)
+          key_dates[i] << date3_key_date[i]
+        else
+          key_dates[i] = [date3_key_date[i]]
         end
       end
     end
