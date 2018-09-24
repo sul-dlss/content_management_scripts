@@ -69,8 +69,8 @@ sheets_in.each_with_pagename do |name, sheet|
     end
     # Add source data to row hash incorporating {variables}
     @complexdata.each do |target, source|
-#      puts source.inspect
-      data_out[target] = source.gsub(/{[^}]*}/) {|s| row[data_fields.index(s[1..-2])]} if data_fields.include?(source)
+      # Generate data only if all variable names are also present in data field names
+      data_out[target] = source.gsub(/{[^}]*}/) {|s| row[data_fields.index(s[1..-2])]} if source.scan(/{([^}]*)}/).flatten - data_fields == []
     end
     # Delete data from row hash when required dependency is not present
     @datarules.each do |target, rule|
