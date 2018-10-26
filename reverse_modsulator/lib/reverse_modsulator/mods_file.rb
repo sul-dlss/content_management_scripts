@@ -10,7 +10,7 @@ class MODSFile
     @mods = Nokogiri::XML(File.open(filename))
   end
 
-  def process_mods_file(mods_filename)
+  def process_mods_file
     return {'ti1:title' => 'title placeholder'}
   end
 end
