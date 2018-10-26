@@ -23,5 +23,20 @@ RSpec.describe(MODSFile) do
     it "extracts paired code/text values" do
       expect(mods).to include("ro1:roleText2" => "author", "ro1:roleCode2" => "aut")
     end
+    it "extracts name subject attributes" do
+      expect(mods).to include("sn1:p1:nameType" => "personal", "sn1:p1:nm:authority" => "naf")
+    end
+    it "extracts name subject values" do
+      expect(mods).to include("sn1:p1:name" => "Cranston, Mary B.", "sn2:p1:name" => "Ochoa, Ellen")
+    end
+    it "extracts other subject attributes" do
+      expect(mods).to include("su1:authority" => "lcsh")
+    end
+    it "extracts other subject values" do
+      expect(mods).to include("su1:p1:value" => "Video arcades")
+    end
+    it "extracts other subject types" do
+      expect(mods).to include("su1:p1:type" => "topic", "su1:p2:type" => "geographic", "su1:p3:type" => "geographic", "su1:p4:type" => "genre")
+    end
   end
 end

@@ -37,6 +37,16 @@
     <geographic>Berkeley</geographic>
     <genre>Pictorial works</genre>
   </subject>
+  <subject>
+    <name type="personal" authority="naf" valueURI="http://id.loc.gov/authorities/names/n86025036">
+      <namePart>Cranston, Mary B.</namePart>
+    </name>
+  </subject>
+  <subject>
+    <name type="personal" authority="naf" valueURI="http://id.loc.gov/authorities/names/n88602946">
+      <namePart>Ochoa, Ellen</namePart>
+    </name>
+  </subject>
   <location>
     <physicalLocation>MSS PHOTO 0309 Flat Box 1</physicalLocation>
     <physicalLocation type="repository">Stanford University. Libraries.

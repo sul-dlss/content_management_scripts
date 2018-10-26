@@ -50,6 +50,7 @@ class MODSFile
           @column_hash.merge!(extract_self_value(n, template_element_nodes[i]))
         end
       end
+      @column_hash.merge!(extract_subjects)
     end
     return @column_hash
   end
@@ -69,8 +70,8 @@ class MODSFile
     child_attributes_and_values = {}
     child_element_names = get_child_element_names(mods_node)
     child_element_names.each do |name|
-      child_mods_nodes = mods_node.xpath("xmlns:#{name}")
-      child_template_nodes = template_node.xpath("xmlns:#{name}")
+      child_mods_nodes = mods_node.xpath("#{@ns}:#{name}")
+      child_template_nodes = template_node.xpath("#{@ns}:#{name}")
       child_mods_nodes.each_with_index do |n, i|
         child_attributes_and_values.merge!(extract_attributes(n, child_template_nodes[i]))
         child_attributes_and_values.merge!(extract_self_value(n, child_template_nodes[i]))
@@ -104,13 +105,65 @@ class MODSFile
     code_text_values = {}
     child_element_name = @paired_code_text_elements[mods_node.name]
     ['text', 'code'].each do |x|
-      header_code = template_node.at_xpath("xmlns:#{child_element_name}[@type='#{x}']")
-      value = mods_node.at_xpath("xmlns:#{child_element_name}[@type='#{x}']")
+      header_code = template_node.at_xpath("#{@ns}:#{child_element_name}[@type='#{x}']")
+      value = mods_node.at_xpath("#{@ns}:#{child_element_name}[@type='#{x}']")
       next if header_code == nil || value == nil
       code_text_values[header_code.content.strip.slice(2..-3)] = value.content
       code_text_values.merge!(extract_attributes(value, header_code))
     end
     return code_text_values
+  end
+
+  def extract_subjects
+    subjects = {}
+    mods_subject_name_nodes, template_subject_name_nodes = get_subject_name_nodes
+    mods_subject_other_nodes, template_subject_other_nodes = get_subject_other_nodes(mods_subject_name_nodes)
+    mods_subject_name_nodes.each_with_index do |sn, i|
+     subjects.merge!(extract_subject_values_and_attributes(sn, template_subject_name_nodes[i]))
+    end
+    mods_subject_other_nodes.each_with_index do |su, i|
+     subjects.merge!(extract_subject_values_and_attributes(su, template_subject_other_nodes[i]))
+    end
+    return subjects
+  end
+
+  def get_subject_name_nodes
+    mods_subject_name_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:name|//#{@ns}:mods/#{@ns}:subject/#{@ns}:titleInfo").map {|x| x.parent}.uniq
+    template_subject_name_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:subject").grep(/sn[\d]+:/)
+    return mods_subject_name_nodes, template_subject_name_nodes
+  end
+
+  def get_subject_other_nodes(mods_subject_name_nodes)
+    mods_subject_other_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:subject")
+    mods_subject_other_nodes.map {|x| mods_subject_other_nodes.delete(x) if mods_subject_name_nodes.include?(x)}
+    template_subject_other_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:subject").grep(/su[\d]+:/)
+    return mods_subject_other_nodes, template_subject_other_nodes
+  end
+
+  def extract_subject_values_and_attributes(mods_node, template_node)
+    return {} if mods_node == nil || template_node == nil
+    subject_values_and_attributes = {}
+    subject_values_and_attributes.merge!(extract_attributes(mods_node, template_node))
+    mods_children = mods_node.children.map {|x| x if x.content.match(/\S/)}.compact
+    template_children = template_node.children.map {|x| x if x.content.match(/\S/)}.compact
+    mods_children.each_with_index do |s, i|
+      subject_values_and_attributes.merge!(extract_subject_child_attributes_and_values(s, template_children[i]))
+    end
+    return subject_values_and_attributes
+  end
+
+  def extract_subject_child_attributes_and_values(mods_node, template_node)
+    child_attributes_and_values = {}
+    return {} if mods_node == nil || template_node == nil
+    if ['topic', 'geographic', 'temporal', 'genre'].include?(mods_node.name)
+      header_code = template_node.content.match(/s[nu][\d]+:p\d:/)[0] + "type"
+      child_attributes_and_values.merge!({header_code => mods_node.name})
+    elsif ['name', 'titleInfo'].include?(mods_node.name)
+      child_attributes_and_values.merge!(extract_child_attributes_and_values(mods_node, template_node)) #handle multiple nameParts
+    end
+    child_attributes_and_values.merge!(extract_attributes(mods_node, template_node))
+    child_attributes_and_values.merge!(extract_self_value(mods_node, template_node))
+    return child_attributes_and_values
   end
 
 end
