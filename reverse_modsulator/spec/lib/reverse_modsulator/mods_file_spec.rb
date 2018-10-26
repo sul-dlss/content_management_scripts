@@ -21,7 +21,7 @@ RSpec.describe(MODSFile) do
       expect(mods).to include("ro1:authority" => "marcrelator")
     end
     it "extracts paired code/text values" do
-      expect(mods).to include("ro1:roleText2" => "author", "ro1:roleCode2" => "aut")
+      expect(mods).to include("ro1:roleText" => "photographer", "ro1:roleText2" => "author", "ro1:roleCode2" => "aut")
     end
     it "extracts name subject attributes" do
       expect(mods).to include("sn1:p1:nameType" => "personal", "sn1:p1:nm:authority" => "naf")

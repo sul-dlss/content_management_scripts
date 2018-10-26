@@ -6,7 +6,7 @@
   <name type="personal" usage="primary" authority="naf" valueURI="http://id.loc.gov/authorities/names/n79113135">
     <namePart>Nowinski, Ira</namePart>
     <role>
-      <roleTerm type="text" authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/pht">Photographer</roleTerm>
+      <roleTerm type="text" authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/pht">photographer</roleTerm>
     </role>
     <role>
       <roleTerm type="code">aut</roleTerm>
