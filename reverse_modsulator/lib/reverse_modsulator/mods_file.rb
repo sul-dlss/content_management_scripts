@@ -7,7 +7,7 @@ class MODSFile
   # @option options [String] :template_file    The full path to the desired template file (a spreadsheet).
   def initialize(filename, template)
     @filename = filename
-    @mods = Nokogiri::XML(File.open(File.join(indir, f)))
+    @mods = Nokogiri::XML(File.open(filename)
     @template = template
   end
 
