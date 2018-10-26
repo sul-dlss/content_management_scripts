@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd" version="3.5">
+  <titleInfo>
+    <title>Berkeley</title>
+  </titleInfo>
+  <name type="personal" usage="primary" authority="naf" valueURI="http://id.loc.gov/authorities/names/n79113135">
+    <namePart>Nowinski, Ira</namePart>
+    <role>
+      <roleTerm type="text" authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/pht">Photographer</roleTerm>
+    </role>
+    <role>
+      <roleTerm type="code">aut</roleTerm>
+      <roleTerm type="text">author</roleTerm>
+    </role>
+  </name>
+  <name>
+    <namePart>Smith, Jane</namePart>
+  </name>
+  <typeOfResource>still image</typeOfResource>
+  <genre authority="aat" valueURI="http://vocab.getty.edu/aat/300046300">photographs</genre>
+  <originInfo eventType="production" displayLabel="Place of Creation">
+    <place supplied="yes">
+      <placeTerm valueURI="http://id.loc.gov/authorities/names/n79046046">Berkeley (Calif.)</placeTerm>
+    </place>
+    <dateCreated encoding="w3cdtf" keyDate="yes" point="start">1981</dateCreated>
+    <dateCreated encoding="w3cdtf" point="end">1982</dateCreated>
+  </originInfo>
+  <physicalDescription>
+    <digitalOrigin>reformatted digital</digitalOrigin>
+    <internetMediaType>image/jpeg</internetMediaType>
+    <extent>36 photographs (35mm) on 1 contact sheet</extent>
+  </physicalDescription>
+  <note>Digitized by Stanford University Libraries in 2013.</note>
+  <subject authority="lcsh">
+    <topic>Video arcades</topic>
+    <geographic>California</geographic>
+    <geographic>Berkeley</geographic>
+    <genre>Pictorial works</genre>
+  </subject>
+  <location>
+    <physicalLocation>MSS PHOTO 0309 Flat Box 1</physicalLocation>
+    <physicalLocation type="repository">Stanford University. Libraries.
+        Department of Special Collections and University Archives</physicalLocation>
+
+  </location>
+  <recordInfo>
+    <languageOfCataloging>
+      <languageTerm authority="iso639-2b">eng</languageTerm>
+    </languageOfCataloging>
+    <recordContentSource authority="marcorg">CSt</recordContentSource>
+  </recordInfo>
+</mods>
