@@ -10,10 +10,4 @@ RSpec.describe ReverseModsulator do
       expect(optional.namespace).to eq("mods")
     end
   end
-  describe "process_mods_file" do
-    mods_file = MODSFile.new(File.join(FIXTURES_DIR, "bg730rr6720.xml"))
-    it "returns default data" do
-      expect(mods_file.process_mods_file).to eq({"ti1:title" => "title placeholder"})
-    end
-  end
 end
