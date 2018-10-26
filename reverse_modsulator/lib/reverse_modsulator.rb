@@ -37,7 +37,7 @@ class ReverseModsulator
     Dir.foreach(dir) do |f|
       next unless f.match('.xml')
       druid = get_druid_from_filename(f)
-      data[druid] = process_mods_file(File.expand_path(File.join(dir, f), __FILE__))
+      data[druid] = process_mods_file(File.expand_path(File.join(dir, f), __FILE__), @template, @namespace)
       write_output(data, outfile)
     end
   end

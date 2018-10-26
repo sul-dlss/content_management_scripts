@@ -3,11 +3,12 @@ require 'reverse_modsulator'
 
 class MODSFile
 
-  attr_reader :mods
+  attr_reader :mods, :template, :ns
 
-  # @option options [String] :template_file    The full path to the desired template file (a spreadsheet).
-  def initialize(filename)
+  def initialize(filename, template, namespace)
     @mods = Nokogiri::XML(File.open(filename))
+    @template = template
+    @ns = namespace
   end
 
   def process_mods_file
