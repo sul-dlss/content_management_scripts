@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'reverse_modsulator/mods_file'
 
 class ReverseModsulator
 
