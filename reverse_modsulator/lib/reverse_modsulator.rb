@@ -63,7 +63,7 @@ class ReverseModsulator
     data.each do |druid, column_hash|
       row_out = [druid]
       headers.each do |header|
-        if column_hash.keys.include?(header)
+        if @column_hash.keys.include?(header)
           row_out = column_hash[header]
         else
           row_out << ""
