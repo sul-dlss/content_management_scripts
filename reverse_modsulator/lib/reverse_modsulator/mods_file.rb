@@ -15,7 +15,12 @@ class MODSFile
     @basic_elements = [
       'titleInfo',
       'name',
+      'typeOfResource',
       'genre',
+      'note',
+      'abstract',
+      'tableOfContents',
+      'identifer',
       'recordInfo'
     ]
 
