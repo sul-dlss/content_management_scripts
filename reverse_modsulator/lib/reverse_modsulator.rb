@@ -32,11 +32,11 @@ class ReverseModsulator
   # @param [String] dir         Input directory containing MODS XML files.
   # @param [Hash]   data        Empty hash to hold data output.
   # @param [File]   outfile     File object for output rows.
-  def process_directory(dir, data, outfile)
+  def process_directory(dir, data, template, outfile)
     Dir.foreach(dir) do |f|
       next unless f.match('.xml')
       druid = get_druid_from_filename(f)
-      data[druid] = process_mods_file(f)
+      data[druid] = process_mods_file(f, template)
       write_output(data, outfile)
     end
   end
