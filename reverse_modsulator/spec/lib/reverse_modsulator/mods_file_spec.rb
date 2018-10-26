@@ -38,5 +38,20 @@ RSpec.describe(MODSFile) do
     it "extracts other subject types" do
       expect(mods).to include("su1:p1:type" => "topic", "su1:p2:type" => "geographic", "su1:p3:type" => "geographic", "su1:p4:type" => "genre")
     end
+    it "extracts a repository" do
+      expect(mods).to include("lo:repository" => "Stanford University. Libraries. Department of Special Collections and University Archives")
+    end
+    it "extracts a physical location" do
+      expect(mods).to include("lo:physicalLocation" => "SS PHOTO 0309 Flat Box 1")
+    end
+    it "extracts a shelf locator" do
+      expect(mods).to include("lo:callNumber" => "MS 0309")
+    end
+    it "extracts a purl" do
+      expect(mods).to include("lo:purl" => "https://purl.stanford.edu")
+    end
+    it "extracts a non-purl url" do
+      expect(mods).to include("lo:url" => "http://www.example.com")
+    end
   end
 end

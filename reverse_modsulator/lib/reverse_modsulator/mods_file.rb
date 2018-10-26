@@ -50,8 +50,13 @@ class MODSFile
           @column_hash.merge!(extract_self_value(n, template_element_nodes[i]))
         end
       end
-      @column_hash.merge!(extract_subjects)
     end
+    @column_hash.merge!(extract_subjects)
+    @column_hash.merge!(extract_repository(mods, template))
+    @column_hash.merge!(extract_physicalLocation(mods, template))
+    @column_hash.merge!(extract_self_value(mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator"), template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator")))
+    @column_hash.merge!(extract_purl(mods, template))
+    @column_hash.merge!(extract_urls(mods, template))
     return @column_hash
   end
 
@@ -164,6 +169,46 @@ class MODSFile
     child_attributes_and_values.merge!(extract_attributes(mods_node, template_node))
     child_attributes_and_values.merge!(extract_self_value(mods_node, template_node))
     return child_attributes_and_values
+  end
+
+  def extract_repository(mods, template)
+    repository = {}
+    mods_repository_node = mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type='repository']")
+    return {} if mods_repository_node == nil
+    template_repository_node = template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type='repository']")
+    repository_attributes = extract_attributes(mods_repository_node, template_repository_node)
+    repository = {'lo:repository' => mods_repository_node.content}.merge!(repository_attributes)
+    return repository
+  end
+
+# TODO: xpath negation not working
+  def extract_physicalLocation(mods, template)
+    physicalLocation = {}
+    mods_non_repository_node = mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type!='repository']")
+    return {} if mods_non_repository_node == nil
+    template_non_repository_node = template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type!='repository']")
+    non_repository_attributes = extract_attributes(mods_non_repository_node, template_non_repository_node)
+    physicalLocation = {'lo:physicalLocation' => mods_non_repository_node.content}.merge!(non_repository_attributes)
+    return physicalLocation
+  end
+
+  def extract_purl(mods, template)
+    purl = {}
+    purl = mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url[@usage='primary display']")
+    return {} if purl == nil
+    return {'lo:purl' => purl.content}
+  end
+
+#TODO: xpath negation not working
+  def extract_urls(mods, template)
+    urls = {}
+    mods_urls = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url[@usage!='primary display']|//#{@ns}:mods/#{@ns}:location/#{@ns}:url[not(@usage)]")
+    template_urls = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url[@usage!='primary display']|//#{@ns}:mods/#{@ns}:location/#{@ns}:url[not(@usage)]")
+    mods_urls.each_with_index do |u, i|
+      urls.merge!(extract_attributes(u, template_urls[i]))
+      urls.merge!(extract_self_value(u, template_urls[i]))
+    end
+    return urls
   end
 
 end
