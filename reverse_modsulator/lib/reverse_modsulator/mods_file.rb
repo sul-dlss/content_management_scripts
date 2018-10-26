@@ -31,6 +31,11 @@ class MODSFile
       'recordInfo'
     ]
 
+    @paired_code_text_elements = {
+      'role' => 'roleTerm'
+    }
+
+
   end
 
   def process_mods_file
@@ -69,11 +74,11 @@ class MODSFile
       child_mods_nodes.each_with_index do |n, i|
         child_attributes_and_values.merge!(extract_attributes(n, child_template_nodes[i]))
         child_attributes_and_values.merge!(extract_self_value(n, child_template_nodes[i]))
-        # if @paired_code_text_elements.keys.include?(name)
-        #   child_attributes_and_values.merge!(extract_code_text_values_and_attributes(n, child_template_nodes[i]))
+        if @paired_code_text_elements.keys.include?(name)
+           child_attributes_and_values.merge!(extract_code_text_values_and_attributes(n, child_template_nodes[i]))
         # elsif @wrapper_elements.include?(name)
         #   child_attributes_and_values.merge!(extract_child_attributes_and_values(n, child_template_nodes[i]))
-        # end
+        end
       end
     end
     return child_attributes_and_values
@@ -93,6 +98,19 @@ class MODSFile
     return [] if mods_node == nil
     child_element_names = mods_node.children.map {|x| x.name}.uniq.reject {|y| y == 'text'}.compact
     return child_element_names
+  end
+
+  def extract_code_text_values_and_attributes(mods_node, template_node)
+    code_text_values = {}
+    child_element_name = @paired_code_text_elements[mods_node.name]
+    ['text', 'code'].each do |x|
+      header_code = template_node.at_xpath("xmlns:#{child_element_name}[@type='#{x}']")
+      value = mods_node.at_xpath("xmlns:#{child_element_name}[@type='#{x}']")
+      next if header_code == nil || value == nil
+      code_text_values[header_code.content.strip.slice(2..-3)] = value.content
+      code_text_values.merge!(extract_attributes(value, header_code))
+    end
+    return code_text_values
   end
 
 end

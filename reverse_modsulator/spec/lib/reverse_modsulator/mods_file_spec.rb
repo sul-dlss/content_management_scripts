@@ -17,5 +17,11 @@ RSpec.describe(MODSFile) do
     it "extracts child values" do
       expect(mods).to include("na1:namePart" => "Nowinski, Ira", "na2:namePart" => "Smith, Jane")
     end
+    it "extracted paired code/text attributes" do
+      expect(mods).to include("ro1:authority" => "marcrelator")
+    end
+    it "extracted paired code/text values" do
+      expect(mods).to include("ro1:roleText2" => "author", "ro1:roleCode2" => "aut")
+    end
   end
 end
