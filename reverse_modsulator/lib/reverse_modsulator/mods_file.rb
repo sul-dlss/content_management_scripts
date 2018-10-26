@@ -1,6 +1,6 @@
 require 'nokogiri'
 
-Class MODSFile
+class MODSFile
 
   attr_reader :filename, :template
 
@@ -14,3 +14,4 @@ Class MODSFile
   def process_mods_file(mods_filename)
     return {'ti1:title' => 'title placeholder'}
   end
+end
