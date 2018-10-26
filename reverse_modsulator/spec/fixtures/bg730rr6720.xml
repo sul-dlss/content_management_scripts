@@ -44,9 +44,6 @@
 
   </location>
   <recordInfo>
-    <languageOfCataloging>
-      <languageTerm authority="iso639-2b">eng</languageTerm>
-    </languageOfCataloging>
     <recordContentSource authority="marcorg">CSt</recordContentSource>
   </recordInfo>
 </mods>
