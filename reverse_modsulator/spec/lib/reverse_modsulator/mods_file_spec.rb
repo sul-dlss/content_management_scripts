@@ -68,5 +68,12 @@ RSpec.describe(MODSFile) do
       expect(mods).to include("rc:languageOfCataloging" => "eng")
       expect(mods).to include("rc:langAuthority" => "iso639-2b")
     end
+    it "extracts a script term from recordInfo" do
+      expect(mods).to include("rc:scriptOfCatalogingTerm" => "Latin")
+    end
+    it "extracts a script code and attributes from recordInfo" do
+      expect(mods).to include("rc:scriptOfCatalogingCode" => "Latn")
+      expect(mods).to include("rc:scriptAuthority" => "iso15924")
+    end
   end
 end

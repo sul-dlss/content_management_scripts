@@ -65,6 +65,8 @@
     <languageOfCataloging>
       <languageTerm type="text" authority="iso639-2b">English</languageTerm>
       <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <scriptTerm type="text">Latin</scriptTerm>
+      <scriptTerm type="code" authority="iso15924">Latn</scriptTerm>
     </languageOfCataloging>
     <recordContentSource authority="marcorg">CSt</recordContentSource>
   </recordInfo>

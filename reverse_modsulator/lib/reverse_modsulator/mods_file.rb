@@ -31,16 +31,15 @@ class MODSFile
       'role',
       'language',
       'recordInfo',
-      'languageOfCataloging'
+      'languageOfCataloging',
     ]
 
     @paired_code_text_elements = {
-      'role' => 'roleTerm',
-      'language' => 'languageTerm',
-      'languageOfCataloging' => 'languageTerm'
+      'role' => ['roleTerm'],
+      'language' => ['languageTerm'],
+      'languageOfCataloging' => ['languageTerm', 'scriptTerm']
     }
 
-# language - top and recordInfo
 # originInfo
 # relatedItem
 
@@ -116,13 +115,15 @@ class MODSFile
 
   def extract_code_text_values_and_attributes(mods_node, template_node)
     code_text_values = {}
-    child_element_name = @paired_code_text_elements[mods_node.name]
-    ['text', 'code'].each do |x|
-      header_code = template_node.at_xpath("#{@ns}:#{child_element_name}[@type='#{x}']")
-      value = mods_node.at_xpath("#{@ns}:#{child_element_name}[@type='#{x}']")
-      next if header_code == nil || value == nil
-      code_text_values[header_code.content.strip.slice(2..-3)] = value.content
-      code_text_values.merge!(extract_attributes(value, header_code))
+    child_element_names = @paired_code_text_elements[mods_node.name]
+    child_element_names.each do |n|
+      ['text', 'code'].each do |x|
+        header_code = template_node.at_xpath("#{@ns}:#{n}[@type='#{x}']")
+        value = mods_node.at_xpath("#{@ns}:#{n}[@type='#{x}']")
+        next if header_code == nil || value == nil
+        code_text_values[header_code.content.strip.slice(2..-3)] = value.content
+        code_text_values.merge!(extract_attributes(value, header_code))
+      end
     end
     return code_text_values
   end
