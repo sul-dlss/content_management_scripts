@@ -42,7 +42,7 @@ RSpec.describe(MODSFile) do
       expect(mods).to include("lo:repository" => "Stanford University. Libraries. Department of Special Collections and University Archives")
     end
     it "extracts a physical location" do
-      expect(mods).to include("lo:physicalLocation" => "SS PHOTO 0309 Flat Box 1")
+      expect(mods).to include("lo:physicalLocation" => "MSS PHOTO 0309 Flat Box 1")
     end
     it "extracts a shelf locator" do
       expect(mods).to include("lo:callNumber" => "MS 0309")
