@@ -66,6 +66,28 @@
     <url usage="primary display">https://purl.stanford.edu</url>
     <url>http://www.example.com</url>
   </location>
+  <relatedItem type="host" displayLabel="Case">
+    <titleInfo>
+      <title>The Prosecutor v. Rusdin Maubere</title>
+    </titleInfo>
+    <name type="corporate" authority="naf" authorityURI="http://id.loc.gov/authorities/names" valueURI="http://id.loc.gov/authorities/names/no2004000863">
+      <namePart>Timor-Leste. District Court (Dili). Special Panels for Serious Crimes</namePart>
+      <role>
+        <roleTerm type="text">Issuing body</roleTerm>
+      </role>
+    </name>
+    <identifier type="case number" displayLabel="Case number">23/2003</identifier>
+    <identifier type="alternate case number" displayLabel="Alternate case number">LI-109-99-SC</identifier>
+  </relatedItem>
+  <relatedItem type="host">
+    <titleInfo>
+      <title>Trial Records of the Special Panels for Serious Crimes (SPSC) in East Timor</title>
+    </titleInfo>
+    <location>
+      <url>https://purl.stanford.edu/kh392jb5994</url>
+    </location>
+    <typeOfResource collection="yes"/>
+  </relatedItem>
   <recordInfo>
     <languageOfCataloging>
       <languageTerm type="text" authority="iso639-2b">English</languageTerm>

@@ -44,33 +44,59 @@ class MODSFile
       'languageOfCataloging' => ['languageTerm', 'scriptTerm']
     }
 
-# hierarchical geographic subjects
 # relatedItem
 # geo extension
 
   end
 
   def process_mods_file
+    @column_hash = process_mods_elements(@mods, @template, "//#{@ns}:mods/")
+    # @basic_elements.each do |element|
+    #   mods_element_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:#{element}")
+    #   template_element_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:#{element}")
+    #   mods_element_nodes.each_with_index do |n, i|
+    #     @column_hash.merge!(extract_attributes(n, template_element_nodes[i]))
+    #     # TODO: check element type instead of relying on list
+    #     if @wrapper_elements.include?(element)
+    #       @column_hash.merge!(extract_child_attributes_and_values(n, template_element_nodes[i]))
+    #     else
+    #       @column_hash.merge!(extract_self_value(n, template_element_nodes[i]))
+    #     end
+    #   end
+    # end
+    # @column_hash.merge!(extract_subjects)
+    # @column_hash.merge!(extract_repository(mods, template))
+    # @column_hash.merge!(extract_physicalLocation(mods))
+    # @column_hash.merge!(extract_self_value(mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator"), template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator")))
+    # @column_hash.merge!(extract_purl(mods))
+    # @column_hash.merge!(extract_url(mods))
+    # @column_hash.merge!(extract_relatedItem(mods, template))
+    return @column_hash
+  end
+
+  def process_mods_elements(mods, template, xpath_root)
+    output = {}
     @basic_elements.each do |element|
-      mods_element_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:#{element}")
-      template_element_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:#{element}")
+      mods_element_nodes = mods.xpath("#{xpath_root}#{@ns}:#{element}")
+      template_element_nodes = template.xpath("#{xpath_root}#{@ns}:#{element}")
       mods_element_nodes.each_with_index do |n, i|
-        @column_hash.merge!(extract_attributes(n, template_element_nodes[i]))
+        output.merge!(extract_attributes(n, template_element_nodes[i]))
         # TODO: check element type instead of relying on list
         if @wrapper_elements.include?(element)
-          @column_hash.merge!(extract_child_attributes_and_values(n, template_element_nodes[i]))
+          output.merge!(extract_child_attributes_and_values(n, template_element_nodes[i]))
         else
-          @column_hash.merge!(extract_self_value(n, template_element_nodes[i]))
+          output.merge!(extract_self_value(n, template_element_nodes[i]))
         end
       end
     end
-    @column_hash.merge!(extract_subjects)
-    @column_hash.merge!(extract_repository(mods, template))
-    @column_hash.merge!(extract_physicalLocation(mods))
-    @column_hash.merge!(extract_self_value(mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator"), template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator")))
-    @column_hash.merge!(extract_purl(mods))
-    @column_hash.merge!(extract_url(mods))
-    return @column_hash
+    output.merge!(extract_subjects)
+    output.merge!(extract_repository(mods, template))
+    output.merge!(extract_physicalLocation(mods))
+    output.merge!(extract_self_value(mods.at_xpath("#{xpath_root}#{@ns}:location/#{@ns}:shelfLocator"), template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator")))
+    output.merge!(extract_purl(mods))
+    output.merge!(extract_url(mods))
+    # @column_hash.merge!(extract_relatedItem(mods, template))
+    return output
   end
 
   def extract_attributes(mods_node, template_node)
@@ -92,6 +118,8 @@ class MODSFile
       child_template_nodes = template_node.xpath("#{@ns}:#{name}")
       child_mods_nodes.each_with_index do |n, i|
         child_attributes_and_values.merge!(extract_attributes(n, child_template_nodes[i]))
+        # TODO: extract self value only if not paired; check whether this
+        # leaves any grandchildren unaccounted for
         child_attributes_and_values.merge!(extract_self_value(n, child_template_nodes[i]))
         if @paired_code_text_elements.keys.include?(name)
            child_attributes_and_values.merge!(extract_code_text_values_and_attributes(n, child_template_nodes[i]))
@@ -236,5 +264,17 @@ class MODSFile
     end
     return url
   end
-
+  #
+  # def extract_relatedItem(mods, template)
+  #   relatedItems = {}
+  #   mods_relatedItem_nodes = mods.xpath("//#{@ns}:mods/#{@ns}:relatedItem")
+  #   return {} if mods_relatedItem_nodes == nil
+  #   template_relatedItem_nodes = template.xpath("//#{@ns}:mods/#{@ns}:relatedItem")
+  #   mods_relatedItem_nodes.each_with_index do |ri, i|
+  #     next if ri.at_xpath("#{@ns}:typeOfResource[@collection='yes']") != nil
+  #     relatedItems.merge!(extract_attributes(ri, template_relatedItem_nodes[i]))
+  #     relatedItems.merge!(process_mods_file(ri, template_relatedItem_nodes[i]))
+  #   end
+  #   return relatedItems
+  # end
 end
