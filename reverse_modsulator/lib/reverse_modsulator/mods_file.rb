@@ -89,7 +89,11 @@ class MODSFile
         end
       end
     end
-    output.merge!(extract_subjects)
+    mods_subject_nodes = mods.xpath("#{xpath_root}#{@ns}:subject")
+    template_subject_nodes = template.xpath("#{xpath_root}#{@ns}:subject")
+    output.merge!(extract_subjects(mods_subject_nodes, template_subject_nodes))
+    mods_location_node = mods.at_xpath("#{xpath_root}#{ns}:location")
+#    output.merge!(extract_locations(xpath_root))
     output.merge!(extract_repository(mods, template))
     output.merge!(extract_physicalLocation(mods))
     output.merge!(extract_self_value(mods.at_xpath("#{xpath_root}#{@ns}:location/#{@ns}:shelfLocator"), template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator")))
@@ -162,30 +166,30 @@ class MODSFile
     return code_text_values
   end
 
-  def extract_subjects
+  def extract_subjects(mods_subject_nodes, template_subject_nodes)
     subjects = {}
-    mods_subject_name_nodes, template_subject_name_nodes = get_subject_name_nodes
-    mods_subject_other_nodes, template_subject_other_nodes = get_subject_other_nodes(mods_subject_name_nodes)
+    mods_subject_name_nodes, template_subject_name_nodes = get_subject_name_nodes(mods_subject_nodes, template_subject_nodes)
+    mods_subject_other_nodes, template_subject_other_nodes = get_subject_other_nodes(mods_subject_nodes, template_subject_nodes, mods_subject_name_nodes)
     mods_subject_name_nodes.each_with_index do |sn, i|
      subjects.merge!(extract_subject_values_and_attributes(sn, template_subject_name_nodes[i]))
     end
     mods_subject_other_nodes.each_with_index do |su, i|
      subjects.merge!(extract_subject_values_and_attributes(su, template_subject_other_nodes[i]))
     end
-    subjects.merge!(extract_other_geo_subjects)
+    subjects.merge!(extract_other_geo_subjects(mods_subject_nodes, template_subject_nodes))
     return subjects
   end
 
-  def get_subject_name_nodes
-    mods_subject_name_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:name|//#{@ns}:mods/#{@ns}:subject/#{@ns}:titleInfo").map {|x| x.parent}.uniq
-    template_subject_name_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:subject").grep(/sn[\d]+:/)
+  def get_subject_name_nodes(mods_subject_nodes, template_subject_nodes)
+    mods_subject_name_nodes = mods_subject_nodes.xpath("#{@ns}:name|#{@ns}:titleInfo").map {|x| x.parent}.uniq
+    template_subject_name_nodes = template_subject_nodes.grep(/sn[\d]+:/)
     return mods_subject_name_nodes, template_subject_name_nodes
   end
 
-  def get_subject_other_nodes(mods_subject_name_nodes)
-    mods_subject_other_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:subject")
+  def get_subject_other_nodes(mods_subject_nodes, template_subject_nodes, mods_subject_name_nodes)
+    mods_subject_other_nodes = mods_subject_nodes
     mods_subject_other_nodes.map {|x| mods_subject_other_nodes.delete(x) if mods_subject_name_nodes.include?(x)}
-    template_subject_other_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:subject").grep(/su[\d]+:/)
+    template_subject_other_nodes = template_subject_nodes.grep(/su[\d]+:/)
     return mods_subject_other_nodes, template_subject_other_nodes
   end
 
@@ -215,12 +219,12 @@ class MODSFile
     return child_attributes_and_values
   end
 
-  def extract_other_geo_subjects
+  def extract_other_geo_subjects(mods_subject_nodes, template_subject_nodes)
     geo_subjects = {}
     ['cartographics', 'hierarchicalGeographic'].each do |gs|
-      mods_subject_geo_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:#{gs}")
+      mods_subject_geo_nodes = mods_subject_nodes.xpath("#{@ns}:#{gs}")
       next if mods_subject_geo_nodes == nil
-      template_subject_geo_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:#{gs}")
+      template_subject_geo_nodes = template_subject_nodes.xpath("#{@ns}:#{gs}")
       mods_subject_geo_nodes.each_with_index do |c, i|
         geo_subjects.merge!(extract_child_attributes_and_values(c, template_subject_geo_nodes[i]))
       end
@@ -230,7 +234,7 @@ class MODSFile
 
   def extract_repository(mods, template)
     repository = {}
-    mods_repository_node = mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type='repository']")
+    mods_repository_node = @mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type='repository']")
     return {} if mods_repository_node == nil
     template_repository_node = template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type='repository']")
     repository_attributes = extract_attributes(mods_repository_node, template_repository_node)
