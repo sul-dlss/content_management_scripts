@@ -87,5 +87,8 @@ RSpec.describe(MODSFile) do
       expect(mods).to include("dt:dateCreatedKeyDate" => "yes")
       expect(mods).to include("dt:dateCreated2" => "1982")
     end
+    it "extracts cartographic subjects" do
+      expect(mods).to include("sc1:scale" => "Scale")
+    end
   end
 end

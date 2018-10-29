@@ -44,7 +44,6 @@ class MODSFile
       'languageOfCataloging' => ['languageTerm', 'scriptTerm']
     }
 
-# originInfo
 # cartographic and hierarchical geographic subjects
 # relatedItem
 # geo extension
@@ -57,6 +56,7 @@ class MODSFile
       template_element_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:#{element}")
       mods_element_nodes.each_with_index do |n, i|
         @column_hash.merge!(extract_attributes(n, template_element_nodes[i]))
+        # TODO: check element type instead of relying on list
         if @wrapper_elements.include?(element)
           @column_hash.merge!(extract_child_attributes_and_values(n, template_element_nodes[i]))
         else
@@ -144,6 +144,7 @@ class MODSFile
     mods_subject_other_nodes.each_with_index do |su, i|
      subjects.merge!(extract_subject_values_and_attributes(su, template_subject_other_nodes[i]))
     end
+    subjects.merge!(extract_cartographic_subjects)
     return subjects
   end
 
@@ -184,6 +185,17 @@ class MODSFile
     child_attributes_and_values.merge!(extract_attributes(mods_node, template_node))
     child_attributes_and_values.merge!(extract_self_value(mods_node, template_node))
     return child_attributes_and_values
+  end
+
+  def extract_cartographic_subjects
+    cartographic_subjects = {}
+    mods_subject_cartographic_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:cartographics")
+    return {} if mods_subject_cartographic_nodes == nil
+    template_subject_cartographic_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:cartographics")
+    mods_subject_cartographic_nodes.each_with_index do |c, i|
+      cartographic_subjects.merge!(extract_child_attributes_and_values(c, template_subject_cartographic_nodes[i]))
+    end
+    return cartographic_subjects
   end
 
   def extract_repository(mods, template)

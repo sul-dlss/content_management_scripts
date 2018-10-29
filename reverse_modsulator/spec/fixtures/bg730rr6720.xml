@@ -54,6 +54,11 @@
       <namePart>Ochoa, Ellen</namePart>
     </name>
   </subject>
+  <subject>
+    <cartographics>
+      <scale>Scale</scale>
+    </cartographics>
+  </subject>
   <location>
     <physicalLocation>MSS PHOTO 0309 Flat Box 1</physicalLocation>
     <physicalLocation type="repository">Stanford University. Libraries. Department of Special Collections and University Archives</physicalLocation>
