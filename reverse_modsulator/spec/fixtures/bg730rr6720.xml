@@ -30,6 +30,13 @@
     <internetMediaType>image/jpeg</internetMediaType>
     <extent>36 photographs (35mm) on 1 contact sheet</extent>
   </physicalDescription>
+  <language>
+    <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+    <languageTerm type="text" authority="iso639-2b">English</languageTerm>
+  </language>
+  <language>
+    <languageTerm type="code" authority="iso639-2b">rus</languageTerm>
+  </language>
   <note>Digitized by Stanford University Libraries in 2013.</note>
   <subject authority="lcsh">
     <topic>Video arcades</topic>

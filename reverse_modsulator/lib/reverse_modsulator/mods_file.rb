@@ -17,6 +17,7 @@ class MODSFile
       'name',
       'typeOfResource',
       'genre',
+      'language',
       'note',
       'abstract',
       'tableOfContents',
@@ -28,13 +29,18 @@ class MODSFile
       'titleInfo',
       'name',
       'role',
+      'language',
       'recordInfo'
     ]
 
     @paired_code_text_elements = {
-      'role' => 'roleTerm'
+      'role' => 'roleTerm',
+      'language' => 'languageTerm'
     }
 
+# language - top and recordInfo
+# originInfo
+# relatedItem
 
   end
 
