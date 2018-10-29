@@ -55,8 +55,8 @@ class MODSFile
     @column_hash.merge!(extract_repository(mods, template))
     @column_hash.merge!(extract_physicalLocation(mods))
     @column_hash.merge!(extract_self_value(mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator"), template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator")))
-    @column_hash.merge!(extract_purl(mods, template))
-    @column_hash.merge!(extract_urls(mods, template))
+    @column_hash.merge!(extract_purl(mods))
+    @column_hash.merge!(extract_url(mods))
     return @column_hash
   end
 
@@ -195,23 +195,21 @@ class MODSFile
     return physicalLocation
   end
 
-  def extract_purl(mods, template)
+  def extract_purl(mods)
     purl = {}
     purl = mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url[@usage='primary display']")
     return {} if purl == nil
     return {'lo:purl' => purl.content}
   end
 
-#TODO: xpath negation not working
-  def extract_urls(mods, template)
-    urls = {}
-    mods_urls = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url[@usage!='primary display']|//#{@ns}:mods/#{@ns}:location/#{@ns}:url[not(@usage)]")
-    template_urls = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url[@usage!='primary display']|//#{@ns}:mods/#{@ns}:location/#{@ns}:url[not(@usage)]")
-    mods_urls.each_with_index do |u, i|
-      urls.merge!(extract_attributes(u, template_urls[i]))
-      urls.merge!(extract_self_value(u, template_urls[i]))
-    end
-    return urls
+  def extract_url(mods)
+    url = {}
+    mods_urls = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url")
+    mods_urls.each do |u|
+      url.merge!({'lo:url' => u.content}) if u['usage'] != 'primary display'
+      url.merge!({'lo:url:displayLabel' => u['displayLabel']}) if u['displayLabel'] != nil
+    end    
+    return url
   end
 
 end
