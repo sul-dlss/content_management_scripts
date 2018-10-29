@@ -44,7 +44,7 @@ class MODSFile
       'languageOfCataloging' => ['languageTerm', 'scriptTerm']
     }
 
-# cartographic and hierarchical geographic subjects
+# hierarchical geographic subjects
 # relatedItem
 # geo extension
 
@@ -144,7 +144,7 @@ class MODSFile
     mods_subject_other_nodes.each_with_index do |su, i|
      subjects.merge!(extract_subject_values_and_attributes(su, template_subject_other_nodes[i]))
     end
-    subjects.merge!(extract_cartographic_subjects)
+    subjects.merge!(extract_other_geo_subjects)
     return subjects
   end
 
@@ -187,15 +187,17 @@ class MODSFile
     return child_attributes_and_values
   end
 
-  def extract_cartographic_subjects
-    cartographic_subjects = {}
-    mods_subject_cartographic_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:cartographics")
-    return {} if mods_subject_cartographic_nodes == nil
-    template_subject_cartographic_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:cartographics")
-    mods_subject_cartographic_nodes.each_with_index do |c, i|
-      cartographic_subjects.merge!(extract_child_attributes_and_values(c, template_subject_cartographic_nodes[i]))
+  def extract_other_geo_subjects
+    geo_subjects = {}
+    ['cartographics', 'hierarchicalGeographic'].each do |gs|
+      mods_subject_geo_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:#{gs}")
+      next if mods_subject_geo_nodes == nil
+      template_subject_geo_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:subject/#{@ns}:#{gs}")
+      mods_subject_geo_nodes.each_with_index do |c, i|
+        geo_subjects.merge!(extract_child_attributes_and_values(c, template_subject_geo_nodes[i]))
+      end
     end
-    return cartographic_subjects
+    return geo_subjects
   end
 
   def extract_repository(mods, template)
