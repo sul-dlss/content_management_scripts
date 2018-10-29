@@ -75,5 +75,17 @@ RSpec.describe(MODSFile) do
       expect(mods).to include("rc:scriptOfCatalogingCode" => "Latn")
       expect(mods).to include("rc:scriptAuthority" => "iso15924")
     end
+    it "extracts originInfo attributes" do
+      expect(mods).to include("or:eventType" => "production")
+    end
+    it "extracts a place and attributes" do
+      expect(mods).to include("pl:placeText" => "Berkeley (Calif.)")
+      expect(mods).to include("pl:valueURI" => "http://id.loc.gov/authorities/names/n79046046")
+    end
+    it "extracts dates and attributes" do
+      expect(mods).to include("dt:dateCreated" => "1981")
+      expect(mods).to include("dt:dateCreatedKeyDate" => "yes")
+      expect(mods).to include("dt:dateCreated2" => "1982")
+    end
   end
 end

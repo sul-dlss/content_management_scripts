@@ -20,7 +20,7 @@
   <genre authority="aat" valueURI="http://vocab.getty.edu/aat/300046300">photographs</genre>
   <originInfo eventType="production" displayLabel="Place of Creation">
     <place supplied="yes">
-      <placeTerm valueURI="http://id.loc.gov/authorities/names/n79046046">Berkeley (Calif.)</placeTerm>
+      <placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n79046046">Berkeley (Calif.)</placeTerm>
     </place>
     <dateCreated encoding="w3cdtf" keyDate="yes" point="start">1981</dateCreated>
     <dateCreated encoding="w3cdtf" point="end">1982</dateCreated>

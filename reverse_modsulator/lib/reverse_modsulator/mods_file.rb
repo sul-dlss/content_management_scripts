@@ -17,6 +17,7 @@ class MODSFile
       'name',
       'typeOfResource',
       'genre',
+      'originInfo',
       'language',
       'note',
       'abstract',
@@ -29,6 +30,8 @@ class MODSFile
       'titleInfo',
       'name',
       'role',
+      'originInfo',
+      'place',
       'language',
       'recordInfo',
       'languageOfCataloging',
@@ -37,11 +40,14 @@ class MODSFile
     @paired_code_text_elements = {
       'role' => ['roleTerm'],
       'language' => ['languageTerm'],
+      'place' => ['placeTerm'],
       'languageOfCataloging' => ['languageTerm', 'scriptTerm']
     }
 
 # originInfo
+# cartographic and hierarchical geographic subjects
 # relatedItem
+# geo extension
 
   end
 
