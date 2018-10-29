@@ -30,12 +30,14 @@ class MODSFile
       'name',
       'role',
       'language',
-      'recordInfo'
+      'recordInfo',
+      'languageOfCataloging'
     ]
 
     @paired_code_text_elements = {
       'role' => 'roleTerm',
-      'language' => 'languageTerm'
+      'language' => 'languageTerm',
+      'languageOfCataloging' => 'languageTerm'
     }
 
 # language - top and recordInfo

@@ -62,6 +62,10 @@
     <url>http://www.example.com</url>
   </location>
   <recordInfo>
+    <languageOfCataloging>
+      <languageTerm type="text" authority="iso639-2b">English</languageTerm>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+    </languageOfCataloging>
     <recordContentSource authority="marcorg">CSt</recordContentSource>
   </recordInfo>
 </mods>

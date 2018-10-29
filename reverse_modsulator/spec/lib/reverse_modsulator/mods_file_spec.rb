@@ -53,11 +53,20 @@ RSpec.describe(MODSFile) do
     it "extracts a non-purl url" do
       expect(mods).to include("lo:url" => "http://www.example.com")
     end
-    it "extracts a language term" do
+    it "extracts a language term and attributes" do
       expect(mods).to include("la1:text" => "English")
+      expect(mods).to include("la1:authority" => "iso639-2b")
     end
-    it "extracts a language code" do
+    it "extracts a language code and attributes" do
       expect(mods).to include("la2:code" => "rus")
+      expect(mods).to include("la2:authority" => "iso639-2b")
+    end
+    it "extracts a language term from recordInfo" do
+      expect(mods).to include("rc:languageOfCatalogingTerm" => "English")
+    end
+    it "extracts a language code and attributes from recordInfo" do
+      expect(mods).to include("rc:languageOfCataloging" => "eng")
+      expect(mods).to include("rc:langAuthority" => "iso639-2b")
     end
   end
 end
