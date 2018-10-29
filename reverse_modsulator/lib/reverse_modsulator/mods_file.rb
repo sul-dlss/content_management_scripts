@@ -185,13 +185,9 @@ class MODSFile
     physicalLocation = {}
     mods_physicalLocation_nodes = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation")
     return {} if mods_physicalLocation_nodes == nil
-    location = []
     mods_physicalLocation_nodes.each do |p|
-      if p['type'] != 'repository'
-        location << p.content
-      end
+      physicalLocation.merge!({'lo:physicalLocation' => p.content}) if p['type'] != 'repository'
     end
-    physicalLocation.merge!({'lo:physicalLocation' => location.join("|")}) unless location.empty?
     return physicalLocation
   end
 
@@ -208,7 +204,7 @@ class MODSFile
     mods_urls.each do |u|
       url.merge!({'lo:url' => u.content}) if u['usage'] != 'primary display'
       url.merge!({'lo:url:displayLabel' => u['displayLabel']}) if u['displayLabel'] != nil
-    end    
+    end
     return url
   end
 
