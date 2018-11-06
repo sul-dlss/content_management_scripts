@@ -29,13 +29,16 @@ RSpec.describe(MODSFile) do
     it "extracts name subject values" do
       expect(mods).to include("sn1:p1:name" => "Cranston, Mary B.", "sn2:p1:name" => "Ochoa, Ellen")
     end
+    it "extracts only name subjects as name subject values" do
+      expect(mods.keys.map {|k| k if k.start_with?('sn')}.compact.size).to eq(10)
+    end
     it "extracts other subject attributes" do
       expect(mods).to include("su1:authority" => "lcsh")
     end
     it "extracts other subject values" do
       expect(mods).to include("su1:p1:value" => "Video arcades")
     end
-    it "extracts only subjects as other subject values" do
+    it "extracts only other subjects as other subject values" do
       expect(mods.keys.map {|k| k if k.start_with?('su')}.compact.size).to eq(9)
     end
     it "extracts other subject types" do
@@ -105,6 +108,9 @@ RSpec.describe(MODSFile) do
     it "does not extract collections as related items" do
       expect(mods).not_to include("ri2:title" => "Trial Records of the Special Panels for Serious Crimes (SPSC) in East Timor")
     end
-#    puts mods.inspect
+    it "does not include brackets or newlines in header keys" do
+      expect(mods.keys.map {|k| k if k.match(/[\[\]\n]/)}.compact.size).to eq(0)
+    end
+    puts mods.inspect
   end
 end
