@@ -45,7 +45,7 @@ class MODSFile
       'languageOfCataloging' => ['languageTerm', 'scriptTerm']
     }
 
-# geo extension
+# not included: part, geo extension
 
   end
 
