@@ -1659,6 +1659,7 @@
         <roleTerm type="text" authority="[[ri1:ro1:authority2]]" authorityURI="[[ri1:ro1:authorityURI2]]" valueURI="[[ri1:ro1:valueURI2]]">[[ri1:ro1:roleText2]]</roleTerm>
       </role>
     </name>
+    <typeOfResource collection="[[ri1:ty1:collection]]">[[ri1:ty1:typeOfResource]]</typeOfResource>
     <originInfo>
       <place>
         <placeTerm type="code" authority="[[ri1:pl:authority]]" authorityURI="[[ri1:pl:authorityURI]]" valueURI="[[ri1:pl:valueURI]]">[[ri1:pl:placeCode]]</placeTerm>
@@ -1712,6 +1713,7 @@
         <roleTerm type="text" authority="[[ri2:ro1:authority2]]" authorityURI="[[ri2:ro1:authorityURI2]]" valueURI="[[ri2:ro1:valueURI2]]">[[ri2:ro1:roleText2]]</roleTerm>
       </role>
     </name>
+    <typeOfResource collection="[[ri2:ty1:collection]]">[[ri2:ty1:typeOfResource]]</typeOfResource>
     <originInfo>
       <place>
         <placeTerm type="code" authority="[[ri2:pl:authority]]" authorityURI="[[ri2:pl:authorityURI]]" valueURI="[[ri2:pl:valueURI]]">[[ri2:pl:placeCode]]</placeTerm>
@@ -1765,6 +1767,7 @@
         <roleTerm type="text" authority="[[ri3:ro1:authority2]]" authorityURI="[[ri3:ro1:authorityURI2]]" valueURI="[[ri3:ro1:valueURI2]]">[[ri3:ro1:roleText2]]</roleTerm>
       </role>
     </name>
+    <typeOfResource collection="[[ri3:ty1:collection]]">[[ri3:ty1:typeOfResource]]</typeOfResource>
     <originInfo>
       <place>
         <placeTerm type="code" authority="[[ri3:pl:authority]]" authorityURI="[[ri3:pl:authorityURI]]" valueURI="[[ri3:pl:valueURI]]">[[ri3:pl:placeCode]]</placeTerm>

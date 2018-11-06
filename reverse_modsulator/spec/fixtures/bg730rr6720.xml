@@ -16,7 +16,7 @@
   <name>
     <namePart>Smith, Jane</namePart>
   </name>
-  <typeOfResource>still image</typeOfResource>
+  <typeOfResource manuscript="yes">still image</typeOfResource>
   <genre authority="aat" valueURI="http://vocab.getty.edu/aat/300046300">photographs</genre>
   <originInfo eventType="production" displayLabel="Place of Creation">
     <place supplied="yes">
@@ -38,6 +38,7 @@
     <languageTerm type="code" authority="iso639-2b">rus</languageTerm>
   </language>
   <note>Digitized by Stanford University Libraries in 2013.</note>
+  <abstract>This is an abstract</abstract>
   <subject authority="lcsh">
     <topic>Video arcades</topic>
     <geographic>California</geographic>
@@ -66,6 +67,7 @@
     <url usage="primary display">https://purl.stanford.edu</url>
     <url>http://www.example.com</url>
   </location>
+  <identifier>top level identifier</identifier>
   <relatedItem type="host" displayLabel="Case">
     <titleInfo>
       <title>The Prosecutor v. Rusdin Maubere</title>
@@ -76,6 +78,7 @@
         <roleTerm type="text">Issuing body</roleTerm>
       </role>
     </name>
+    <typeOfResource manuscript="yes">text</text>
     <identifier type="case number" displayLabel="Case number">23/2003</identifier>
     <identifier type="alternate case number" displayLabel="Alternate case number">LI-109-99-SC</identifier>
   </relatedItem>

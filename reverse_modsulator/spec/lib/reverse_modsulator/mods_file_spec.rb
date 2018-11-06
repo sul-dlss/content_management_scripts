@@ -90,17 +90,17 @@ RSpec.describe(MODSFile) do
     it "extracts cartographic subjects" do
       expect(mods).to include("sc1:scale" => "Scale")
     end
-    # it "extracts relatedItem attributes" do
-    #   expect(mods).to include("ri1:displayLabel" => "Case")
-    # end
-    # it "extracts relatedItem child values" do
-    #   expect(mods).to include("ri1:title" => "The Prosecutor v. Rusdin Maubere")
-    # end
-    # it "extracts relatedItem child attributes" do
-    #   expect(mods).to include("ri1:id1:type" => "case number")
-    # end
-    # it "does not extract collections as related items" do
-    #   expect(mods).not_to include("ri2:title" => "Trial Records of the Special Panels for Serious Crimes (SPSC) in East Timor")
-    # end
+    it "extracts relatedItem attributes" do
+      expect(mods).to include("ri1:displayLabel" => "Case")
+    end
+    it "extracts relatedItem child values" do
+      expect(mods).to include("ri1:title" => "The Prosecutor v. Rusdin Maubere")
+    end
+    it "extracts relatedItem child attributes" do
+      expect(mods).to include("ri1:id1:type" => "case number")
+    end
+    it "does not extract collections as related items" do
+      expect(mods).not_to include("ri2:title" => "Trial Records of the Special Panels for Serious Crimes (SPSC) in East Timor")
+    end
   end
 end
