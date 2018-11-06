@@ -167,7 +167,7 @@ class MODSFile
   end
 
   def get_subject_other_nodes(mods_subject_nodes, template_subject_nodes, mods_subject_name_nodes)
-    mods_subject_other_nodes = mods_subject_nodes
+    mods_subject_other_nodes = mods_subject_nodes.xpath("#{@ns}:topic|#{@ns}:geographic|#{@ns}:temporal|#{@ns}:genre").map {|x| x.parent}.uniq
     mods_subject_other_nodes.map {|x| mods_subject_other_nodes.delete(x) if mods_subject_name_nodes.include?(x)}
     template_subject_other_nodes = template_subject_nodes.grep(/su[\d]+:/)
     return mods_subject_other_nodes, template_subject_other_nodes

@@ -35,6 +35,9 @@ RSpec.describe(MODSFile) do
     it "extracts other subject values" do
       expect(mods).to include("su1:p1:value" => "Video arcades")
     end
+    it "extracts only subjects as other subject values" do
+      expect(mods.keys.map {|k| k if k.start_with?('su')}.compact.size).to eq(9)
+    end
     it "extracts other subject types" do
       expect(mods).to include("su1:p1:type" => "topic", "su1:p2:type" => "geographic", "su1:p3:type" => "geographic", "su1:p4:type" => "genre")
     end
@@ -102,5 +105,6 @@ RSpec.describe(MODSFile) do
     it "does not extract collections as related items" do
       expect(mods).not_to include("ri2:title" => "Trial Records of the Special Panels for Serious Crimes (SPSC) in East Timor")
     end
+#    puts mods.inspect
   end
 end
