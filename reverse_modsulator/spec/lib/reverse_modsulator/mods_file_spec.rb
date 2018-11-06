@@ -111,6 +111,6 @@ RSpec.describe(MODSFile) do
     it "does not include brackets or newlines in header keys" do
       expect(mods.keys.map {|k| k if k.match(/[\[\]\n]/)}.compact.size).to eq(0)
     end
-    puts mods.inspect
+#    puts mods.inspect
   end
 end

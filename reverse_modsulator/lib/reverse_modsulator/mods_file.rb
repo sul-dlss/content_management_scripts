@@ -179,6 +179,11 @@ class MODSFile
     subject_values_and_attributes.merge!(extract_attributes(mods_node, template_node))
     mods_children = mods_node.children.map {|x| x if x.content.match(/\S/)}.compact
     template_children = template_node.children.map {|x| x if x.content.match(/\S/)}.compact
+    # skip title template if not in data
+    child_subject_types = mods_children.map {|x| x.name}
+    if child_subject_types.include?('name') && !child_subject_types.include?('titleInfo')
+      template_children.delete(template_children[1])
+    end
     mods_children.each_with_index do |s, i|
       subject_values_and_attributes.merge!(extract_subject_child_attributes_and_values(s, template_children[i]))
     end
@@ -189,7 +194,7 @@ class MODSFile
     child_attributes_and_values = {}
     return {} if mods_node == nil || template_node == nil
     if ['topic', 'geographic', 'temporal', 'genre'].include?(mods_node.name)
-      header_code = template_node.content.match(/s[nu][\d]+:p\d:/)[0] + "type"
+      header_code = template_node.content.match(/s[nu][\d]+:p[\d]:/)[0] + "type"
       child_attributes_and_values.merge!({header_code => mods_node.name})
     elsif ['name', 'titleInfo'].include?(mods_node.name)
       child_attributes_and_values.merge!(extract_child_attributes_and_values(mods_node, template_node)) #handle multiple nameParts
