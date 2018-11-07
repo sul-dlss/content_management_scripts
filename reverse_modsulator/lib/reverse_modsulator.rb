@@ -20,7 +20,7 @@ class ReverseModsulator
     if options[:template_file]
       @template_xml = Nokogiri::XML(File.open(options[:template_file]))
     else
-      @template_xml = Nokogiri::XML(File.open(File.expand_path('../reverse_modsulator/modsulator_template.xml', __FILE__)))
+      @template_xml = Nokogiri::XML(File.open('lib/reverse_modsulator/modsulator_template.xml'))
     end
 
     if options[:namespace]
@@ -28,18 +28,21 @@ class ReverseModsulator
     else
       @namespace = 'xmlns'
     end
+
+    process_directory
   end
 
   # @param [String] dir         Input directory containing MODS XML files.
   # @param [Hash]   data        Empty hash to hold data output.
   # @param [File]   outfile     File object for output rows.
-  def process_directory(dir, data, template, outfile)
-    Dir.foreach(dir) do |f|
+  def process_directory
+    Dir.foreach(@dir) do |f|
       next unless f.match('.xml')
       druid = get_druid_from_filename(f)
-      data[druid] = process_mods_file(File.expand_path(File.join(dir, f), __FILE__), @template, @namespace)
-      write_output(data, outfile)
+      mods_file = MODSFile.new(File.join(@dir, f), @template_xml, @namespace)
+      @data[druid] = mods_file.process_mods_file
     end
+    write_output(@data, @outfile)
   end
 
   # @param [String] mods_filename   Name of MODS input file.
@@ -60,11 +63,15 @@ class ReverseModsulator
     rows = []
     headers = get_ordered_headers(data)
     rows << headers
+#    puts headers.inspect
     data.each do |druid, column_hash|
+#      puts column_hash.inspect
       row_out = [druid]
       headers.each do |header|
-        if @column_hash.keys.include?(header)
-          row_out = column_hash[header]
+        if header == 'druid'
+          next
+        elsif column_hash.keys.include?(header)
+          row_out << column_hash[header]
         else
           row_out << ""
         end
@@ -88,7 +95,8 @@ class ReverseModsulator
     data.each do |druid, column_hash|
       headers << column_hash.keys
     end
-    headers.flatten!.uniq!
+    headers_out = headers.flatten.uniq
+    return headers_out
   end
 
 end
