@@ -3,7 +3,7 @@ require 'reverse_modsulator'
 
 class MODSFile
 
-  attr_reader :mods, :template, :ns
+  attr_reader :mods, :template, :modified_template, :ns
 
   def initialize(filename, template, namespace)
     @mods = Nokogiri::XML(File.open(filename))
@@ -73,7 +73,7 @@ class MODSFile
     mods_subject_nodes = mods.xpath("#{xpath_root}#{@ns}:subject")
     template_subject_nodes = template.xpath("#{xpath_root}#{@ns}:subject")
     output.merge!(extract_subjects(mods_subject_nodes, template_subject_nodes))
-    mods_location_node = mods.at_xpath("#{xpath_root}#{ns}:location")
+    mods_location_node = mods.at_xpath("#{xpath_root}#{@ns}:location")
     output.merge!(extract_repository(mods, template))
     output.merge!(extract_physicalLocation(mods))
     output.merge!(extract_self_value(mods.at_xpath("#{xpath_root}#{@ns}:location/#{@ns}:shelfLocator"), template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator")))
@@ -262,8 +262,9 @@ class MODSFile
     mods_relatedItem_nodes.each_with_index do |ri, i|
       next if ri.at_xpath(".//#{@ns}:typeOfResource")['collection'] == "yes"
       relatedItems.merge!(extract_attributes(ri, template_relatedItem_nodes[i]))
-      relatedItems.merge!(process_mods_elements(ri, template_relatedItem_nodes[i], ".//"))
+      relatedItems.merge!(process_mods_elements(ri, template_relatedItem_nodes[i], "./"))
     end
     return relatedItems
   end
+
 end

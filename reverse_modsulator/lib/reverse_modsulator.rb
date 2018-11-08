@@ -18,10 +18,12 @@ class ReverseModsulator
     @data = {}
 
     if options[:template_file]
-      @template_xml = Nokogiri::XML(File.open(options[:template_file]))
+      @template_filename = options[:template_file]
     else
-      @template_xml = Nokogiri::XML(File.open('lib/reverse_modsulator/modsulator_template.xml'))
+      @template_filename = 'lib/reverse_modsulator/modsulator_template.xml'
     end
+
+    @template_xml = Nokogiri::XML(modify_template)
 
     if options[:namespace]
       @namespace = options[:namespace]
@@ -30,6 +32,12 @@ class ReverseModsulator
     end
 
     process_directory
+  end
+
+  def modify_template
+    template = File.read(@template_filename)
+    working_template = template.gsub(/\[\[s[un]\d+:p\d:type\]\]/, 'topic')
+    return StringIO.new(string=working_template, 'r')
   end
 
   # @param [String] dir         Input directory containing MODS XML files.
@@ -63,9 +71,7 @@ class ReverseModsulator
     rows = []
     headers = get_ordered_headers(data)
     rows << headers
-#    puts headers.inspect
     data.each do |druid, column_hash|
-#      puts column_hash.inspect
       row_out = [druid]
       headers.each do |header|
         if header == 'druid'
@@ -81,11 +87,12 @@ class ReverseModsulator
     return rows
   end
 
-  ## TODO: real ordering following replayable spreadsheet
   # @param [Hash]   data        Processed data output.
   def get_ordered_headers(data)
     headers = get_headers(data)
-    ordered_headers = ['druid', 'sourceId'] + headers
+    template_headers = get_template_headers
+    ordered_headers = ['druid', 'sourceId']
+    template_headers.each {|th| ordered_headers << th if headers.include?(th)}
     return ordered_headers
   end
 
@@ -97,6 +104,11 @@ class ReverseModsulator
     end
     headers_out = headers.flatten.uniq
     return headers_out
+  end
+
+  def get_template_headers
+    template_headers = File.read(@template_filename).scan(/\[\[([A-Za-z0-9:]+)\]\]/).uniq.flatten
+    return template_headers
   end
 
 end

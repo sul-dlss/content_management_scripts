@@ -793,10 +793,10 @@
       <partNumber>[[sn1:p1:partNumber]]</partNumber>
       <partName>[[sn1:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn1:p2:authority]]" authorityURI="[[sn1:p2:authorityURI]]" valueURI="[[sn1:p2:valueURI]]">[[sn1:p2:value]]</topic>
-    <topic authority="[[sn1:p3:authority]]" authorityURI="[[sn1:p3:authorityURI]]" valueURI="[[sn1:p3:valueURI]]">[[sn1:p3:value]]</topic>
-    <topic authority="[[sn1:p4:authority]]" authorityURI="[[sn1:p4:authorityURI]]" valueURI="[[sn1:p4:valueURI]]">[[sn1:p4:value]]</topic>
-    <topic authority="[[sn1:p5:authority]]" authorityURI="[[sn1:p5:authorityURI]]" valueURI="[[sn1:p5:valueURI]]">[[sn1:p5:value]]</topic>
+    <[[sn1:p2:type]] authority="[[sn1:p2:authority]]" authorityURI="[[sn1:p2:authorityURI]]" valueURI="[[sn1:p2:valueURI]]">[[sn1:p2:value]]</[[sn1:p2:type]]>
+    <[[sn1:p3:type]] authority="[[sn1:p3:authority]]" authorityURI="[[sn1:p3:authorityURI]]" valueURI="[[sn1:p3:valueURI]]">[[sn1:p3:value]]</[[sn1:p3:type]]>
+    <[[sn1:p4:type]] authority="[[sn1:p4:authority]]" authorityURI="[[sn1:p4:authorityURI]]" valueURI="[[sn1:p4:valueURI]]">[[sn1:p4:value]]</[[sn1:p4:type]]>
+    <[[sn1:p5:type]] authority="[[sn1:p5:authority]]" authorityURI="[[sn1:p5:authorityURI]]" valueURI="[[sn1:p5:valueURI]]">[[sn1:p5:value]]</[[sn1:p5:type]]>
   </subject>
   <subject authority="[[sn2:authority]]" authorityURI="[[sn2:authorityURI]]" valueURI="[[sn2:valueURI]]" altRepGroup="[[sn2:altRepGroup]]">
     <name type="[[sn2:p1:nameType]]" authority="[[sn2:p1:nm:authority]]" authorityURI="[[sn2:p1:nm:authorityURI]]" valueURI="[[sn2:p1:nm:valueURI]]" lang="[[sn2:p1:nm:language]]" script="[[sn2:p1:nm:script]]" transliteration="[[sn2:p1:nm:transliteration]]">
@@ -808,10 +808,10 @@
       <partNumber>[[sn2:p1:partNumber]]</partNumber>
       <partName>[[sn2:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn2:p2:authority]]" authorityURI="[[sn2:p2:authorityURI]]" valueURI="[[sn2:p2:valueURI]]">[[sn2:p2:value]]</topic>
-    <topic authority="[[sn2:p3:authority]]" authorityURI="[[sn2:p3:authorityURI]]" valueURI="[[sn2:p3:valueURI]]">[[sn2:p3:value]]</topic>
-    <topic authority="[[sn2:p4:authority]]" authorityURI="[[sn2:p4:authorityURI]]" valueURI="[[sn2:p4:valueURI]]">[[sn2:p4:value]]</topic>
-    <topic authority="[[sn2:p5:authority]]" authorityURI="[[sn2:p5:authorityURI]]" valueURI="[[sn2:p5:valueURI]]">[[sn2:p5:value]]</topic>
+    <[[sn2:p2:type]] authority="[[sn2:p2:authority]]" authorityURI="[[sn2:p2:authorityURI]]" valueURI="[[sn2:p2:valueURI]]">[[sn2:p2:value]]</[[sn2:p2:type]]>
+    <[[sn2:p3:type]] authority="[[sn2:p3:authority]]" authorityURI="[[sn2:p3:authorityURI]]" valueURI="[[sn2:p3:valueURI]]">[[sn2:p3:value]]</[[sn2:p3:type]]>
+    <[[sn2:p4:type]] authority="[[sn2:p4:authority]]" authorityURI="[[sn2:p4:authorityURI]]" valueURI="[[sn2:p4:valueURI]]">[[sn2:p4:value]]</[[sn2:p4:type]]>
+    <[[sn2:p5:type]] authority="[[sn2:p5:authority]]" authorityURI="[[sn2:p5:authorityURI]]" valueURI="[[sn2:p5:valueURI]]">[[sn2:p5:value]]</[[sn2:p5:type]]>
   </subject>
   <subject authority="[[sn3:authority]]" authorityURI="[[sn3:authorityURI]]" valueURI="[[sn3:valueURI]]" altRepGroup="[[sn3:altRepGroup]]">
     <name type="[[sn3:p1:nameType]]" authority="[[sn3:p1:nm:authority]]" authorityURI="[[sn3:p1:nm:authorityURI]]" valueURI="[[sn3:p1:nm:valueURI]]" lang="[[sn3:p1:nm:language]]" script="[[sn3:p1:nm:script]]" transliteration="[[sn3:p1:nm:transliteration]]">
@@ -823,10 +823,10 @@
       <partNumber>[[sn3:p1:partNumber]]</partNumber>
       <partName>[[sn3:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn3:p2:authority]]" authorityURI="[[sn3:p2:authorityURI]]" valueURI="[[sn3:p2:valueURI]]">[[sn3:p2:value]]</topic>
-    <topic authority="[[sn3:p3:authority]]" authorityURI="[[sn3:p3:authorityURI]]" valueURI="[[sn3:p3:valueURI]]">[[sn3:p3:value]]</topic>
-    <topic authority="[[sn3:p4:authority]]" authorityURI="[[sn3:p4:authorityURI]]" valueURI="[[sn3:p4:valueURI]]">[[sn3:p4:value]]</topic>
-    <topic authority="[[sn3:p5:authority]]" authorityURI="[[sn3:p5:authorityURI]]" valueURI="[[sn3:p5:valueURI]]">[[sn3:p5:value]]</topic>
+    <[[sn3:p2:type]] authority="[[sn3:p2:authority]]" authorityURI="[[sn3:p2:authorityURI]]" valueURI="[[sn3:p2:valueURI]]">[[sn3:p2:value]]</[[sn3:p2:type]]>
+    <[[sn3:p3:type]] authority="[[sn3:p3:authority]]" authorityURI="[[sn3:p3:authorityURI]]" valueURI="[[sn3:p3:valueURI]]">[[sn3:p3:value]]</[[sn3:p3:type]]>
+    <[[sn3:p4:type]] authority="[[sn3:p4:authority]]" authorityURI="[[sn3:p4:authorityURI]]" valueURI="[[sn3:p4:valueURI]]">[[sn3:p4:value]]</[[sn3:p4:type]]>
+    <[[sn3:p5:type]] authority="[[sn3:p5:authority]]" authorityURI="[[sn3:p5:authorityURI]]" valueURI="[[sn3:p5:valueURI]]">[[sn3:p5:value]]</[[sn3:p5:type]]>
   </subject>
   <subject authority="[[sn4:authority]]" authorityURI="[[sn4:authorityURI]]" valueURI="[[sn4:valueURI]]" altRepGroup="[[sn4:altRepGroup]]">
     <name type="[[sn4:p1:nameType]]" authority="[[sn4:p1:nm:authority]]" authorityURI="[[sn4:p1:nm:authorityURI]]" valueURI="[[sn4:p1:nm:valueURI]]" lang="[[sn4:p1:nm:language]]" script="[[sn4:p1:nm:script]]" transliteration="[[sn4:p1:nm:transliteration]]">
@@ -838,10 +838,10 @@
       <partNumber>[[sn4:p1:partNumber]]</partNumber>
       <partName>[[sn4:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn4:p2:authority]]" authorityURI="[[sn4:p2:authorityURI]]" valueURI="[[sn4:p2:valueURI]]">[[sn4:p2:value]]</topic>
-    <topic authority="[[sn4:p3:authority]]" authorityURI="[[sn4:p3:authorityURI]]" valueURI="[[sn4:p3:valueURI]]">[[sn4:p3:value]]</topic>
-    <topic authority="[[sn4:p4:authority]]" authorityURI="[[sn4:p4:authorityURI]]" valueURI="[[sn4:p4:valueURI]]">[[sn4:p4:value]]</topic>
-    <topic authority="[[sn4:p5:authority]]" authorityURI="[[sn4:p5:authorityURI]]" valueURI="[[sn4:p5:valueURI]]">[[sn4:p5:value]]</topic>
+    <[[sn4:p2:type]] authority="[[sn4:p2:authority]]" authorityURI="[[sn4:p2:authorityURI]]" valueURI="[[sn4:p2:valueURI]]">[[sn4:p2:value]]</[[sn4:p2:type]]>
+    <[[sn4:p3:type]] authority="[[sn4:p3:authority]]" authorityURI="[[sn4:p3:authorityURI]]" valueURI="[[sn4:p3:valueURI]]">[[sn4:p3:value]]</[[sn4:p3:type]]>
+    <[[sn4:p4:type]] authority="[[sn4:p4:authority]]" authorityURI="[[sn4:p4:authorityURI]]" valueURI="[[sn4:p4:valueURI]]">[[sn4:p4:value]]</[[sn4:p4:type]]>
+    <[[sn4:p5:type]] authority="[[sn4:p5:authority]]" authorityURI="[[sn4:p5:authorityURI]]" valueURI="[[sn4:p5:valueURI]]">[[sn4:p5:value]]</[[sn4:p5:type]]>
   </subject>
   <subject authority="[[sn5:authority]]" authorityURI="[[sn5:authorityURI]]" valueURI="[[sn5:valueURI]]" altRepGroup="[[sn5:altRepGroup]]">
     <name type="[[sn5:p1:nameType]]" authority="[[sn5:p1:nm:authority]]" authorityURI="[[sn5:p1:nm:authorityURI]]" valueURI="[[sn5:p1:nm:valueURI]]" lang="[[sn5:p1:nm:language]]" script="[[sn5:p1:nm:script]]" transliteration="[[sn5:p1:nm:transliteration]]">
@@ -853,10 +853,10 @@
       <partNumber>[[sn5:p1:partNumber]]</partNumber>
       <partName>[[sn5:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn5:p2:authority]]" authorityURI="[[sn5:p2:authorityURI]]" valueURI="[[sn5:p2:valueURI]]">[[sn5:p2:value]]</topic>
-    <topic authority="[[sn5:p3:authority]]" authorityURI="[[sn5:p3:authorityURI]]" valueURI="[[sn5:p3:valueURI]]">[[sn5:p3:value]]</topic>
-    <topic authority="[[sn5:p4:authority]]" authorityURI="[[sn5:p4:authorityURI]]" valueURI="[[sn5:p4:valueURI]]">[[sn5:p4:value]]</topic>
-    <topic authority="[[sn5:p5:authority]]" authorityURI="[[sn5:p5:authorityURI]]" valueURI="[[sn5:p5:valueURI]]">[[sn5:p5:value]]</topic>
+    <[[sn5:p2:type]] authority="[[sn5:p2:authority]]" authorityURI="[[sn5:p2:authorityURI]]" valueURI="[[sn5:p2:valueURI]]">[[sn5:p2:value]]</[[sn5:p2:type]]>
+    <[[sn5:p3:type]] authority="[[sn5:p3:authority]]" authorityURI="[[sn5:p3:authorityURI]]" valueURI="[[sn5:p3:valueURI]]">[[sn5:p3:value]]</[[sn5:p3:type]]>
+    <[[sn5:p4:type]] authority="[[sn5:p4:authority]]" authorityURI="[[sn5:p4:authorityURI]]" valueURI="[[sn5:p4:valueURI]]">[[sn5:p4:value]]</[[sn5:p4:type]]>
+    <[[sn5:p5:type]] authority="[[sn5:p5:authority]]" authorityURI="[[sn5:p5:authorityURI]]" valueURI="[[sn5:p5:valueURI]]">[[sn5:p5:value]]</[[sn5:p5:type]]>
   </subject>
   <subject authority="[[sn6:authority]]" authorityURI="[[sn6:authorityURI]]" valueURI="[[sn6:valueURI]]" altRepGroup="[[sn6:altRepGroup]]">
     <name type="[[sn6:p1:nameType]]" authority="[[sn6:p1:nm:authority]]" authorityURI="[[sn6:p1:nm:authorityURI]]" valueURI="[[sn6:p1:nm:valueURI]]" lang="[[sn6:p1:nm:language]]" script="[[sn6:p1:nm:script]]" transliteration="[[sn6:p1:nm:transliteration]]">
@@ -868,10 +868,10 @@
       <partNumber>[[sn6:p1:partNumber]]</partNumber>
       <partName>[[sn6:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn6:p2:authority]]" authorityURI="[[sn6:p2:authorityURI]]" valueURI="[[sn6:p2:valueURI]]">[[sn6:p2:value]]</topic>
-    <topic authority="[[sn6:p3:authority]]" authorityURI="[[sn6:p3:authorityURI]]" valueURI="[[sn6:p3:valueURI]]">[[sn6:p3:value]]</topic>
-    <topic authority="[[sn6:p4:authority]]" authorityURI="[[sn6:p4:authorityURI]]" valueURI="[[sn6:p4:valueURI]]">[[sn6:p4:value]]</topic>
-    <topic authority="[[sn6:p5:authority]]" authorityURI="[[sn6:p5:authorityURI]]" valueURI="[[sn6:p5:valueURI]]">[[sn6:p5:value]]</topic>
+    <[[sn6:p2:type]] authority="[[sn6:p2:authority]]" authorityURI="[[sn6:p2:authorityURI]]" valueURI="[[sn6:p2:valueURI]]">[[sn6:p2:value]]</[[sn6:p2:type]]>
+    <[[sn6:p3:type]] authority="[[sn6:p3:authority]]" authorityURI="[[sn6:p3:authorityURI]]" valueURI="[[sn6:p3:valueURI]]">[[sn6:p3:value]]</[[sn6:p3:type]]>
+    <[[sn6:p4:type]] authority="[[sn6:p4:authority]]" authorityURI="[[sn6:p4:authorityURI]]" valueURI="[[sn6:p4:valueURI]]">[[sn6:p4:value]]</[[sn6:p4:type]]>
+    <[[sn6:p5:type]] authority="[[sn6:p5:authority]]" authorityURI="[[sn6:p5:authorityURI]]" valueURI="[[sn6:p5:valueURI]]">[[sn6:p5:value]]</[[sn6:p5:type]]>
   </subject>
   <subject authority="[[sn7:authority]]" authorityURI="[[sn7:authorityURI]]" valueURI="[[sn7:valueURI]]" altRepGroup="[[sn7:altRepGroup]]">
     <name type="[[sn7:p1:nameType]]" authority="[[sn7:p1:nm:authority]]" authorityURI="[[sn7:p1:nm:authorityURI]]" valueURI="[[sn7:p1:nm:valueURI]]" lang="[[sn7:p1:nm:language]]" script="[[sn7:p1:nm:script]]" transliteration="[[sn7:p1:nm:transliteration]]">
@@ -883,10 +883,10 @@
       <partNumber>[[sn7:p1:partNumber]]</partNumber>
       <partName>[[sn7:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn7:p2:authority]]" authorityURI="[[sn7:p2:authorityURI]]" valueURI="[[sn7:p2:valueURI]]">[[sn7:p2:value]]</topic>
-    <topic authority="[[sn7:p3:authority]]" authorityURI="[[sn7:p3:authorityURI]]" valueURI="[[sn7:p3:valueURI]]">[[sn7:p3:value]]</topic>
-    <topic authority="[[sn7:p4:authority]]" authorityURI="[[sn7:p4:authorityURI]]" valueURI="[[sn7:p4:valueURI]]">[[sn7:p4:value]]</topic>
-    <topic authority="[[sn7:p5:authority]]" authorityURI="[[sn7:p5:authorityURI]]" valueURI="[[sn7:p5:valueURI]]">[[sn7:p5:value]]</topic>
+    <[[sn7:p2:type]] authority="[[sn7:p2:authority]]" authorityURI="[[sn7:p2:authorityURI]]" valueURI="[[sn7:p2:valueURI]]">[[sn7:p2:value]]</[[sn7:p2:type]]>
+    <[[sn7:p3:type]] authority="[[sn7:p3:authority]]" authorityURI="[[sn7:p3:authorityURI]]" valueURI="[[sn7:p3:valueURI]]">[[sn7:p3:value]]</[[sn7:p3:type]]>
+    <[[sn7:p4:type]] authority="[[sn7:p4:authority]]" authorityURI="[[sn7:p4:authorityURI]]" valueURI="[[sn7:p4:valueURI]]">[[sn7:p4:value]]</[[sn7:p4:type]]>
+    <[[sn7:p5:type]] authority="[[sn7:p5:authority]]" authorityURI="[[sn7:p5:authorityURI]]" valueURI="[[sn7:p5:valueURI]]">[[sn7:p5:value]]</[[sn7:p5:type]]>
   </subject>
   <subject authority="[[sn8:authority]]" authorityURI="[[sn8:authorityURI]]" valueURI="[[sn8:valueURI]]" altRepGroup="[[sn8:altRepGroup]]">
     <name type="[[sn8:p1:nameType]]" authority="[[sn8:p1:nm:authority]]" authorityURI="[[sn8:p1:nm:authorityURI]]" valueURI="[[sn8:p1:nm:valueURI]]" lang="[[sn8:p1:nm:language]]" script="[[sn8:p1:nm:script]]" transliteration="[[sn8:p1:nm:transliteration]]">
@@ -898,10 +898,10 @@
       <partNumber>[[sn8:p1:partNumber]]</partNumber>
       <partName>[[sn8:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn8:p2:authority]]" authorityURI="[[sn8:p2:authorityURI]]" valueURI="[[sn8:p2:valueURI]]">[[sn8:p2:value]]</topic>
-    <topic authority="[[sn8:p3:authority]]" authorityURI="[[sn8:p3:authorityURI]]" valueURI="[[sn8:p3:valueURI]]">[[sn8:p3:value]]</topic>
-    <topic authority="[[sn8:p4:authority]]" authorityURI="[[sn8:p4:authorityURI]]" valueURI="[[sn8:p4:valueURI]]">[[sn8:p4:value]]</topic>
-    <topic authority="[[sn8:p5:authority]]" authorityURI="[[sn8:p5:authorityURI]]" valueURI="[[sn8:p5:valueURI]]">[[sn8:p5:value]]</topic>
+    <[[sn8:p2:type]] authority="[[sn8:p2:authority]]" authorityURI="[[sn8:p2:authorityURI]]" valueURI="[[sn8:p2:valueURI]]">[[sn8:p2:value]]</[[sn8:p2:type]]>
+    <[[sn8:p3:type]] authority="[[sn8:p3:authority]]" authorityURI="[[sn8:p3:authorityURI]]" valueURI="[[sn8:p3:valueURI]]">[[sn8:p3:value]]</[[sn8:p3:type]]>
+    <[[sn8:p4:type]] authority="[[sn8:p4:authority]]" authorityURI="[[sn8:p4:authorityURI]]" valueURI="[[sn8:p4:valueURI]]">[[sn8:p4:value]]</[[sn8:p4:type]]>
+    <[[sn8:p5:type]] authority="[[sn8:p5:authority]]" authorityURI="[[sn8:p5:authorityURI]]" valueURI="[[sn8:p5:valueURI]]">[[sn8:p5:value]]</[[sn8:p5:type]]>
   </subject>
   <subject authority="[[sn9:authority]]" authorityURI="[[sn9:authorityURI]]" valueURI="[[sn9:valueURI]]" altRepGroup="[[sn9:altRepGroup]]">
     <name type="[[sn9:p1:nameType]]" authority="[[sn9:p1:nm:authority]]" authorityURI="[[sn9:p1:nm:authorityURI]]" valueURI="[[sn9:p1:nm:valueURI]]" lang="[[sn9:p1:nm:language]]" script="[[sn9:p1:nm:script]]" transliteration="[[sn9:p1:nm:transliteration]]">
@@ -913,10 +913,10 @@
       <partNumber>[[sn9:p1:partNumber]]</partNumber>
       <partName>[[sn9:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn9:p2:authority]]" authorityURI="[[sn9:p2:authorityURI]]" valueURI="[[sn9:p2:valueURI]]">[[sn9:p2:value]]</topic>
-    <topic authority="[[sn9:p3:authority]]" authorityURI="[[sn9:p3:authorityURI]]" valueURI="[[sn9:p3:valueURI]]">[[sn9:p3:value]]</topic>
-    <topic authority="[[sn9:p4:authority]]" authorityURI="[[sn9:p4:authorityURI]]" valueURI="[[sn9:p4:valueURI]]">[[sn9:p4:value]]</topic>
-    <topic authority="[[sn9:p5:authority]]" authorityURI="[[sn9:p5:authorityURI]]" valueURI="[[sn9:p5:valueURI]]">[[sn9:p5:value]]</topic>
+    <[[sn9:p2:type]] authority="[[sn9:p2:authority]]" authorityURI="[[sn9:p2:authorityURI]]" valueURI="[[sn9:p2:valueURI]]">[[sn9:p2:value]]</[[sn9:p2:type]]>
+    <[[sn9:p3:type]] authority="[[sn9:p3:authority]]" authorityURI="[[sn9:p3:authorityURI]]" valueURI="[[sn9:p3:valueURI]]">[[sn9:p3:value]]</[[sn9:p3:type]]>
+    <[[sn9:p4:type]] authority="[[sn9:p4:authority]]" authorityURI="[[sn9:p4:authorityURI]]" valueURI="[[sn9:p4:valueURI]]">[[sn9:p4:value]]</[[sn9:p4:type]]>
+    <[[sn9:p5:type]] authority="[[sn9:p5:authority]]" authorityURI="[[sn9:p5:authorityURI]]" valueURI="[[sn9:p5:valueURI]]">[[sn9:p5:value]]</[[sn9:p5:type]]>
   </subject>
   <subject authority="[[sn10:authority]]" authorityURI="[[sn10:authorityURI]]" valueURI="[[sn10:valueURI]]" altRepGroup="[[sn10:altRepGroup]]">
     <name type="[[sn10:p1:nameType]]" authority="[[sn10:p1:nm:authority]]" authorityURI="[[sn10:p1:nm:authorityURI]]" valueURI="[[sn10:p1:nm:valueURI]]" lang="[[sn10:p1:nm:language]]" script="[[sn10:p1:nm:script]]" transliteration="[[sn10:p1:nm:transliteration]]">
@@ -928,10 +928,10 @@
       <partNumber>[[sn10:p1:partNumber]]</partNumber>
       <partName>[[sn10:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn10:p2:authority]]" authorityURI="[[sn10:p2:authorityURI]]" valueURI="[[sn10:p2:valueURI]]">[[sn10:p2:value]]</topic>
-    <topic authority="[[sn10:p3:authority]]" authorityURI="[[sn10:p3:authorityURI]]" valueURI="[[sn10:p3:valueURI]]">[[sn10:p3:value]]</topic>
-    <topic authority="[[sn10:p4:authority]]" authorityURI="[[sn10:p4:authorityURI]]" valueURI="[[sn10:p4:valueURI]]">[[sn10:p4:value]]</topic>
-    <topic authority="[[sn10:p5:authority]]" authorityURI="[[sn10:p5:authorityURI]]" valueURI="[[sn10:p5:valueURI]]">[[sn10:p5:value]]</topic>
+    <[[sn10:p2:type]] authority="[[sn10:p2:authority]]" authorityURI="[[sn10:p2:authorityURI]]" valueURI="[[sn10:p2:valueURI]]">[[sn10:p2:value]]</[[sn10:p2:type]]>
+    <[[sn10:p3:type]] authority="[[sn10:p3:authority]]" authorityURI="[[sn10:p3:authorityURI]]" valueURI="[[sn10:p3:valueURI]]">[[sn10:p3:value]]</[[sn10:p3:type]]>
+    <[[sn10:p4:type]] authority="[[sn10:p4:authority]]" authorityURI="[[sn10:p4:authorityURI]]" valueURI="[[sn10:p4:valueURI]]">[[sn10:p4:value]]</[[sn10:p4:type]]>
+    <[[sn10:p5:type]] authority="[[sn10:p5:authority]]" authorityURI="[[sn10:p5:authorityURI]]" valueURI="[[sn10:p5:valueURI]]">[[sn10:p5:value]]</[[sn10:p5:type]]>
   </subject>
   <subject authority="[[sn11:authority]]" authorityURI="[[sn11:authorityURI]]" valueURI="[[sn11:valueURI]]" altRepGroup="[[sn11:altRepGroup]]">
     <name type="[[sn11:p1:nameType]]" authority="[[sn11:p1:nm:authority]]" authorityURI="[[sn11:p1:nm:authorityURI]]" valueURI="[[sn11:p1:nm:valueURI]]" lang="[[sn11:p1:nm:language]]" script="[[sn11:p1:nm:script]]" transliteration="[[sn11:p1:nm:transliteration]]">
@@ -943,10 +943,10 @@
       <partNumber>[[sn11:p1:partNumber]]</partNumber>
       <partName>[[sn11:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn11:p2:authority]]" authorityURI="[[sn11:p2:authorityURI]]" valueURI="[[sn11:p2:valueURI]]">[[sn11:p2:value]]</topic>
-    <topic authority="[[sn11:p3:authority]]" authorityURI="[[sn11:p3:authorityURI]]" valueURI="[[sn11:p3:valueURI]]">[[sn11:p3:value]]</topic>
-    <topic authority="[[sn11:p4:authority]]" authorityURI="[[sn11:p4:authorityURI]]" valueURI="[[sn11:p4:valueURI]]">[[sn11:p4:value]]</topic>
-    <topic authority="[[sn11:p5:authority]]" authorityURI="[[sn11:p5:authorityURI]]" valueURI="[[sn11:p5:valueURI]]">[[sn11:p5:value]]</topic>
+    <[[sn11:p2:type]] authority="[[sn11:p2:authority]]" authorityURI="[[sn11:p2:authorityURI]]" valueURI="[[sn11:p2:valueURI]]">[[sn11:p2:value]]</[[sn11:p2:type]]>
+    <[[sn11:p3:type]] authority="[[sn11:p3:authority]]" authorityURI="[[sn11:p3:authorityURI]]" valueURI="[[sn11:p3:valueURI]]">[[sn11:p3:value]]</[[sn11:p3:type]]>
+    <[[sn11:p4:type]] authority="[[sn11:p4:authority]]" authorityURI="[[sn11:p4:authorityURI]]" valueURI="[[sn11:p4:valueURI]]">[[sn11:p4:value]]</[[sn11:p4:type]]>
+    <[[sn11:p5:type]] authority="[[sn11:p5:authority]]" authorityURI="[[sn11:p5:authorityURI]]" valueURI="[[sn11:p5:valueURI]]">[[sn11:p5:value]]</[[sn11:p5:type]]>
   </subject>
   <subject authority="[[sn12:authority]]" authorityURI="[[sn12:authorityURI]]" valueURI="[[sn12:valueURI]]" altRepGroup="[[sn12:altRepGroup]]">
     <name type="[[sn12:p1:nameType]]" authority="[[sn12:p1:nm:authority]]" authorityURI="[[sn12:p1:nm:authorityURI]]" valueURI="[[sn12:p1:nm:valueURI]]" lang="[[sn12:p1:nm:language]]" script="[[sn12:p1:nm:script]]" transliteration="[[sn12:p1:nm:transliteration]]">
@@ -958,10 +958,10 @@
       <partNumber>[[sn12:p1:partNumber]]</partNumber>
       <partName>[[sn12:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn12:p2:authority]]" authorityURI="[[sn12:p2:authorityURI]]" valueURI="[[sn12:p2:valueURI]]">[[sn12:p2:value]]</topic>
-    <topic authority="[[sn12:p3:authority]]" authorityURI="[[sn12:p3:authorityURI]]" valueURI="[[sn12:p3:valueURI]]">[[sn12:p3:value]]</topic>
-    <topic authority="[[sn12:p4:authority]]" authorityURI="[[sn12:p4:authorityURI]]" valueURI="[[sn12:p4:valueURI]]">[[sn12:p4:value]]</topic>
-    <topic authority="[[sn12:p5:authority]]" authorityURI="[[sn12:p5:authorityURI]]" valueURI="[[sn12:p5:valueURI]]">[[sn12:p5:value]]</topic>
+    <[[sn12:p2:type]] authority="[[sn12:p2:authority]]" authorityURI="[[sn12:p2:authorityURI]]" valueURI="[[sn12:p2:valueURI]]">[[sn12:p2:value]]</[[sn12:p2:type]]>
+    <[[sn12:p3:type]] authority="[[sn12:p3:authority]]" authorityURI="[[sn12:p3:authorityURI]]" valueURI="[[sn12:p3:valueURI]]">[[sn12:p3:value]]</[[sn12:p3:type]]>
+    <[[sn12:p4:type]] authority="[[sn12:p4:authority]]" authorityURI="[[sn12:p4:authorityURI]]" valueURI="[[sn12:p4:valueURI]]">[[sn12:p4:value]]</[[sn12:p4:type]]>
+    <[[sn12:p5:type]] authority="[[sn12:p5:authority]]" authorityURI="[[sn12:p5:authorityURI]]" valueURI="[[sn12:p5:valueURI]]">[[sn12:p5:value]]</[[sn12:p5:type]]>
   </subject>
   <subject authority="[[sn13:authority]]" authorityURI="[[sn13:authorityURI]]" valueURI="[[sn13:valueURI]]" altRepGroup="[[sn13:altRepGroup]]">
     <name type="[[sn13:p1:nameType]]" authority="[[sn13:p1:nm:authority]]" authorityURI="[[sn13:p1:nm:authorityURI]]" valueURI="[[sn13:p1:nm:valueURI]]" lang="[[sn13:p1:nm:language]]" script="[[sn13:p1:nm:script]]" transliteration="[[sn13:p1:nm:transliteration]]">
@@ -973,10 +973,10 @@
       <partNumber>[[sn13:p1:partNumber]]</partNumber>
       <partName>[[sn13:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn13:p2:authority]]" authorityURI="[[sn13:p2:authorityURI]]" valueURI="[[sn13:p2:valueURI]]">[[sn13:p2:value]]</topic>
-    <topic authority="[[sn13:p3:authority]]" authorityURI="[[sn13:p3:authorityURI]]" valueURI="[[sn13:p3:valueURI]]">[[sn13:p3:value]]</topic>
-    <topic authority="[[sn13:p4:authority]]" authorityURI="[[sn13:p4:authorityURI]]" valueURI="[[sn13:p4:valueURI]]">[[sn13:p4:value]]</topic>
-    <topic authority="[[sn13:p5:authority]]" authorityURI="[[sn13:p5:authorityURI]]" valueURI="[[sn13:p5:valueURI]]">[[sn13:p5:value]]</topic>
+    <[[sn13:p2:type]] authority="[[sn13:p2:authority]]" authorityURI="[[sn13:p2:authorityURI]]" valueURI="[[sn13:p2:valueURI]]">[[sn13:p2:value]]</[[sn13:p2:type]]>
+    <[[sn13:p3:type]] authority="[[sn13:p3:authority]]" authorityURI="[[sn13:p3:authorityURI]]" valueURI="[[sn13:p3:valueURI]]">[[sn13:p3:value]]</[[sn13:p3:type]]>
+    <[[sn13:p4:type]] authority="[[sn13:p4:authority]]" authorityURI="[[sn13:p4:authorityURI]]" valueURI="[[sn13:p4:valueURI]]">[[sn13:p4:value]]</[[sn13:p4:type]]>
+    <[[sn13:p5:type]] authority="[[sn13:p5:authority]]" authorityURI="[[sn13:p5:authorityURI]]" valueURI="[[sn13:p5:valueURI]]">[[sn13:p5:value]]</[[sn13:p5:type]]>
   </subject>
   <subject authority="[[sn14:authority]]" authorityURI="[[sn14:authorityURI]]" valueURI="[[sn14:valueURI]]" altRepGroup="[[sn14:altRepGroup]]">
     <name type="[[sn14:p1:nameType]]" authority="[[sn14:p1:nm:authority]]" authorityURI="[[sn14:p1:nm:authorityURI]]" valueURI="[[sn14:p1:nm:valueURI]]" lang="[[sn14:p1:nm:language]]" script="[[sn14:p1:nm:script]]" transliteration="[[sn14:p1:nm:transliteration]]">
@@ -988,10 +988,10 @@
       <partNumber>[[sn14:p1:partNumber]]</partNumber>
       <partName>[[sn14:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn14:p2:authority]]" authorityURI="[[sn14:p2:authorityURI]]" valueURI="[[sn14:p2:valueURI]]">[[sn14:p2:value]]</topic>
-    <topic authority="[[sn14:p3:authority]]" authorityURI="[[sn14:p3:authorityURI]]" valueURI="[[sn14:p3:valueURI]]">[[sn14:p3:value]]</topic>
-    <topic authority="[[sn14:p4:authority]]" authorityURI="[[sn14:p4:authorityURI]]" valueURI="[[sn14:p4:valueURI]]">[[sn14:p4:value]]</topic>
-    <topic authority="[[sn14:p5:authority]]" authorityURI="[[sn14:p5:authorityURI]]" valueURI="[[sn14:p5:valueURI]]">[[sn14:p5:value]]</topic>
+    <[[sn14:p2:type]] authority="[[sn14:p2:authority]]" authorityURI="[[sn14:p2:authorityURI]]" valueURI="[[sn14:p2:valueURI]]">[[sn14:p2:value]]</[[sn14:p2:type]]>
+    <[[sn14:p3:type]] authority="[[sn14:p3:authority]]" authorityURI="[[sn14:p3:authorityURI]]" valueURI="[[sn14:p3:valueURI]]">[[sn14:p3:value]]</[[sn14:p3:type]]>
+    <[[sn14:p4:type]] authority="[[sn14:p4:authority]]" authorityURI="[[sn14:p4:authorityURI]]" valueURI="[[sn14:p4:valueURI]]">[[sn14:p4:value]]</[[sn14:p4:type]]>
+    <[[sn14:p5:type]] authority="[[sn14:p5:authority]]" authorityURI="[[sn14:p5:authorityURI]]" valueURI="[[sn14:p5:valueURI]]">[[sn14:p5:value]]</[[sn14:p5:type]]>
   </subject>
   <subject authority="[[sn15:authority]]" authorityURI="[[sn15:authorityURI]]" valueURI="[[sn15:valueURI]]" altRepGroup="[[sn15:altRepGroup]]">
     <name type="[[sn15:p1:nameType]]" authority="[[sn15:p1:nm:authority]]" authorityURI="[[sn15:p1:nm:authorityURI]]" valueURI="[[sn15:p1:nm:valueURI]]" lang="[[sn15:p1:nm:language]]" script="[[sn15:p1:nm:script]]" transliteration="[[sn15:p1:nm:transliteration]]">
@@ -1003,10 +1003,10 @@
       <partNumber>[[sn15:p1:partNumber]]</partNumber>
       <partName>[[sn15:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn15:p2:authority]]" authorityURI="[[sn15:p2:authorityURI]]" valueURI="[[sn15:p2:valueURI]]">[[sn15:p2:value]]</topic>
-    <topic authority="[[sn15:p3:authority]]" authorityURI="[[sn15:p3:authorityURI]]" valueURI="[[sn15:p3:valueURI]]">[[sn15:p3:value]]</topic>
-    <topic authority="[[sn15:p4:authority]]" authorityURI="[[sn15:p4:authorityURI]]" valueURI="[[sn15:p4:valueURI]]">[[sn15:p4:value]]</topic>
-    <topic authority="[[sn15:p5:authority]]" authorityURI="[[sn15:p5:authorityURI]]" valueURI="[[sn15:p5:valueURI]]">[[sn15:p5:value]]</topic>
+    <[[sn15:p2:type]] authority="[[sn15:p2:authority]]" authorityURI="[[sn15:p2:authorityURI]]" valueURI="[[sn15:p2:valueURI]]">[[sn15:p2:value]]</[[sn15:p2:type]]>
+    <[[sn15:p3:type]] authority="[[sn15:p3:authority]]" authorityURI="[[sn15:p3:authorityURI]]" valueURI="[[sn15:p3:valueURI]]">[[sn15:p3:value]]</[[sn15:p3:type]]>
+    <[[sn15:p4:type]] authority="[[sn15:p4:authority]]" authorityURI="[[sn15:p4:authorityURI]]" valueURI="[[sn15:p4:valueURI]]">[[sn15:p4:value]]</[[sn15:p4:type]]>
+    <[[sn15:p5:type]] authority="[[sn15:p5:authority]]" authorityURI="[[sn15:p5:authorityURI]]" valueURI="[[sn15:p5:valueURI]]">[[sn15:p5:value]]</[[sn15:p5:type]]>
   </subject>
   <subject authority="[[sn16:authority]]" authorityURI="[[sn16:authorityURI]]" valueURI="[[sn16:valueURI]]" altRepGroup="[[sn16:altRepGroup]]">
     <name type="[[sn16:p1:nameType]]" authority="[[sn16:p1:nm:authority]]" authorityURI="[[sn16:p1:nm:authorityURI]]" valueURI="[[sn16:p1:nm:valueURI]]" lang="[[sn16:p1:nm:language]]" script="[[sn16:p1:nm:script]]" transliteration="[[sn16:p1:nm:transliteration]]">
@@ -1018,10 +1018,10 @@
       <partNumber>[[sn16:p1:partNumber]]</partNumber>
       <partName>[[sn16:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn16:p2:authority]]" authorityURI="[[sn16:p2:authorityURI]]" valueURI="[[sn16:p2:valueURI]]">[[sn16:p2:value]]</topic>
-    <topic authority="[[sn16:p3:authority]]" authorityURI="[[sn16:p3:authorityURI]]" valueURI="[[sn16:p3:valueURI]]">[[sn16:p3:value]]</topic>
-    <topic authority="[[sn16:p4:authority]]" authorityURI="[[sn16:p4:authorityURI]]" valueURI="[[sn16:p4:valueURI]]">[[sn16:p4:value]]</topic>
-    <topic authority="[[sn16:p5:authority]]" authorityURI="[[sn16:p5:authorityURI]]" valueURI="[[sn16:p5:valueURI]]">[[sn16:p5:value]]</topic>
+    <[[sn16:p2:type]] authority="[[sn16:p2:authority]]" authorityURI="[[sn16:p2:authorityURI]]" valueURI="[[sn16:p2:valueURI]]">[[sn16:p2:value]]</[[sn16:p2:type]]>
+    <[[sn16:p3:type]] authority="[[sn16:p3:authority]]" authorityURI="[[sn16:p3:authorityURI]]" valueURI="[[sn16:p3:valueURI]]">[[sn16:p3:value]]</[[sn16:p3:type]]>
+    <[[sn16:p4:type]] authority="[[sn16:p4:authority]]" authorityURI="[[sn16:p4:authorityURI]]" valueURI="[[sn16:p4:valueURI]]">[[sn16:p4:value]]</[[sn16:p4:type]]>
+    <[[sn16:p5:type]] authority="[[sn16:p5:authority]]" authorityURI="[[sn16:p5:authorityURI]]" valueURI="[[sn16:p5:valueURI]]">[[sn16:p5:value]]</[[sn16:p5:type]]>
   </subject>
   <subject authority="[[sn17:authority]]" authorityURI="[[sn17:authorityURI]]" valueURI="[[sn17:valueURI]]" altRepGroup="[[sn17:altRepGroup]]">
     <name type="[[sn17:p1:nameType]]" authority="[[sn17:p1:nm:authority]]" authorityURI="[[sn17:p1:nm:authorityURI]]" valueURI="[[sn17:p1:nm:valueURI]]" lang="[[sn17:p1:nm:language]]" script="[[sn17:p1:nm:script]]" transliteration="[[sn17:p1:nm:transliteration]]">
@@ -1033,10 +1033,10 @@
       <partNumber>[[sn17:p1:partNumber]]</partNumber>
       <partName>[[sn17:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn17:p2:authority]]" authorityURI="[[sn17:p2:authorityURI]]" valueURI="[[sn17:p2:valueURI]]">[[sn17:p2:value]]</topic>
-    <topic authority="[[sn17:p3:authority]]" authorityURI="[[sn17:p3:authorityURI]]" valueURI="[[sn17:p3:valueURI]]">[[sn17:p3:value]]</topic>
-    <topic authority="[[sn17:p4:authority]]" authorityURI="[[sn17:p4:authorityURI]]" valueURI="[[sn17:p4:valueURI]]">[[sn17:p4:value]]</topic>
-    <topic authority="[[sn17:p5:authority]]" authorityURI="[[sn17:p5:authorityURI]]" valueURI="[[sn17:p5:valueURI]]">[[sn17:p5:value]]</topic>
+    <[[sn17:p2:type]] authority="[[sn17:p2:authority]]" authorityURI="[[sn17:p2:authorityURI]]" valueURI="[[sn17:p2:valueURI]]">[[sn17:p2:value]]</[[sn17:p2:type]]>
+    <[[sn17:p3:type]] authority="[[sn17:p3:authority]]" authorityURI="[[sn17:p3:authorityURI]]" valueURI="[[sn17:p3:valueURI]]">[[sn17:p3:value]]</[[sn17:p3:type]]>
+    <[[sn17:p4:type]] authority="[[sn17:p4:authority]]" authorityURI="[[sn17:p4:authorityURI]]" valueURI="[[sn17:p4:valueURI]]">[[sn17:p4:value]]</[[sn17:p4:type]]>
+    <[[sn17:p5:type]] authority="[[sn17:p5:authority]]" authorityURI="[[sn17:p5:authorityURI]]" valueURI="[[sn17:p5:valueURI]]">[[sn17:p5:value]]</[[sn17:p5:type]]>
   </subject>
   <subject authority="[[sn18:authority]]" authorityURI="[[sn18:authorityURI]]" valueURI="[[sn18:valueURI]]" altRepGroup="[[sn18:altRepGroup]]">
     <name type="[[sn18:p1:nameType]]" authority="[[sn18:p1:nm:authority]]" authorityURI="[[sn18:p1:nm:authorityURI]]" valueURI="[[sn18:p1:nm:valueURI]]" lang="[[sn18:p1:nm:language]]" script="[[sn18:p1:nm:script]]" transliteration="[[sn18:p1:nm:transliteration]]">
@@ -1048,10 +1048,10 @@
       <partNumber>[[sn18:p1:partNumber]]</partNumber>
       <partName>[[sn18:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn18:p2:authority]]" authorityURI="[[sn18:p2:authorityURI]]" valueURI="[[sn18:p2:valueURI]]">[[sn18:p2:value]]</topic>
-    <topic authority="[[sn18:p3:authority]]" authorityURI="[[sn18:p3:authorityURI]]" valueURI="[[sn18:p3:valueURI]]">[[sn18:p3:value]]</topic>
-    <topic authority="[[sn18:p4:authority]]" authorityURI="[[sn18:p4:authorityURI]]" valueURI="[[sn18:p4:valueURI]]">[[sn18:p4:value]]</topic>
-    <topic authority="[[sn18:p5:authority]]" authorityURI="[[sn18:p5:authorityURI]]" valueURI="[[sn18:p5:valueURI]]">[[sn18:p5:value]]</topic>
+    <[[sn18:p2:type]] authority="[[sn18:p2:authority]]" authorityURI="[[sn18:p2:authorityURI]]" valueURI="[[sn18:p2:valueURI]]">[[sn18:p2:value]]</[[sn18:p2:type]]>
+    <[[sn18:p3:type]] authority="[[sn18:p3:authority]]" authorityURI="[[sn18:p3:authorityURI]]" valueURI="[[sn18:p3:valueURI]]">[[sn18:p3:value]]</[[sn18:p3:type]]>
+    <[[sn18:p4:type]] authority="[[sn18:p4:authority]]" authorityURI="[[sn18:p4:authorityURI]]" valueURI="[[sn18:p4:valueURI]]">[[sn18:p4:value]]</[[sn18:p4:type]]>
+    <[[sn18:p5:type]] authority="[[sn18:p5:authority]]" authorityURI="[[sn18:p5:authorityURI]]" valueURI="[[sn18:p5:valueURI]]">[[sn18:p5:value]]</[[sn18:p5:type]]>
   </subject>
   <subject authority="[[sn19:authority]]" authorityURI="[[sn19:authorityURI]]" valueURI="[[sn19:valueURI]]" altRepGroup="[[sn19:altRepGroup]]">
     <name type="[[sn19:p1:nameType]]" authority="[[sn19:p1:nm:authority]]" authorityURI="[[sn19:p1:nm:authorityURI]]" valueURI="[[sn19:p1:nm:valueURI]]" lang="[[sn19:p1:nm:language]]" script="[[sn19:p1:nm:script]]" transliteration="[[sn19:p1:nm:transliteration]]">
@@ -1063,10 +1063,10 @@
       <partNumber>[[sn19:p1:partNumber]]</partNumber>
       <partName>[[sn19:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn19:p2:authority]]" authorityURI="[[sn19:p2:authorityURI]]" valueURI="[[sn19:p2:valueURI]]">[[sn19:p2:value]]</topic>
-    <topic authority="[[sn19:p3:authority]]" authorityURI="[[sn19:p3:authorityURI]]" valueURI="[[sn19:p3:valueURI]]">[[sn19:p3:value]]</topic>
-    <topic authority="[[sn19:p4:authority]]" authorityURI="[[sn19:p4:authorityURI]]" valueURI="[[sn19:p4:valueURI]]">[[sn19:p4:value]]</topic>
-    <topic authority="[[sn19:p5:authority]]" authorityURI="[[sn19:p5:authorityURI]]" valueURI="[[sn19:p5:valueURI]]">[[sn19:p5:value]]</topic>
+    <[[sn19:p2:type]] authority="[[sn19:p2:authority]]" authorityURI="[[sn19:p2:authorityURI]]" valueURI="[[sn19:p2:valueURI]]">[[sn19:p2:value]]</[[sn19:p2:type]]>
+    <[[sn19:p3:type]] authority="[[sn19:p3:authority]]" authorityURI="[[sn19:p3:authorityURI]]" valueURI="[[sn19:p3:valueURI]]">[[sn19:p3:value]]</[[sn19:p3:type]]>
+    <[[sn19:p4:type]] authority="[[sn19:p4:authority]]" authorityURI="[[sn19:p4:authorityURI]]" valueURI="[[sn19:p4:valueURI]]">[[sn19:p4:value]]</[[sn19:p4:type]]>
+    <[[sn19:p5:type]] authority="[[sn19:p5:authority]]" authorityURI="[[sn19:p5:authorityURI]]" valueURI="[[sn19:p5:valueURI]]">[[sn19:p5:value]]</[[sn19:p5:type]]>
   </subject>
   <subject authority="[[sn20:authority]]" authorityURI="[[sn20:authorityURI]]" valueURI="[[sn20:valueURI]]" altRepGroup="[[sn20:altRepGroup]]">
     <name type="[[sn20:p1:nameType]]" authority="[[sn20:p1:nm:authority]]" authorityURI="[[sn20:p1:nm:authorityURI]]" valueURI="[[sn20:p1:nm:valueURI]]" lang="[[sn20:p1:nm:language]]" script="[[sn20:p1:nm:script]]" transliteration="[[sn20:p1:nm:transliteration]]">
@@ -1078,10 +1078,10 @@
       <partNumber>[[sn20:p1:partNumber]]</partNumber>
       <partName>[[sn20:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn20:p2:authority]]" authorityURI="[[sn20:p2:authorityURI]]" valueURI="[[sn20:p2:valueURI]]">[[sn20:p2:value]]</topic>
-    <topic authority="[[sn20:p3:authority]]" authorityURI="[[sn20:p3:authorityURI]]" valueURI="[[sn20:p3:valueURI]]">[[sn20:p3:value]]</topic>
-    <topic authority="[[sn20:p4:authority]]" authorityURI="[[sn20:p4:authorityURI]]" valueURI="[[sn20:p4:valueURI]]">[[sn20:p4:value]]</topic>
-    <topic authority="[[sn20:p5:authority]]" authorityURI="[[sn20:p5:authorityURI]]" valueURI="[[sn20:p5:valueURI]]">[[sn20:p5:value]]</topic>
+    <[[sn20:p2:type]] authority="[[sn20:p2:authority]]" authorityURI="[[sn20:p2:authorityURI]]" valueURI="[[sn20:p2:valueURI]]">[[sn20:p2:value]]</[[sn20:p2:type]]>
+    <[[sn20:p3:type]] authority="[[sn20:p3:authority]]" authorityURI="[[sn20:p3:authorityURI]]" valueURI="[[sn20:p3:valueURI]]">[[sn20:p3:value]]</[[sn20:p3:type]]>
+    <[[sn20:p4:type]] authority="[[sn20:p4:authority]]" authorityURI="[[sn20:p4:authorityURI]]" valueURI="[[sn20:p4:valueURI]]">[[sn20:p4:value]]</[[sn20:p4:type]]>
+    <[[sn20:p5:type]] authority="[[sn20:p5:authority]]" authorityURI="[[sn20:p5:authorityURI]]" valueURI="[[sn20:p5:valueURI]]">[[sn20:p5:value]]</[[sn20:p5:type]]>
   </subject>
   <subject authority="[[sn21:authority]]" authorityURI="[[sn21:authorityURI]]" valueURI="[[sn21:valueURI]]" altRepGroup="[[sn21:altRepGroup]]">
     <name type="[[sn21:p1:nameType]]" authority="[[sn21:p1:nm:authority]]" authorityURI="[[sn21:p1:nm:authorityURI]]" valueURI="[[sn21:p1:nm:valueURI]]" lang="[[sn21:p1:nm:language]]" script="[[sn21:p1:nm:script]]" transliteration="[[sn21:p1:nm:transliteration]]">
@@ -1093,10 +1093,10 @@
       <partNumber>[[sn21:p1:partNumber]]</partNumber>
       <partName>[[sn21:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn21:p2:authority]]" authorityURI="[[sn21:p2:authorityURI]]" valueURI="[[sn21:p2:valueURI]]">[[sn21:p2:value]]</topic>
-    <topic authority="[[sn21:p3:authority]]" authorityURI="[[sn21:p3:authorityURI]]" valueURI="[[sn21:p3:valueURI]]">[[sn21:p3:value]]</topic>
-    <topic authority="[[sn21:p4:authority]]" authorityURI="[[sn21:p4:authorityURI]]" valueURI="[[sn21:p4:valueURI]]">[[sn21:p4:value]]</topic>
-    <topic authority="[[sn21:p5:authority]]" authorityURI="[[sn21:p5:authorityURI]]" valueURI="[[sn21:p5:valueURI]]">[[sn21:p5:value]]</topic>
+    <[[sn21:p2:type]] authority="[[sn21:p2:authority]]" authorityURI="[[sn21:p2:authorityURI]]" valueURI="[[sn21:p2:valueURI]]">[[sn21:p2:value]]</[[sn21:p2:type]]>
+    <[[sn21:p3:type]] authority="[[sn21:p3:authority]]" authorityURI="[[sn21:p3:authorityURI]]" valueURI="[[sn21:p3:valueURI]]">[[sn21:p3:value]]</[[sn21:p3:type]]>
+    <[[sn21:p4:type]] authority="[[sn21:p4:authority]]" authorityURI="[[sn21:p4:authorityURI]]" valueURI="[[sn21:p4:valueURI]]">[[sn21:p4:value]]</[[sn21:p4:type]]>
+    <[[sn21:p5:type]] authority="[[sn21:p5:authority]]" authorityURI="[[sn21:p5:authorityURI]]" valueURI="[[sn21:p5:valueURI]]">[[sn21:p5:value]]</[[sn21:p5:type]]>
   </subject>
   <subject authority="[[sn22:authority]]" authorityURI="[[sn22:authorityURI]]" valueURI="[[sn22:valueURI]]" altRepGroup="[[sn22:altRepGroup]]">
     <name type="[[sn22:p1:nameType]]" authority="[[sn22:p1:nm:authority]]" authorityURI="[[sn22:p1:nm:authorityURI]]" valueURI="[[sn22:p1:nm:valueURI]]" lang="[[sn22:p1:nm:language]]" script="[[sn22:p1:nm:script]]" transliteration="[[sn22:p1:nm:transliteration]]">
@@ -1108,10 +1108,10 @@
       <partNumber>[[sn22:p1:partNumber]]</partNumber>
       <partName>[[sn22:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn22:p2:authority]]" authorityURI="[[sn22:p2:authorityURI]]" valueURI="[[sn22:p2:valueURI]]">[[sn22:p2:value]]</topic>
-    <topic authority="[[sn22:p3:authority]]" authorityURI="[[sn22:p3:authorityURI]]" valueURI="[[sn22:p3:valueURI]]">[[sn22:p3:value]]</topic>
-    <topic authority="[[sn22:p4:authority]]" authorityURI="[[sn22:p4:authorityURI]]" valueURI="[[sn22:p4:valueURI]]">[[sn22:p4:value]]</topic>
-    <topic authority="[[sn22:p5:authority]]" authorityURI="[[sn22:p5:authorityURI]]" valueURI="[[sn22:p5:valueURI]]">[[sn22:p5:value]]</topic>
+    <[[sn22:p2:type]] authority="[[sn22:p2:authority]]" authorityURI="[[sn22:p2:authorityURI]]" valueURI="[[sn22:p2:valueURI]]">[[sn22:p2:value]]</[[sn22:p2:type]]>
+    <[[sn22:p3:type]] authority="[[sn22:p3:authority]]" authorityURI="[[sn22:p3:authorityURI]]" valueURI="[[sn22:p3:valueURI]]">[[sn22:p3:value]]</[[sn22:p3:type]]>
+    <[[sn22:p4:type]] authority="[[sn22:p4:authority]]" authorityURI="[[sn22:p4:authorityURI]]" valueURI="[[sn22:p4:valueURI]]">[[sn22:p4:value]]</[[sn22:p4:type]]>
+    <[[sn22:p5:type]] authority="[[sn22:p5:authority]]" authorityURI="[[sn22:p5:authorityURI]]" valueURI="[[sn22:p5:valueURI]]">[[sn22:p5:value]]</[[sn22:p5:type]]>
   </subject>
   <subject authority="[[sn23:authority]]" authorityURI="[[sn23:authorityURI]]" valueURI="[[sn23:valueURI]]" altRepGroup="[[s23:altRepGroup]]">
     <name type="[[sn23:p1:nameType]]" authority="[[sn23:p1:nm:authority]]" authorityURI="[[sn23:p1:nm:authorityURI]]" valueURI="[[sn23:p1:nm:valueURI]]" lang="[[sn23:p1:nm:language]]" script="[[sn23:p1:nm:script]]" transliteration="[[sn23:p1:nm:transliteration]]">
@@ -1123,10 +1123,10 @@
       <partNumber>[[sn23:p1:partNumber]]</partNumber>
       <partName>[[sn23:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn23:p2:authority]]" authorityURI="[[sn23:p2:authorityURI]]" valueURI="[[sn23:p2:valueURI]]">[[sn23:p2:value]]</topic>
-    <topic authority="[[sn23:p3:authority]]" authorityURI="[[sn23:p3:authorityURI]]" valueURI="[[sn23:p3:valueURI]]">[[sn23:p3:value]]</topic>
-    <topic authority="[[sn23:p4:authority]]" authorityURI="[[sn23:p4:authorityURI]]" valueURI="[[sn23:p4:valueURI]]">[[sn23:p4:value]]</topic>
-    <topic authority="[[sn23:p5:authority]]" authorityURI="[[sn23:p5:authorityURI]]" valueURI="[[sn23:p5:valueURI]]">[[sn23:p5:value]]</topic>
+    <[[sn23:p2:type]] authority="[[sn23:p2:authority]]" authorityURI="[[sn23:p2:authorityURI]]" valueURI="[[sn23:p2:valueURI]]">[[sn23:p2:value]]</[[sn23:p2:type]]>
+    <[[sn23:p3:type]] authority="[[sn23:p3:authority]]" authorityURI="[[sn23:p3:authorityURI]]" valueURI="[[sn23:p3:valueURI]]">[[sn23:p3:value]]</[[sn23:p3:type]]>
+    <[[sn23:p4:type]] authority="[[sn23:p4:authority]]" authorityURI="[[sn23:p4:authorityURI]]" valueURI="[[sn23:p4:valueURI]]">[[sn23:p4:value]]</[[sn23:p4:type]]>
+    <[[sn23:p5:type]] authority="[[sn23:p5:authority]]" authorityURI="[[sn23:p5:authorityURI]]" valueURI="[[sn23:p5:valueURI]]">[[sn23:p5:value]]</[[sn23:p5:type]]>
   </subject>
   <subject authority="[[sn24:authority]]" authorityURI="[[sn24:authorityURI]]" valueURI="[[sn24:valueURI]]" altRepGroup="[[sn24:altRepGroup]]">
     <name type="[[sn24:p1:nameType]]" authority="[[sn24:p1:nm:authority]]" authorityURI="[[sn24:p1:nm:authorityURI]]" valueURI="[[sn24:p1:nm:valueURI]]" lang="[[sn24:p1:nm:language]]" script="[[sn24:p1:nm:script]]" transliteration="[[sn24:p1:nm:transliteration]]">
@@ -1138,10 +1138,10 @@
       <partNumber>[[sn24:p1:partNumber]]</partNumber>
       <partName>[[sn24:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn24:p2:authority]]" authorityURI="[[sn24:p2:authorityURI]]" valueURI="[[sn24:p2:valueURI]]">[[sn24:p2:value]]</topic>
-    <topic authority="[[sn24:p3:authority]]" authorityURI="[[sn24:p3:authorityURI]]" valueURI="[[sn24:p3:valueURI]]">[[sn24:p3:value]]</topic>
-    <topic authority="[[sn24:p4:authority]]" authorityURI="[[sn24:p4:authorityURI]]" valueURI="[[sn24:p4:valueURI]]">[[sn24:p4:value]]</topic>
-    <topic authority="[[sn24:p5:authority]]" authorityURI="[[sn24:p5:authorityURI]]" valueURI="[[sn24:p5:valueURI]]">[[sn24:p5:value]]</topic>
+    <[[sn24:p2:type]] authority="[[sn24:p2:authority]]" authorityURI="[[sn24:p2:authorityURI]]" valueURI="[[sn24:p2:valueURI]]">[[sn24:p2:value]]</[[sn24:p2:type]]>
+    <[[sn24:p3:type]] authority="[[sn24:p3:authority]]" authorityURI="[[sn24:p3:authorityURI]]" valueURI="[[sn24:p3:valueURI]]">[[sn24:p3:value]]</[[sn24:p3:type]]>
+    <[[sn24:p4:type]] authority="[[sn24:p4:authority]]" authorityURI="[[sn24:p4:authorityURI]]" valueURI="[[sn24:p4:valueURI]]">[[sn24:p4:value]]</[[sn24:p4:type]]>
+    <[[sn24:p5:type]] authority="[[sn24:p5:authority]]" authorityURI="[[sn24:p5:authorityURI]]" valueURI="[[sn24:p5:valueURI]]">[[sn24:p5:value]]</[[sn24:p5:type]]>
   </subject>
   <subject authority="[[sn25:authority]]" authorityURI="[[sn25:authorityURI]]" valueURI="[[sn25:valueURI]]" altRepGroup="[[sn25:altRepGroup]]">
     <name type="[[sn25:p1:nameType]]" authority="[[sn25:p1:nm:authority]]" authorityURI="[[sn25:p1:nm:authorityURI]]" valueURI="[[sn25:p1:nm:valueURI]]" lang="[[sn25:p1:nm:language]]" script="[[sn25:p1:nm:script]]" transliteration="[[sn25:p1:nm:transliteration]]">
@@ -1153,10 +1153,10 @@
       <partNumber>[[sn25:p1:partNumber]]</partNumber>
       <partName>[[sn25:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn25:p2:authority]]" authorityURI="[[sn25:p2:authorityURI]]" valueURI="[[sn25:p2:valueURI]]">[[sn25:p2:value]]</topic>
-    <topic authority="[[sn25:p3:authority]]" authorityURI="[[sn25:p3:authorityURI]]" valueURI="[[sn25:p3:valueURI]]">[[sn25:p3:value]]</topic>
-    <topic authority="[[sn25:p4:authority]]" authorityURI="[[sn25:p4:authorityURI]]" valueURI="[[sn25:p4:valueURI]]">[[sn25:p4:value]]</topic>
-    <topic authority="[[sn25:p5:authority]]" authorityURI="[[sn25:p5:authorityURI]]" valueURI="[[sn25:p5:valueURI]]">[[sn25:p5:value]]</topic>
+    <[[sn25:p2:type]] authority="[[sn25:p2:authority]]" authorityURI="[[sn25:p2:authorityURI]]" valueURI="[[sn25:p2:valueURI]]">[[sn25:p2:value]]</[[sn25:p2:type]]>
+    <[[sn25:p3:type]] authority="[[sn25:p3:authority]]" authorityURI="[[sn25:p3:authorityURI]]" valueURI="[[sn25:p3:valueURI]]">[[sn25:p3:value]]</[[sn25:p3:type]]>
+    <[[sn25:p4:type]] authority="[[sn25:p4:authority]]" authorityURI="[[sn25:p4:authorityURI]]" valueURI="[[sn25:p4:valueURI]]">[[sn25:p4:value]]</[[sn25:p4:type]]>
+    <[[sn25:p5:type]] authority="[[sn25:p5:authority]]" authorityURI="[[sn25:p5:authorityURI]]" valueURI="[[sn25:p5:valueURI]]">[[sn25:p5:value]]</[[sn25:p5:type]]>
   </subject>
   <subject authority="[[sn26:authority]]" authorityURI="[[sn26:authorityURI]]" valueURI="[[sn26:valueURI]]" altRepGroup="[[sn26:altRepGroup]]">
     <name type="[[sn26:p1:nameType]]" authority="[[sn26:p1:nm:authority]]" authorityURI="[[sn26:p1:nm:authorityURI]]" valueURI="[[sn26:p1:nm:valueURI]]" lang="[[sn26:p1:nm:language]]" script="[[sn26:p1:nm:script]]" transliteration="[[sn26:p1:nm:transliteration]]">
@@ -1168,10 +1168,10 @@
       <partNumber>[[sn26:p1:partNumber]]</partNumber>
       <partName>[[sn26:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn26:p2:authority]]" authorityURI="[[sn26:p2:authorityURI]]" valueURI="[[sn26:p2:valueURI]]">[[sn26:p2:value]]</topic>
-    <topic authority="[[sn26:p3:authority]]" authorityURI="[[sn26:p3:authorityURI]]" valueURI="[[sn26:p3:valueURI]]">[[sn26:p3:value]]</topic>
-    <topic authority="[[sn26:p4:authority]]" authorityURI="[[sn26:p4:authorityURI]]" valueURI="[[sn26:p4:valueURI]]">[[sn26:p4:value]]</topic>
-    <topic authority="[[sn26:p5:authority]]" authorityURI="[[sn26:p5:authorityURI]]" valueURI="[[sn26:p5:valueURI]]">[[sn26:p5:value]]</topic>
+    <[[sn26:p2:type]] authority="[[sn26:p2:authority]]" authorityURI="[[sn26:p2:authorityURI]]" valueURI="[[sn26:p2:valueURI]]">[[sn26:p2:value]]</[[sn26:p2:type]]>
+    <[[sn26:p3:type]] authority="[[sn26:p3:authority]]" authorityURI="[[sn26:p3:authorityURI]]" valueURI="[[sn26:p3:valueURI]]">[[sn26:p3:value]]</[[sn26:p3:type]]>
+    <[[sn26:p4:type]] authority="[[sn26:p4:authority]]" authorityURI="[[sn26:p4:authorityURI]]" valueURI="[[sn26:p4:valueURI]]">[[sn26:p4:value]]</[[sn26:p4:type]]>
+    <[[sn26:p5:type]] authority="[[sn26:p5:authority]]" authorityURI="[[sn26:p5:authorityURI]]" valueURI="[[sn26:p5:valueURI]]">[[sn26:p5:value]]</[[sn26:p5:type]]>
   </subject>
   <subject authority="[[sn27:authority]]" authorityURI="[[sn27:authorityURI]]" valueURI="[[sn27:valueURI]]" altRepGroup="[[sn27:altRepGroup]]">
     <name type="[[sn27:p1:nameType]]" authority="[[sn27:p1:nm:authority]]" authorityURI="[[sn27:p1:nm:authorityURI]]" valueURI="[[sn27:p1:nm:valueURI]]" lang="[[sn27:p1:nm:language]]" script="[[sn27:p1:nm:script]]" transliteration="[[sn27:p1:nm:transliteration]]">
@@ -1183,10 +1183,10 @@
       <partNumber>[[sn27:p1:partNumber]]</partNumber>
       <partName>[[sn27:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn27:p2:authority]]" authorityURI="[[sn27:p2:authorityURI]]" valueURI="[[sn27:p2:valueURI]]">[[sn27:p2:value]]</topic>
-    <topic authority="[[sn27:p3:authority]]" authorityURI="[[sn27:p3:authorityURI]]" valueURI="[[sn27:p3:valueURI]]">[[sn27:p3:value]]</topic>
-    <topic authority="[[sn27:p4:authority]]" authorityURI="[[sn27:p4:authorityURI]]" valueURI="[[sn27:p4:valueURI]]">[[sn27:p4:value]]</topic>
-    <topic authority="[[sn27:p5:authority]]" authorityURI="[[sn27:p5:authorityURI]]" valueURI="[[sn27:p5:valueURI]]">[[sn27:p5:value]]</topic>
+    <[[sn27:p2:type]] authority="[[sn27:p2:authority]]" authorityURI="[[sn27:p2:authorityURI]]" valueURI="[[sn27:p2:valueURI]]">[[sn27:p2:value]]</[[sn27:p2:type]]>
+    <[[sn27:p3:type]] authority="[[sn27:p3:authority]]" authorityURI="[[sn27:p3:authorityURI]]" valueURI="[[sn27:p3:valueURI]]">[[sn27:p3:value]]</[[sn27:p3:type]]>
+    <[[sn27:p4:type]] authority="[[sn27:p4:authority]]" authorityURI="[[sn27:p4:authorityURI]]" valueURI="[[sn27:p4:valueURI]]">[[sn27:p4:value]]</[[sn27:p4:type]]>
+    <[[sn27:p5:type]] authority="[[sn27:p5:authority]]" authorityURI="[[sn27:p5:authorityURI]]" valueURI="[[sn27:p5:valueURI]]">[[sn27:p5:value]]</[[sn27:p5:type]]>
   </subject>
   <subject authority="[[sn28:authority]]" authorityURI="[[sn28:authorityURI]]" valueURI="[[sn28:valueURI]]" altRepGroup="[[sn28:altRepGroup]]">
     <name type="[[sn28:p1:nameType]]" authority="[[sn28:p1:nm:authority]]" authorityURI="[[sn28:p1:nm:authorityURI]]" valueURI="[[sn28:p1:nm:valueURI]]" lang="[[sn28:p1:nm:language]]" script="[[sn28:p1:nm:script]]" transliteration="[[sn28:p1:nm:transliteration]]">
@@ -1198,10 +1198,10 @@
       <partNumber>[[sn28:p1:partNumber]]</partNumber>
       <partName>[[sn28:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn28:p2:authority]]" authorityURI="[[sn28:p2:authorityURI]]" valueURI="[[sn28:p2:valueURI]]">[[sn28:p2:value]]</topic>
-    <topic authority="[[sn28:p3:authority]]" authorityURI="[[sn28:p3:authorityURI]]" valueURI="[[sn28:p3:valueURI]]">[[sn28:p3:value]]</topic>
-    <topic authority="[[sn28:p4:authority]]" authorityURI="[[sn28:p4:authorityURI]]" valueURI="[[sn28:p4:valueURI]]">[[sn28:p4:value]]</topic>
-    <topic authority="[[sn28:p5:authority]]" authorityURI="[[sn28:p5:authorityURI]]" valueURI="[[sn28:p5:valueURI]]">[[sn28:p5:value]]</topic>
+    <[[sn28:p2:type]] authority="[[sn28:p2:authority]]" authorityURI="[[sn28:p2:authorityURI]]" valueURI="[[sn28:p2:valueURI]]">[[sn28:p2:value]]</[[sn28:p2:type]]>
+    <[[sn28:p3:type]] authority="[[sn28:p3:authority]]" authorityURI="[[sn28:p3:authorityURI]]" valueURI="[[sn28:p3:valueURI]]">[[sn28:p3:value]]</[[sn28:p3:type]]>
+    <[[sn28:p4:type]] authority="[[sn28:p4:authority]]" authorityURI="[[sn28:p4:authorityURI]]" valueURI="[[sn28:p4:valueURI]]">[[sn28:p4:value]]</[[sn28:p4:type]]>
+    <[[sn28:p5:type]] authority="[[sn28:p5:authority]]" authorityURI="[[sn28:p5:authorityURI]]" valueURI="[[sn28:p5:valueURI]]">[[sn28:p5:value]]</[[sn28:p5:type]]>
   </subject>
   <subject authority="[[sn29:authority]]" authorityURI="[[sn29:authorityURI]]" valueURI="[[sn29:valueURI]]" altRepGroup="[[sn29:altRepGroup]]">
     <name type="[[sn29:p1:nameType]]" authority="[[sn29:p1:nm:authority]]" authorityURI="[[sn29:p1:nm:authorityURI]]" valueURI="[[sn29:p1:nm:valueURI]]" lang="[[sn29:p1:nm:language]]" script="[[sn29:p1:nm:script]]" transliteration="[[sn29:p1:nm:transliteration]]">
@@ -1213,10 +1213,10 @@
       <partNumber>[[sn29:p1:partNumber]]</partNumber>
       <partName>[[sn29:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn29:p2:authority]]" authorityURI="[[sn29:p2:authorityURI]]" valueURI="[[sn29:p2:valueURI]]">[[sn29:p2:value]]</topic>
-    <topic authority="[[sn29:p3:authority]]" authorityURI="[[sn29:p3:authorityURI]]" valueURI="[[sn29:p3:valueURI]]">[[sn29:p3:value]]</topic>
-    <topic authority="[[sn29:p4:authority]]" authorityURI="[[sn29:p4:authorityURI]]" valueURI="[[sn29:p4:valueURI]]">[[sn29:p4:value]]</topic>
-    <topic authority="[[sn29:p5:authority]]" authorityURI="[[sn29:p5:authorityURI]]" valueURI="[[sn29:p5:valueURI]]">[[sn29:p5:value]]</topic>
+    <[[sn29:p2:type]] authority="[[sn29:p2:authority]]" authorityURI="[[sn29:p2:authorityURI]]" valueURI="[[sn29:p2:valueURI]]">[[sn29:p2:value]]</[[sn29:p2:type]]>
+    <[[sn29:p3:type]] authority="[[sn29:p3:authority]]" authorityURI="[[sn29:p3:authorityURI]]" valueURI="[[sn29:p3:valueURI]]">[[sn29:p3:value]]</[[sn29:p3:type]]>
+    <[[sn29:p4:type]] authority="[[sn29:p4:authority]]" authorityURI="[[sn29:p4:authorityURI]]" valueURI="[[sn29:p4:valueURI]]">[[sn29:p4:value]]</[[sn29:p4:type]]>
+    <[[sn29:p5:type]] authority="[[sn29:p5:authority]]" authorityURI="[[sn29:p5:authorityURI]]" valueURI="[[sn29:p5:valueURI]]">[[sn29:p5:value]]</[[sn29:p5:type]]>
   </subject>
   <subject authority="[[sn30:authority]]" authorityURI="[[sn30:authorityURI]]" valueURI="[[sn30:valueURI]]" altRepGroup="[[sn30:altRepGroup]]">
     <name type="[[sn30:p1:nameType]]" authority="[[sn30:p1:nm:authority]]" authorityURI="[[sn30:p1:nm:authorityURI]]" valueURI="[[sn30:p1:nm:valueURI]]" lang="[[sn30:p1:nm:language]]" script="[[sn30:p1:nm:script]]" transliteration="[[sn30:p1:nm:transliteration]]">
@@ -1228,360 +1228,360 @@
       <partNumber>[[sn30:p1:partNumber]]</partNumber>
       <partName>[[sn30:p1:partName]]</partName>
     </titleInfo>
-    <topic authority="[[sn30:p2:authority]]" authorityURI="[[sn30:p2:authorityURI]]" valueURI="[[sn30:p2:valueURI]]">[[sn30:p2:value]]</topic>
-    <topic authority="[[sn30:p3:authority]]" authorityURI="[[sn30:p3:authorityURI]]" valueURI="[[sn30:p3:valueURI]]">[[sn30:p3:value]]</topic>
-    <topic authority="[[sn30:p4:authority]]" authorityURI="[[sn30:p4:authorityURI]]" valueURI="[[sn30:p4:valueURI]]">[[sn30:p4:value]]</topic>
-    <topic authority="[[sn30:p5:authority]]" authorityURI="[[sn30:p5:authorityURI]]" valueURI="[[sn30:p5:valueURI]]">[[sn30:p5:value]]</topic>
+    <[[sn30:p2:type]] authority="[[sn30:p2:authority]]" authorityURI="[[sn30:p2:authorityURI]]" valueURI="[[sn30:p2:valueURI]]">[[sn30:p2:value]]</[[sn30:p2:type]]>
+    <[[sn30:p3:type]] authority="[[sn30:p3:authority]]" authorityURI="[[sn30:p3:authorityURI]]" valueURI="[[sn30:p3:valueURI]]">[[sn30:p3:value]]</[[sn30:p3:type]]>
+    <[[sn30:p4:type]] authority="[[sn30:p4:authority]]" authorityURI="[[sn30:p4:authorityURI]]" valueURI="[[sn30:p4:valueURI]]">[[sn30:p4:value]]</[[sn30:p4:type]]>
+    <[[sn30:p5:type]] authority="[[sn30:p5:authority]]" authorityURI="[[sn30:p5:authorityURI]]" valueURI="[[sn30:p5:valueURI]]">[[sn30:p5:value]]</[[sn30:p5:type]]>
   </subject>
   <subject displayLabel="[[su1:displayLabel]]" authority="[[su1:authority]]" authorityURI="[[su1:authorityURI]]" valueURI="[[su1:valueURI]]" lang="[[su1:language]]" script="[[su1:script]]" transliteration="[[su1:transliteration]]" altRepGroup="[[su1:altRepGroup]]">
-    <topic authority="[[su1:p1:authority]]" authorityURI="[[su1:p1:authorityURI]]" valueURI="[[su1:p1:valueURI]]">[[su1:p1:value]]</topic>
-    <topic authority="[[su1:p2:authority]]" authorityURI="[[su1:p2:authorityURI]]" valueURI="[[su1:p2:valueURI]]">[[su1:p2:value]]</topic>
-    <topic authority="[[su1:p3:authority]]" authorityURI="[[su1:p3:authorityURI]]" valueURI="[[su1:p3:valueURI]]">[[su1:p3:value]]</topic>
-    <topic authority="[[su1:p4:authority]]" authorityURI="[[su1:p4:authorityURI]]" valueURI="[[su1:p4:valueURI]]">[[su1:p4:value]]</topic>
-    <topic authority="[[su1:p5:authority]]" authorityURI="[[su1:p5:authorityURI]]" valueURI="[[su1:p5:valueURI]]">[[su1:p5:value]]</topic>
+    <[[su1:p1:type]] authority="[[su1:p1:authority]]" authorityURI="[[su1:p1:authorityURI]]" valueURI="[[su1:p1:valueURI]]">[[su1:p1:value]]</[[su1:p1:type]]>
+    <[[su1:p2:type]] authority="[[su1:p2:authority]]" authorityURI="[[su1:p2:authorityURI]]" valueURI="[[su1:p2:valueURI]]">[[su1:p2:value]]</[[su1:p2:type]]>
+    <[[su1:p3:type]] authority="[[su1:p3:authority]]" authorityURI="[[su1:p3:authorityURI]]" valueURI="[[su1:p3:valueURI]]">[[su1:p3:value]]</[[su1:p3:type]]>
+    <[[su1:p4:type]] authority="[[su1:p4:authority]]" authorityURI="[[su1:p4:authorityURI]]" valueURI="[[su1:p4:valueURI]]">[[su1:p4:value]]</[[su1:p4:type]]>
+    <[[su1:p5:type]] authority="[[su1:p5:authority]]" authorityURI="[[su1:p5:authorityURI]]" valueURI="[[su1:p5:valueURI]]">[[su1:p5:value]]</[[su1:p5:type]]>
   </subject>
   <subject displayLabel="[[su2:displayLabel]]" authority="[[su2:authority]]" authorityURI="[[su2:authorityURI]]" valueURI="[[su2:valueURI]]" lang="[[su2:language]]" script="[[su2:script]]" transliteration="[[su2:transliteration]]" altRepGroup="[[su2:altRepGroup]]">
-    <topic authority="[[su2:p1:authority]]" authorityURI="[[su2:p1:authorityURI]]" valueURI="[[su2:p1:valueURI]]">[[su2:p1:value]]</topic>
-    <topic authority="[[su2:p2:authority]]" authorityURI="[[su2:p2:authorityURI]]" valueURI="[[su2:p2:valueURI]]">[[su2:p2:value]]</topic>
-    <topic authority="[[su2:p3:authority]]" authorityURI="[[su2:p3:authorityURI]]" valueURI="[[su2:p3:valueURI]]">[[su2:p3:value]]</topic>
-    <topic authority="[[su2:p4:authority]]" authorityURI="[[su2:p4:authorityURI]]" valueURI="[[su2:p4:valueURI]]">[[su2:p4:value]]</topic>
-    <topic authority="[[su2:p5:authority]]" authorityURI="[[su2:p5:authorityURI]]" valueURI="[[su2:p5:valueURI]]">[[su2:p5:value]]</topic>
+    <[[su2:p1:type]] authority="[[su2:p1:authority]]" authorityURI="[[su2:p1:authorityURI]]" valueURI="[[su2:p1:valueURI]]">[[su2:p1:value]]</[[su2:p1:type]]>
+    <[[su2:p2:type]] authority="[[su2:p2:authority]]" authorityURI="[[su2:p2:authorityURI]]" valueURI="[[su2:p2:valueURI]]">[[su2:p2:value]]</[[su2:p2:type]]>
+    <[[su2:p3:type]] authority="[[su2:p3:authority]]" authorityURI="[[su2:p3:authorityURI]]" valueURI="[[su2:p3:valueURI]]">[[su2:p3:value]]</[[su2:p3:type]]>
+    <[[su2:p4:type]] authority="[[su2:p4:authority]]" authorityURI="[[su2:p4:authorityURI]]" valueURI="[[su2:p4:valueURI]]">[[su2:p4:value]]</[[su2:p4:type]]>
+    <[[su2:p5:type]] authority="[[su2:p5:authority]]" authorityURI="[[su2:p5:authorityURI]]" valueURI="[[su2:p5:valueURI]]">[[su2:p5:value]]</[[su2:p5:type]]>
   </subject>
   <subject displayLabel="[[su3:displayLabel]]" authority="[[su3:authority]]" authorityURI="[[su3:authorityURI]]" valueURI="[[su3:valueURI]]" lang="[[su3:language]]" script="[[su3:script]]" transliteration="[[su3:transliteration]]" altRepGroup="[[su3:altRepGroup]]">
-    <topic authority="[[su3:p1:authority]]" authorityURI="[[su3:p1:authorityURI]]" valueURI="[[su3:p1:valueURI]]">[[su3:p1:value]]</topic>
-    <topic authority="[[su3:p2:authority]]" authorityURI="[[su3:p2:authorityURI]]" valueURI="[[su3:p2:valueURI]]">[[su3:p2:value]]</topic>
-    <topic authority="[[su3:p3:authority]]" authorityURI="[[su3:p3:authorityURI]]" valueURI="[[su3:p3:valueURI]]">[[su3:p3:value]]</topic>
-    <topic authority="[[su3:p4:authority]]" authorityURI="[[su3:p4:authorityURI]]" valueURI="[[su3:p4:valueURI]]">[[su3:p4:value]]</topic>
-    <topic authority="[[su3:p5:authority]]" authorityURI="[[su3:p5:authorityURI]]" valueURI="[[su3:p5:valueURI]]">[[su3:p5:value]]</topic>
+    <[[su3:p1:type]] authority="[[su3:p1:authority]]" authorityURI="[[su3:p1:authorityURI]]" valueURI="[[su3:p1:valueURI]]">[[su3:p1:value]]</[[su3:p1:type]]>
+    <[[su3:p2:type]] authority="[[su3:p2:authority]]" authorityURI="[[su3:p2:authorityURI]]" valueURI="[[su3:p2:valueURI]]">[[su3:p2:value]]</[[su3:p2:type]]>
+    <[[su3:p3:type]] authority="[[su3:p3:authority]]" authorityURI="[[su3:p3:authorityURI]]" valueURI="[[su3:p3:valueURI]]">[[su3:p3:value]]</[[su3:p3:type]]>
+    <[[su3:p4:type]] authority="[[su3:p4:authority]]" authorityURI="[[su3:p4:authorityURI]]" valueURI="[[su3:p4:valueURI]]">[[su3:p4:value]]</[[su3:p4:type]]>
+    <[[su3:p5:type]] authority="[[su3:p5:authority]]" authorityURI="[[su3:p5:authorityURI]]" valueURI="[[su3:p5:valueURI]]">[[su3:p5:value]]</[[su3:p5:type]]>
   </subject>
   <subject displayLabel="[[su4:displayLabel]]" authority="[[su4:authority]]" authorityURI="[[su4:authorityURI]]" valueURI="[[su4:valueURI]]" lang="[[su4:language]]" script="[[su4:script]]" transliteration="[[su4:transliteration]]" altRepGroup="[[su4:altRepGroup]]">
-    <topic authority="[[su4:p1:authority]]" authorityURI="[[su4:p1:authorityURI]]" valueURI="[[su4:p1:valueURI]]">[[su4:p1:value]]</topic>
-    <topic authority="[[su4:p2:authority]]" authorityURI="[[su4:p2:authorityURI]]" valueURI="[[su4:p2:valueURI]]">[[su4:p2:value]]</topic>
-    <topic authority="[[su4:p3:authority]]" authorityURI="[[su4:p3:authorityURI]]" valueURI="[[su4:p3:valueURI]]">[[su4:p3:value]]</topic>
-    <topic authority="[[su4:p4:authority]]" authorityURI="[[su4:p4:authorityURI]]" valueURI="[[su4:p4:valueURI]]">[[su4:p4:value]]</topic>
-    <topic authority="[[su4:p5:authority]]" authorityURI="[[su4:p5:authorityURI]]" valueURI="[[su4:p5:valueURI]]">[[su4:p5:value]]</topic>
+    <[[su4:p1:type]] authority="[[su4:p1:authority]]" authorityURI="[[su4:p1:authorityURI]]" valueURI="[[su4:p1:valueURI]]">[[su4:p1:value]]</[[su4:p1:type]]>
+    <[[su4:p2:type]] authority="[[su4:p2:authority]]" authorityURI="[[su4:p2:authorityURI]]" valueURI="[[su4:p2:valueURI]]">[[su4:p2:value]]</[[su4:p2:type]]>
+    <[[su4:p3:type]] authority="[[su4:p3:authority]]" authorityURI="[[su4:p3:authorityURI]]" valueURI="[[su4:p3:valueURI]]">[[su4:p3:value]]</[[su4:p3:type]]>
+    <[[su4:p4:type]] authority="[[su4:p4:authority]]" authorityURI="[[su4:p4:authorityURI]]" valueURI="[[su4:p4:valueURI]]">[[su4:p4:value]]</[[su4:p4:type]]>
+    <[[su4:p5:type]] authority="[[su4:p5:authority]]" authorityURI="[[su4:p5:authorityURI]]" valueURI="[[su4:p5:valueURI]]">[[su4:p5:value]]</[[su4:p5:type]]>
   </subject>
   <subject displayLabel="[[su5:displayLabel]]" authority="[[su5:authority]]" authorityURI="[[su5:authorityURI]]" valueURI="[[su5:valueURI]]" lang="[[su5:language]]" script="[[su5:script]]" transliteration="[[su5:transliteration]]" altRepGroup="[[su5:altRepGroup]]">
-    <topic authority="[[su5:p1:authority]]" authorityURI="[[su5:p1:authorityURI]]" valueURI="[[su5:p1:valueURI]]">[[su5:p1:value]]</topic>
-    <topic authority="[[su5:p2:authority]]" authorityURI="[[su5:p2:authorityURI]]" valueURI="[[su5:p2:valueURI]]">[[su5:p2:value]]</topic>
-    <topic authority="[[su5:p3:authority]]" authorityURI="[[su5:p3:authorityURI]]" valueURI="[[su5:p3:valueURI]]">[[su5:p3:value]]</topic>
-    <topic authority="[[su5:p4:authority]]" authorityURI="[[su5:p4:authorityURI]]" valueURI="[[su5:p4:valueURI]]">[[su5:p4:value]]</topic>
-    <topic authority="[[su5:p5:authority]]" authorityURI="[[su5:p5:authorityURI]]" valueURI="[[su5:p5:valueURI]]">[[su5:p5:value]]</topic>
+    <[[su5:p1:type]] authority="[[su5:p1:authority]]" authorityURI="[[su5:p1:authorityURI]]" valueURI="[[su5:p1:valueURI]]">[[su5:p1:value]]</[[su5:p1:type]]>
+    <[[su5:p2:type]] authority="[[su5:p2:authority]]" authorityURI="[[su5:p2:authorityURI]]" valueURI="[[su5:p2:valueURI]]">[[su5:p2:value]]</[[su5:p2:type]]>
+    <[[su5:p3:type]] authority="[[su5:p3:authority]]" authorityURI="[[su5:p3:authorityURI]]" valueURI="[[su5:p3:valueURI]]">[[su5:p3:value]]</[[su5:p3:type]]>
+    <[[su5:p4:type]] authority="[[su5:p4:authority]]" authorityURI="[[su5:p4:authorityURI]]" valueURI="[[su5:p4:valueURI]]">[[su5:p4:value]]</[[su5:p4:type]]>
+    <[[su5:p5:type]] authority="[[su5:p5:authority]]" authorityURI="[[su5:p5:authorityURI]]" valueURI="[[su5:p5:valueURI]]">[[su5:p5:value]]</[[su5:p5:type]]>
   </subject>
   <subject displayLabel="[[su6:displayLabel]]" authority="[[su6:authority]]" authorityURI="[[su6:authorityURI]]" valueURI="[[su6:valueURI]]" lang="[[su6:language]]" script="[[su6:script]]" transliteration="[[su6:transliteration]]" altRepGroup="[[su6:altRepGroup]]">
-    <topic authority="[[su6:p1:authority]]" authorityURI="[[su6:p1:authorityURI]]" valueURI="[[su6:p1:valueURI]]">[[su6:p1:value]]</topic>
-    <topic authority="[[su6:p2:authority]]" authorityURI="[[su6:p2:authorityURI]]" valueURI="[[su6:p2:valueURI]]">[[su6:p2:value]]</topic>
-    <topic authority="[[su6:p3:authority]]" authorityURI="[[su6:p3:authorityURI]]" valueURI="[[su6:p3:valueURI]]">[[su6:p3:value]]</topic>
-    <topic authority="[[su6:p4:authority]]" authorityURI="[[su6:p4:authorityURI]]" valueURI="[[su6:p4:valueURI]]">[[su6:p4:value]]</topic>
-    <topic authority="[[su6:p5:authority]]" authorityURI="[[su6:p5:authorityURI]]" valueURI="[[su6:p5:valueURI]]">[[su6:p5:value]]</topic>
+    <[[su6:p1:type]] authority="[[su6:p1:authority]]" authorityURI="[[su6:p1:authorityURI]]" valueURI="[[su6:p1:valueURI]]">[[su6:p1:value]]</[[su6:p1:type]]>
+    <[[su6:p2:type]] authority="[[su6:p2:authority]]" authorityURI="[[su6:p2:authorityURI]]" valueURI="[[su6:p2:valueURI]]">[[su6:p2:value]]</[[su6:p2:type]]>
+    <[[su6:p3:type]] authority="[[su6:p3:authority]]" authorityURI="[[su6:p3:authorityURI]]" valueURI="[[su6:p3:valueURI]]">[[su6:p3:value]]</[[su6:p3:type]]>
+    <[[su6:p4:type]] authority="[[su6:p4:authority]]" authorityURI="[[su6:p4:authorityURI]]" valueURI="[[su6:p4:valueURI]]">[[su6:p4:value]]</[[su6:p4:type]]>
+    <[[su6:p5:type]] authority="[[su6:p5:authority]]" authorityURI="[[su6:p5:authorityURI]]" valueURI="[[su6:p5:valueURI]]">[[su6:p5:value]]</[[su6:p5:type]]>
   </subject>
   <subject displayLabel="[[su7:displayLabel]]" authority="[[su7:authority]]" authorityURI="[[su7:authorityURI]]" valueURI="[[su7:valueURI]]" lang="[[su7:language]]" script="[[su7:script]]" transliteration="[[su7:transliteration]]" altRepGroup="[[su7:altRepGroup]]">
-    <topic authority="[[su7:p1:authority]]" authorityURI="[[su7:p1:authorityURI]]" valueURI="[[su7:p1:valueURI]]">[[su7:p1:value]]</topic>
-    <topic authority="[[su7:p2:authority]]" authorityURI="[[su7:p2:authorityURI]]" valueURI="[[su7:p2:valueURI]]">[[su7:p2:value]]</topic>
-    <topic authority="[[su7:p3:authority]]" authorityURI="[[su7:p3:authorityURI]]" valueURI="[[su7:p3:valueURI]]">[[su7:p3:value]]</topic>
-    <topic authority="[[su7:p4:authority]]" authorityURI="[[su7:p4:authorityURI]]" valueURI="[[su7:p4:valueURI]]">[[su7:p4:value]]</topic>
-    <topic authority="[[su7:p5:authority]]" authorityURI="[[su7:p5:authorityURI]]" valueURI="[[su7:p5:valueURI]]">[[su7:p5:value]]</topic>
+    <[[su7:p1:type]] authority="[[su7:p1:authority]]" authorityURI="[[su7:p1:authorityURI]]" valueURI="[[su7:p1:valueURI]]">[[su7:p1:value]]</[[su7:p1:type]]>
+    <[[su7:p2:type]] authority="[[su7:p2:authority]]" authorityURI="[[su7:p2:authorityURI]]" valueURI="[[su7:p2:valueURI]]">[[su7:p2:value]]</[[su7:p2:type]]>
+    <[[su7:p3:type]] authority="[[su7:p3:authority]]" authorityURI="[[su7:p3:authorityURI]]" valueURI="[[su7:p3:valueURI]]">[[su7:p3:value]]</[[su7:p3:type]]>
+    <[[su7:p4:type]] authority="[[su7:p4:authority]]" authorityURI="[[su7:p4:authorityURI]]" valueURI="[[su7:p4:valueURI]]">[[su7:p4:value]]</[[su7:p4:type]]>
+    <[[su7:p5:type]] authority="[[su7:p5:authority]]" authorityURI="[[su7:p5:authorityURI]]" valueURI="[[su7:p5:valueURI]]">[[su7:p5:value]]</[[su7:p5:type]]>
   </subject>
   <subject displayLabel="[[su8:displayLabel]]" authority="[[su8:authority]]" authorityURI="[[su8:authorityURI]]" valueURI="[[su8:valueURI]]" lang="[[su8:language]]" script="[[su8:script]]" transliteration="[[su8:transliteration]]" altRepGroup="[[su8:altRepGroup]]">
-    <topic authority="[[su8:p1:authority]]" authorityURI="[[su8:p1:authorityURI]]" valueURI="[[su8:p1:valueURI]]">[[su8:p1:value]]</topic>
-    <topic authority="[[su8:p2:authority]]" authorityURI="[[su8:p2:authorityURI]]" valueURI="[[su8:p2:valueURI]]">[[su8:p2:value]]</topic>
-    <topic authority="[[su8:p3:authority]]" authorityURI="[[su8:p3:authorityURI]]" valueURI="[[su8:p3:valueURI]]">[[su8:p3:value]]</topic>
-    <topic authority="[[su8:p4:authority]]" authorityURI="[[su8:p4:authorityURI]]" valueURI="[[su8:p4:valueURI]]">[[su8:p4:value]]</topic>
-    <topic authority="[[su8:p5:authority]]" authorityURI="[[su8:p5:authorityURI]]" valueURI="[[su8:p5:valueURI]]">[[su8:p5:value]]</topic>
+    <[[su8:p1:type]] authority="[[su8:p1:authority]]" authorityURI="[[su8:p1:authorityURI]]" valueURI="[[su8:p1:valueURI]]">[[su8:p1:value]]</[[su8:p1:type]]>
+    <[[su8:p2:type]] authority="[[su8:p2:authority]]" authorityURI="[[su8:p2:authorityURI]]" valueURI="[[su8:p2:valueURI]]">[[su8:p2:value]]</[[su8:p2:type]]>
+    <[[su8:p3:type]] authority="[[su8:p3:authority]]" authorityURI="[[su8:p3:authorityURI]]" valueURI="[[su8:p3:valueURI]]">[[su8:p3:value]]</[[su8:p3:type]]>
+    <[[su8:p4:type]] authority="[[su8:p4:authority]]" authorityURI="[[su8:p4:authorityURI]]" valueURI="[[su8:p4:valueURI]]">[[su8:p4:value]]</[[su8:p4:type]]>
+    <[[su8:p5:type]] authority="[[su8:p5:authority]]" authorityURI="[[su8:p5:authorityURI]]" valueURI="[[su8:p5:valueURI]]">[[su8:p5:value]]</[[su8:p5:type]]>
   </subject>
   <subject displayLabel="[[su9:displayLabel]]" authority="[[su9:authority]]" authorityURI="[[su9:authorityURI]]" valueURI="[[su9:valueURI]]" lang="[[su9:language]]" script="[[su9:script]]" transliteration="[[su9:transliteration]]" altRepGroup="[[su9:altRepGroup]]">
-    <topic authority="[[su9:p1:authority]]" authorityURI="[[su9:p1:authorityURI]]" valueURI="[[su9:p1:valueURI]]">[[su9:p1:value]]</topic>
-    <topic authority="[[su9:p2:authority]]" authorityURI="[[su9:p2:authorityURI]]" valueURI="[[su9:p2:valueURI]]">[[su9:p2:value]]</topic>
-    <topic authority="[[su9:p3:authority]]" authorityURI="[[su9:p3:authorityURI]]" valueURI="[[su9:p3:valueURI]]">[[su9:p3:value]]</topic>
-    <topic authority="[[su9:p4:authority]]" authorityURI="[[su9:p4:authorityURI]]" valueURI="[[su9:p4:valueURI]]">[[su9:p4:value]]</topic>
-    <topic authority="[[su9:p5:authority]]" authorityURI="[[su9:p5:authorityURI]]" valueURI="[[su9:p5:valueURI]]">[[su9:p5:value]]</topic>
+    <[[su9:p1:type]] authority="[[su9:p1:authority]]" authorityURI="[[su9:p1:authorityURI]]" valueURI="[[su9:p1:valueURI]]">[[su9:p1:value]]</[[su9:p1:type]]>
+    <[[su9:p2:type]] authority="[[su9:p2:authority]]" authorityURI="[[su9:p2:authorityURI]]" valueURI="[[su9:p2:valueURI]]">[[su9:p2:value]]</[[su9:p2:type]]>
+    <[[su9:p3:type]] authority="[[su9:p3:authority]]" authorityURI="[[su9:p3:authorityURI]]" valueURI="[[su9:p3:valueURI]]">[[su9:p3:value]]</[[su9:p3:type]]>
+    <[[su9:p4:type]] authority="[[su9:p4:authority]]" authorityURI="[[su9:p4:authorityURI]]" valueURI="[[su9:p4:valueURI]]">[[su9:p4:value]]</[[su9:p4:type]]>
+    <[[su9:p5:type]] authority="[[su9:p5:authority]]" authorityURI="[[su9:p5:authorityURI]]" valueURI="[[su9:p5:valueURI]]">[[su9:p5:value]]</[[su9:p5:type]]>
   </subject>
   <subject displayLabel="[[su10:displayLabel]]" authority="[[su10:authority]]" authorityURI="[[su10:authorityURI]]" valueURI="[[su10:valueURI]]" lang="[[su10:language]]" script="[[su10:script]]" transliteration="[[su10:transliteration]]" altRepGroup="[[su10:altRepGroup]]">
-    <topic authority="[[su10:p1:authority]]" authorityURI="[[su10:p1:authorityURI]]" valueURI="[[su10:p1:valueURI]]">[[su10:p1:value]]</topic>
-    <topic authority="[[su10:p2:authority]]" authorityURI="[[su10:p2:authorityURI]]" valueURI="[[su10:p2:valueURI]]">[[su10:p2:value]]</topic>
-    <topic authority="[[su10:p3:authority]]" authorityURI="[[su10:p3:authorityURI]]" valueURI="[[su10:p3:valueURI]]">[[su10:p3:value]]</topic>
-    <topic authority="[[su10:p4:authority]]" authorityURI="[[su10:p4:authorityURI]]" valueURI="[[su10:p4:valueURI]]">[[su10:p4:value]]</topic>
-    <topic authority="[[su10:p5:authority]]" authorityURI="[[su10:p5:authorityURI]]" valueURI="[[su10:p5:valueURI]]">[[su10:p5:value]]</topic>
+    <[[su10:p1:type]] authority="[[su10:p1:authority]]" authorityURI="[[su10:p1:authorityURI]]" valueURI="[[su10:p1:valueURI]]">[[su10:p1:value]]</[[su10:p1:type]]>
+    <[[su10:p2:type]] authority="[[su10:p2:authority]]" authorityURI="[[su10:p2:authorityURI]]" valueURI="[[su10:p2:valueURI]]">[[su10:p2:value]]</[[su10:p2:type]]>
+    <[[su10:p3:type]] authority="[[su10:p3:authority]]" authorityURI="[[su10:p3:authorityURI]]" valueURI="[[su10:p3:valueURI]]">[[su10:p3:value]]</[[su10:p3:type]]>
+    <[[su10:p4:type]] authority="[[su10:p4:authority]]" authorityURI="[[su10:p4:authorityURI]]" valueURI="[[su10:p4:valueURI]]">[[su10:p4:value]]</[[su10:p4:type]]>
+    <[[su10:p5:type]] authority="[[su10:p5:authority]]" authorityURI="[[su10:p5:authorityURI]]" valueURI="[[su10:p5:valueURI]]">[[su10:p5:value]]</[[su10:p5:type]]>
   </subject>
   <subject displayLabel="[[su11:displayLabel]]" authority="[[su11:authority]]" authorityURI="[[su11:authorityURI]]" valueURI="[[su11:valueURI]]" lang="[[su11:language]]" script="[[su11:script]]" transliteration="[[su11:transliteration]]" altRepGroup="[[su11:altRepGroup]]">
-    <topic authority="[[su11:p1:authority]]" authorityURI="[[su11:p1:authorityURI]]" valueURI="[[su11:p1:valueURI]]">[[su11:p1:value]]</topic>
-    <topic authority="[[su11:p2:authority]]" authorityURI="[[su11:p2:authorityURI]]" valueURI="[[su11:p2:valueURI]]">[[su11:p2:value]]</topic>
-    <topic authority="[[su11:p3:authority]]" authorityURI="[[su11:p3:authorityURI]]" valueURI="[[su11:p3:valueURI]]">[[su11:p3:value]]</topic>
-    <topic authority="[[su11:p4:authority]]" authorityURI="[[su11:p4:authorityURI]]" valueURI="[[su11:p4:valueURI]]">[[su11:p4:value]]</topic>
-    <topic authority="[[su11:p5:authority]]" authorityURI="[[su11:p5:authorityURI]]" valueURI="[[su11:p5:valueURI]]">[[su11:p5:value]]</topic>
+    <[[su11:p1:type]] authority="[[su11:p1:authority]]" authorityURI="[[su11:p1:authorityURI]]" valueURI="[[su11:p1:valueURI]]">[[su11:p1:value]]</[[su11:p1:type]]>
+    <[[su11:p2:type]] authority="[[su11:p2:authority]]" authorityURI="[[su11:p2:authorityURI]]" valueURI="[[su11:p2:valueURI]]">[[su11:p2:value]]</[[su11:p2:type]]>
+    <[[su11:p3:type]] authority="[[su11:p3:authority]]" authorityURI="[[su11:p3:authorityURI]]" valueURI="[[su11:p3:valueURI]]">[[su11:p3:value]]</[[su11:p3:type]]>
+    <[[su11:p4:type]] authority="[[su11:p4:authority]]" authorityURI="[[su11:p4:authorityURI]]" valueURI="[[su11:p4:valueURI]]">[[su11:p4:value]]</[[su11:p4:type]]>
+    <[[su11:p5:type]] authority="[[su11:p5:authority]]" authorityURI="[[su11:p5:authorityURI]]" valueURI="[[su11:p5:valueURI]]">[[su11:p5:value]]</[[su11:p5:type]]>
   </subject>
   <subject displayLabel="[[su12:displayLabel]]" authority="[[su12:authority]]" authorityURI="[[su12:authorityURI]]" valueURI="[[su12:valueURI]]" lang="[[su12:language]]" script="[[su12:script]]" transliteration="[[su12:transliteration]]" altRepGroup="[[su12:altRepGroup]]">
-    <topic authority="[[su12:p1:authority]]" authorityURI="[[su12:p1:authorityURI]]" valueURI="[[su12:p1:valueURI]]">[[su12:p1:value]]</topic>
-    <topic authority="[[su12:p2:authority]]" authorityURI="[[su12:p2:authorityURI]]" valueURI="[[su12:p2:valueURI]]">[[su12:p2:value]]</topic>
-    <topic authority="[[su12:p3:authority]]" authorityURI="[[su12:p3:authorityURI]]" valueURI="[[su12:p3:valueURI]]">[[su12:p3:value]]</topic>
-    <topic authority="[[su12:p4:authority]]" authorityURI="[[su12:p4:authorityURI]]" valueURI="[[su12:p4:valueURI]]">[[su12:p4:value]]</topic>
-    <topic authority="[[su12:p5:authority]]" authorityURI="[[su12:p5:authorityURI]]" valueURI="[[su12:p5:valueURI]]">[[su12:p5:value]]</topic>
+    <[[su12:p1:type]] authority="[[su12:p1:authority]]" authorityURI="[[su12:p1:authorityURI]]" valueURI="[[su12:p1:valueURI]]">[[su12:p1:value]]</[[su12:p1:type]]>
+    <[[su12:p2:type]] authority="[[su12:p2:authority]]" authorityURI="[[su12:p2:authorityURI]]" valueURI="[[su12:p2:valueURI]]">[[su12:p2:value]]</[[su12:p2:type]]>
+    <[[su12:p3:type]] authority="[[su12:p3:authority]]" authorityURI="[[su12:p3:authorityURI]]" valueURI="[[su12:p3:valueURI]]">[[su12:p3:value]]</[[su12:p3:type]]>
+    <[[su12:p4:type]] authority="[[su12:p4:authority]]" authorityURI="[[su12:p4:authorityURI]]" valueURI="[[su12:p4:valueURI]]">[[su12:p4:value]]</[[su12:p4:type]]>
+    <[[su12:p5:type]] authority="[[su12:p5:authority]]" authorityURI="[[su12:p5:authorityURI]]" valueURI="[[su12:p5:valueURI]]">[[su12:p5:value]]</[[su12:p5:type]]>
   </subject>
   <subject displayLabel="[[su13:displayLabel]]" authority="[[su13:authority]]" authorityURI="[[su13:authorityURI]]" valueURI="[[su13:valueURI]]" lang="[[su13:language]]" script="[[su13:script]]" transliteration="[[su13:transliteration]]" altRepGroup="[[su13:altRepGroup]]">
-    <topic authority="[[su13:p1:authority]]" authorityURI="[[su13:p1:authorityURI]]" valueURI="[[su13:p1:valueURI]]">[[su13:p1:value]]</topic>
-    <topic authority="[[su13:p2:authority]]" authorityURI="[[su13:p2:authorityURI]]" valueURI="[[su13:p2:valueURI]]">[[su13:p2:value]]</topic>
-    <topic authority="[[su13:p3:authority]]" authorityURI="[[su13:p3:authorityURI]]" valueURI="[[su13:p3:valueURI]]">[[su13:p3:value]]</topic>
-    <topic authority="[[su13:p4:authority]]" authorityURI="[[su13:p4:authorityURI]]" valueURI="[[su13:p4:valueURI]]">[[su13:p4:value]]</topic>
-    <topic authority="[[su13:p5:authority]]" authorityURI="[[su13:p5:authorityURI]]" valueURI="[[su13:p5:valueURI]]">[[su13:p5:value]]</topic>
+    <[[su13:p1:type]] authority="[[su13:p1:authority]]" authorityURI="[[su13:p1:authorityURI]]" valueURI="[[su13:p1:valueURI]]">[[su13:p1:value]]</[[su13:p1:type]]>
+    <[[su13:p2:type]] authority="[[su13:p2:authority]]" authorityURI="[[su13:p2:authorityURI]]" valueURI="[[su13:p2:valueURI]]">[[su13:p2:value]]</[[su13:p2:type]]>
+    <[[su13:p3:type]] authority="[[su13:p3:authority]]" authorityURI="[[su13:p3:authorityURI]]" valueURI="[[su13:p3:valueURI]]">[[su13:p3:value]]</[[su13:p3:type]]>
+    <[[su13:p4:type]] authority="[[su13:p4:authority]]" authorityURI="[[su13:p4:authorityURI]]" valueURI="[[su13:p4:valueURI]]">[[su13:p4:value]]</[[su13:p4:type]]>
+    <[[su13:p5:type]] authority="[[su13:p5:authority]]" authorityURI="[[su13:p5:authorityURI]]" valueURI="[[su13:p5:valueURI]]">[[su13:p5:value]]</[[su13:p5:type]]>
   </subject>
   <subject displayLabel="[[su14:displayLabel]]" authority="[[su14:authority]]" authorityURI="[[su14:authorityURI]]" valueURI="[[su14:valueURI]]" lang="[[su14:language]]" script="[[su14:script]]" transliteration="[[su14:transliteration]]" altRepGroup="[[su14:altRepGroup]]">
-    <topic authority="[[su14:p1:authority]]" authorityURI="[[su14:p1:authorityURI]]" valueURI="[[su14:p1:valueURI]]">[[su14:p1:value]]</topic>
-    <topic authority="[[su14:p2:authority]]" authorityURI="[[su14:p2:authorityURI]]" valueURI="[[su14:p2:valueURI]]">[[su14:p2:value]]</topic>
-    <topic authority="[[su14:p3:authority]]" authorityURI="[[su14:p3:authorityURI]]" valueURI="[[su14:p3:valueURI]]">[[su14:p3:value]]</topic>
-    <topic authority="[[su14:p4:authority]]" authorityURI="[[su14:p4:authorityURI]]" valueURI="[[su14:p4:valueURI]]">[[su14:p4:value]]</topic>
-    <topic authority="[[su14:p5:authority]]" authorityURI="[[su14:p5:authorityURI]]" valueURI="[[su14:p5:valueURI]]">[[su14:p5:value]]</topic>
+    <[[su14:p1:type]] authority="[[su14:p1:authority]]" authorityURI="[[su14:p1:authorityURI]]" valueURI="[[su14:p1:valueURI]]">[[su14:p1:value]]</[[su14:p1:type]]>
+    <[[su14:p2:type]] authority="[[su14:p2:authority]]" authorityURI="[[su14:p2:authorityURI]]" valueURI="[[su14:p2:valueURI]]">[[su14:p2:value]]</[[su14:p2:type]]>
+    <[[su14:p3:type]] authority="[[su14:p3:authority]]" authorityURI="[[su14:p3:authorityURI]]" valueURI="[[su14:p3:valueURI]]">[[su14:p3:value]]</[[su14:p3:type]]>
+    <[[su14:p4:type]] authority="[[su14:p4:authority]]" authorityURI="[[su14:p4:authorityURI]]" valueURI="[[su14:p4:valueURI]]">[[su14:p4:value]]</[[su14:p4:type]]>
+    <[[su14:p5:type]] authority="[[su14:p5:authority]]" authorityURI="[[su14:p5:authorityURI]]" valueURI="[[su14:p5:valueURI]]">[[su14:p5:value]]</[[su14:p5:type]]>
   </subject>
   <subject displayLabel="[[su15:displayLabel]]" authority="[[su15:authority]]" authorityURI="[[su15:authorityURI]]" valueURI="[[su15:valueURI]]" lang="[[su15:language]]" script="[[su15:script]]" transliteration="[[su15:transliteration]]" altRepGroup="[[su15:altRepGroup]]">
-    <topic authority="[[su15:p1:authority]]" authorityURI="[[su15:p1:authorityURI]]" valueURI="[[su15:p1:valueURI]]">[[su15:p1:value]]</topic>
-    <topic authority="[[su15:p2:authority]]" authorityURI="[[su15:p2:authorityURI]]" valueURI="[[su15:p2:valueURI]]">[[su15:p2:value]]</topic>
-    <topic authority="[[su15:p3:authority]]" authorityURI="[[su15:p3:authorityURI]]" valueURI="[[su15:p3:valueURI]]">[[su15:p3:value]]</topic>
-    <topic authority="[[su15:p4:authority]]" authorityURI="[[su15:p4:authorityURI]]" valueURI="[[su15:p4:valueURI]]">[[su15:p4:value]]</topic>
-    <topic authority="[[su15:p5:authority]]" authorityURI="[[su15:p5:authorityURI]]" valueURI="[[su15:p5:valueURI]]">[[su15:p5:value]]</topic>
+    <[[su15:p1:type]] authority="[[su15:p1:authority]]" authorityURI="[[su15:p1:authorityURI]]" valueURI="[[su15:p1:valueURI]]">[[su15:p1:value]]</[[su15:p1:type]]>
+    <[[su15:p2:type]] authority="[[su15:p2:authority]]" authorityURI="[[su15:p2:authorityURI]]" valueURI="[[su15:p2:valueURI]]">[[su15:p2:value]]</[[su15:p2:type]]>
+    <[[su15:p3:type]] authority="[[su15:p3:authority]]" authorityURI="[[su15:p3:authorityURI]]" valueURI="[[su15:p3:valueURI]]">[[su15:p3:value]]</[[su15:p3:type]]>
+    <[[su15:p4:type]] authority="[[su15:p4:authority]]" authorityURI="[[su15:p4:authorityURI]]" valueURI="[[su15:p4:valueURI]]">[[su15:p4:value]]</[[su15:p4:type]]>
+    <[[su15:p5:type]] authority="[[su15:p5:authority]]" authorityURI="[[su15:p5:authorityURI]]" valueURI="[[su15:p5:valueURI]]">[[su15:p5:value]]</[[su15:p5:type]]>
   </subject>
   <subject displayLabel="[[su16:displayLabel]]" authority="[[su16:authority]]" authorityURI="[[su16:authorityURI]]" valueURI="[[su16:valueURI]]" lang="[[su16:language]]" script="[[su16:script]]" transliteration="[[su16:transliteration]]" altRepGroup="[[su16:altRepGroup]]">
-    <topic authority="[[su16:p1:authority]]" authorityURI="[[su16:p1:authorityURI]]" valueURI="[[su16:p1:valueURI]]">[[su16:p1:value]]</topic>
-    <topic authority="[[su16:p2:authority]]" authorityURI="[[su16:p2:authorityURI]]" valueURI="[[su16:p2:valueURI]]">[[su16:p2:value]]</topic>
-    <topic authority="[[su16:p3:authority]]" authorityURI="[[su16:p3:authorityURI]]" valueURI="[[su16:p3:valueURI]]">[[su16:p3:value]]</topic>
-    <topic authority="[[su16:p4:authority]]" authorityURI="[[su16:p4:authorityURI]]" valueURI="[[su16:p4:valueURI]]">[[su16:p4:value]]</topic>
-    <topic authority="[[su16:p5:authority]]" authorityURI="[[su16:p5:authorityURI]]" valueURI="[[su16:p5:valueURI]]">[[su16:p5:value]]</topic>
+    <[[su16:p1:type]] authority="[[su16:p1:authority]]" authorityURI="[[su16:p1:authorityURI]]" valueURI="[[su16:p1:valueURI]]">[[su16:p1:value]]</[[su16:p1:type]]>
+    <[[su16:p2:type]] authority="[[su16:p2:authority]]" authorityURI="[[su16:p2:authorityURI]]" valueURI="[[su16:p2:valueURI]]">[[su16:p2:value]]</[[su16:p2:type]]>
+    <[[su16:p3:type]] authority="[[su16:p3:authority]]" authorityURI="[[su16:p3:authorityURI]]" valueURI="[[su16:p3:valueURI]]">[[su16:p3:value]]</[[su16:p3:type]]>
+    <[[su16:p4:type]] authority="[[su16:p4:authority]]" authorityURI="[[su16:p4:authorityURI]]" valueURI="[[su16:p4:valueURI]]">[[su16:p4:value]]</[[su16:p4:type]]>
+    <[[su16:p5:type]] authority="[[su16:p5:authority]]" authorityURI="[[su16:p5:authorityURI]]" valueURI="[[su16:p5:valueURI]]">[[su16:p5:value]]</[[su16:p5:type]]>
   </subject>
   <subject displayLabel="[[su17:displayLabel]]" authority="[[su17:authority]]" authorityURI="[[su17:authorityURI]]" valueURI="[[su17:valueURI]]" lang="[[su17:language]]" script="[[su17:script]]" transliteration="[[su17:transliteration]]" altRepGroup="[[su17:altRepGroup]]">
-    <topic authority="[[su17:p1:authority]]" authorityURI="[[su17:p1:authorityURI]]" valueURI="[[su17:p1:valueURI]]">[[su17:p1:value]]</topic>
-    <topic authority="[[su17:p2:authority]]" authorityURI="[[su17:p2:authorityURI]]" valueURI="[[su17:p2:valueURI]]">[[su17:p2:value]]</topic>
-    <topic authority="[[su17:p3:authority]]" authorityURI="[[su17:p3:authorityURI]]" valueURI="[[su17:p3:valueURI]]">[[su17:p3:value]]</topic>
-    <topic authority="[[su17:p4:authority]]" authorityURI="[[su17:p4:authorityURI]]" valueURI="[[su17:p4:valueURI]]">[[su17:p4:value]]</topic>
-    <topic authority="[[su17:p5:authority]]" authorityURI="[[su17:p5:authorityURI]]" valueURI="[[su17:p5:valueURI]]">[[su17:p5:value]]</topic>
+    <[[su17:p1:type]] authority="[[su17:p1:authority]]" authorityURI="[[su17:p1:authorityURI]]" valueURI="[[su17:p1:valueURI]]">[[su17:p1:value]]</[[su17:p1:type]]>
+    <[[su17:p2:type]] authority="[[su17:p2:authority]]" authorityURI="[[su17:p2:authorityURI]]" valueURI="[[su17:p2:valueURI]]">[[su17:p2:value]]</[[su17:p2:type]]>
+    <[[su17:p3:type]] authority="[[su17:p3:authority]]" authorityURI="[[su17:p3:authorityURI]]" valueURI="[[su17:p3:valueURI]]">[[su17:p3:value]]</[[su17:p3:type]]>
+    <[[su17:p4:type]] authority="[[su17:p4:authority]]" authorityURI="[[su17:p4:authorityURI]]" valueURI="[[su17:p4:valueURI]]">[[su17:p4:value]]</[[su17:p4:type]]>
+    <[[su17:p5:type]] authority="[[su17:p5:authority]]" authorityURI="[[su17:p5:authorityURI]]" valueURI="[[su17:p5:valueURI]]">[[su17:p5:value]]</[[su17:p5:type]]>
   </subject>
   <subject displayLabel="[[su18:displayLabel]]" authority="[[su18:authority]]" authorityURI="[[su18:authorityURI]]" valueURI="[[su18:valueURI]]" lang="[[su18:language]]" script="[[su18:script]]" transliteration="[[su18:transliteration]]" altRepGroup="[[su18:altRepGroup]]">
-    <topic authority="[[su18:p1:authority]]" authorityURI="[[su18:p1:authorityURI]]" valueURI="[[su18:p1:valueURI]]">[[su18:p1:value]]</topic>
-    <topic authority="[[su18:p2:authority]]" authorityURI="[[su18:p2:authorityURI]]" valueURI="[[su18:p2:valueURI]]">[[su18:p2:value]]</topic>
-    <topic authority="[[su18:p3:authority]]" authorityURI="[[su18:p3:authorityURI]]" valueURI="[[su18:p3:valueURI]]">[[su18:p3:value]]</topic>
-    <topic authority="[[su18:p4:authority]]" authorityURI="[[su18:p4:authorityURI]]" valueURI="[[su18:p4:valueURI]]">[[su18:p4:value]]</topic>
-    <topic authority="[[su18:p5:authority]]" authorityURI="[[su18:p5:authorityURI]]" valueURI="[[su18:p5:valueURI]]">[[su18:p5:value]]</topic>
+    <[[su18:p1:type]] authority="[[su18:p1:authority]]" authorityURI="[[su18:p1:authorityURI]]" valueURI="[[su18:p1:valueURI]]">[[su18:p1:value]]</[[su18:p1:type]]>
+    <[[su18:p2:type]] authority="[[su18:p2:authority]]" authorityURI="[[su18:p2:authorityURI]]" valueURI="[[su18:p2:valueURI]]">[[su18:p2:value]]</[[su18:p2:type]]>
+    <[[su18:p3:type]] authority="[[su18:p3:authority]]" authorityURI="[[su18:p3:authorityURI]]" valueURI="[[su18:p3:valueURI]]">[[su18:p3:value]]</[[su18:p3:type]]>
+    <[[su18:p4:type]] authority="[[su18:p4:authority]]" authorityURI="[[su18:p4:authorityURI]]" valueURI="[[su18:p4:valueURI]]">[[su18:p4:value]]</[[su18:p4:type]]>
+    <[[su18:p5:type]] authority="[[su18:p5:authority]]" authorityURI="[[su18:p5:authorityURI]]" valueURI="[[su18:p5:valueURI]]">[[su18:p5:value]]</[[su18:p5:type]]>
   </subject>
   <subject displayLabel="[[su19:displayLabel]]" authority="[[su19:authority]]" authorityURI="[[su19:authorityURI]]" valueURI="[[su19:valueURI]]" lang="[[su19:language]]" script="[[su19:script]]" transliteration="[[su19:transliteration]]" altRepGroup="[[su19:altRepGroup]]">
-    <topic authority="[[su19:p1:authority]]" authorityURI="[[su19:p1:authorityURI]]" valueURI="[[su19:p1:valueURI]]">[[su19:p1:value]]</topic>
-    <topic authority="[[su19:p2:authority]]" authorityURI="[[su19:p2:authorityURI]]" valueURI="[[su19:p2:valueURI]]">[[su19:p2:value]]</topic>
-    <topic authority="[[su19:p3:authority]]" authorityURI="[[su19:p3:authorityURI]]" valueURI="[[su19:p3:valueURI]]">[[su19:p3:value]]</topic>
-    <topic authority="[[su19:p4:authority]]" authorityURI="[[su19:p4:authorityURI]]" valueURI="[[su19:p4:valueURI]]">[[su19:p4:value]]</topic>
-    <topic authority="[[su19:p5:authority]]" authorityURI="[[su19:p5:authorityURI]]" valueURI="[[su19:p5:valueURI]]">[[su19:p5:value]]</topic>
+    <[[su19:p1:type]] authority="[[su19:p1:authority]]" authorityURI="[[su19:p1:authorityURI]]" valueURI="[[su19:p1:valueURI]]">[[su19:p1:value]]</[[su19:p1:type]]>
+    <[[su19:p2:type]] authority="[[su19:p2:authority]]" authorityURI="[[su19:p2:authorityURI]]" valueURI="[[su19:p2:valueURI]]">[[su19:p2:value]]</[[su19:p2:type]]>
+    <[[su19:p3:type]] authority="[[su19:p3:authority]]" authorityURI="[[su19:p3:authorityURI]]" valueURI="[[su19:p3:valueURI]]">[[su19:p3:value]]</[[su19:p3:type]]>
+    <[[su19:p4:type]] authority="[[su19:p4:authority]]" authorityURI="[[su19:p4:authorityURI]]" valueURI="[[su19:p4:valueURI]]">[[su19:p4:value]]</[[su19:p4:type]]>
+    <[[su19:p5:type]] authority="[[su19:p5:authority]]" authorityURI="[[su19:p5:authorityURI]]" valueURI="[[su19:p5:valueURI]]">[[su19:p5:value]]</[[su19:p5:type]]>
   </subject>
   <subject displayLabel="[[su20:displayLabel]]" authority="[[su20:authority]]" authorityURI="[[su20:authorityURI]]" valueURI="[[su20:valueURI]]" lang="[[su20:language]]" script="[[su20:script]]" transliteration="[[su20:transliteration]]" altRepGroup="[[su20:altRepGroup]]">
-    <topic authority="[[su20:p1:authority]]" authorityURI="[[su20:p1:authorityURI]]" valueURI="[[su20:p1:valueURI]]">[[su20:p1:value]]</topic>
-    <topic authority="[[su20:p2:authority]]" authorityURI="[[su20:p2:authorityURI]]" valueURI="[[su20:p2:valueURI]]">[[su20:p2:value]]</topic>
-    <topic authority="[[su20:p3:authority]]" authorityURI="[[su20:p3:authorityURI]]" valueURI="[[su20:p3:valueURI]]">[[su20:p3:value]]</topic>
-    <topic authority="[[su20:p4:authority]]" authorityURI="[[su20:p4:authorityURI]]" valueURI="[[su20:p4:valueURI]]">[[su20:p4:value]]</topic>
-    <topic authority="[[su20:p5:authority]]" authorityURI="[[su20:p5:authorityURI]]" valueURI="[[su20:p5:valueURI]]">[[su20:p5:value]]</topic>
+    <[[su20:p1:type]] authority="[[su20:p1:authority]]" authorityURI="[[su20:p1:authorityURI]]" valueURI="[[su20:p1:valueURI]]">[[su20:p1:value]]</[[su20:p1:type]]>
+    <[[su20:p2:type]] authority="[[su20:p2:authority]]" authorityURI="[[su20:p2:authorityURI]]" valueURI="[[su20:p2:valueURI]]">[[su20:p2:value]]</[[su20:p2:type]]>
+    <[[su20:p3:type]] authority="[[su20:p3:authority]]" authorityURI="[[su20:p3:authorityURI]]" valueURI="[[su20:p3:valueURI]]">[[su20:p3:value]]</[[su20:p3:type]]>
+    <[[su20:p4:type]] authority="[[su20:p4:authority]]" authorityURI="[[su20:p4:authorityURI]]" valueURI="[[su20:p4:valueURI]]">[[su20:p4:value]]</[[su20:p4:type]]>
+    <[[su20:p5:type]] authority="[[su20:p5:authority]]" authorityURI="[[su20:p5:authorityURI]]" valueURI="[[su20:p5:valueURI]]">[[su20:p5:value]]</[[su20:p5:type]]>
   </subject>
   <subject displayLabel="[[su21:displayLabel]]" authority="[[su21:authority]]" authorityURI="[[su21:authorityURI]]" valueURI="[[su21:valueURI]]" lang="[[su21:language]]" script="[[su21:script]]" transliteration="[[su21:transliteration]]" altRepGroup="[[su21:altRepGroup]]">
-    <topic authority="[[su21:p1:authority]]" authorityURI="[[su21:p1:authorityURI]]" valueURI="[[su21:p1:valueURI]]">[[su21:p1:value]]</topic>
-    <topic authority="[[su21:p2:authority]]" authorityURI="[[su21:p2:authorityURI]]" valueURI="[[su21:p2:valueURI]]">[[su21:p2:value]]</topic>
-    <topic authority="[[su21:p3:authority]]" authorityURI="[[su21:p3:authorityURI]]" valueURI="[[su21:p3:valueURI]]">[[su21:p3:value]]</topic>
-    <topic authority="[[su21:p4:authority]]" authorityURI="[[su21:p4:authorityURI]]" valueURI="[[su21:p4:valueURI]]">[[su21:p4:value]]</topic>
-    <topic authority="[[su21:p5:authority]]" authorityURI="[[su21:p5:authorityURI]]" valueURI="[[su21:p5:valueURI]]">[[su21:p5:value]]</topic>
+    <[[su21:p1:type]] authority="[[su21:p1:authority]]" authorityURI="[[su21:p1:authorityURI]]" valueURI="[[su21:p1:valueURI]]">[[su21:p1:value]]</[[su21:p1:type]]>
+    <[[su21:p2:type]] authority="[[su21:p2:authority]]" authorityURI="[[su21:p2:authorityURI]]" valueURI="[[su21:p2:valueURI]]">[[su21:p2:value]]</[[su21:p2:type]]>
+    <[[su21:p3:type]] authority="[[su21:p3:authority]]" authorityURI="[[su21:p3:authorityURI]]" valueURI="[[su21:p3:valueURI]]">[[su21:p3:value]]</[[su21:p3:type]]>
+    <[[su21:p4:type]] authority="[[su21:p4:authority]]" authorityURI="[[su21:p4:authorityURI]]" valueURI="[[su21:p4:valueURI]]">[[su21:p4:value]]</[[su21:p4:type]]>
+    <[[su21:p5:type]] authority="[[su21:p5:authority]]" authorityURI="[[su21:p5:authorityURI]]" valueURI="[[su21:p5:valueURI]]">[[su21:p5:value]]</[[su21:p5:type]]>
   </subject>
   <subject displayLabel="[[su22:displayLabel]]" authority="[[su22:authority]]" authorityURI="[[su22:authorityURI]]" valueURI="[[su22:valueURI]]" lang="[[su22:language]]" script="[[su22:script]]" transliteration="[[su22:transliteration]]" altRepGroup="[[su22:altRepGroup]]">
-    <topic authority="[[su22:p1:authority]]" authorityURI="[[su22:p1:authorityURI]]" valueURI="[[su22:p1:valueURI]]">[[su22:p1:value]]</topic>
-    <topic authority="[[su22:p2:authority]]" authorityURI="[[su22:p2:authorityURI]]" valueURI="[[su22:p2:valueURI]]">[[su22:p2:value]]</topic>
-    <topic authority="[[su22:p3:authority]]" authorityURI="[[su22:p3:authorityURI]]" valueURI="[[su22:p3:valueURI]]">[[su22:p3:value]]</topic>
-    <topic authority="[[su22:p4:authority]]" authorityURI="[[su22:p4:authorityURI]]" valueURI="[[su22:p4:valueURI]]">[[su22:p4:value]]</topic>
-    <topic authority="[[su22:p5:authority]]" authorityURI="[[su22:p5:authorityURI]]" valueURI="[[su22:p5:valueURI]]">[[su22:p5:value]]</topic>
+    <[[su22:p1:type]] authority="[[su22:p1:authority]]" authorityURI="[[su22:p1:authorityURI]]" valueURI="[[su22:p1:valueURI]]">[[su22:p1:value]]</[[su22:p1:type]]>
+    <[[su22:p2:type]] authority="[[su22:p2:authority]]" authorityURI="[[su22:p2:authorityURI]]" valueURI="[[su22:p2:valueURI]]">[[su22:p2:value]]</[[su22:p2:type]]>
+    <[[su22:p3:type]] authority="[[su22:p3:authority]]" authorityURI="[[su22:p3:authorityURI]]" valueURI="[[su22:p3:valueURI]]">[[su22:p3:value]]</[[su22:p3:type]]>
+    <[[su22:p4:type]] authority="[[su22:p4:authority]]" authorityURI="[[su22:p4:authorityURI]]" valueURI="[[su22:p4:valueURI]]">[[su22:p4:value]]</[[su22:p4:type]]>
+    <[[su22:p5:type]] authority="[[su22:p5:authority]]" authorityURI="[[su22:p5:authorityURI]]" valueURI="[[su22:p5:valueURI]]">[[su22:p5:value]]</[[su22:p5:type]]>
   </subject>
   <subject displayLabel="[[su23:displayLabel]]" authority="[[su23:authority]]" authorityURI="[[su23:authorityURI]]" valueURI="[[su23:valueURI]]" lang="[[su23:language]]" script="[[su23:script]]" transliteration="[[su23:transliteration]]" altRepGroup="[[su23:altRepGroup]]">
-    <topic authority="[[su23:p1:authority]]" authorityURI="[[su23:p1:authorityURI]]" valueURI="[[su23:p1:valueURI]]">[[su23:p1:value]]</topic>
-    <topic authority="[[su23:p2:authority]]" authorityURI="[[su23:p2:authorityURI]]" valueURI="[[su23:p2:valueURI]]">[[su23:p2:value]]</topic>
-    <topic authority="[[su23:p3:authority]]" authorityURI="[[su23:p3:authorityURI]]" valueURI="[[su23:p3:valueURI]]">[[su23:p3:value]]</topic>
-    <topic authority="[[su23:p4:authority]]" authorityURI="[[su23:p4:authorityURI]]" valueURI="[[su23:p4:valueURI]]">[[su23:p4:value]]</topic>
-    <topic authority="[[su23:p5:authority]]" authorityURI="[[su23:p5:authorityURI]]" valueURI="[[su23:p5:valueURI]]">[[su23:p5:value]]</topic>
+    <[[su23:p1:type]] authority="[[su23:p1:authority]]" authorityURI="[[su23:p1:authorityURI]]" valueURI="[[su23:p1:valueURI]]">[[su23:p1:value]]</[[su23:p1:type]]>
+    <[[su23:p2:type]] authority="[[su23:p2:authority]]" authorityURI="[[su23:p2:authorityURI]]" valueURI="[[su23:p2:valueURI]]">[[su23:p2:value]]</[[su23:p2:type]]>
+    <[[su23:p3:type]] authority="[[su23:p3:authority]]" authorityURI="[[su23:p3:authorityURI]]" valueURI="[[su23:p3:valueURI]]">[[su23:p3:value]]</[[su23:p3:type]]>
+    <[[su23:p4:type]] authority="[[su23:p4:authority]]" authorityURI="[[su23:p4:authorityURI]]" valueURI="[[su23:p4:valueURI]]">[[su23:p4:value]]</[[su23:p4:type]]>
+    <[[su23:p5:type]] authority="[[su23:p5:authority]]" authorityURI="[[su23:p5:authorityURI]]" valueURI="[[su23:p5:valueURI]]">[[su23:p5:value]]</[[su23:p5:type]]>
   </subject>
   <subject displayLabel="[[su24:displayLabel]]" authority="[[su24:authority]]" authorityURI="[[su24:authorityURI]]" valueURI="[[su24:valueURI]]" lang="[[su24:language]]" script="[[su24:script]]" transliteration="[[su24:transliteration]]" altRepGroup="[[su24:altRepGroup]]">
-    <topic authority="[[su24:p1:authority]]" authorityURI="[[su24:p1:authorityURI]]" valueURI="[[su24:p1:valueURI]]">[[su24:p1:value]]</topic>
-    <topic authority="[[su24:p2:authority]]" authorityURI="[[su24:p2:authorityURI]]" valueURI="[[su24:p2:valueURI]]">[[su24:p2:value]]</topic>
-    <topic authority="[[su24:p3:authority]]" authorityURI="[[su24:p3:authorityURI]]" valueURI="[[su24:p3:valueURI]]">[[su24:p3:value]]</topic>
-    <topic authority="[[su24:p4:authority]]" authorityURI="[[su24:p4:authorityURI]]" valueURI="[[su24:p4:valueURI]]">[[su24:p4:value]]</topic>
-    <topic authority="[[su24:p5:authority]]" authorityURI="[[su24:p5:authorityURI]]" valueURI="[[su24:p5:valueURI]]">[[su24:p5:value]]</topic>
+    <[[su24:p1:type]] authority="[[su24:p1:authority]]" authorityURI="[[su24:p1:authorityURI]]" valueURI="[[su24:p1:valueURI]]">[[su24:p1:value]]</[[su24:p1:type]]>
+    <[[su24:p2:type]] authority="[[su24:p2:authority]]" authorityURI="[[su24:p2:authorityURI]]" valueURI="[[su24:p2:valueURI]]">[[su24:p2:value]]</[[su24:p2:type]]>
+    <[[su24:p3:type]] authority="[[su24:p3:authority]]" authorityURI="[[su24:p3:authorityURI]]" valueURI="[[su24:p3:valueURI]]">[[su24:p3:value]]</[[su24:p3:type]]>
+    <[[su24:p4:type]] authority="[[su24:p4:authority]]" authorityURI="[[su24:p4:authorityURI]]" valueURI="[[su24:p4:valueURI]]">[[su24:p4:value]]</[[su24:p4:type]]>
+    <[[su24:p5:type]] authority="[[su24:p5:authority]]" authorityURI="[[su24:p5:authorityURI]]" valueURI="[[su24:p5:valueURI]]">[[su24:p5:value]]</[[su24:p5:type]]>
   </subject>
   <subject displayLabel="[[su25:displayLabel]]" authority="[[su25:authority]]" authorityURI="[[su25:authorityURI]]" valueURI="[[su25:valueURI]]" lang="[[su25:language]]" script="[[su25:script]]" transliteration="[[su25:transliteration]]" altRepGroup="[[su25:altRepGroup]]">
-    <topic authority="[[su25:p1:authority]]" authorityURI="[[su25:p1:authorityURI]]" valueURI="[[su25:p1:valueURI]]">[[su25:p1:value]]</topic>
-    <topic authority="[[su25:p2:authority]]" authorityURI="[[su25:p2:authorityURI]]" valueURI="[[su25:p2:valueURI]]">[[su25:p2:value]]</topic>
-    <topic authority="[[su25:p3:authority]]" authorityURI="[[su25:p3:authorityURI]]" valueURI="[[su25:p3:valueURI]]">[[su25:p3:value]]</topic>
-    <topic authority="[[su25:p4:authority]]" authorityURI="[[su25:p4:authorityURI]]" valueURI="[[su25:p4:valueURI]]">[[su25:p4:value]]</topic>
-    <topic authority="[[su25:p5:authority]]" authorityURI="[[su25:p5:authorityURI]]" valueURI="[[su25:p5:valueURI]]">[[su25:p5:value]]</topic>
+    <[[su25:p1:type]] authority="[[su25:p1:authority]]" authorityURI="[[su25:p1:authorityURI]]" valueURI="[[su25:p1:valueURI]]">[[su25:p1:value]]</[[su25:p1:type]]>
+    <[[su25:p2:type]] authority="[[su25:p2:authority]]" authorityURI="[[su25:p2:authorityURI]]" valueURI="[[su25:p2:valueURI]]">[[su25:p2:value]]</[[su25:p2:type]]>
+    <[[su25:p3:type]] authority="[[su25:p3:authority]]" authorityURI="[[su25:p3:authorityURI]]" valueURI="[[su25:p3:valueURI]]">[[su25:p3:value]]</[[su25:p3:type]]>
+    <[[su25:p4:type]] authority="[[su25:p4:authority]]" authorityURI="[[su25:p4:authorityURI]]" valueURI="[[su25:p4:valueURI]]">[[su25:p4:value]]</[[su25:p4:type]]>
+    <[[su25:p5:type]] authority="[[su25:p5:authority]]" authorityURI="[[su25:p5:authorityURI]]" valueURI="[[su25:p5:valueURI]]">[[su25:p5:value]]</[[su25:p5:type]]>
   </subject>
   <subject displayLabel="[[su26:displayLabel]]" authority="[[su26:authority]]" authorityURI="[[su26:authorityURI]]" valueURI="[[su26:valueURI]]" lang="[[su26:language]]" script="[[su26:script]]" transliteration="[[su26:transliteration]]" altRepGroup="[[su26:altRepGroup]]">
-    <topic authority="[[su26:p1:authority]]" authorityURI="[[su26:p1:authorityURI]]" valueURI="[[su26:p1:valueURI]]">[[su26:p1:value]]</topic>
-    <topic authority="[[su26:p2:authority]]" authorityURI="[[su26:p2:authorityURI]]" valueURI="[[su26:p2:valueURI]]">[[su26:p2:value]]</topic>
-    <topic authority="[[su26:p3:authority]]" authorityURI="[[su26:p3:authorityURI]]" valueURI="[[su26:p3:valueURI]]">[[su26:p3:value]]</topic>
-    <topic authority="[[su26:p4:authority]]" authorityURI="[[su26:p4:authorityURI]]" valueURI="[[su26:p4:valueURI]]">[[su26:p4:value]]</topic>
-    <topic authority="[[su26:p5:authority]]" authorityURI="[[su26:p5:authorityURI]]" valueURI="[[su26:p5:valueURI]]">[[su26:p5:value]]</topic>
+    <[[su26:p1:type]] authority="[[su26:p1:authority]]" authorityURI="[[su26:p1:authorityURI]]" valueURI="[[su26:p1:valueURI]]">[[su26:p1:value]]</[[su26:p1:type]]>
+    <[[su26:p2:type]] authority="[[su26:p2:authority]]" authorityURI="[[su26:p2:authorityURI]]" valueURI="[[su26:p2:valueURI]]">[[su26:p2:value]]</[[su26:p2:type]]>
+    <[[su26:p3:type]] authority="[[su26:p3:authority]]" authorityURI="[[su26:p3:authorityURI]]" valueURI="[[su26:p3:valueURI]]">[[su26:p3:value]]</[[su26:p3:type]]>
+    <[[su26:p4:type]] authority="[[su26:p4:authority]]" authorityURI="[[su26:p4:authorityURI]]" valueURI="[[su26:p4:valueURI]]">[[su26:p4:value]]</[[su26:p4:type]]>
+    <[[su26:p5:type]] authority="[[su26:p5:authority]]" authorityURI="[[su26:p5:authorityURI]]" valueURI="[[su26:p5:valueURI]]">[[su26:p5:value]]</[[su26:p5:type]]>
   </subject>
   <subject displayLabel="[[su27:displayLabel]]" authority="[[su27:authority]]" authorityURI="[[su27:authorityURI]]" valueURI="[[su27:valueURI]]" lang="[[su27:language]]" script="[[su27:script]]" transliteration="[[su27:transliteration]]" altRepGroup="[[su27:altRepGroup]]">
-    <topic authority="[[su27:p1:authority]]" authorityURI="[[su27:p1:authorityURI]]" valueURI="[[su27:p1:valueURI]]">[[su27:p1:value]]</topic>
-    <topic authority="[[su27:p2:authority]]" authorityURI="[[su27:p2:authorityURI]]" valueURI="[[su27:p2:valueURI]]">[[su27:p2:value]]</topic>
-    <topic authority="[[su27:p3:authority]]" authorityURI="[[su27:p3:authorityURI]]" valueURI="[[su27:p3:valueURI]]">[[su27:p3:value]]</topic>
-    <topic authority="[[su27:p4:authority]]" authorityURI="[[su27:p4:authorityURI]]" valueURI="[[su27:p4:valueURI]]">[[su27:p4:value]]</topic>
-    <topic authority="[[su27:p5:authority]]" authorityURI="[[su27:p5:authorityURI]]" valueURI="[[su27:p5:valueURI]]">[[su27:p5:value]]</topic>
+    <[[su27:p1:type]] authority="[[su27:p1:authority]]" authorityURI="[[su27:p1:authorityURI]]" valueURI="[[su27:p1:valueURI]]">[[su27:p1:value]]</[[su27:p1:type]]>
+    <[[su27:p2:type]] authority="[[su27:p2:authority]]" authorityURI="[[su27:p2:authorityURI]]" valueURI="[[su27:p2:valueURI]]">[[su27:p2:value]]</[[su27:p2:type]]>
+    <[[su27:p3:type]] authority="[[su27:p3:authority]]" authorityURI="[[su27:p3:authorityURI]]" valueURI="[[su27:p3:valueURI]]">[[su27:p3:value]]</[[su27:p3:type]]>
+    <[[su27:p4:type]] authority="[[su27:p4:authority]]" authorityURI="[[su27:p4:authorityURI]]" valueURI="[[su27:p4:valueURI]]">[[su27:p4:value]]</[[su27:p4:type]]>
+    <[[su27:p5:type]] authority="[[su27:p5:authority]]" authorityURI="[[su27:p5:authorityURI]]" valueURI="[[su27:p5:valueURI]]">[[su27:p5:value]]</[[su27:p5:type]]>
   </subject>
   <subject displayLabel="[[su28:displayLabel]]" authority="[[su28:authority]]" authorityURI="[[su28:authorityURI]]" valueURI="[[su28:valueURI]]" lang="[[su28:language]]" script="[[su28:script]]" transliteration="[[su28:transliteration]]" altRepGroup="[[su28:altRepGroup]]">
-    <topic authority="[[su28:p1:authority]]" authorityURI="[[su28:p1:authorityURI]]" valueURI="[[su28:p1:valueURI]]">[[su28:p1:value]]</topic>
-    <topic authority="[[su28:p2:authority]]" authorityURI="[[su28:p2:authorityURI]]" valueURI="[[su28:p2:valueURI]]">[[su28:p2:value]]</topic>
-    <topic authority="[[su28:p3:authority]]" authorityURI="[[su28:p3:authorityURI]]" valueURI="[[su28:p3:valueURI]]">[[su28:p3:value]]</topic>
-    <topic authority="[[su28:p4:authority]]" authorityURI="[[su28:p4:authorityURI]]" valueURI="[[su28:p4:valueURI]]">[[su28:p4:value]]</topic>
-    <topic authority="[[su28:p5:authority]]" authorityURI="[[su28:p5:authorityURI]]" valueURI="[[su28:p5:valueURI]]">[[su28:p5:value]]</topic>
+    <[[su28:p1:type]] authority="[[su28:p1:authority]]" authorityURI="[[su28:p1:authorityURI]]" valueURI="[[su28:p1:valueURI]]">[[su28:p1:value]]</[[su28:p1:type]]>
+    <[[su28:p2:type]] authority="[[su28:p2:authority]]" authorityURI="[[su28:p2:authorityURI]]" valueURI="[[su28:p2:valueURI]]">[[su28:p2:value]]</[[su28:p2:type]]>
+    <[[su28:p3:type]] authority="[[su28:p3:authority]]" authorityURI="[[su28:p3:authorityURI]]" valueURI="[[su28:p3:valueURI]]">[[su28:p3:value]]</[[su28:p3:type]]>
+    <[[su28:p4:type]] authority="[[su28:p4:authority]]" authorityURI="[[su28:p4:authorityURI]]" valueURI="[[su28:p4:valueURI]]">[[su28:p4:value]]</[[su28:p4:type]]>
+    <[[su28:p5:type]] authority="[[su28:p5:authority]]" authorityURI="[[su28:p5:authorityURI]]" valueURI="[[su28:p5:valueURI]]">[[su28:p5:value]]</[[su28:p5:type]]>
   </subject>
   <subject displayLabel="[[su29:displayLabel]]" authority="[[su29:authority]]" authorityURI="[[su29:authorityURI]]" valueURI="[[su29:valueURI]]" lang="[[su29:language]]" script="[[su29:script]]" transliteration="[[su29:transliteration]]" altRepGroup="[[su29:altRepGroup]]">
-    <topic authority="[[su29:p1:authority]]" authorityURI="[[su29:p1:authorityURI]]" valueURI="[[su29:p1:valueURI]]">[[su29:p1:value]]</topic>
-    <topic authority="[[su29:p2:authority]]" authorityURI="[[su29:p2:authorityURI]]" valueURI="[[su29:p2:valueURI]]">[[su29:p2:value]]</topic>
-    <topic authority="[[su29:p3:authority]]" authorityURI="[[su29:p3:authorityURI]]" valueURI="[[su29:p3:valueURI]]">[[su29:p3:value]]</topic>
-    <topic authority="[[su29:p4:authority]]" authorityURI="[[su29:p4:authorityURI]]" valueURI="[[su29:p4:valueURI]]">[[su29:p4:value]]</topic>
-    <topic authority="[[su29:p5:authority]]" authorityURI="[[su29:p5:authorityURI]]" valueURI="[[su29:p5:valueURI]]">[[su29:p5:value]]</topic>
+    <[[su29:p1:type]] authority="[[su29:p1:authority]]" authorityURI="[[su29:p1:authorityURI]]" valueURI="[[su29:p1:valueURI]]">[[su29:p1:value]]</[[su29:p1:type]]>
+    <[[su29:p2:type]] authority="[[su29:p2:authority]]" authorityURI="[[su29:p2:authorityURI]]" valueURI="[[su29:p2:valueURI]]">[[su29:p2:value]]</[[su29:p2:type]]>
+    <[[su29:p3:type]] authority="[[su29:p3:authority]]" authorityURI="[[su29:p3:authorityURI]]" valueURI="[[su29:p3:valueURI]]">[[su29:p3:value]]</[[su29:p3:type]]>
+    <[[su29:p4:type]] authority="[[su29:p4:authority]]" authorityURI="[[su29:p4:authorityURI]]" valueURI="[[su29:p4:valueURI]]">[[su29:p4:value]]</[[su29:p4:type]]>
+    <[[su29:p5:type]] authority="[[su29:p5:authority]]" authorityURI="[[su29:p5:authorityURI]]" valueURI="[[su29:p5:valueURI]]">[[su29:p5:value]]</[[su29:p5:type]]>
   </subject>
   <subject displayLabel="[[su30:displayLabel]]" authority="[[su30:authority]]" authorityURI="[[su30:authorityURI]]" valueURI="[[su30:valueURI]]" lang="[[su30:language]]" script="[[su30:script]]" transliteration="[[su30:transliteration]]" altRepGroup="[[su30:altRepGroup]]">
-    <topic authority="[[su30:p1:authority]]" authorityURI="[[su30:p1:authorityURI]]" valueURI="[[su30:p1:valueURI]]">[[su30:p1:value]]</topic>
-    <topic authority="[[su30:p2:authority]]" authorityURI="[[su30:p2:authorityURI]]" valueURI="[[su30:p2:valueURI]]">[[su30:p2:value]]</topic>
-    <topic authority="[[su30:p3:authority]]" authorityURI="[[su30:p3:authorityURI]]" valueURI="[[su30:p3:valueURI]]">[[su30:p3:value]]</topic>
-    <topic authority="[[su30:p4:authority]]" authorityURI="[[su30:p4:authorityURI]]" valueURI="[[su30:p4:valueURI]]">[[su30:p4:value]]</topic>
-    <topic authority="[[su30:p5:authority]]" authorityURI="[[su30:p5:authorityURI]]" valueURI="[[su30:p5:valueURI]]">[[su30:p5:value]]</topic>
+    <[[su30:p1:type]] authority="[[su30:p1:authority]]" authorityURI="[[su30:p1:authorityURI]]" valueURI="[[su30:p1:valueURI]]">[[su30:p1:value]]</[[su30:p1:type]]>
+    <[[su30:p2:type]] authority="[[su30:p2:authority]]" authorityURI="[[su30:p2:authorityURI]]" valueURI="[[su30:p2:valueURI]]">[[su30:p2:value]]</[[su30:p2:type]]>
+    <[[su30:p3:type]] authority="[[su30:p3:authority]]" authorityURI="[[su30:p3:authorityURI]]" valueURI="[[su30:p3:valueURI]]">[[su30:p3:value]]</[[su30:p3:type]]>
+    <[[su30:p4:type]] authority="[[su30:p4:authority]]" authorityURI="[[su30:p4:authorityURI]]" valueURI="[[su30:p4:valueURI]]">[[su30:p4:value]]</[[su30:p4:type]]>
+    <[[su30:p5:type]] authority="[[su30:p5:authority]]" authorityURI="[[su30:p5:authorityURI]]" valueURI="[[su30:p5:valueURI]]">[[su30:p5:value]]</[[su30:p5:type]]>
   </subject>
   <subject displayLabel="[[su31:displayLabel]]" authority="[[su31:authority]]" authorityURI="[[su31:authorityURI]]" valueURI="[[su31:valueURI]]" lang="[[su31:language]]" script="[[su31:script]]" transliteration="[[su31:transliteration]]" altRepGroup="[[su31:altRepGroup]]">
-    <topic authority="[[su31:p1:authority]]" authorityURI="[[su31:p1:authorityURI]]" valueURI="[[su31:p1:valueURI]]">[[su31:p1:value]]</topic>
-    <topic authority="[[su31:p2:authority]]" authorityURI="[[su31:p2:authorityURI]]" valueURI="[[su31:p2:valueURI]]">[[su31:p2:value]]</topic>
-    <topic authority="[[su31:p3:authority]]" authorityURI="[[su31:p3:authorityURI]]" valueURI="[[su31:p3:valueURI]]">[[su31:p3:value]]</topic>
-    <topic authority="[[su31:p4:authority]]" authorityURI="[[su31:p4:authorityURI]]" valueURI="[[su31:p4:valueURI]]">[[su31:p4:value]]</topic>
-    <topic authority="[[su31:p5:authority]]" authorityURI="[[su31:p5:authorityURI]]" valueURI="[[su31:p5:valueURI]]">[[su31:p5:value]]</topic>
+    <[[su31:p1:type]] authority="[[su31:p1:authority]]" authorityURI="[[su31:p1:authorityURI]]" valueURI="[[su31:p1:valueURI]]">[[su31:p1:value]]</[[su31:p1:type]]>
+    <[[su31:p2:type]] authority="[[su31:p2:authority]]" authorityURI="[[su31:p2:authorityURI]]" valueURI="[[su31:p2:valueURI]]">[[su31:p2:value]]</[[su31:p2:type]]>
+    <[[su31:p3:type]] authority="[[su31:p3:authority]]" authorityURI="[[su31:p3:authorityURI]]" valueURI="[[su31:p3:valueURI]]">[[su31:p3:value]]</[[su31:p3:type]]>
+    <[[su31:p4:type]] authority="[[su31:p4:authority]]" authorityURI="[[su31:p4:authorityURI]]" valueURI="[[su31:p4:valueURI]]">[[su31:p4:value]]</[[su31:p4:type]]>
+    <[[su31:p5:type]] authority="[[su31:p5:authority]]" authorityURI="[[su31:p5:authorityURI]]" valueURI="[[su31:p5:valueURI]]">[[su31:p5:value]]</[[su31:p5:type]]>
   </subject>
   <subject displayLabel="[[su32:displayLabel]]" authority="[[su32:authority]]" authorityURI="[[su32:authorityURI]]" valueURI="[[su32:valueURI]]" lang="[[su32:language]]" script="[[su32:script]]" transliteration="[[su32:transliteration]]" altRepGroup="[[su32:altRepGroup]]">
-    <topic authority="[[su32:p1:authority]]" authorityURI="[[su32:p1:authorityURI]]" valueURI="[[su32:p1:valueURI]]">[[su32:p1:value]]</topic>
-    <topic authority="[[su32:p2:authority]]" authorityURI="[[su32:p2:authorityURI]]" valueURI="[[su32:p2:valueURI]]">[[su32:p2:value]]</topic>
-    <topic authority="[[su32:p3:authority]]" authorityURI="[[su32:p3:authorityURI]]" valueURI="[[su32:p3:valueURI]]">[[su32:p3:value]]</topic>
-    <topic authority="[[su32:p4:authority]]" authorityURI="[[su32:p4:authorityURI]]" valueURI="[[su32:p4:valueURI]]">[[su32:p4:value]]</topic>
-    <topic authority="[[su32:p5:authority]]" authorityURI="[[su32:p5:authorityURI]]" valueURI="[[su32:p5:valueURI]]">[[su32:p5:value]]</topic>
+    <[[su32:p1:type]] authority="[[su32:p1:authority]]" authorityURI="[[su32:p1:authorityURI]]" valueURI="[[su32:p1:valueURI]]">[[su32:p1:value]]</[[su32:p1:type]]>
+    <[[su32:p2:type]] authority="[[su32:p2:authority]]" authorityURI="[[su32:p2:authorityURI]]" valueURI="[[su32:p2:valueURI]]">[[su32:p2:value]]</[[su32:p2:type]]>
+    <[[su32:p3:type]] authority="[[su32:p3:authority]]" authorityURI="[[su32:p3:authorityURI]]" valueURI="[[su32:p3:valueURI]]">[[su32:p3:value]]</[[su32:p3:type]]>
+    <[[su32:p4:type]] authority="[[su32:p4:authority]]" authorityURI="[[su32:p4:authorityURI]]" valueURI="[[su32:p4:valueURI]]">[[su32:p4:value]]</[[su32:p4:type]]>
+    <[[su32:p5:type]] authority="[[su32:p5:authority]]" authorityURI="[[su32:p5:authorityURI]]" valueURI="[[su32:p5:valueURI]]">[[su32:p5:value]]</[[su32:p5:type]]>
   </subject>
   <subject displayLabel="[[su33:displayLabel]]" authority="[[su33:authority]]" authorityURI="[[su33:authorityURI]]" valueURI="[[su33:valueURI]]" lang="[[su33:language]]" script="[[su33:script]]" transliteration="[[su33:transliteration]]" altRepGroup="[[su33:altRepGroup]]">
-    <topic authority="[[su33:p1:authority]]" authorityURI="[[su33:p1:authorityURI]]" valueURI="[[su33:p1:valueURI]]">[[su33:p1:value]]</topic>
-    <topic authority="[[su33:p2:authority]]" authorityURI="[[su33:p2:authorityURI]]" valueURI="[[su33:p2:valueURI]]">[[su33:p2:value]]</topic>
-    <topic authority="[[su33:p3:authority]]" authorityURI="[[su33:p3:authorityURI]]" valueURI="[[su33:p3:valueURI]]">[[su33:p3:value]]</topic>
-    <topic authority="[[su33:p4:authority]]" authorityURI="[[su33:p4:authorityURI]]" valueURI="[[su33:p4:valueURI]]">[[su33:p4:value]]</topic>
-    <topic authority="[[su33:p5:authority]]" authorityURI="[[su33:p5:authorityURI]]" valueURI="[[su33:p5:valueURI]]">[[su33:p5:value]]</topic>
+    <[[su33:p1:type]] authority="[[su33:p1:authority]]" authorityURI="[[su33:p1:authorityURI]]" valueURI="[[su33:p1:valueURI]]">[[su33:p1:value]]</[[su33:p1:type]]>
+    <[[su33:p2:type]] authority="[[su33:p2:authority]]" authorityURI="[[su33:p2:authorityURI]]" valueURI="[[su33:p2:valueURI]]">[[su33:p2:value]]</[[su33:p2:type]]>
+    <[[su33:p3:type]] authority="[[su33:p3:authority]]" authorityURI="[[su33:p3:authorityURI]]" valueURI="[[su33:p3:valueURI]]">[[su33:p3:value]]</[[su33:p3:type]]>
+    <[[su33:p4:type]] authority="[[su33:p4:authority]]" authorityURI="[[su33:p4:authorityURI]]" valueURI="[[su33:p4:valueURI]]">[[su33:p4:value]]</[[su33:p4:type]]>
+    <[[su33:p5:type]] authority="[[su33:p5:authority]]" authorityURI="[[su33:p5:authorityURI]]" valueURI="[[su33:p5:valueURI]]">[[su33:p5:value]]</[[su33:p5:type]]>
   </subject>
   <subject displayLabel="[[su34:displayLabel]]" authority="[[su34:authority]]" authorityURI="[[su34:authorityURI]]" valueURI="[[su34:valueURI]]" lang="[[su34:language]]" script="[[su34:script]]" transliteration="[[su34:transliteration]]" altRepGroup="[[su34:altRepGroup]]">
-    <topic authority="[[su34:p1:authority]]" authorityURI="[[su34:p1:authorityURI]]" valueURI="[[su34:p1:valueURI]]">[[su34:p1:value]]</topic>
-    <topic authority="[[su34:p2:authority]]" authorityURI="[[su34:p2:authorityURI]]" valueURI="[[su34:p2:valueURI]]">[[su34:p2:value]]</topic>
-    <topic authority="[[su34:p3:authority]]" authorityURI="[[su34:p3:authorityURI]]" valueURI="[[su34:p3:valueURI]]">[[su34:p3:value]]</topic>
-    <topic authority="[[su34:p4:authority]]" authorityURI="[[su34:p4:authorityURI]]" valueURI="[[su34:p4:valueURI]]">[[su34:p4:value]]</topic>
-    <topic authority="[[su34:p5:authority]]" authorityURI="[[su34:p5:authorityURI]]" valueURI="[[su34:p5:valueURI]]">[[su34:p5:value]]</topic>
+    <[[su34:p1:type]] authority="[[su34:p1:authority]]" authorityURI="[[su34:p1:authorityURI]]" valueURI="[[su34:p1:valueURI]]">[[su34:p1:value]]</[[su34:p1:type]]>
+    <[[su34:p2:type]] authority="[[su34:p2:authority]]" authorityURI="[[su34:p2:authorityURI]]" valueURI="[[su34:p2:valueURI]]">[[su34:p2:value]]</[[su34:p2:type]]>
+    <[[su34:p3:type]] authority="[[su34:p3:authority]]" authorityURI="[[su34:p3:authorityURI]]" valueURI="[[su34:p3:valueURI]]">[[su34:p3:value]]</[[su34:p3:type]]>
+    <[[su34:p4:type]] authority="[[su34:p4:authority]]" authorityURI="[[su34:p4:authorityURI]]" valueURI="[[su34:p4:valueURI]]">[[su34:p4:value]]</[[su34:p4:type]]>
+    <[[su34:p5:type]] authority="[[su34:p5:authority]]" authorityURI="[[su34:p5:authorityURI]]" valueURI="[[su34:p5:valueURI]]">[[su34:p5:value]]</[[su34:p5:type]]>
   </subject>
   <subject displayLabel="[[su35:displayLabel]]" authority="[[su35:authority]]" authorityURI="[[su35:authorityURI]]" valueURI="[[su35:valueURI]]" lang="[[su35:language]]" script="[[su35:script]]" transliteration="[[su35:transliteration]]" altRepGroup="[[su35:altRepGroup]]">
-    <topic authority="[[su35:p1:authority]]" authorityURI="[[su35:p1:authorityURI]]" valueURI="[[su35:p1:valueURI]]">[[su35:p1:value]]</topic>
-    <topic authority="[[su35:p2:authority]]" authorityURI="[[su35:p2:authorityURI]]" valueURI="[[su35:p2:valueURI]]">[[su35:p2:value]]</topic>
-    <topic authority="[[su35:p3:authority]]" authorityURI="[[su35:p3:authorityURI]]" valueURI="[[su35:p3:valueURI]]">[[su35:p3:value]]</topic>
-    <topic authority="[[su35:p4:authority]]" authorityURI="[[su35:p4:authorityURI]]" valueURI="[[su35:p4:valueURI]]">[[su35:p4:value]]</topic>
-    <topic authority="[[su35:p5:authority]]" authorityURI="[[su35:p5:authorityURI]]" valueURI="[[su35:p5:valueURI]]">[[su35:p5:value]]</topic>
+    <[[su35:p1:type]] authority="[[su35:p1:authority]]" authorityURI="[[su35:p1:authorityURI]]" valueURI="[[su35:p1:valueURI]]">[[su35:p1:value]]</[[su35:p1:type]]>
+    <[[su35:p2:type]] authority="[[su35:p2:authority]]" authorityURI="[[su35:p2:authorityURI]]" valueURI="[[su35:p2:valueURI]]">[[su35:p2:value]]</[[su35:p2:type]]>
+    <[[su35:p3:type]] authority="[[su35:p3:authority]]" authorityURI="[[su35:p3:authorityURI]]" valueURI="[[su35:p3:valueURI]]">[[su35:p3:value]]</[[su35:p3:type]]>
+    <[[su35:p4:type]] authority="[[su35:p4:authority]]" authorityURI="[[su35:p4:authorityURI]]" valueURI="[[su35:p4:valueURI]]">[[su35:p4:value]]</[[su35:p4:type]]>
+    <[[su35:p5:type]] authority="[[su35:p5:authority]]" authorityURI="[[su35:p5:authorityURI]]" valueURI="[[su35:p5:valueURI]]">[[su35:p5:value]]</[[su35:p5:type]]>
   </subject>
   <subject displayLabel="[[su36:displayLabel]]" authority="[[su36:authority]]" authorityURI="[[su36:authorityURI]]" valueURI="[[su36:valueURI]]" lang="[[su36:language]]" script="[[su36:script]]" transliteration="[[su36:transliteration]]" altRepGroup="[[su36:altRepGroup]]">
-    <topic authority="[[su36:p1:authority]]" authorityURI="[[su36:p1:authorityURI]]" valueURI="[[su36:p1:valueURI]]">[[su36:p1:value]]</topic>
-    <topic authority="[[su36:p2:authority]]" authorityURI="[[su36:p2:authorityURI]]" valueURI="[[su36:p2:valueURI]]">[[su36:p2:value]]</topic>
-    <topic authority="[[su36:p3:authority]]" authorityURI="[[su36:p3:authorityURI]]" valueURI="[[su36:p3:valueURI]]">[[su36:p3:value]]</topic>
-    <topic authority="[[su36:p4:authority]]" authorityURI="[[su36:p4:authorityURI]]" valueURI="[[su36:p4:valueURI]]">[[su36:p4:value]]</topic>
-    <topic authority="[[su36:p5:authority]]" authorityURI="[[su36:p5:authorityURI]]" valueURI="[[su36:p5:valueURI]]">[[su36:p5:value]]</topic>
+    <[[su36:p1:type]] authority="[[su36:p1:authority]]" authorityURI="[[su36:p1:authorityURI]]" valueURI="[[su36:p1:valueURI]]">[[su36:p1:value]]</[[su36:p1:type]]>
+    <[[su36:p2:type]] authority="[[su36:p2:authority]]" authorityURI="[[su36:p2:authorityURI]]" valueURI="[[su36:p2:valueURI]]">[[su36:p2:value]]</[[su36:p2:type]]>
+    <[[su36:p3:type]] authority="[[su36:p3:authority]]" authorityURI="[[su36:p3:authorityURI]]" valueURI="[[su36:p3:valueURI]]">[[su36:p3:value]]</[[su36:p3:type]]>
+    <[[su36:p4:type]] authority="[[su36:p4:authority]]" authorityURI="[[su36:p4:authorityURI]]" valueURI="[[su36:p4:valueURI]]">[[su36:p4:value]]</[[su36:p4:type]]>
+    <[[su36:p5:type]] authority="[[su36:p5:authority]]" authorityURI="[[su36:p5:authorityURI]]" valueURI="[[su36:p5:valueURI]]">[[su36:p5:value]]</[[su36:p5:type]]>
   </subject>
   <subject displayLabel="[[su37:displayLabel]]" authority="[[su37:authority]]" authorityURI="[[su37:authorityURI]]" valueURI="[[su37:valueURI]]" lang="[[su37:language]]" script="[[su37:script]]" transliteration="[[su37:transliteration]]" altRepGroup="[[su37:altRepGroup]]">
-    <topic authority="[[su37:p1:authority]]" authorityURI="[[su37:p1:authorityURI]]" valueURI="[[su37:p1:valueURI]]">[[su37:p1:value]]</topic>
-    <topic authority="[[su37:p2:authority]]" authorityURI="[[su37:p2:authorityURI]]" valueURI="[[su37:p2:valueURI]]">[[su37:p2:value]]</topic>
-    <topic authority="[[su37:p3:authority]]" authorityURI="[[su37:p3:authorityURI]]" valueURI="[[su37:p3:valueURI]]">[[su37:p3:value]]</topic>
-    <topic authority="[[su37:p4:authority]]" authorityURI="[[su37:p4:authorityURI]]" valueURI="[[su37:p4:valueURI]]">[[su37:p4:value]]</topic>
-    <topic authority="[[su37:p5:authority]]" authorityURI="[[su37:p5:authorityURI]]" valueURI="[[su37:p5:valueURI]]">[[su37:p5:value]]</topic>
+    <[[su37:p1:type]] authority="[[su37:p1:authority]]" authorityURI="[[su37:p1:authorityURI]]" valueURI="[[su37:p1:valueURI]]">[[su37:p1:value]]</[[su37:p1:type]]>
+    <[[su37:p2:type]] authority="[[su37:p2:authority]]" authorityURI="[[su37:p2:authorityURI]]" valueURI="[[su37:p2:valueURI]]">[[su37:p2:value]]</[[su37:p2:type]]>
+    <[[su37:p3:type]] authority="[[su37:p3:authority]]" authorityURI="[[su37:p3:authorityURI]]" valueURI="[[su37:p3:valueURI]]">[[su37:p3:value]]</[[su37:p3:type]]>
+    <[[su37:p4:type]] authority="[[su37:p4:authority]]" authorityURI="[[su37:p4:authorityURI]]" valueURI="[[su37:p4:valueURI]]">[[su37:p4:value]]</[[su37:p4:type]]>
+    <[[su37:p5:type]] authority="[[su37:p5:authority]]" authorityURI="[[su37:p5:authorityURI]]" valueURI="[[su37:p5:valueURI]]">[[su37:p5:value]]</[[su37:p5:type]]>
   </subject>
   <subject displayLabel="[[su38:displayLabel]]" authority="[[su38:authority]]" authorityURI="[[su38:authorityURI]]" valueURI="[[su38:valueURI]]" lang="[[su38:language]]" script="[[su38:script]]" transliteration="[[su38:transliteration]]" altRepGroup="[[su38:altRepGroup]]">
-    <topic authority="[[su38:p1:authority]]" authorityURI="[[su38:p1:authorityURI]]" valueURI="[[su38:p1:valueURI]]">[[su38:p1:value]]</topic>
-    <topic authority="[[su38:p2:authority]]" authorityURI="[[su38:p2:authorityURI]]" valueURI="[[su38:p2:valueURI]]">[[su38:p2:value]]</topic>
-    <topic authority="[[su38:p3:authority]]" authorityURI="[[su38:p3:authorityURI]]" valueURI="[[su38:p3:valueURI]]">[[su38:p3:value]]</topic>
-    <topic authority="[[su38:p4:authority]]" authorityURI="[[su38:p4:authorityURI]]" valueURI="[[su38:p4:valueURI]]">[[su38:p4:value]]</topic>
-    <topic authority="[[su38:p5:authority]]" authorityURI="[[su38:p5:authorityURI]]" valueURI="[[su38:p5:valueURI]]">[[su38:p5:value]]</topic>
+    <[[su38:p1:type]] authority="[[su38:p1:authority]]" authorityURI="[[su38:p1:authorityURI]]" valueURI="[[su38:p1:valueURI]]">[[su38:p1:value]]</[[su38:p1:type]]>
+    <[[su38:p2:type]] authority="[[su38:p2:authority]]" authorityURI="[[su38:p2:authorityURI]]" valueURI="[[su38:p2:valueURI]]">[[su38:p2:value]]</[[su38:p2:type]]>
+    <[[su38:p3:type]] authority="[[su38:p3:authority]]" authorityURI="[[su38:p3:authorityURI]]" valueURI="[[su38:p3:valueURI]]">[[su38:p3:value]]</[[su38:p3:type]]>
+    <[[su38:p4:type]] authority="[[su38:p4:authority]]" authorityURI="[[su38:p4:authorityURI]]" valueURI="[[su38:p4:valueURI]]">[[su38:p4:value]]</[[su38:p4:type]]>
+    <[[su38:p5:type]] authority="[[su38:p5:authority]]" authorityURI="[[su38:p5:authorityURI]]" valueURI="[[su38:p5:valueURI]]">[[su38:p5:value]]</[[su38:p5:type]]>
   </subject>
   <subject displayLabel="[[su39:displayLabel]]" authority="[[su39:authority]]" authorityURI="[[su39:authorityURI]]" valueURI="[[su39:valueURI]]" lang="[[su39:language]]" script="[[su39:script]]" transliteration="[[su39:transliteration]]" altRepGroup="[[su39:altRepGroup]]">
-    <topic authority="[[su39:p1:authority]]" authorityURI="[[su39:p1:authorityURI]]" valueURI="[[su39:p1:valueURI]]">[[su39:p1:value]]</topic>
-    <topic authority="[[su39:p2:authority]]" authorityURI="[[su39:p2:authorityURI]]" valueURI="[[su39:p2:valueURI]]">[[su39:p2:value]]</topic>
-    <topic authority="[[su39:p3:authority]]" authorityURI="[[su39:p3:authorityURI]]" valueURI="[[su39:p3:valueURI]]">[[su39:p3:value]]</topic>
-    <topic authority="[[su39:p4:authority]]" authorityURI="[[su39:p4:authorityURI]]" valueURI="[[su39:p4:valueURI]]">[[su39:p4:value]]</topic>
-    <topic authority="[[su39:p5:authority]]" authorityURI="[[su39:p5:authorityURI]]" valueURI="[[su39:p5:valueURI]]">[[su39:p5:value]]</topic>
+    <[[su39:p1:type]] authority="[[su39:p1:authority]]" authorityURI="[[su39:p1:authorityURI]]" valueURI="[[su39:p1:valueURI]]">[[su39:p1:value]]</[[su39:p1:type]]>
+    <[[su39:p2:type]] authority="[[su39:p2:authority]]" authorityURI="[[su39:p2:authorityURI]]" valueURI="[[su39:p2:valueURI]]">[[su39:p2:value]]</[[su39:p2:type]]>
+    <[[su39:p3:type]] authority="[[su39:p3:authority]]" authorityURI="[[su39:p3:authorityURI]]" valueURI="[[su39:p3:valueURI]]">[[su39:p3:value]]</[[su39:p3:type]]>
+    <[[su39:p4:type]] authority="[[su39:p4:authority]]" authorityURI="[[su39:p4:authorityURI]]" valueURI="[[su39:p4:valueURI]]">[[su39:p4:value]]</[[su39:p4:type]]>
+    <[[su39:p5:type]] authority="[[su39:p5:authority]]" authorityURI="[[su39:p5:authorityURI]]" valueURI="[[su39:p5:valueURI]]">[[su39:p5:value]]</[[su39:p5:type]]>
   </subject>
   <subject displayLabel="[[su40:displayLabel]]" authority="[[su40:authority]]" authorityURI="[[su40:authorityURI]]" valueURI="[[su40:valueURI]]" lang="[[su40:language]]" script="[[su40:script]]" transliteration="[[su40:transliteration]]" altRepGroup="[[su40:altRepGroup]]">
-    <topic authority="[[su40:p1:authority]]" authorityURI="[[su40:p1:authorityURI]]" valueURI="[[su40:p1:valueURI]]">[[su40:p1:value]]</topic>
-    <topic authority="[[su40:p2:authority]]" authorityURI="[[su40:p2:authorityURI]]" valueURI="[[su40:p2:valueURI]]">[[su40:p2:value]]</topic>
-    <topic authority="[[su40:p3:authority]]" authorityURI="[[su40:p3:authorityURI]]" valueURI="[[su40:p3:valueURI]]">[[su40:p3:value]]</topic>
-    <topic authority="[[su40:p4:authority]]" authorityURI="[[su40:p4:authorityURI]]" valueURI="[[su40:p4:valueURI]]">[[su40:p4:value]]</topic>
-    <topic authority="[[su40:p5:authority]]" authorityURI="[[su40:p5:authorityURI]]" valueURI="[[su40:p5:valueURI]]">[[su40:p5:value]]</topic>
+    <[[su40:p1:type]] authority="[[su40:p1:authority]]" authorityURI="[[su40:p1:authorityURI]]" valueURI="[[su40:p1:valueURI]]">[[su40:p1:value]]</[[su40:p1:type]]>
+    <[[su40:p2:type]] authority="[[su40:p2:authority]]" authorityURI="[[su40:p2:authorityURI]]" valueURI="[[su40:p2:valueURI]]">[[su40:p2:value]]</[[su40:p2:type]]>
+    <[[su40:p3:type]] authority="[[su40:p3:authority]]" authorityURI="[[su40:p3:authorityURI]]" valueURI="[[su40:p3:valueURI]]">[[su40:p3:value]]</[[su40:p3:type]]>
+    <[[su40:p4:type]] authority="[[su40:p4:authority]]" authorityURI="[[su40:p4:authorityURI]]" valueURI="[[su40:p4:valueURI]]">[[su40:p4:value]]</[[su40:p4:type]]>
+    <[[su40:p5:type]] authority="[[su40:p5:authority]]" authorityURI="[[su40:p5:authorityURI]]" valueURI="[[su40:p5:valueURI]]">[[su40:p5:value]]</[[su40:p5:type]]>
   </subject>
   <subject displayLabel="[[su41:displayLabel]]" authority="[[su41:authority]]" authorityURI="[[su41:authorityURI]]" valueURI="[[su41:valueURI]]" lang="[[su41:language]]" script="[[su41:script]]" transliteration="[[su41:transliteration]]" altRepGroup="[[su41:altRepGroup]]">
-    <topic authority="[[su41:p1:authority]]" authorityURI="[[su41:p1:authorityURI]]" valueURI="[[su41:p1:valueURI]]">[[su41:p1:value]]</topic>
-    <topic authority="[[su41:p2:authority]]" authorityURI="[[su41:p2:authorityURI]]" valueURI="[[su41:p2:valueURI]]">[[su41:p2:value]]</topic>
-    <topic authority="[[su41:p3:authority]]" authorityURI="[[su41:p3:authorityURI]]" valueURI="[[su41:p3:valueURI]]">[[su41:p3:value]]</topic>
-    <topic authority="[[su41:p4:authority]]" authorityURI="[[su41:p4:authorityURI]]" valueURI="[[su41:p4:valueURI]]">[[su41:p4:value]]</topic>
-    <topic authority="[[su41:p5:authority]]" authorityURI="[[su41:p5:authorityURI]]" valueURI="[[su41:p5:valueURI]]">[[su41:p5:value]]</topic>
+    <[[su41:p1:type]] authority="[[su41:p1:authority]]" authorityURI="[[su41:p1:authorityURI]]" valueURI="[[su41:p1:valueURI]]">[[su41:p1:value]]</[[su41:p1:type]]>
+    <[[su41:p2:type]] authority="[[su41:p2:authority]]" authorityURI="[[su41:p2:authorityURI]]" valueURI="[[su41:p2:valueURI]]">[[su41:p2:value]]</[[su41:p2:type]]>
+    <[[su41:p3:type]] authority="[[su41:p3:authority]]" authorityURI="[[su41:p3:authorityURI]]" valueURI="[[su41:p3:valueURI]]">[[su41:p3:value]]</[[su41:p3:type]]>
+    <[[su41:p4:type]] authority="[[su41:p4:authority]]" authorityURI="[[su41:p4:authorityURI]]" valueURI="[[su41:p4:valueURI]]">[[su41:p4:value]]</[[su41:p4:type]]>
+    <[[su41:p5:type]] authority="[[su41:p5:authority]]" authorityURI="[[su41:p5:authorityURI]]" valueURI="[[su41:p5:valueURI]]">[[su41:p5:value]]</[[su41:p5:type]]>
   </subject>
   <subject displayLabel="[[su42:displayLabel]]" authority="[[su42:authority]]" authorityURI="[[su42:authorityURI]]" valueURI="[[su42:valueURI]]" lang="[[su42:language]]" script="[[su42:script]]" transliteration="[[su42:transliteration]]" altRepGroup="[[su42:altRepGroup]]">
-    <topic authority="[[su42:p1:authority]]" authorityURI="[[su42:p1:authorityURI]]" valueURI="[[su42:p1:valueURI]]">[[su42:p1:value]]</topic>
-    <topic authority="[[su42:p2:authority]]" authorityURI="[[su42:p2:authorityURI]]" valueURI="[[su42:p2:valueURI]]">[[su42:p2:value]]</topic>
-    <topic authority="[[su42:p3:authority]]" authorityURI="[[su42:p3:authorityURI]]" valueURI="[[su42:p3:valueURI]]">[[su42:p3:value]]</topic>
-    <topic authority="[[su42:p4:authority]]" authorityURI="[[su42:p4:authorityURI]]" valueURI="[[su42:p4:valueURI]]">[[su42:p4:value]]</topic>
-    <topic authority="[[su42:p5:authority]]" authorityURI="[[su42:p5:authorityURI]]" valueURI="[[su42:p5:valueURI]]">[[su42:p5:value]]</topic>
+    <[[su42:p1:type]] authority="[[su42:p1:authority]]" authorityURI="[[su42:p1:authorityURI]]" valueURI="[[su42:p1:valueURI]]">[[su42:p1:value]]</[[su42:p1:type]]>
+    <[[su42:p2:type]] authority="[[su42:p2:authority]]" authorityURI="[[su42:p2:authorityURI]]" valueURI="[[su42:p2:valueURI]]">[[su42:p2:value]]</[[su42:p2:type]]>
+    <[[su42:p3:type]] authority="[[su42:p3:authority]]" authorityURI="[[su42:p3:authorityURI]]" valueURI="[[su42:p3:valueURI]]">[[su42:p3:value]]</[[su42:p3:type]]>
+    <[[su42:p4:type]] authority="[[su42:p4:authority]]" authorityURI="[[su42:p4:authorityURI]]" valueURI="[[su42:p4:valueURI]]">[[su42:p4:value]]</[[su42:p4:type]]>
+    <[[su42:p5:type]] authority="[[su42:p5:authority]]" authorityURI="[[su42:p5:authorityURI]]" valueURI="[[su42:p5:valueURI]]">[[su42:p5:value]]</[[su42:p5:type]]>
   </subject>
   <subject displayLabel="[[su43:displayLabel]]" authority="[[su43:authority]]" authorityURI="[[su43:authorityURI]]" valueURI="[[su43:valueURI]]" lang="[[su43:language]]" script="[[su43:script]]" transliteration="[[su43:transliteration]]" altRepGroup="[[su43:altRepGroup]]">
-    <topic authority="[[su43:p1:authority]]" authorityURI="[[su43:p1:authorityURI]]" valueURI="[[su43:p1:valueURI]]">[[su43:p1:value]]</topic>
-    <topic authority="[[su43:p2:authority]]" authorityURI="[[su43:p2:authorityURI]]" valueURI="[[su43:p2:valueURI]]">[[su43:p2:value]]</topic>
-    <topic authority="[[su43:p3:authority]]" authorityURI="[[su43:p3:authorityURI]]" valueURI="[[su43:p3:valueURI]]">[[su43:p3:value]]</topic>
-    <topic authority="[[su43:p4:authority]]" authorityURI="[[su43:p4:authorityURI]]" valueURI="[[su43:p4:valueURI]]">[[su43:p4:value]]</topic>
-    <topic authority="[[su43:p5:authority]]" authorityURI="[[su43:p5:authorityURI]]" valueURI="[[su43:p5:valueURI]]">[[su43:p5:value]]</topic>
+    <[[su43:p1:type]] authority="[[su43:p1:authority]]" authorityURI="[[su43:p1:authorityURI]]" valueURI="[[su43:p1:valueURI]]">[[su43:p1:value]]</[[su43:p1:type]]>
+    <[[su43:p2:type]] authority="[[su43:p2:authority]]" authorityURI="[[su43:p2:authorityURI]]" valueURI="[[su43:p2:valueURI]]">[[su43:p2:value]]</[[su43:p2:type]]>
+    <[[su43:p3:type]] authority="[[su43:p3:authority]]" authorityURI="[[su43:p3:authorityURI]]" valueURI="[[su43:p3:valueURI]]">[[su43:p3:value]]</[[su43:p3:type]]>
+    <[[su43:p4:type]] authority="[[su43:p4:authority]]" authorityURI="[[su43:p4:authorityURI]]" valueURI="[[su43:p4:valueURI]]">[[su43:p4:value]]</[[su43:p4:type]]>
+    <[[su43:p5:type]] authority="[[su43:p5:authority]]" authorityURI="[[su43:p5:authorityURI]]" valueURI="[[su43:p5:valueURI]]">[[su43:p5:value]]</[[su43:p5:type]]>
   </subject>
   <subject displayLabel="[[su44:displayLabel]]" authority="[[su44:authority]]" authorityURI="[[su44:authorityURI]]" valueURI="[[su44:valueURI]]" lang="[[su44:language]]" script="[[su44:script]]" transliteration="[[su44:transliteration]]" altRepGroup="[[su44:altRepGroup]]">
-    <topic authority="[[su44:p1:authority]]" authorityURI="[[su44:p1:authorityURI]]" valueURI="[[su44:p1:valueURI]]">[[su44:p1:value]]</topic>
-    <topic authority="[[su44:p2:authority]]" authorityURI="[[su44:p2:authorityURI]]" valueURI="[[su44:p2:valueURI]]">[[su44:p2:value]]</topic>
-    <topic authority="[[su44:p3:authority]]" authorityURI="[[su44:p3:authorityURI]]" valueURI="[[su44:p3:valueURI]]">[[su44:p3:value]]</topic>
-    <topic authority="[[su44:p4:authority]]" authorityURI="[[su44:p4:authorityURI]]" valueURI="[[su44:p4:valueURI]]">[[su44:p4:value]]</topic>
-    <topic authority="[[su44:p5:authority]]" authorityURI="[[su44:p5:authorityURI]]" valueURI="[[su44:p5:valueURI]]">[[su44:p5:value]]</topic>
+    <[[su44:p1:type]] authority="[[su44:p1:authority]]" authorityURI="[[su44:p1:authorityURI]]" valueURI="[[su44:p1:valueURI]]">[[su44:p1:value]]</[[su44:p1:type]]>
+    <[[su44:p2:type]] authority="[[su44:p2:authority]]" authorityURI="[[su44:p2:authorityURI]]" valueURI="[[su44:p2:valueURI]]">[[su44:p2:value]]</[[su44:p2:type]]>
+    <[[su44:p3:type]] authority="[[su44:p3:authority]]" authorityURI="[[su44:p3:authorityURI]]" valueURI="[[su44:p3:valueURI]]">[[su44:p3:value]]</[[su44:p3:type]]>
+    <[[su44:p4:type]] authority="[[su44:p4:authority]]" authorityURI="[[su44:p4:authorityURI]]" valueURI="[[su44:p4:valueURI]]">[[su44:p4:value]]</[[su44:p4:type]]>
+    <[[su44:p5:type]] authority="[[su44:p5:authority]]" authorityURI="[[su44:p5:authorityURI]]" valueURI="[[su44:p5:valueURI]]">[[su44:p5:value]]</[[su44:p5:type]]>
   </subject>
   <subject displayLabel="[[su45:displayLabel]]" authority="[[su45:authority]]" authorityURI="[[su45:authorityURI]]" valueURI="[[su45:valueURI]]" lang="[[su45:language]]" script="[[su45:script]]" transliteration="[[su45:transliteration]]" altRepGroup="[[su45:altRepGroup]]">
-    <topic authority="[[su45:p1:authority]]" authorityURI="[[su45:p1:authorityURI]]" valueURI="[[su45:p1:valueURI]]">[[su45:p1:value]]</topic>
-    <topic authority="[[su45:p2:authority]]" authorityURI="[[su45:p2:authorityURI]]" valueURI="[[su45:p2:valueURI]]">[[su45:p2:value]]</topic>
-    <topic authority="[[su45:p3:authority]]" authorityURI="[[su45:p3:authorityURI]]" valueURI="[[su45:p3:valueURI]]">[[su45:p3:value]]</topic>
-    <topic authority="[[su45:p4:authority]]" authorityURI="[[su45:p4:authorityURI]]" valueURI="[[su45:p4:valueURI]]">[[su45:p4:value]]</topic>
-    <topic authority="[[su45:p5:authority]]" authorityURI="[[su45:p5:authorityURI]]" valueURI="[[su45:p5:valueURI]]">[[su45:p5:value]]</topic>
+    <[[su45:p1:type]] authority="[[su45:p1:authority]]" authorityURI="[[su45:p1:authorityURI]]" valueURI="[[su45:p1:valueURI]]">[[su45:p1:value]]</[[su45:p1:type]]>
+    <[[su45:p2:type]] authority="[[su45:p2:authority]]" authorityURI="[[su45:p2:authorityURI]]" valueURI="[[su45:p2:valueURI]]">[[su45:p2:value]]</[[su45:p2:type]]>
+    <[[su45:p3:type]] authority="[[su45:p3:authority]]" authorityURI="[[su45:p3:authorityURI]]" valueURI="[[su45:p3:valueURI]]">[[su45:p3:value]]</[[su45:p3:type]]>
+    <[[su45:p4:type]] authority="[[su45:p4:authority]]" authorityURI="[[su45:p4:authorityURI]]" valueURI="[[su45:p4:valueURI]]">[[su45:p4:value]]</[[su45:p4:type]]>
+    <[[su45:p5:type]] authority="[[su45:p5:authority]]" authorityURI="[[su45:p5:authorityURI]]" valueURI="[[su45:p5:valueURI]]">[[su45:p5:value]]</[[su45:p5:type]]>
   </subject>
   <subject displayLabel="[[su46:displayLabel]]" authority="[[su46:authority]]" authorityURI="[[su46:authorityURI]]" valueURI="[[su46:valueURI]]" lang="[[su46:language]]" script="[[su46:script]]" transliteration="[[su46:transliteration]]" altRepGroup="[[su46:altRepGroup]]">
-    <topic authority="[[su46:p1:authority]]" authorityURI="[[su46:p1:authorityURI]]" valueURI="[[su46:p1:valueURI]]">[[su46:p1:value]]</topic>
-    <topic authority="[[su46:p2:authority]]" authorityURI="[[su46:p2:authorityURI]]" valueURI="[[su46:p2:valueURI]]">[[su46:p2:value]]</topic>
-    <topic authority="[[su46:p3:authority]]" authorityURI="[[su46:p3:authorityURI]]" valueURI="[[su46:p3:valueURI]]">[[su46:p3:value]]</topic>
-    <topic authority="[[su46:p4:authority]]" authorityURI="[[su46:p4:authorityURI]]" valueURI="[[su46:p4:valueURI]]">[[su46:p4:value]]</topic>
-    <topic authority="[[su46:p5:authority]]" authorityURI="[[su46:p5:authorityURI]]" valueURI="[[su46:p5:valueURI]]">[[su46:p5:value]]</topic>
+    <[[su46:p1:type]] authority="[[su46:p1:authority]]" authorityURI="[[su46:p1:authorityURI]]" valueURI="[[su46:p1:valueURI]]">[[su46:p1:value]]</[[su46:p1:type]]>
+    <[[su46:p2:type]] authority="[[su46:p2:authority]]" authorityURI="[[su46:p2:authorityURI]]" valueURI="[[su46:p2:valueURI]]">[[su46:p2:value]]</[[su46:p2:type]]>
+    <[[su46:p3:type]] authority="[[su46:p3:authority]]" authorityURI="[[su46:p3:authorityURI]]" valueURI="[[su46:p3:valueURI]]">[[su46:p3:value]]</[[su46:p3:type]]>
+    <[[su46:p4:type]] authority="[[su46:p4:authority]]" authorityURI="[[su46:p4:authorityURI]]" valueURI="[[su46:p4:valueURI]]">[[su46:p4:value]]</[[su46:p4:type]]>
+    <[[su46:p5:type]] authority="[[su46:p5:authority]]" authorityURI="[[su46:p5:authorityURI]]" valueURI="[[su46:p5:valueURI]]">[[su46:p5:value]]</[[su46:p5:type]]>
   </subject>
   <subject displayLabel="[[su47:displayLabel]]" authority="[[su47:authority]]" authorityURI="[[su47:authorityURI]]" valueURI="[[su47:valueURI]]" lang="[[su47:language]]" script="[[su47:script]]" transliteration="[[su47:transliteration]]" altRepGroup="[[su47:altRepGroup]]">
-    <topic authority="[[su47:p1:authority]]" authorityURI="[[su47:p1:authorityURI]]" valueURI="[[su47:p1:valueURI]]">[[su47:p1:value]]</topic>
-    <topic authority="[[su47:p2:authority]]" authorityURI="[[su47:p2:authorityURI]]" valueURI="[[su47:p2:valueURI]]">[[su47:p2:value]]</topic>
-    <topic authority="[[su47:p3:authority]]" authorityURI="[[su47:p3:authorityURI]]" valueURI="[[su47:p3:valueURI]]">[[su47:p3:value]]</topic>
-    <topic authority="[[su47:p4:authority]]" authorityURI="[[su47:p4:authorityURI]]" valueURI="[[su47:p4:valueURI]]">[[su47:p4:value]]</topic>
-    <topic authority="[[su47:p5:authority]]" authorityURI="[[su47:p5:authorityURI]]" valueURI="[[su47:p5:valueURI]]">[[su47:p5:value]]</topic>
+    <[[su47:p1:type]] authority="[[su47:p1:authority]]" authorityURI="[[su47:p1:authorityURI]]" valueURI="[[su47:p1:valueURI]]">[[su47:p1:value]]</[[su47:p1:type]]>
+    <[[su47:p2:type]] authority="[[su47:p2:authority]]" authorityURI="[[su47:p2:authorityURI]]" valueURI="[[su47:p2:valueURI]]">[[su47:p2:value]]</[[su47:p2:type]]>
+    <[[su47:p3:type]] authority="[[su47:p3:authority]]" authorityURI="[[su47:p3:authorityURI]]" valueURI="[[su47:p3:valueURI]]">[[su47:p3:value]]</[[su47:p3:type]]>
+    <[[su47:p4:type]] authority="[[su47:p4:authority]]" authorityURI="[[su47:p4:authorityURI]]" valueURI="[[su47:p4:valueURI]]">[[su47:p4:value]]</[[su47:p4:type]]>
+    <[[su47:p5:type]] authority="[[su47:p5:authority]]" authorityURI="[[su47:p5:authorityURI]]" valueURI="[[su47:p5:valueURI]]">[[su47:p5:value]]</[[su47:p5:type]]>
   </subject>
   <subject displayLabel="[[su48:displayLabel]]" authority="[[su48:authority]]" authorityURI="[[su48:authorityURI]]" valueURI="[[su48:valueURI]]" lang="[[su48:language]]" script="[[su48:script]]" transliteration="[[su48:transliteration]]" altRepGroup="[[su48:altRepGroup]]">
-    <topic authority="[[su48:p1:authority]]" authorityURI="[[su48:p1:authorityURI]]" valueURI="[[su48:p1:valueURI]]">[[su48:p1:value]]</topic>
-    <topic authority="[[su48:p2:authority]]" authorityURI="[[su48:p2:authorityURI]]" valueURI="[[su48:p2:valueURI]]">[[su48:p2:value]]</topic>
-    <topic authority="[[su48:p3:authority]]" authorityURI="[[su48:p3:authorityURI]]" valueURI="[[su48:p3:valueURI]]">[[su48:p3:value]]</topic>
-    <topic authority="[[su48:p4:authority]]" authorityURI="[[su48:p4:authorityURI]]" valueURI="[[su48:p4:valueURI]]">[[su48:p4:value]]</topic>
-    <topic authority="[[su48:p5:authority]]" authorityURI="[[su48:p5:authorityURI]]" valueURI="[[su48:p5:valueURI]]">[[su48:p5:value]]</topic>
+    <[[su48:p1:type]] authority="[[su48:p1:authority]]" authorityURI="[[su48:p1:authorityURI]]" valueURI="[[su48:p1:valueURI]]">[[su48:p1:value]]</[[su48:p1:type]]>
+    <[[su48:p2:type]] authority="[[su48:p2:authority]]" authorityURI="[[su48:p2:authorityURI]]" valueURI="[[su48:p2:valueURI]]">[[su48:p2:value]]</[[su48:p2:type]]>
+    <[[su48:p3:type]] authority="[[su48:p3:authority]]" authorityURI="[[su48:p3:authorityURI]]" valueURI="[[su48:p3:valueURI]]">[[su48:p3:value]]</[[su48:p3:type]]>
+    <[[su48:p4:type]] authority="[[su48:p4:authority]]" authorityURI="[[su48:p4:authorityURI]]" valueURI="[[su48:p4:valueURI]]">[[su48:p4:value]]</[[su48:p4:type]]>
+    <[[su48:p5:type]] authority="[[su48:p5:authority]]" authorityURI="[[su48:p5:authorityURI]]" valueURI="[[su48:p5:valueURI]]">[[su48:p5:value]]</[[su48:p5:type]]>
   </subject>
   <subject displayLabel="[[su49:displayLabel]]" authority="[[su49:authority]]" authorityURI="[[su49:authorityURI]]" valueURI="[[su49:valueURI]]" lang="[[su49:language]]" script="[[su49:script]]" transliteration="[[su49:transliteration]]" altRepGroup="[[su49:altRepGroup]]">
-    <topic authority="[[su49:p1:authority]]" authorityURI="[[su49:p1:authorityURI]]" valueURI="[[su49:p1:valueURI]]">[[su49:p1:value]]</topic>
-    <topic authority="[[su49:p2:authority]]" authorityURI="[[su49:p2:authorityURI]]" valueURI="[[su49:p2:valueURI]]">[[su49:p2:value]]</topic>
-    <topic authority="[[su49:p3:authority]]" authorityURI="[[su49:p3:authorityURI]]" valueURI="[[su49:p3:valueURI]]">[[su49:p3:value]]</topic>
-    <topic authority="[[su49:p4:authority]]" authorityURI="[[su49:p4:authorityURI]]" valueURI="[[su49:p4:valueURI]]">[[su49:p4:value]]</topic>
-    <topic authority="[[su49:p5:authority]]" authorityURI="[[su49:p5:authorityURI]]" valueURI="[[su49:p5:valueURI]]">[[su49:p5:value]]</topic>
+    <[[su49:p1:type]] authority="[[su49:p1:authority]]" authorityURI="[[su49:p1:authorityURI]]" valueURI="[[su49:p1:valueURI]]">[[su49:p1:value]]</[[su49:p1:type]]>
+    <[[su49:p2:type]] authority="[[su49:p2:authority]]" authorityURI="[[su49:p2:authorityURI]]" valueURI="[[su49:p2:valueURI]]">[[su49:p2:value]]</[[su49:p2:type]]>
+    <[[su49:p3:type]] authority="[[su49:p3:authority]]" authorityURI="[[su49:p3:authorityURI]]" valueURI="[[su49:p3:valueURI]]">[[su49:p3:value]]</[[su49:p3:type]]>
+    <[[su49:p4:type]] authority="[[su49:p4:authority]]" authorityURI="[[su49:p4:authorityURI]]" valueURI="[[su49:p4:valueURI]]">[[su49:p4:value]]</[[su49:p4:type]]>
+    <[[su49:p5:type]] authority="[[su49:p5:authority]]" authorityURI="[[su49:p5:authorityURI]]" valueURI="[[su49:p5:valueURI]]">[[su49:p5:value]]</[[su49:p5:type]]>
   </subject>
   <subject displayLabel="[[su50:displayLabel]]" authority="[[su50:authority]]" authorityURI="[[su50:authorityURI]]" valueURI="[[su50:valueURI]]" lang="[[su50:language]]" script="[[su50:script]]" transliteration="[[su50:transliteration]]" altRepGroup="[[su50:altRepGroup]]">
-    <topic authority="[[su50:p1:authority]]" authorityURI="[[su50:p1:authorityURI]]" valueURI="[[su50:p1:valueURI]]">[[su50:p1:value]]</topic>
-    <topic authority="[[su50:p2:authority]]" authorityURI="[[su50:p2:authorityURI]]" valueURI="[[su50:p2:valueURI]]">[[su50:p2:value]]</topic>
-    <topic authority="[[su50:p3:authority]]" authorityURI="[[su50:p3:authorityURI]]" valueURI="[[su50:p3:valueURI]]">[[su50:p3:value]]</topic>
-    <topic authority="[[su50:p4:authority]]" authorityURI="[[su50:p4:authorityURI]]" valueURI="[[su50:p4:valueURI]]">[[su50:p4:value]]</topic>
-    <topic authority="[[su50:p5:authority]]" authorityURI="[[su50:p5:authorityURI]]" valueURI="[[su50:p5:valueURI]]">[[su50:p5:value]]</topic>
+    <[[su50:p1:type]] authority="[[su50:p1:authority]]" authorityURI="[[su50:p1:authorityURI]]" valueURI="[[su50:p1:valueURI]]">[[su50:p1:value]]</[[su50:p1:type]]>
+    <[[su50:p2:type]] authority="[[su50:p2:authority]]" authorityURI="[[su50:p2:authorityURI]]" valueURI="[[su50:p2:valueURI]]">[[su50:p2:value]]</[[su50:p2:type]]>
+    <[[su50:p3:type]] authority="[[su50:p3:authority]]" authorityURI="[[su50:p3:authorityURI]]" valueURI="[[su50:p3:valueURI]]">[[su50:p3:value]]</[[su50:p3:type]]>
+    <[[su50:p4:type]] authority="[[su50:p4:authority]]" authorityURI="[[su50:p4:authorityURI]]" valueURI="[[su50:p4:valueURI]]">[[su50:p4:value]]</[[su50:p4:type]]>
+    <[[su50:p5:type]] authority="[[su50:p5:authority]]" authorityURI="[[su50:p5:authorityURI]]" valueURI="[[su50:p5:valueURI]]">[[su50:p5:value]]</[[su50:p5:type]]>
   </subject>
   <subject authority="[[shg1:authority]]" authorityURI="[[shg1:authorityURI]]" valueURI="[[shg1:valueURI]]">
     <hierarchicalGeographic>
@@ -1659,7 +1659,6 @@
         <roleTerm type="text" authority="[[ri1:ro1:authority2]]" authorityURI="[[ri1:ro1:authorityURI2]]" valueURI="[[ri1:ro1:valueURI2]]">[[ri1:ro1:roleText2]]</roleTerm>
       </role>
     </name>
-    <typeOfResource collection="[[ri1:ty1:collection]]">[[ri1:ty1:typeOfResource]]</typeOfResource>
     <originInfo>
       <place>
         <placeTerm type="code" authority="[[ri1:pl:authority]]" authorityURI="[[ri1:pl:authorityURI]]" valueURI="[[ri1:pl:valueURI]]">[[ri1:pl:placeCode]]</placeTerm>
@@ -1713,7 +1712,6 @@
         <roleTerm type="text" authority="[[ri2:ro1:authority2]]" authorityURI="[[ri2:ro1:authorityURI2]]" valueURI="[[ri2:ro1:valueURI2]]">[[ri2:ro1:roleText2]]</roleTerm>
       </role>
     </name>
-    <typeOfResource collection="[[ri2:ty1:collection]]">[[ri2:ty1:typeOfResource]]</typeOfResource>
     <originInfo>
       <place>
         <placeTerm type="code" authority="[[ri2:pl:authority]]" authorityURI="[[ri2:pl:authorityURI]]" valueURI="[[ri2:pl:valueURI]]">[[ri2:pl:placeCode]]</placeTerm>
@@ -1767,7 +1765,6 @@
         <roleTerm type="text" authority="[[ri3:ro1:authority2]]" authorityURI="[[ri3:ro1:authorityURI2]]" valueURI="[[ri3:ro1:valueURI2]]">[[ri3:ro1:roleText2]]</roleTerm>
       </role>
     </name>
-    <typeOfResource collection="[[ri3:ty1:collection]]">[[ri3:ty1:typeOfResource]]</typeOfResource>
     <originInfo>
       <place>
         <placeTerm type="code" authority="[[ri3:pl:authority]]" authorityURI="[[ri3:pl:authorityURI]]" valueURI="[[ri3:pl:valueURI]]">[[ri3:pl:placeCode]]</placeTerm>
