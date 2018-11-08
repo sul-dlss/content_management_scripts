@@ -5,6 +5,9 @@ class MODSFile
 
   attr_reader :mods, :template, :modified_template, :ns
 
+  # @param [String] filename                Name of MODS file to process.
+  # @param [Nokogiri::XML] template         Template as nokogiri document.
+  # @param [String] namespace               Namespace used in file for the MODS schema.
   def initialize(filename, template, namespace)
     @mods = Nokogiri::XML(File.open(filename))
     @template = template
@@ -49,12 +52,19 @@ class MODSFile
 
   end
 
+  # Match data in MODS input to header codes from template.
+  # Related item is separate so the contents of each relatedItem can be processed
+  # in the same way as the top-level contents of the mods root.
+  # @return [Hash]             Key: header code; value: metadata value.
   def process_mods_file
     @column_hash = process_mods_elements(@mods, @template, "//#{@ns}:mods/")
     @column_hash.merge!(extract_relatedItem(@mods, @template))
-    return @column_hash
   end
 
+  # Extract data from MODS element nodes and match with template header codes.
+  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
+  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
+  # @return [Hash]                    Key: header code; value: metadata value.
   def process_mods_elements(mods, template, xpath_root)
     output = {}
     @basic_elements.each do |element|
@@ -82,6 +92,10 @@ class MODSFile
     return output
   end
 
+  # Extract attribute values for a given node and match with template header codes.
+  # @param [Nokogiri::Node] mods_node       The data node to be processed.
+  # @param [Nokogiri::Node] template_node   The corresponding template node.
+  # @return [Hash]                          Key: header code; value: metadata value.
   def extract_attributes(mods_node, template_node)
     return {} if mods_node == nil || template_node == nil
     attributes = {}
@@ -93,6 +107,11 @@ class MODSFile
     return attributes
   end
 
+  # Extract attributes and values for the children of a given node and match with
+  # template header codes.
+  # @param [Nokogiri::Node] mods_node       The data node to be processed.
+  # @param [Nokogiri::Node] template_node   The corresponding template node.
+  # @return [Hash]                          Key: header code; value: metadata value.
   def extract_child_attributes_and_values(mods_node, template_node)
     return {} if mods_node == nil || template_node == nil
     child_attributes_and_values = {}
@@ -115,6 +134,10 @@ class MODSFile
     return child_attributes_and_values
   end
 
+  # Extract the data value for a given node and match with template header codes.
+  # @param [Nokogiri::Node] mods_node       The data node to be processed.
+  # @param [Nokogiri::Node] template_node   The corresponding template node.
+  # @return [Hash]                          Key: header code; value: metadata value.
   def extract_self_value(mods_node, template_node)
     self_value = {}
     return {} if mods_node == nil || template_node == nil || mods_node.name == 'text' || @wrapper_elements.include?(mods_node.name)
@@ -125,6 +148,9 @@ class MODSFile
     return self_value
   end
 
+  # Get list of element names for a the children of a given node.
+  # @param [Nokogiri::Node] mods_node       The parent data node to be processed.
+  # @return [Array]                         List of child element names (strings).
   def get_child_element_names(mods_node)
     return [] if mods_node == nil
     child_element_names = mods_node.children.map {|x| x.name}.uniq.reject {|y| y == 'text'}.compact
