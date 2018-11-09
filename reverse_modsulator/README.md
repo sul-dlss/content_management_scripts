@@ -14,5 +14,4 @@ gem install ./reverse_modsulator-x.x.x.gem
 ```
 
 ## To use:
-```reverse_modsulator path/to/modsfiles outfile.txt
-```
+`reverse_modsulator path/to/modsfiles outfile.txt`
