@@ -32,7 +32,7 @@ class ReverseModsulator
   end
 
   # Replace subject subelements given as header codes with 'topic' for parseable XML.
-  # @return [StringIO]          Modified template
+  # @return [StringIO]          Modified template.
   def modify_template
     template = File.read(@template_filename)
     working_template = template.gsub(/\[\[s[un]\d+:p\d:type\]\]/, 'topic')

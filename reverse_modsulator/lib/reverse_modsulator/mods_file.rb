@@ -83,6 +83,7 @@ class MODSFile
     mods_subject_nodes = mods.xpath("#{xpath_root}#{@ns}:subject")
     template_subject_nodes = template.xpath("#{xpath_root}#{@ns}:subject")
     output.merge!(extract_subjects(mods_subject_nodes, template_subject_nodes))
+    # TODO: extract location subelements using this node
     mods_location_node = mods.at_xpath("#{xpath_root}#{@ns}:location")
     output.merge!(extract_repository(mods, template))
     output.merge!(extract_physicalLocation(mods))
@@ -157,6 +158,10 @@ class MODSFile
     return child_element_names
   end
 
+  # Extract the data and attribute values for code/text elemnts that may be paired.
+  # @param [Nokogiri::Node] mods_node       The data node to be processed.
+  # @param [Nokogiri::Node] template_node   The corresponding template node.
+  # @return [Hash]                          Key: header code; value: metadata value.
   def extract_code_text_values_and_attributes(mods_node, template_node)
     code_text_values = {}
     child_element_names = @paired_code_text_elements[mods_node.name]
@@ -172,6 +177,11 @@ class MODSFile
     return code_text_values
   end
 
+  # Extract the data and attribute values for all subject elements and match with
+  # template header codes.
+  # @param [Nokogiri::Node] mods_node       The data node to be processed.
+  # @param [Nokogiri::Node] template_node   The corresponding template node.
+  # @return [Hash]                          Key: header code; value: metadata value.
   def extract_subjects(mods_subject_nodes, template_subject_nodes)
     subjects = {}
     mods_subject_name_nodes, template_subject_name_nodes = get_subject_name_nodes(mods_subject_nodes, template_subject_nodes)
@@ -186,12 +196,23 @@ class MODSFile
     return subjects
   end
 
+  # Select subject elements where any subelement is name and/or titleInfo.
+  # @param [Nokogiri::NodeSet] mods_subject_nodes            All subject data nodes.
+  # @param [Nokogiri::NodeSet] template_subject_nodes        All subject template nodes.
+  # @return [Nokogiri::NodeSet] mods_subject_name_nodes      Subject data nodes with name or titleInfo subelement.
+  # @return [Nokogiri::NodeSet] template_subject_name_nodes  Template data nodes with name or titleInfo subelement.
   def get_subject_name_nodes(mods_subject_nodes, template_subject_nodes)
     mods_subject_name_nodes = mods_subject_nodes.xpath("#{@ns}:name|#{@ns}:titleInfo").map {|x| x.parent}.uniq
     template_subject_name_nodes = template_subject_nodes.grep(/sn[\d]+:/)
     return mods_subject_name_nodes, template_subject_name_nodes
   end
 
+  # Select subject elements where subelements are only topic, geographic, temporal, and/or genre.
+  # @param [Nokogiri::NodeSet] mods_subject_nodes             All subject data nodes.
+  # @param [Nokogiri::NodeSet] template_subject_nodes         All subject template nodes.
+  # @param [Nokogiri::NodeSet] mods_subject_name_nodes        Subject data nodes with name or titleInfo subelement.
+  # @return [Nokogiri::NodeSet] mods_subject_other_nodes      Subject data nodes with only topic, geographic, temporal, genre subelements.
+  # @return [Nokogiri::NodeSet] template_subject_other_nodes  Template data nodes with only topic, geographic, temporal, genre subelements.
   def get_subject_other_nodes(mods_subject_nodes, template_subject_nodes, mods_subject_name_nodes)
     mods_subject_other_nodes = mods_subject_nodes.xpath("#{@ns}:topic|#{@ns}:geographic|#{@ns}:temporal|#{@ns}:genre").map {|x| x.parent}.uniq
     mods_subject_other_nodes.map {|x| mods_subject_other_nodes.delete(x) if mods_subject_name_nodes.include?(x)}
@@ -199,6 +220,11 @@ class MODSFile
     return mods_subject_other_nodes, template_subject_other_nodes
   end
 
+  # Extract data and attribute values from a given subject node and match with
+  # template header codes.
+  # @param [Nokogiri::Node] mods_node       The data node to be processed.
+  # @param [Nokogiri::Node] template_node   The corresponding template node.
+  # @return [Hash]                          Key: header code; value: metadata value.
   def extract_subject_values_and_attributes(mods_node, template_node)
     return {} if mods_node == nil || template_node == nil
     subject_values_and_attributes = {}
@@ -216,6 +242,12 @@ class MODSFile
     return subject_values_and_attributes
   end
 
+  # Extract data and attribute values from the children of a given subject node
+  # and match with template header codes, except for cartographics and
+  # hierarchicalGeographic subelements.
+  # @param [Nokogiri::Node] mods_node       The data node to be processed.
+  # @param [Nokogiri::Node] template_node   The corresponding template node.
+  # @return [Hash]                          Key: header code; value: metadata value.
   def extract_subject_child_attributes_and_values(mods_node, template_node)
     child_attributes_and_values = {}
     return {} if mods_node == nil || template_node == nil
@@ -230,6 +262,11 @@ class MODSFile
     return child_attributes_and_values
   end
 
+  # Extract data and attribute values for subjects with cartographics or
+  # hierarchicalGeographic subelements and match with template header codes.
+  # @param [Nokogiri::NodeSet] mods_subject_nodes           All subject data nodes.
+  # @param [Nokogiri::NodeSet] template_subject_nodes       All subject template nodes.
+  # @return [Hash]                                          Key: header code; value: metadata value.
   def extract_other_geo_subjects(mods_subject_nodes, template_subject_nodes)
     geo_subjects = {}
     ['cartographics', 'hierarchicalGeographic'].each do |gs|
@@ -243,6 +280,10 @@ class MODSFile
     return geo_subjects
   end
 
+  # Extract repository value and attributes from first location node.
+  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
+  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
+  # @return [Hash]                    Key: header code; value: metadata value.
   def extract_repository(mods, template)
     repository = {}
     mods_repository_node = @mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type='repository']")
@@ -253,6 +294,11 @@ class MODSFile
     return repository
   end
 
+  # Extract first non-repository physicalLocation value from first location node
+  # and assign header code.
+  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
+  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
+  # @return [Hash]                    Key: header code; value: metadata value.
   def extract_physicalLocation(mods)
     physicalLocation = {}
     mods_physicalLocation_nodes = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation")
@@ -263,6 +309,10 @@ class MODSFile
     return physicalLocation
   end
 
+  # Extract first purl from first location node and assign header code.
+  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
+  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
+  # @return [Hash]                    Key: header code; value: metadata value.
   def extract_purl(mods)
     purl = {}
     purl = mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url[@usage='primary display']")
@@ -270,6 +320,12 @@ class MODSFile
     return {'lo:purl' => purl.content}
   end
 
+  # Extract URL and displayLabels for non-purls from first location node and
+  # assign header codes.
+  # If multiple non-purl URLs are present, only the final one is captured.
+  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
+  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
+  # @return [Hash]                    Key: header code; value: metadata value.
   def extract_url(mods)
     url = {}
     mods_urls = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url")
@@ -280,6 +336,10 @@ class MODSFile
     return url
   end
 
+  # Extract relatedItem data and attribute values, and match with template header codes.
+  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
+  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
+  # @return [Hash]                    Key: header code; value: metadata value.
   def extract_relatedItem(mods, template)
     relatedItems = {}
     mods_relatedItem_nodes = mods.xpath("//#{@ns}:mods/#{@ns}:relatedItem")
