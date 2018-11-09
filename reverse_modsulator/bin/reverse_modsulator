@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'reverse_modsulator'
+
+reverse_modsulator = ReverseModsulator.new(*ARGV)
