@@ -66,6 +66,7 @@ class ReverseModsulator
   end
 
   # Convert processed data hash to array of arrays with header codes as first entry.
+  # Merge druid keys into data.
   # @return [Array]             Array of row arrays for output.
   def data_to_rows
     rows = []
@@ -79,6 +80,7 @@ class ReverseModsulator
         elsif column_hash.keys.include?(header)
           row_out << column_hash[header]
         else
+          # Padding if row does not have data for that header
           row_out << ""
         end
       end
@@ -93,6 +95,7 @@ class ReverseModsulator
     headers = get_headers
     template_headers = get_template_headers
     ordered_headers = ['druid', 'sourceId']
+    # Select only headers with values somewhere in the data
     template_headers.each {|th| ordered_headers << th if headers.include?(th)}
     ordered_headers
   end
