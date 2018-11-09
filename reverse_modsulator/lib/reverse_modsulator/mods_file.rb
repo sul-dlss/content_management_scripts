@@ -333,7 +333,7 @@ class MODSFile
     mods_relatedItem_nodes.each_with_index do |ri, i|
       # Skip if relatedItem is for collection (not in descMetadata, inserted into
       # public MODS XML on PURL)
-      next if ri.at_xpath(".//#{@ns}:typeOfResource")['collection'] == "yes"
+      next if ri.at_xpath(".//#{@ns}:typeOfResource[@collection='yes']")
       relatedItems.merge!(extract_attributes(ri, template_relatedItem_nodes[i]))
       relatedItems.merge!(process_mods_elements(ri, template_relatedItem_nodes[i], "./"))
     end
