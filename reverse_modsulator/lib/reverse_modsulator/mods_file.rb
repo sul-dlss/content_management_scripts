@@ -83,13 +83,9 @@ class MODSFile
     mods_subject_nodes = mods.xpath("#{xpath_root}#{@ns}:subject")
     template_subject_nodes = template.xpath("#{xpath_root}#{@ns}:subject")
     output.merge!(extract_subjects(mods_subject_nodes, template_subject_nodes))
-    # TODO: extract location subelements using this node
     mods_location_node = mods.at_xpath("#{xpath_root}#{@ns}:location")
-    output.merge!(extract_repository(mods, template))
-    output.merge!(extract_physicalLocation(mods))
-    output.merge!(extract_self_value(mods.at_xpath("#{xpath_root}#{@ns}:location/#{@ns}:shelfLocator"), template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator")))
-    output.merge!(extract_purl(mods))
-    output.merge!(extract_url(mods))
+    template_location_node = template.at_xpath("#{xpath_root}#{@ns}:location")
+    output.merge!(extract_locations(mods, template))
   end
 
   # Extract attribute values for a given node and match with template header codes.
@@ -276,60 +272,31 @@ class MODSFile
     geo_subjects
   end
 
-  # Extract repository value and attributes from first location node.
+  # Extract data and attribute values from location subelements and match with
+  # template header codes.
   # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
   # @param [Nokogiri::Node] template  The template node corresponding to the data node.
   # @return [Hash]                    Key: header code; value: metadata value.
-  def extract_repository(mods, template)
-    repository = {}
-    mods_repository_node = @mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type='repository']")
-    return {} if mods_repository_node == nil
-    template_repository_node = template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation[@type='repository']")
-    repository_attributes = extract_attributes(mods_repository_node, template_repository_node)
-    repository = {'lo:repository' => mods_repository_node.content}.merge!(repository_attributes)
-    return repository
+  def extract_locations(mods_location_node, template_location_node)
+    return {} if mods_location_node == nil
+    locations = {}
+    l = [mods_location_node, template_location_node]
+    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:physicalLocation[@type='repository']"))
+    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:physicalLocation[not(@type) or @type!='repository']"))
+    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:url[@usage='primary display']"))
+    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:url[not(@usage) or @usage!='primary display']"))
+    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:shelfLocator"))
   end
 
-  # Extract first non-repository physicalLocation value from first location node
-  # and assign header code.
-  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
-  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
-  # @return [Hash]                    Key: header code; value: metadata value.
-  def extract_physicalLocation(mods)
-    physicalLocation = {}
-    mods_physicalLocation_nodes = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:physicalLocation")
-    return {} if mods_physicalLocation_nodes == nil
-    mods_physicalLocation_nodes.each do |p|
-      physicalLocation.merge!({'lo:physicalLocation' => p.content}) if p['type'] != 'repository'
-    end
-    return physicalLocation
-  end
-
-  # Extract first purl from first location node and assign header code.
-  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
-  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
-  # @return [Hash]                    Key: header code; value: metadata value.
-  def extract_purl(mods)
-    purl = {}
-    purl = mods.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url[@usage='primary display']")
-    return {} if purl == nil
-    return {'lo:purl' => purl.content}
-  end
-
-  # Extract URL and displayLabels for non-purls from first location node and
-  # assign header codes.
-  # If multiple non-purl URLs are present, only the final one is captured.
-  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
-  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
-  # @return [Hash]                    Key: header code; value: metadata value.
-  def extract_url(mods)
-    url = {}
-    mods_urls = mods.xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:url")
-    mods_urls.each do |u|
-      url.merge!({'lo:url' => u.content}) if u['usage'] != 'primary display'
-      url.merge!({'lo:url:displayLabel' => u['displayLabel']}) if u['displayLabel'] != nil
-    end
-    url
+  # Extract data and attributes from xpath relative to a given node and match
+  # with template header codes.
+  def extract_from_relative_xpath(mods_node, template_node, xpath)
+    values = {}
+    mods_xpath_node = mods_node.at_xpath(xpath)
+    return {} if mods_xpath_node == nil
+    template_xpath_node = template_node.at_xpath(xpath)
+    values.merge!(extract_self_value(mods_xpath_node, template_xpath_node))
+    values.merge!(extract_attributes(mods_xpath_node, template_xpath_node))
   end
 
   # Extract relatedItem data and attribute values, and match with template header codes.
