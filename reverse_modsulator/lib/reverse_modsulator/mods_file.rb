@@ -81,9 +81,10 @@ class MODSFile
       mods_element_nodes.each_with_index do |n, i|
         # Get element attributes and header codes
         output.merge!(extract_attributes(n, template_element_nodes[i]))
-        # TODO: check element child count >1 instead of relying on list
-        if @wrapper_elements.include?(element)
+        # Process nested child elements if present
+        if n.children.size > 1
           output.merge!(extract_child_attributes_and_values(n, template_element_nodes[i]))
+        # Otherwise get the data value of the element
         else
           output.merge!(extract_self_value(n, template_element_nodes[i]))
         end
