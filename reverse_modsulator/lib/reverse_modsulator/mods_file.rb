@@ -15,7 +15,7 @@ class MODSFile
 
     @column_hash = {}
 
-    # Elements that can be processed similarly.
+    # Top-level elements that do not require special processing.
     @basic_elements = [
       'titleInfo',
       'name',
@@ -28,19 +28,6 @@ class MODSFile
       'tableOfContents',
       'identifier',
       'recordInfo'
-    ]
-
-    # Elements that have child elements rather than directly containing a value.
-    @wrapper_elements = [
-      'titleInfo',
-      'name',
-      'role',
-      'originInfo',
-      'place',
-      'language',
-      'relatedItem',
-      'recordInfo',
-      'languageOfCataloging',
     ]
 
     # <keys> are elements that may contain a pair of child elements <value> representing
@@ -130,15 +117,11 @@ class MODSFile
       child_template_nodes = template_node.xpath("#{@ns}:#{name}")
       child_mods_nodes.each_with_index do |n, i|
         child_attributes_and_values.merge!(extract_attributes(n, child_template_nodes[i]))
-        # TODO: extract self value only if not paired; check whether this
-        # leaves any grandchildren unaccounted for
-        child_attributes_and_values.merge!(extract_self_value(n, child_template_nodes[i]))
         if @paired_code_text_elements.keys.include?(name)
            child_attributes_and_values.merge!(extract_code_text_values_and_attributes(n, child_template_nodes[i]))
-        # TODO: is this recursivity needed?
-        # elsif @wrapper_elements.include?(name)
-        #   child_attributes_and_values.merge!(extract_child_attributes_and_values(n, child_template_nodes[i]))
-        end
+         else
+           child_attributes_and_values.merge!(extract_self_value(n, child_template_nodes[i]))
+         end
       end
     end
     child_attributes_and_values
@@ -150,7 +133,7 @@ class MODSFile
   # @return [Hash]                          Key: header code; value: metadata value.
   def extract_self_value(mods_node, template_node)
     self_value = {}
-    return {} if mods_node == nil || template_node == nil || mods_node.name == 'text' || @wrapper_elements.include?(mods_node.name)
+    return {} if mods_node == nil || template_node == nil || mods_node.name == 'text' || mods_node.children.size > 1
     header_code = template_node.content.strip
     if header_code.start_with?('[[')
       self_value[header_code.slice(2..-3)] = mods_node.content
