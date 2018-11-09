@@ -10,7 +10,9 @@ Output: Tab-delimited file with replayable spreadsheets and one row of data per 
 cd content_management_scripts/reverse_modsulator
 bundle install
 gem build reverse_modsulator.gemspec
-gem install ./reverse_modsulator-x.x.x.gem```
+gem install ./reverse_modsulator-x.x.x.gem
+```
 
 ## To use:
-```reverse_modsulator path/to/modsfiles outfile.txt```
+```reverse_modsulator path/to/modsfiles outfile.txt
+```
