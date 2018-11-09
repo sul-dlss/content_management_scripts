@@ -15,6 +15,7 @@ class MODSFile
 
     @column_hash = {}
 
+    # Elements that can be processed similarly.
     @basic_elements = [
       'titleInfo',
       'name',
@@ -29,6 +30,7 @@ class MODSFile
       'recordInfo'
     ]
 
+    # Elements that have child elements rather than directly containing a value.
     @wrapper_elements = [
       'titleInfo',
       'name',
@@ -41,6 +43,8 @@ class MODSFile
       'languageOfCataloging',
     ]
 
+    # <keys> are elements that may contain a pair of child elements <value> representing
+    # the same information as code and text, as specifed in the type attribute.
     @paired_code_text_elements = {
       'role' => ['roleTerm'],
       'language' => ['languageTerm'],
@@ -62,17 +66,22 @@ class MODSFile
   end
 
   # Extract data from MODS element nodes and match with template header codes.
+  # Takes mods and template as arguments to support relatedItem processing.
   # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
   # @param [Nokogiri::Node] template  The template node corresponding to the data node.
+  # @param [String] xpath_root        The relative XPath context for the elements processed.
   # @return [Hash]                    Key: header code; value: metadata value.
   def process_mods_elements(mods, template, xpath_root)
     output = {}
     @basic_elements.each do |element|
+      # Get the nodeset for this element from the MODS file and the corresponding
+      # nodeset from the modsulator template for elements following the same pattern.
       mods_element_nodes = mods.xpath("#{xpath_root}#{@ns}:#{element}")
       template_element_nodes = template.xpath("#{xpath_root}#{@ns}:#{element}")
       mods_element_nodes.each_with_index do |n, i|
+        # Get element attributes and header codes
         output.merge!(extract_attributes(n, template_element_nodes[i]))
-        # TODO: check element type instead of relying on list
+        # TODO: check element child count >1 instead of relying on list
         if @wrapper_elements.include?(element)
           output.merge!(extract_child_attributes_and_values(n, template_element_nodes[i]))
         else
@@ -80,9 +89,11 @@ class MODSFile
         end
       end
     end
+    # Subjects
     mods_subject_nodes = mods.xpath("#{xpath_root}#{@ns}:subject")
     template_subject_nodes = template.xpath("#{xpath_root}#{@ns}:subject")
     output.merge!(extract_subjects(mods_subject_nodes, template_subject_nodes))
+    # Locations
     mods_location_node = mods.at_xpath("#{xpath_root}#{@ns}:location")
     template_location_node = template.at_xpath("#{xpath_root}#{@ns}:location")
     output.merge!(extract_locations(mods, template))
@@ -97,6 +108,7 @@ class MODSFile
     attributes = {}
     mods_node.each do |attr_name, attr_value|
       header_code = template_node[attr_name]
+      # Skip if value hardcoded in template rather than [[header code]]
       next if header_code == nil || !header_code.start_with?('[[')
       attributes[header_code.slice(2..-3)] = attr_value
     end
@@ -122,6 +134,7 @@ class MODSFile
         child_attributes_and_values.merge!(extract_self_value(n, child_template_nodes[i]))
         if @paired_code_text_elements.keys.include?(name)
            child_attributes_and_values.merge!(extract_code_text_values_and_attributes(n, child_template_nodes[i]))
+        # TODO: is this recursivity needed?
         # elsif @wrapper_elements.include?(name)
         #   child_attributes_and_values.merge!(extract_child_attributes_and_values(n, child_template_nodes[i]))
         end
@@ -152,7 +165,8 @@ class MODSFile
     child_element_names = mods_node.children.map {|x| x.name}.uniq.reject {|y| y == 'text'}.compact
   end
 
-  # Extract the data and attribute values for code/text elemnts that may be paired.
+  # Extract the data and attribute values for code/text elements that may be paired.
+  # Elements are still processed if only one of the pair is present.
   # @param [Nokogiri::Node] mods_node       The data node to be processed.
   # @param [Nokogiri::Node] template_node   The corresponding template node.
   # @return [Hash]                          Key: header code; value: metadata value.
@@ -170,6 +184,8 @@ class MODSFile
     end
     code_text_values
   end
+
+  ### subject
 
   # Extract the data and attribute values for all subject elements and match with
   # template header codes.
@@ -190,6 +206,7 @@ class MODSFile
   end
 
   # Select subject elements where any subelement is name and/or titleInfo.
+  # The selcted subject elements may also have topic, geographic, temporal, and/or genre subelements.
   # @param [Nokogiri::NodeSet] mods_subject_nodes            All subject data nodes.
   # @param [Nokogiri::NodeSet] template_subject_nodes        All subject template nodes.
   # @return [Nokogiri::NodeSet] mods_subject_name_nodes      Subject data nodes with name or titleInfo subelement.
@@ -222,9 +239,12 @@ class MODSFile
     return {} if mods_node == nil || template_node == nil
     subject_values_and_attributes = {}
     subject_values_and_attributes.merge!(extract_attributes(mods_node, template_node))
+    # Skip empty-space text nodes
     mods_children = mods_node.children.map {|x| x if x.content.match(/\S/)}.compact
     template_children = template_node.children.map {|x| x if x.content.match(/\S/)}.compact
-    # skip title template if not in data
+    # Skip titleInfo in template if not present in data - template uses snX:p2
+    # for both titleInfo and topic etc. subject type, throwing off the index matching if the
+    # data uses the second p2 pattern and not the first.
     child_subject_types = mods_children.map {|x| x.name}
     if child_subject_types.include?('name') && !child_subject_types.include?('titleInfo')
       template_children.delete(template_children[1])
@@ -244,11 +264,16 @@ class MODSFile
   def extract_subject_child_attributes_and_values(mods_node, template_node)
     child_attributes_and_values = {}
     return {} if mods_node == nil || template_node == nil
+    # Process these subelements regardless of whether name and/or titleInfo are also present.
+    # Type is an element name and has been replaced in the template object with generic
+    # value 'topic' so as to not break XPath. The header code prefixes are picked up from
+    # elsewhere in the same line of the template to generate the suX:pX:type header.
     if ['topic', 'geographic', 'temporal', 'genre'].include?(mods_node.name)
       header_code = template_node.content.match(/s[nu][\d]+:p[\d]:/)[0] + "type"
       child_attributes_and_values.merge!({header_code => mods_node.name})
+    # Name and titleInfo have nested child elements and must be processed separately.
     elsif ['name', 'titleInfo'].include?(mods_node.name)
-      child_attributes_and_values.merge!(extract_child_attributes_and_values(mods_node, template_node)) #handle multiple nameParts
+      child_attributes_and_values.merge!(extract_child_attributes_and_values(mods_node, template_node))
     end
     child_attributes_and_values.merge!(extract_attributes(mods_node, template_node))
     child_attributes_and_values.merge!(extract_self_value(mods_node, template_node))
@@ -272,8 +297,11 @@ class MODSFile
     geo_subjects
   end
 
+  ### location
+
   # Extract data and attribute values from location subelements and match with
-  # template header codes.
+  # template header codes. Processes first location element and first instance of each
+  # subelement type only.
   # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
   # @param [Nokogiri::Node] template  The template node corresponding to the data node.
   # @return [Hash]                    Key: header code; value: metadata value.
@@ -281,15 +309,23 @@ class MODSFile
     return {} if mods_location_node == nil
     locations = {}
     l = [mods_location_node, template_location_node]
+    # Repository
     locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:physicalLocation[@type='repository']"))
+    # Other physical location
     locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:physicalLocation[not(@type) or @type!='repository']"))
+    # PURL
     locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:url[@usage='primary display']"))
+    # Other URL
     locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:url[not(@usage) or @usage!='primary display']"))
+    # Shelf locator (call number)
     locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:shelfLocator"))
   end
 
   # Extract data and attributes from xpath relative to a given node and match
-  # with template header codes.
+  # with template header codes. Returns first XPath match only.
+  # @param [Nokogiri::Node] mods_node       Nokogiri document or node with data to be processed.
+  # @param [Nokogiri::Node] template_node   The template node corresponding to the data node.
+  # @return [Hash]                          Key: header code; value: metadata value.
   def extract_from_relative_xpath(mods_node, template_node, xpath)
     values = {}
     mods_xpath_node = mods_node.at_xpath(xpath)
@@ -299,6 +335,8 @@ class MODSFile
     values.merge!(extract_attributes(mods_xpath_node, template_xpath_node))
   end
 
+  ### relatedItem
+
   # Extract relatedItem data and attribute values, and match with template header codes.
   # @return [Hash]                    Key: header code; value: metadata value.
   def extract_relatedItem
@@ -306,7 +344,11 @@ class MODSFile
     mods_relatedItem_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:relatedItem")
     return {} if mods_relatedItem_nodes == nil
     template_relatedItem_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:relatedItem")
+    # Process each relatedItem in same way as top-level document, using XPath
+    # relative to relatedItem node
     mods_relatedItem_nodes.each_with_index do |ri, i|
+      # Skip if relatedItem is for collection (not in descMetadata, inserted into
+      # public MODS XML on PURL)
       next if ri.at_xpath(".//#{@ns}:typeOfResource")['collection'] == "yes"
       relatedItems.merge!(extract_attributes(ri, template_relatedItem_nodes[i]))
       relatedItems.merge!(process_mods_elements(ri, template_relatedItem_nodes[i], "./"))
