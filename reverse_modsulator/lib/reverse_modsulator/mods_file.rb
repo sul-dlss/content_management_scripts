@@ -58,7 +58,7 @@ class MODSFile
   # @return [Hash]             Key: header code; value: metadata value.
   def process_mods_file
     @column_hash = process_mods_elements(@mods, @template, "//#{@ns}:mods/")
-    @column_hash.merge!(extract_relatedItem(@mods, @template))
+    @column_hash.merge!(extract_relatedItem)
   end
 
   # Extract data from MODS element nodes and match with template header codes.
@@ -90,7 +90,6 @@ class MODSFile
     output.merge!(extract_self_value(mods.at_xpath("#{xpath_root}#{@ns}:location/#{@ns}:shelfLocator"), template.at_xpath("//#{@ns}:mods/#{@ns}:location/#{@ns}:shelfLocator")))
     output.merge!(extract_purl(mods))
     output.merge!(extract_url(mods))
-    return output
   end
 
   # Extract attribute values for a given node and match with template header codes.
@@ -105,7 +104,7 @@ class MODSFile
       next if header_code == nil || !header_code.start_with?('[[')
       attributes[header_code.slice(2..-3)] = attr_value
     end
-    return attributes
+    attributes
   end
 
   # Extract attributes and values for the children of a given node and match with
@@ -132,7 +131,7 @@ class MODSFile
         end
       end
     end
-    return child_attributes_and_values
+    child_attributes_and_values
   end
 
   # Extract the data value for a given node and match with template header codes.
@@ -146,7 +145,7 @@ class MODSFile
     if header_code.start_with?('[[')
       self_value[header_code.slice(2..-3)] = mods_node.content
     end
-    return self_value
+    self_value
   end
 
   # Get list of element names for a the children of a given node.
@@ -155,7 +154,6 @@ class MODSFile
   def get_child_element_names(mods_node)
     return [] if mods_node == nil
     child_element_names = mods_node.children.map {|x| x.name}.uniq.reject {|y| y == 'text'}.compact
-    return child_element_names
   end
 
   # Extract the data and attribute values for code/text elemnts that may be paired.
@@ -174,7 +172,7 @@ class MODSFile
         code_text_values.merge!(extract_attributes(value, header_code))
       end
     end
-    return code_text_values
+    code_text_values
   end
 
   # Extract the data and attribute values for all subject elements and match with
@@ -187,13 +185,12 @@ class MODSFile
     mods_subject_name_nodes, template_subject_name_nodes = get_subject_name_nodes(mods_subject_nodes, template_subject_nodes)
     mods_subject_other_nodes, template_subject_other_nodes = get_subject_other_nodes(mods_subject_nodes, template_subject_nodes, mods_subject_name_nodes)
     mods_subject_name_nodes.each_with_index do |sn, i|
-     subjects.merge!(extract_subject_values_and_attributes(sn, template_subject_name_nodes[i]))
+      subjects.merge!(extract_subject_values_and_attributes(sn, template_subject_name_nodes[i]))
     end
     mods_subject_other_nodes.each_with_index do |su, i|
-     subjects.merge!(extract_subject_values_and_attributes(su, template_subject_other_nodes[i]))
+      subjects.merge!(extract_subject_values_and_attributes(su, template_subject_other_nodes[i]))
     end
     subjects.merge!(extract_other_geo_subjects(mods_subject_nodes, template_subject_nodes))
-    return subjects
   end
 
   # Select subject elements where any subelement is name and/or titleInfo.
@@ -239,7 +236,7 @@ class MODSFile
     mods_children.each_with_index do |s, i|
       subject_values_and_attributes.merge!(extract_subject_child_attributes_and_values(s, template_children[i]))
     end
-    return subject_values_and_attributes
+    subject_values_and_attributes
   end
 
   # Extract data and attribute values from the children of a given subject node
@@ -259,7 +256,6 @@ class MODSFile
     end
     child_attributes_and_values.merge!(extract_attributes(mods_node, template_node))
     child_attributes_and_values.merge!(extract_self_value(mods_node, template_node))
-    return child_attributes_and_values
   end
 
   # Extract data and attribute values for subjects with cartographics or
@@ -277,7 +273,7 @@ class MODSFile
         geo_subjects.merge!(extract_child_attributes_and_values(c, template_subject_geo_nodes[i]))
       end
     end
-    return geo_subjects
+    geo_subjects
   end
 
   # Extract repository value and attributes from first location node.
@@ -333,24 +329,22 @@ class MODSFile
       url.merge!({'lo:url' => u.content}) if u['usage'] != 'primary display'
       url.merge!({'lo:url:displayLabel' => u['displayLabel']}) if u['displayLabel'] != nil
     end
-    return url
+    url
   end
 
   # Extract relatedItem data and attribute values, and match with template header codes.
-  # @param [Nokogiri::Node] mods      Nokogiri document or node with data to be processed.
-  # @param [Nokogiri::Node] template  The template node corresponding to the data node.
   # @return [Hash]                    Key: header code; value: metadata value.
-  def extract_relatedItem(mods, template)
+  def extract_relatedItem
     relatedItems = {}
-    mods_relatedItem_nodes = mods.xpath("//#{@ns}:mods/#{@ns}:relatedItem")
+    mods_relatedItem_nodes = @mods.xpath("//#{@ns}:mods/#{@ns}:relatedItem")
     return {} if mods_relatedItem_nodes == nil
-    template_relatedItem_nodes = template.xpath("//#{@ns}:mods/#{@ns}:relatedItem")
+    template_relatedItem_nodes = @template.xpath("//#{@ns}:mods/#{@ns}:relatedItem")
     mods_relatedItem_nodes.each_with_index do |ri, i|
       next if ri.at_xpath(".//#{@ns}:typeOfResource")['collection'] == "yes"
       relatedItems.merge!(extract_attributes(ri, template_relatedItem_nodes[i]))
       relatedItems.merge!(process_mods_elements(ri, template_relatedItem_nodes[i], "./"))
     end
-    return relatedItems
+    relatedItems
   end
 
 end
