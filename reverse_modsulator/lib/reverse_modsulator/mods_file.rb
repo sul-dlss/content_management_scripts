@@ -97,7 +97,7 @@ class MODSFile
     # Locations
     mods_location_node = mods.at_xpath("#{xpath_root}#{@ns}:location")
     template_location_node = template.at_xpath("#{xpath_root}#{@ns}:location")
-    output.merge!(extract_locations(mods, template))
+    output.merge!(extract_locations(mods_location_node, template_location_node))
   end
 
   # Extract attribute values for a given node and match with template header codes.
@@ -311,15 +311,15 @@ class MODSFile
     locations = {}
     l = [mods_location_node, template_location_node]
     # Repository
-    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:physicalLocation[@type='repository']"))
+    locations.merge!(extract_from_relative_xpath(*l, "./#{@ns}:physicalLocation[@type='repository']"))
     # Other physical location
-    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:physicalLocation[not(@type) or @type!='repository']"))
+    locations.merge!(extract_from_relative_xpath(*l, "./#{@ns}:physicalLocation[not(@type) or @type!='repository']"))
     # PURL
-    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:url[@usage='primary display']"))
+    locations.merge!(extract_from_relative_xpath(*l, "./#{@ns}:url[@usage='primary display']"))
     # Other URL
-    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:url[not(@usage) or @usage!='primary display']"))
+    locations.merge!(extract_from_relative_xpath(*l, "./#{@ns}:url[not(@usage) or @usage!='primary display']"))
     # Shelf locator (call number)
-    locations.merge!(extract_from_relative_xpath(*l, ".//#{@ns}:shelfLocator"))
+    locations.merge!(extract_from_relative_xpath(*l, "./#{@ns}:shelfLocator"))
   end
 
   # Extract data and attributes from xpath relative to a given node and match
