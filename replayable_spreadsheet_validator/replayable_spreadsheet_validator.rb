@@ -21,42 +21,42 @@ end
 
 # Skip rows before headers and headers
 def skip_to_data?(field, value)
-  return TRUE if field.index(value) <= @header_row_index
+  return true if field.index(value) <= @header_row_index
 end
 
 # Identify effectively blank strings and arrays
 def value_is_blank?(value)
-  return TRUE if value == nil
+  return true if value == nil
   if value.is_a? String
-    return TRUE if value.strip.empty?
+    return true if value.strip.empty?
   elsif value.is_a? Array
-    return TRUE if value.compact.join("").strip == ""
+    return true if value.compact.join("").strip == ""
   end
 end
 
 # Identify non-blank strings and arrays
 def value_is_not_blank?(value)
-  return TRUE if !value_is_blank?(value)
+  return true if !value_is_blank?(value)
 end
 
 # Determine whether row has any content
 def row_has_content?(index)
-  return TRUE unless @blank_row_index.include?(index)
+  return true unless @blank_row_index.include?(index)
 end
 
 # Determine whether value is missing from a row with other content
 def value_is_blank_in_nonblank_row?(value, index)
-  return TRUE if value_is_blank?(value) && row_has_content?(index)
+  return true if value_is_blank?(value) && row_has_content?(index)
 end
 
 # Determine whether value is present in given term list
 def value_not_in_term_list?(value, termlist)
-  return TRUE if !value_is_blank?(value) && !termlist.include?(value)
+  return true if !value_is_blank?(value) && !termlist.include?(value)
 end
 
 # Check for duplicates in given list of values
 def has_duplicates?(terms)
-  return TRUE if terms.compact.size != terms.compact.uniq.size
+  return true if terms.compact.size != terms.compact.uniq.size
 end
 
 # Return list of duplicate terms as string
@@ -125,15 +125,15 @@ def check_date_encoding(date_value, encoding)
   date = date_value.to_s.strip
   case encoding
   when 'w3cdtf'
-    return TRUE if date.match(/^[\d]{4}$/)
-    return TRUE if date.match(/^[\d]{4}-[\d]{2}$/)
-    return TRUE if date.match(/^[\d]{4}-[\d]{2}-[\d]{2}$/)
+    return true if date.match(/^[\d]{4}$/)
+    return true if date.match(/^[\d]{4}-[\d]{2}$/)
+    return true if date.match(/^[\d]{4}-[\d]{2}-[\d]{2}$/)
   when 'edtf'
-    return TRUE if date.match(/^-?[\d]{4}$/)
+    return true if date.match(/^-?[\d]{4}$/)
   when 'marc'
-    return TRUE if date.match(/^[\du]{4}$/)
-    return TRUE if date.match(/^[\d]{1,3}$/)
-    return TRUE if date.match(/^[\d]{6}$/)
+    return true if date.match(/^[\du]{4}$/)
+    return true if date.match(/^[\d]{1,3}$/)
+    return true if date.match(/^[\d]{6}$/)
   end
   if ['w3cdtf', 'edtf', 'marc'].include?(encoding)
     return FALSE
